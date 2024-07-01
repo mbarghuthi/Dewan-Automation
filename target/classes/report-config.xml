@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+	<!-- report theme -->
+	<!-- standard, dark -->
+	<theme>standard</theme>
+
+	<!-- document encoding -->
+	<!-- defaults to UTF-8 -->
+	<encoding>UTF-8</encoding>
+
+	<!-- title of the document -->
+	<documentTitle>Automation Report</documentTitle>
+
+	<!-- report name - displayed at top-nav -->
+	<reportName>Automation Report</reportName>
+	<!-- <reportName> <image id="image-zoom"> <![CDATA[ <img src='E:\automation-web\src\main\resources\data\documents\Lab 
+		Tests Or Images.jpg'/> ]]> </image> </reportName> -->
+
+	<!-- global date format override -->
+	<!-- defaults to yyyy-MM-dd -->
+	<dateFormat>yyyy-MM-dd</dateFormat>
+
+	<!-- global time format override -->
+	<!-- defaults to HH:mm:ss -->
+	<timeFormat>HH:mm:ss</timeFormat>
+
+	<!-- custom javascript -->
+	<scripts>
+		<!-- <![CDATA[ -->
+		<!-- $(document).ready(function() { -->
+		<!-- $("#image-zoom").src("src",src); -->
+		<!-- $("#image-zoom").append("src",src); -->
+		<!-- }); -->
+		<!-- ]]> -->
+   <![CDATA[
+        $(document).ready(function() {
+            $('#parentWithoutNodes').prop("checked", true).click();
+            $('#test-count-setting > div.modal-footer > a')[0].click();
+        });
+    ]]>
+	</scripts>
+
+	<!-- custom styles -->
+	<styles>
+   <![CDATA[
+            .report-name { padding-left: 40%; }
+            .test-desc { font-size: 18px; }
+            .test-name { width: 0% !important; word-break: unset;}
+            .cyan { display: none; }
+            .orange { display: none; }
+            .darken-4 { display: none; }      
+            .logo-content { display: none; }  
+			.logo-container { background-color: #1A231E!important; width: 46px; }  
+			.blue.darken-2 { background-color: #1A231E!important; } 
+			.button-collapse { width: 50px; }
+			.side-nav { width: 50px; }
+			.analysis i {font-size: 15px !important; }
+			.side-nav.fixed a { padding: 18px; padding-top: 0px; }
+            .step-details { word-break: inherit; }
+            ._addedCell1 { min-width: 25%; max-width: 50%; width: 150px; }
+            .step-filters { padding-bottom: 5px; }
+            
+            
+           ]]>
+	</styles>
+</configuration>

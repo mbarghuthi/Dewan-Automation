@@ -1,0 +1,71 @@
+<html>
+<head>
+<title>stories.TC_001</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+<div class="story">
+<h1></h1>
+<div class="path">stories/TC_001.story</div>
+<div class="scenario">
+<h2>Scenario: TC_001 login</h2>
+<div class="step successful">Given  I navigate to 'http://172.16.30.82:8888/login.aspx'</div>
+<div class="step successful">When  I login as 'alaa.abdelbagi' with password 'Aa1'</div>
+<div class="step successful">And  Verify 'Generalizations Header Button' equals '&#1575;&#1604;&#1578;&#1593;&#1575;&#1605;&#1610;&#1605;' text</div>
+<div class="step successful">Then  I click on 'logout Button'</div>
+<div class="step successful">And  Verify 'login Button' is present</div>
+</div>
+<div class="scenario">
+<h2>Scenario: TC_002 Create Generalization Process</h2>
+<div class="step successful">Given  I navigate to 'http://172.16.30.82:8888/login.aspx'</div>
+<div class="step successful">And  I login as 'alaa.abdelbagi' with password 'Aa1'</div>
+<div class="step successful">And  I click on 'Add Process Button'</div>
+<div class="step successful">And  I click on 'Generalization Button'</div>
+<div class="step successful">When  Set 'Generalization Subject Field' value to 'random'</div>
+<div class="step successful">And  Set 'Generalization Date Field' value to 'date'</div>
+<div class="step successful">And  I click on 'Generalization Save Button'</div>
+<div class="step successful">And  I get text from 'Generalization Get Subject' and save it as 'GeneralizationSubjectText'</div>
+<div class="step successful">And  I get value from 'Generalization Get Serial Number' and save it as 'GeneralizationSerialNumberValue'</div>
+<div class="step successful">And  I click on 'Generalization Direction Button'</div>
+<div class="step successful">And  I click on 'Generalize Button'</div>
+<div class="step successful">Then  I click on 'Generalizations Header Button'</div>
+<div class="step successful">And  Verify text of 'Generalization First Subject Text' equals saved value 'GeneralizationSubjectText'</div>
+<div class="step failed">And  Verify text of 'Generalization First Serial Number' equals saved value 'GeneralizationSerialNumberValue' <span class="keyword failed">(FAILED)</span><br/><span class="message failed">org.junit.ComparisonFailure: expected:&lt;[&#1635;]&gt; but was:&lt;[3]&gt;</span><br/><a color="black" target="jb_scn_shot" href="../screenshots/failed-scenario-a15ea876-3ff5-404c-b4f6-4c8e831b7e25.png"><img src="images/failing_screenshot.png" alt="failing screenshot"/></a></div>
+<div class="step notPerformed">And  Verify 'login Button' is present <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<pre class="failure">org.junit.ComparisonFailure: expected:&lt;[&#1635;]&gt; but was:&lt;[3]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.automation.pages.CannedPage.checkElementText(CannedPage.java:319)
+	at com.automation.steps.CannedSteps.assertElementTextEqualsSavedValue(CannedSteps.java:456)
+	(reflection-invoke)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:599)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:340)
+...</pre>
+</div>
+</div>
+
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>

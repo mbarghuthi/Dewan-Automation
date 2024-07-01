@@ -420,11 +420,10 @@ public class CannedSteps extends AbstractSteps {
 	@Then("[Action] I get text from '$elementName' and save it as '$variableName'")
 	public void getElementTextAndSave(@Named("elementName") String elementName, @Named("variableName") String variableName) throws Exception {
 		String text = cannedPage.getElementWithWaitText(elementName);
-		// Debug log
-		System.out.println("Fetched text from " + elementName + ": " + text);
 		stateManager.put(variableName, text);
-		System.out.println(variableName + " saved as: " + text);
+		System.out.println("Saved text from element '" + elementName + "' as '" + variableName + "': " + text);
 	}
+
 	@Given("[Action] I get value from '$elementName' and save it as '$variableName'")
 	@When("[Action] I get value from '$elementName' and save it as '$variableName'")
 	@Then("[Action] I get value from '$elementName' and save it as '$variableName'")
@@ -433,6 +432,7 @@ public class CannedSteps extends AbstractSteps {
 		// Debug log
 		System.out.println("Fetched value from " + elementName + ": " + value);
 		stateManager.put(variableName, value);
+		// Debug log
 		System.out.println(variableName + " saved as: " + value);
 	}
 
@@ -446,13 +446,11 @@ public class CannedSteps extends AbstractSteps {
 		String actualValue = cannedPage.getElementWithWaitText(elementName);
 
 		// Debug log
-		System.out.println("Expected value: " + expectedValue);
-		System.out.println("Actual value: " + actualValue);
+		System.out.println("Expected value (from stateManager, key='" + variableName + "'): " + expectedValue);
+		System.out.println("Actual value (from element '" + elementName + "'): " + actualValue);
 
-		if (expectedValue == null) {
-			throw new AssertionError("Expected value is null");
+		if (!expectedValue.equals(actualValue)) {
+			throw new Exception("Assertion failed: expected '" + expectedValue + "', but was '" + actualValue + "'");
 		}
-
-		cannedPage.checkElementText(elementName, expectedValue, true);
 	}
 }

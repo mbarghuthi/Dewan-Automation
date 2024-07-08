@@ -16,7 +16,6 @@
 	<reportName>
 	<![CDATA[
         <div class="logo-container" style= width:130px>
-<!--            <img src='..\..\logo\logo.png' style='height: inherit; width: inherit; margin-top:0px'/>-->
             <img src='http://172.16.30.82:8888/Images/HKD.png' style='height: inherit; width: inherit; margin-top:0px'/>
         </div>
         Dewan Automation Report

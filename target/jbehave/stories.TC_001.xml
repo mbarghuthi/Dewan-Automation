@@ -1,9 +1,5 @@
 <story path="stories/TC_001.story" title="">
-<scenario keyword="Scenario:" title="TC_001 login">
+<scenario keyword="Scenario:" title="TC_001 Navigate to the link">
 <step outcome="successful">Given [Navigation] I navigate to &apos;p:dewan&apos;</step>
-<step outcome="successful">When [Input] I login as &apos;p:userName.admin&apos; with password &apos;p:password&apos;</step>
-<step outcome="successful">And [Assertion] Verify &apos;Generalizations Header Button&apos; equals &apos;p:dewanHeader&apos; text</step>
-<step outcome="successful">Then [Input] I click on &apos;logout Button&apos;</step>
-<step outcome="successful">And [Assertion] Verify &apos;login Button&apos; is present</step>
 </scenario>
 </story>

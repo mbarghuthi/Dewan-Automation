@@ -1,3 +1,3 @@
-Scenario: TC_001 login
+Scenario: TC_001 Navigate to the link
 
 Given [Navigation] I navigate to 'p:dewan'

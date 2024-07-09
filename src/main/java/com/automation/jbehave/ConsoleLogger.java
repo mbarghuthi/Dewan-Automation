@@ -2,6 +2,8 @@ package com.automation.jbehave;
 
 import java.util.List;
 import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import org.apache.log4j.Logger;
 import org.jbehave.core.model.ExamplesTable;
@@ -87,15 +89,15 @@ public class ConsoleLogger implements StoryReporter {
 	}
 
 	public void beforeScenario(String scenarioTitle) {
-
 		String scenarioKey = scenarioTitle.substring(0, scenarioTitle.indexOf(" ")).trim();
 		String scenarioName = scenarioTitle.substring(scenarioTitle.indexOf(" ")).trim();
-		extentTest = extent.startTest(scenarioKey, scenarioName);
+//		extentTest = extent.startTest(scenarioKey, scenarioName);
+		extentTest = extent.startTest(scenarioName, scenarioKey);
 		test.set(extentTest);
 		extent.flush();
 
 		log.info("==========================================================");
-		log.info("Scenario: " + scenarioTitle);
+		log.info("Scenario: " + scenarioKey);
 		log.info("==========================================================");
 	}
 

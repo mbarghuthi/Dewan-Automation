@@ -12,6 +12,7 @@ import org.jbehave.core.steps.InjectableStepsFactory;
 import org.jbehave.core.steps.ParameterControls;
 import org.jbehave.core.steps.ParameterConverters;
 import org.jbehave.core.steps.spring.SpringStepsFactory;
+import org.jbehave.web.selenium.WebDriverProvider;
 import org.springframework.context.ApplicationContext;
 
 import com.automation.jbehave.ConsoleLogger;
@@ -111,7 +112,8 @@ public abstract class AbstractStoryConfiguration extends JUnitStories {
     }
 
     private StoryReporter[] getReporters() {
-        return new StoryReporter[]{new ConsoleLogger()};
+        WebDriverProvider webDriverProvider = context.getBean(WebDriverProvider.class);
+        return new StoryReporter[]{new ConsoleLogger(webDriverProvider)};
     }
 
     @Override

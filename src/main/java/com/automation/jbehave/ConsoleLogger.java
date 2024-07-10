@@ -2,8 +2,6 @@ package com.automation.jbehave;
 
 import java.util.List;
 import java.util.Map;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 import org.apache.log4j.Logger;
 import org.jbehave.core.model.ExamplesTable;
@@ -16,6 +14,11 @@ import org.jbehave.core.model.Scenario;
 import org.jbehave.core.model.Story;
 import org.jbehave.core.model.StoryDuration;
 import org.jbehave.core.reporters.StoryReporter;
+import org.jbehave.web.selenium.WebDriverProvider;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriverException;
 import org.springframework.stereotype.Component;
 
 import com.automation.jbehave.format.PropertyConverter;
@@ -34,8 +37,11 @@ public class ConsoleLogger implements StoryReporter {
 	private static final Logger log = Logger.getLogger(ConsoleLogger.class);
 	private ThreadLocal<Boolean> runningStoryStatus = new ThreadLocal<>();
 	private ThreadLocal<Story> storyThreadLocal = new ThreadLocal<>();
+	private WebDriver driver;
+	private final WebDriverProvider webDriverProvider;
 
-	public ConsoleLogger() {
+	public ConsoleLogger(WebDriverProvider webDriverProvider) {
+		this.webDriverProvider = webDriverProvider;
 	}
 
 	public void storyNotAllowed(Story story, String filter) {
@@ -91,7 +97,6 @@ public class ConsoleLogger implements StoryReporter {
 	public void beforeScenario(String scenarioTitle) {
 		String scenarioKey = scenarioTitle.substring(0, scenarioTitle.indexOf(" ")).trim();
 		String scenarioName = scenarioTitle.substring(scenarioTitle.indexOf(" ")).trim();
-//		extentTest = extent.startTest(scenarioKey, scenarioName);
 		extentTest = extent.startTest(scenarioName, scenarioKey);
 		test.set(extentTest);
 		extent.flush();
@@ -120,7 +125,6 @@ public class ConsoleLogger implements StoryReporter {
 	}
 
 	public void example(Map<String, String> tableRow) {
-
 	}
 
 	public void afterExamples() {
@@ -131,7 +135,6 @@ public class ConsoleLogger implements StoryReporter {
 
 	public void successful(String step) {
 		test.get().log(LogStatus.PASS, PropertyConverter.convert(step));
-	//	test.get().log(LogStatus.INFO, extentTest.addScreenCapture(""));
 		extent.flush();
 
 		log.info(String.format("%s (SUCCESSFUL)", step));
@@ -155,17 +158,26 @@ public class ConsoleLogger implements StoryReporter {
 
 	public void failed(String step, Throwable cause) {
 		test.get().log(LogStatus.FAIL, PropertyConverter.convert(step));
-		//test.get().log(LogStatus.INFO, extentTest.addScreenCapture(""));
-		test.get().log(LogStatus.INFO, cause.getCause().getMessage());
 
-		// Add screenshot code
+		// Log the cause message if available
+		if (cause.getCause() != null) {
+			test.get().log(LogStatus.INFO, cause.getCause().getMessage());
+			log.error(cause.getCause());
+		} else {
+			test.get().log(LogStatus.INFO, "Unknown error occurred");
+			log.error("Unknown error occurred");
+		}
 
+		// Capture and log screenshot if possible
+		String screenshotBase64 = captureScreenshot();
+		if (screenshotBase64 != null && !screenshotBase64.isEmpty()) {
+			test.get().log(LogStatus.INFO, "Screenshot of the failure", "<img src='data:image/png;base64," + screenshotBase64 + "' />");
+		}
 
 		extent.flush();
 
 		this.runningStoryStatus.set(false);
 		log.info(String.format("%s (FAILED)", step));
-		log.error(cause.getCause());
 	}
 
 	public void failedOutcomes(String step, OutcomesTable table) {
@@ -182,5 +194,23 @@ public class ConsoleLogger implements StoryReporter {
 	}
 
 	public void pendingMethods(List<String> methods) {
+	}
+
+	public String captureScreenshot() {
+		driver = webDriverProvider.get();
+		if (driver == null) {
+			log.error("WebDriver instance is null. Cannot capture screenshot.");
+			return null;
+		}
+
+		try {
+			TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
+			String base64Code = takesScreenshot.getScreenshotAs(OutputType.BASE64);
+			log.info("Screenshot saved successfully");
+			return base64Code;
+		} catch (WebDriverException e) {
+			log.error("Failed to capture screenshot: " + e.getMessage());
+			return null;
+		}
 	}
 }

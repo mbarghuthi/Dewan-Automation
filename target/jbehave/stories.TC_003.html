@@ -2,7 +2,58 @@
 <h1></h1>
 <div class="path">stories/TC_003.story</div>
 <div class="scenario">
-<h2>Scenario: TC_001 login</h2>
+<h2>Scenario: TC_001 Create Generalization</h2>
 <div class="step successful">Given  I navigate to 'http://172.16.30.82:8888/login.aspx'</div>
+<div class="step successful">And  I login as 'alaa.abdelbagi' with password 'Aa1'</div>
+<div class="step successful">And  I click on 'Add Process Button'</div>
+<div class="step successful">And  I click on 'Generalization Button'</div>
+<div class="step successful">When  Set 'Generalization Subject Field' value to 'random'</div>
+<div class="step successful">And  Set 'Generalization Date Field' value to 'date'</div>
+<div class="step successful">And  I get value from 'Generalization Get Year' and save it as 'GeneralizationYearValue'</div>
+<div class="step successful">And  Verify 'GeneralizationYearValue' equals current year</div>
+<div class="step successful">And  I click on 'Generalization Save Button'</div>
+<div class="step successful">And  I get value from 'Generalization Get Serial Number' and save it as 'GeneralizationSerialNumberValue'</div>
+<div class="step successful">And  I get text from 'Generalization Subject Field' and save it as 'GeneralizationSubjectText'</div>
+<div class="step successful">And  I click on 'My Processes List Header Button'</div>
+<div class="step successful">And  Verify 'Process Status' equals '&#1578;&#1581;&#1578; &#1575;&#1604;&#1575;&#1580;&#1585;&#1575;&#1569;' text</div>
+<div class="step successful">And  I click on 'View Generalizations Process Button'</div>
+<div class="step successful">And  I click on 'Generalization Direction Button'</div>
+<div class="step successful">And  I click on 'Generalize Button'</div>
+<div class="step successful">And  I wait for '3' sec</div>
+<div class="step successful">And  I click on 'Generalizations Header Button'</div>
+<div class="step successful">And  Verify text of 'Generalization First Subject Text' equals saved value 'GeneralizationSubjectText'</div>
+<div class="step ignorable">!-- And  Verify text of 'Generalization First Serial Number' equals saved value 'GeneralizationSerialNumberValue'</div>
+<div class="step successful">And  I click on 'ViewGeneralizationsProcessButton'</div>
+<div class="step successful">And  I click on 'Generalization Direction Button'</div>
+<div class="step successful">And  Verify 'Generalize Button' not present</div>
+<div class="step successful">And  I click on 'My Processes List Header Button'</div>
+<div class="step successful">And  Verify 'Process Status' equals '&#1578;&#1605;&#1578; &#1575;&#1604;&#1593;&#1605;&#1604;&#1610;&#1577; &#1576;&#1606;&#1580;&#1575;&#1581;' text</div>
+<div class="step successful">Then  I click on 'logout Button'</div>
+<div class="step successful">And  Verify 'login Button' is present</div>
+<div class="step successful">And  I login as 'mmalhis' with password 'Aa1'</div>
+<div class="step successful">And  I click on 'Generalizations Header Button'</div>
+<div class="step successful">And  Verify text of 'Generalization First Subject Text' equals saved value 'GeneralizationSubjectText'</div>
+<div class="step failed">And  Verify text of 'Generalization First Serial Number' equals saved value 'GeneralizationSerialNumberValue' <span class="keyword failed">(FAILED)</span><br/><span class="message failed">java.lang.Exception: Assertion failed: expected '&#1633;&#1632;&#1636;', but was '104'</span><br/><a color="black" target="jb_scn_shot" href="../screenshots/failed-scenario-55e89143-1fb9-478d-ad71-9bd1c7551498.png"><img src="images/failing_screenshot.png" alt="failing screenshot"/></a></div>
+<div class="step notPerformed">And  I click on 'logout Button' <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And  Verify 'login Button' is present <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<pre class="failure">java.lang.Exception: Assertion failed: expected '&#1633;&#1632;&#1636;', but was '104'
+	at com.automation.steps.CannedSteps.assertElementTextEqualsSavedValue(CannedSteps.java:461)
+	(reflection-invoke)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:599)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:340)
+...</pre>
+</div>
+<div class="scenario">
+<h2>Scenario: TC_002 Check uniqueness serial number for Generalization</h2>
+<div class="step successful">Given  I navigate to 'http://172.16.30.82:8888/login.aspx'</div>
+<div class="step successful">And  I login as 'alaa.abdelbagi' with password 'Aa1'</div>
+<div class="step successful">And  I click on 'Generalizations Header Button'</div>
+<div class="step successful">When  Set 'Generalization Size Page Input' value to '10000000'</div>
+<div class="step successful">And  I click on 'Change Button'</div>
+<div class="step successful">And  I wait for '3' sec</div>
+<div class="step successful">And  I get value from 'Generalization Size Page Input' and save it as 'GeneralizationSizePageValue'</div>
+<div class="step successful">Then  Verify uniqueness of values in column '&#1585;&#1602;&#1605; &#1575;&#1604;&#1578;&#1593;&#1605;&#1610;&#1605;' to approaches 'GeneralizationSizePageValue'</div>
+<div class="step successful">And  I click on 'logout Button'</div>
+<div class="step successful">And  Verify 'login Button' is present</div>
 </div>
 </div>

@@ -1,5 +1,55 @@
 <story path="stories/TC_003.story" title="">
-<scenario keyword="Scenario:" title="TC_001 login">
-<step outcome="successful">Given [Navigation] I navigate to &apos;p:dewan&apos;</step>
+<scenario keyword="Scenario:" title="TC_001 Create Generalization">
+<step outcome="successful">Given [Navigation] I navigate to &apos;p:dewanPetra&apos;</step>
+<step outcome="successful">And [Input] I login as &apos;p:userName.admin&apos; with password &apos;p:password&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;Add Process Button&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;Generalization Button&apos;</step>
+<step outcome="successful">When [Input] Set &apos;Generalization Subject Field&apos; value to &apos;random&apos;</step>
+<step outcome="successful">And [Input] Set &apos;Generalization Date Field&apos; value to &apos;date&apos;</step>
+<step outcome="successful">And [Action] I get value from &apos;Generalization Get Year&apos; and save it as &apos;GeneralizationYearValue&apos;</step>
+<step outcome="successful">And [Assertion] Verify &apos;GeneralizationYearValue&apos; equals current year</step>
+<step outcome="successful">And [Input] I click on &apos;Generalization Save Button&apos;</step>
+<step outcome="successful">And [Action] I get value from &apos;Generalization Get Serial Number&apos; and save it as &apos;GeneralizationSerialNumberValue&apos;</step>
+<step outcome="successful">And [Action] I get text from &apos;Generalization Subject Field&apos; and save it as &apos;GeneralizationSubjectText&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;My Processes List Header Button&apos;</step>
+<step outcome="successful">And [Assertion] Verify &apos;Process Status&apos; equals &apos;p:ProcessUnCompletedStatus&apos; text</step>
+<step outcome="successful">And [Input] I click on &apos;View Generalizations Process Button&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;Generalization Direction Button&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;Generalize Button&apos;</step>
+<step outcome="successful">And [Progress] I wait for &apos;3&apos; sec</step>
+<step outcome="successful">And [Input] I click on &apos;Generalizations Header Button&apos;</step>
+<step outcome="successful">And [Assertion] Verify text of &apos;Generalization First Subject Text&apos; equals saved value &apos;GeneralizationSubjectText&apos;</step>
+<step outcome="ignorable">!-- And [Assertion] Verify text of &apos;Generalization First Serial Number&apos; equals saved value &apos;GeneralizationSerialNumberValue&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;ViewGeneralizationsProcessButton&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;Generalization Direction Button&apos;</step>
+<step outcome="successful">And [Assertion] Verify &apos;Generalize Button&apos; not present</step>
+<step outcome="successful">And [Input] I click on &apos;My Processes List Header Button&apos;</step>
+<step outcome="successful">And [Assertion] Verify &apos;Process Status&apos; equals &apos;p:ProcessCompletedStatus&apos; text</step>
+<step outcome="successful">Then [Input] I click on &apos;logout Button&apos;</step>
+<step outcome="successful">And [Assertion] Verify &apos;login Button&apos; is present</step>
+<step outcome="successful">And [Input] I login as &apos;p:notDewanUserName&apos; with password &apos;p:password&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;Generalizations Header Button&apos;</step>
+<step outcome="successful">And [Assertion] Verify text of &apos;Generalization First Subject Text&apos; equals saved value &apos;GeneralizationSubjectText&apos;</step>
+<step outcome="failed" keyword="FAILED">And [Assertion] Verify text of &apos;Generalization First Serial Number&apos; equals saved value &apos;GeneralizationSerialNumberValue&apos;<failure>java.lang.Exception: Assertion failed: expected &apos;&#1633;&#1632;&#1636;&apos;, but was &apos;104&apos;</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;logout Button&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify &apos;login Button&apos; is present</step>
+<failure>java.lang.Exception: Assertion failed: expected &apos;&#1633;&#1632;&#1636;&apos;, but was &apos;104&apos;
+	at com.automation.steps.CannedSteps.assertElementTextEqualsSavedValue(CannedSteps.java:461)
+	(reflection-invoke)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:599)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:340)
+...</failure>
+</scenario>
+<scenario keyword="Scenario:" title="TC_002 Check uniqueness serial number for Generalization">
+<step outcome="successful">Given [Navigation] I navigate to &apos;p:dewanPetra&apos;</step>
+<step outcome="successful">And [Input] I login as &apos;p:userName.admin&apos; with password &apos;p:password&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;Generalizations Header Button&apos;</step>
+<step outcome="successful">When [Input] Set &apos;Generalization Size Page Input&apos; value to &apos;p:GeneralizationSizePage&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;Change Button&apos;</step>
+<step outcome="successful">And [Progress] I wait for &apos;3&apos; sec</step>
+<step outcome="successful">And [Action] I get value from &apos;Generalization Size Page Input&apos; and save it as &apos;GeneralizationSizePageValue&apos;</step>
+<step outcome="successful">Then [Assertion] Verify uniqueness of values in column &apos;&#1585;&#1602;&#1605; &#1575;&#1604;&#1578;&#1593;&#1605;&#1610;&#1605;&apos; to approaches &apos;GeneralizationSizePageValue&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;logout Button&apos;</step>
+<step outcome="successful">And [Assertion] Verify &apos;login Button&apos; is present</step>
 </scenario>
 </story>

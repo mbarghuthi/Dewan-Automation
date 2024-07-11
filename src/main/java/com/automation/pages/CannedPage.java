@@ -101,6 +101,20 @@ public class CannedPage extends AbstractPage<CannedPage> {
 //	@FindBy(xpath = "//tbody/tr[@id=\"ctl00_MainContent_RadGrid1_ctl00__0\"]/td[1]")
 //	public WebElement ;
 
+	@FindBy(xpath = "//span[contains(text(),'مهام للإجراء')]")
+	public  WebElement TaskListHeaderButton;
+
+	@FindBy(xpath = "//tbody/tr[@id='ctl00_MainContent_RadGrid1_ctl00__0']/td[5]")
+	public WebElement TaskListFirstSubjectText;
+
+	@FindBy(xpath="//*[@id=\"ctl00_RadMenu1\"]/ul/li[9]/span/span")
+	public WebElement UserNameHeaderButton;
+
+	@FindBy(xpath = "//a[contains(text(),'الملف الشخصي')]")
+	public WebElement ProfileHeaderButton;
+
+	@FindBy(css = "#MainContent_tbxUserName")
+	public WebElement UserNameValue;
 	/**
 	 * Method to open link
 	 * 

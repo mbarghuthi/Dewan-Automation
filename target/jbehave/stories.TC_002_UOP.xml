@@ -1,0 +1,11 @@
+<story path="stories/TC_002_UOP.story" title="">
+<scenario keyword="Scenario:" title="TC_001_UOP UOP login">
+<step outcome="successful">Given [Navigation] I navigate to &apos;p:dewanUOP&apos;</step>
+<step outcome="successful">When [Input] I login as &apos;p:UOPuser.alaa&apos; with password &apos;p:password&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;User Name Header Button&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;Profile Header Button&apos;</step>
+<step outcome="successful">And [Assertion] Verify &apos;User Name Value&apos; have attribute &apos;value&apos; with &apos;p:UOPuser.alaa&apos; <parameter>value</parameter></step>
+<step outcome="successful">Then [Input] I click on &apos;logout Button&apos;</step>
+<step outcome="successful">And [Assertion] Verify &apos;login Button&apos; is present</step>
+</scenario>
+</story>

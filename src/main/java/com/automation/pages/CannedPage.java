@@ -5,14 +5,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.junit.Assert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Dimension;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.UnexpectedTagNameException;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.automation.configuration.pageobjects.PageObject;
@@ -46,13 +44,13 @@ public class CannedPage extends AbstractPage<CannedPage> {
 // filling generalization mandatory fields
 
 	@FindBy(css = "#tbxSubject")
-	public WebElement GeneralizationSubjectField;
+	public WebElement SubjectField;
 
 	@FindBy(css = "#ctl00_MainContent_cal_2543_dateInput")
 	public WebElement GeneralizationDateField;
 
 	@FindBy(css = "#ctl00_MainContent_btnSave")
-	public WebElement GeneralizationSaveButton;
+	public WebElement SaveButton;
 
 	@FindBy(css = "#tbxSubject")
 	public WebElement GeneralizationGetSubject;
@@ -67,7 +65,7 @@ public class CannedPage extends AbstractPage<CannedPage> {
 	public WebElement GeneralizeButton;
 
 	@FindBy(css = "#MainContent_summary1")
-	public WebElement GeneralizationDirectionButton;
+	public WebElement DirectionButton;
 
 	@FindBy(xpath = "//span[contains(text(),'التعاميم')]")
     public WebElement GeneralizationsHeaderButton;
@@ -81,7 +79,7 @@ public class CannedPage extends AbstractPage<CannedPage> {
 
 	// to check that direction button is not clickable
 	@FindBy(css = "#ctl00_MainContent_RadGrid1_ctl00_ctl04_TaskUrl")
-	public WebElement ViewGeneralizationsProcessButton;
+	public WebElement ViewProcessButton;
 
 // to check the process status
 	@FindBy(xpath = "//span[contains(text(),'معاملاتي')]")
@@ -115,6 +113,77 @@ public class CannedPage extends AbstractPage<CannedPage> {
 
 	@FindBy(css = "#MainContent_tbxUserName")
 	public WebElement UserNameValue;
+
+	@FindBy(xpath = "//a[contains(text(),'بريد صادر الى الخارج')]")
+	public WebElement OutgoingButton;
+
+	@FindBy(css = "#ctl00_MainContent_ddlOrg_2371_Input")
+	public WebElement SourceWorkCenter;
+
+	@FindBy(css = "#ctl00_MainContent_ddl_2375_Input")
+	public WebElement AddressingParty;
+
+//	@FindBy(css = "#MainContent_uploadFile_2472_LinklblMessages")
+//	public WebElement AttachmentsButton;
+//
+//	@FindBy(css = "#btnUpload")
+//	public  WebElement UploadButton;
+
+	@FindBy(css = "#_details2")
+	public WebElement UsersDirectedTo;
+
+	@FindBy(xpath = "//td[contains(text(),'pres.sec01')]")
+	public WebElement User1;
+
+	@FindBy(xpath = "//td[contains(text(),'pres.sec02')]")
+	public WebElement User2;
+
+	@FindBy(css = "#ctl00_MainContent_btnApprove")
+	public WebElement ApproveButton;
+
+	@FindBy(xpath = "//*[@id=\"ctl00_RadMenu1\"]/ul/li[3]/a/span")
+	public WebElement TasksToView;
+
+	@FindBy(xpath = "//span[contains(text(),'مشاهدة')]")
+	public WebElement ViewButton;
+
+	@FindBy(xpath = "//span[contains(text(),'المهام المنجزة')]")
+	public WebElement CompletedTasks;
+
+	@FindBy(xpath = "//*[@id=\"ctl00_MainContent_CompletedTasksGrid_ctl00__0\"]/td[3]")
+	public WebElement CompletedTasksFirstSubjectText;
+
+	@FindBy(css = "#MainContent_txt_2361")
+	public WebElement OutgoingGetSerialNumber; //value
+
+
+	@FindBy(xpath = "//a[contains(text(),'بريد وارد من الخارج')]")
+	public WebElement IncomingButton;
+
+	@FindBy(css = "#MainContent_txt_2488")
+	public WebElement NumBookFromTheSource;
+
+	@FindBy(css = "#ctl00_MainContent_ddlOrg_2496_Input")
+	public WebElement CommissionerDestination;
+
+	@FindBy(css = "#ctl00_MainContent_ddl_2492_Input")
+	public WebElement SourceBookByName;
+
+	@FindBy(css = "#ctl00_MainContent_ddlOrg_2626_Input")
+	public WebElement ReceiverName;
+
+	@FindBy(css = "#ctl00_MainContent_ddl_2606_Input")
+	public WebElement Delivery;
+
+	@FindBy(css = "#ctl00_MainContent_btnSaveDraft")
+	public WebElement SaveDraftButton;
+
+	@FindBy(css = "#MainContent_txt_2494")
+	public WebElement IncomingGetSerialNumber;
+
+	@FindBy(css = "#ctl00_MainContent_btnCloseProcess")
+	public WebElement CloseButton;
+
 	/**
 	 * Method to open link
 	 * 
@@ -416,10 +485,29 @@ public class CannedPage extends AbstractPage<CannedPage> {
 	}
 
 	public void selectOptionFromDropdown(String optionValue, String dropDownListName) throws Exception {
-		WebElement dropdown = getElementWithWait(this, dropDownListName);
-		Select selectList = new Select(dropdown);
+//		WebElement dropdown = getElementWithWait(this, dropDownListName);
+//		Select selectList = new Select(dropdown);
+//
+//		selectList.selectByVisibleText(optionValue);
 
-		selectList.selectByVisibleText(optionValue);
+		WebElement dropdown = getElementWithWait(this, dropDownListName);
+
+		try {
+			// Try to use Select if the element is a <select> tag
+			Select selectList = new Select(dropdown);
+			selectList.selectByVisibleText(optionValue);
+		} catch (UnexpectedTagNameException e) {
+			// Handle the case where the element is not a <select> tag
+			if (dropdown.getTagName().equalsIgnoreCase("input")) {
+				dropdown.clear();
+				dropdown.sendKeys(optionValue);
+				dropdown.sendKeys(Keys.DOWN);
+				dropdown.sendKeys(Keys.ENTER);
+				Thread.sleep(1000);
+			} else {
+				throw new Exception("Element is neither a <select> nor an <input> tag.");
+			}
+		}
 	}
 
 	public void checkCheckbox(String elementName) throws Exception {
@@ -454,7 +542,6 @@ public class CannedPage extends AbstractPage<CannedPage> {
 			webDriverProvider.get().switchTo().alert().dismiss();
 	}
 
-
 	public List<String> getValuesFromXpaths(int rowCount) throws Exception {
 		List<String> values = new ArrayList<>();
 
@@ -477,6 +564,17 @@ public class CannedPage extends AbstractPage<CannedPage> {
 		}
 
 		return values;
+	}
+
+
+	public void selectFromComboBox(String elementName, String value) throws Exception {
+		WebElement comboBox = getElementWithWait(this, elementName);
+		comboBox.click();
+		comboBox.clear();
+		comboBox.sendKeys(value);
+		comboBox.sendKeys(Keys.DOWN);
+		comboBox.sendKeys(Keys.ENTER);
+		Thread.sleep(1000);
 	}
 
 

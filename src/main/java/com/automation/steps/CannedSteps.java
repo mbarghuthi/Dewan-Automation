@@ -306,6 +306,12 @@ public class CannedSteps extends AbstractSteps {
 			value = (String) stateManager.get(key);
 		}
 
+		if (value.toLowerCase().contains("nanotime")) {
+			String key = value.toLowerCase().replace("nanotime", "").trim();
+			value = String.valueOf(System.nanoTime());
+			stateManager.put(key, value);
+		}
+
 		cannedPage.enterText(elementName, value);
 
 	}
@@ -462,6 +468,22 @@ public class CannedSteps extends AbstractSteps {
 		}
 	}
 
+	@Given("[Assertion] Verify value of '$elementName' equals saved value '$variableName'")
+	@When("[Assertion] Verify value of '$elementName' equals saved value '$variableName'")
+	@Then("[Assertion] Verify value of '$elementName' equals saved value '$variableName'")
+	public void assertElementValueEqualsSavedValue(@Named("elementName") String elementName, @Named("variableName") String variableName) throws Exception {
+		String expectedValue = (String) stateManager.get(variableName);
+		String actualValue = cannedPage.getElementAttribute(elementName, "value");
+
+		// Debug log
+		System.out.println("Expected value (from stateManager, key='" + variableName + "'): " + expectedValue);
+		System.out.println("Actual value (from element '" + elementName + "'): " + actualValue);
+
+		if (!expectedValue.equals(actualValue)) {
+			throw new Exception("Assertion failed: expected '" + expectedValue + "', but was '" + actualValue + "'");
+		}
+	}
+
 
 	// Step to verify uniqueness of values in column "رقم التعميم"
 	@Given("[Assertion] Verify uniqueness of values in column 'رقم التعميم' to approaches '$variableName'")
@@ -504,6 +526,14 @@ public class CannedSteps extends AbstractSteps {
 					") is not equal to current year (" + currentYear + ")");
 		}
 		System.out.println("Assertion passed: GeneralizationYearValue equals current year");
+	}
+
+
+	@Given("[Input] I select '$value' from the '$elementName' combo box")
+	@When("[Input] I select '$value' from the '$elementName' combo box")
+	@Then("[Input] I select '$value' from the '$elementName' combo box")
+	public void selectFromComboBox(String value, String elementName) throws Exception {
+		cannedPage.selectFromComboBox(elementName, value);
 	}
 
 }

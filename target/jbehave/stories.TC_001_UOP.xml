@@ -1,0 +1,74 @@
+<story path="stories/TC_001_UOP.story" title="">
+<scenario keyword="Scenario:" title="TC_001_UOP UOP Navigate to link">
+<step outcome="failed" keyword="FAILED">Given [Navigation] I navigate to &apos;p:dewanUOP&apos;<failure>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.127)
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ff061421748fea8889bba85ed050b13f, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\sjaber\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54595}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54595/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ff061421748fea8889bba85ed050b13f</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I login as &apos;p:UOPuser.alaa&apos; with password &apos;p:password&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Add Process Button&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Ingoing Button&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When [Input] Set &apos;Subject Field&apos; value to &apos;random&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] Set &apos;Num Book From The Source&apos; value to &apos;nanotime&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I select &apos;p:InternalControlAndAuditUnit&apos; from the &apos;Commissioner Destination&apos; combo box</step>
+<step outcome="ignorable">!-- Get the department liaison officer name and save it in variable</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I select &apos;p:TheMinistryOfEducation&apos; from the &apos;Source Book By Name&apos; combo box</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] Select &apos;p:HeadOfArtisticCulturalAn&apos; value from &apos;Receiver Name&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I select &apos;1578&apos; from the &apos;Delivery&apos; combo box</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Save Draft Button&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Action] I get text from &apos;Subject Field&apos; and save it as &apos;SubjectText&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Action] I get value from &apos;Ingoing Get Serial Number&apos; and save it as &apos;IngoingSerialNumberValue&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Direction Button&apos;</step>
+<step outcome="ignorable">!-- Assertion the department liaison officer name</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Approve Button&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Progress] I wait for &apos;4&apos; sec</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;My Processes List Header Button&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify &apos;Process Status&apos; equals &apos;p:ProcessUnCompletedStatus&apos; text</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Completed Tasks&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify text of &apos;Completed Tasks First Subject Text&apos; equals saved value &apos;SubjectText&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;logout Button&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I login as &apos;p:UOPuser.audit1&apos; with password &apos;p:password&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Task List Header Button&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify text of &apos;Task List First Subject Text&apos; equals saved value &apos;SubjectText&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;View Process Button&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Direction Button&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Progress] I wait for &apos;5&apos; sec</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Close Button&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Javascript] I accept alert</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Progress] I wait for &apos;3&apos; sec</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Completed Tasks&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify text of &apos;Completed Tasks First Subject Text&apos; equals saved value &apos;SubjectText&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;logout Button&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify &apos;login Button&apos; is present</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then [Input] I login as &apos;p:UOPuser.alaa&apos; with password &apos;p:password&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;My Processes List Header Button&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify &apos;Process Status&apos; equals &apos;p:ProcessCompletedStatus&apos; text</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;logout Button&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify &apos;login Button&apos; is present</step>
+<step outcome="failed" keyword="FAILED">com.automation.steps.lifecycle.ExecutionLifecycle.afterScenario()<failure>org.jbehave.core.failures.BeforeOrAfterFailed: Method afterScenario (annotated with @AfterScenario in class com.automation.steps.lifecycle.ExecutionLifecycle) failed: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.127)
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ff061421748fea8889bba85ed050b13f, deleteAllCookies {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\sjaber\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54595}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54595/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ff061421748fea8889bba85ed050b13f</failure></step>
+<failure>org.jbehave.core.failures.BeforeOrAfterFailed: Method afterScenario (annotated with @AfterScenario in class com.automation.steps.lifecycle.ExecutionLifecycle) failed: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.127)
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ff061421748fea8889bba85ed050b13f, deleteAllCookies {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\sjaber\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54595}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54595/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ff061421748fea8889bba85ed050b13f
+	at org.jbehave.core.steps.StepCreator$BeforeOrAfterStep.perform(StepCreator.java:494)
+	at org.jbehave.core.steps.StepCreator$BeforeOrAfterStep.doNotPerform(StepCreator.java:507)
+	at org.jbehave.core.embedder.PerformableTree$SomethingHappened.run(PerformableTree.java:372)
+...</failure>
+</scenario>

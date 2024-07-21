@@ -1,0 +1,72 @@
+<html>
+<head>
+<title>stories.TC_004_UOP</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+<div class="story">
+<h1>&#65279;</h1>
+<div class="path">stories/TC_004_UOP.story</div>
+<div class="scenario">
+<h2>Scenario: TC_001_UOP UOP Create Outgoing</h2>
+<div class="step successful">Given  I navigate to 'http://172.16.30.82:8888/login.aspx'</div>
+<div class="step successful">And  I login as 'alaa.abdelbagi' with password 'Aa1'</div>
+<div class="step successful">And  I click on 'Add Process Button'</div>
+<div class="step successful">And  I click on 'Outgoing Button'</div>
+<div class="step successful">When  Set 'Subject Field' value to 'random'</div>
+<div class="step successful">And  I select '1' from the 'Commissioners Exporting' combo box</div>
+<div class="step successful">And  I select '1' from the 'Salutation Hand' combo box</div>
+<div class="step successful">And  I click on 'Save Button'</div>
+<div class="step successful">And  I get text from 'Subject Field' and save it as 'SubjectText'</div>
+<div class="step successful">And  I get value from 'Outgoing Get Serial Number' and save it as 'OutgoingSerialNumberValue'</div>
+<div class="step successful">And  I click on 'OutgoingUsers Directed To'</div>
+<div class="step successful">And  Verify 'Outgoing User Name Directed To1' equals 'pres.sec01' text</div>
+<div class="step successful">And  Verify 'Outgoing User Name Directed To2' equals 'pres.sec02' text</div>
+<div class="step successful">And  I click on 'Direction Button'</div>
+<div class="step successful">And  I click on 'Approve Button'</div>
+<div class="step successful">And  I wait for '4' sec</div>
+<div class="step successful">And  I click on 'My Processes List Header Button'</div>
+<div class="step successful">And  Verify 'Process Status' equals '&#1578;&#1605;&#1578; &#1575;&#1604;&#1593;&#1605;&#1604;&#1610;&#1577; &#1576;&#1606;&#1580;&#1575;&#1581;' text</div>
+<div class="step successful">Then  I click on 'logout Button'</div>
+<div class="step successful">And  Verify 'login Button' is present</div>
+<div class="step successful">And  I login as 'pres.sec01' with password 'Aa1'</div>
+<div class="step successful">And  I click on 'Tasks To View'</div>
+<div class="step successful">And  Verify text of 'Task List First Subject Text' equals saved value 'SubjectText'</div>
+<div class="step successful">And  I click on 'View Process Button'</div>
+<div class="step successful">And  Verify text of 'Subject Field' equals saved value 'SubjectText'</div>
+<div class="step successful">And  Verify value of 'Outgoing Get Serial Number' equals saved value 'OutgoingSerialNumberValue'</div>
+<div class="step successful">And  I click on 'Direction Button'</div>
+<div class="step successful">And  I click on 'View Button'</div>
+<div class="step successful">And  I wait for '3' sec</div>
+<div class="step successful">And  I click on 'Completed Tasks'</div>
+<div class="step successful">And  Verify text of 'Completed Tasks First Subject Text' equals saved value 'SubjectText'</div>
+<div class="step successful">And  I click on 'logout Button'</div>
+<div class="step successful">And  Verify 'login Button' is present</div>
+</div>
+</div>
+
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>

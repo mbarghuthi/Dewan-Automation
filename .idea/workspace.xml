@@ -4,6 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+    <list default="true" id="0826a89a-9e89-42f5-b126-da99926bde7e" name="Changes" comment="test">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/test_runner/AllStories.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/test_runner/AllStories.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/automation/test_runner/AllStories.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/automation/test_runner/AllStories.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/jbehave/storyDurations.props" beforeDir="false" afterPath="$PROJECT_DIR$/target/jbehave/storyDurations.props" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/jbehave/view/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/jbehave/view/index.html" afterDir="false" />
@@ -39,6 +42,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.AllStories.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
@@ -108,5 +112,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>
 </project>

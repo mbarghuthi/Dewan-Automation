@@ -25,9 +25,9 @@ public class AllStories extends JBehaveReportFormatter {
 		return new StoryFinder().findPaths(CodeLocations.codeLocationFromClass(this.getClass()),
 //				String.format("stories/**/%s.story", STORY_NAME.trim()), "");
 		// to specify running single story / scenario
-//				String.format("stories/TC_001_UOP.story", STORY_NAME.trim()), "");
+				String.format("stories/TC_001_UOP.story", STORY_NAME.trim()), "");
 		//Run a only UOP stories
-				String.format("stories/**/%s.story", STORY_NAME_PATTERN.trim()), "");
+//				String.format("stories/**/%s.story", STORY_NAME_PATTERN.trim()), "");
 	}
 }
 

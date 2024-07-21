@@ -30,3 +30,5 @@ public class AllStories extends JBehaveReportFormatter {
 //				String.format("stories/**/%s.story", STORY_NAME_PATTERN.trim()), "");
 	}
 }
+
+

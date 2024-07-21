@@ -67,8 +67,8 @@ public class CannedPage extends AbstractPage<CannedPage> {
 	@FindBy(css = "#MainContent_summary1")
 	public WebElement DirectionButton;
 
-	@FindBy(xpath = "//span[contains(text(),'التعاميم')]")
-    public WebElement GeneralizationsHeaderButton;
+	@FindBy(xpath = "//*[@id=\"ctl00_RadMenu1\"]/ul/li[6]/a/span")
+	public WebElement GeneralizationsHeaderButton;
 
 	@FindBy(xpath = "//tbody/tr[@id='ctl00_MainContent_RadGrid1_ctl00__0']/td[1]")
 	public WebElement GeneralizationFirstSerialNumber;
@@ -118,10 +118,10 @@ public class CannedPage extends AbstractPage<CannedPage> {
 	public WebElement OutgoingButton;
 
 	@FindBy(css = "#ctl00_MainContent_ddlOrg_2371_Input")
-	public WebElement SourceWorkCenter;
+	public WebElement CommissionersExporting;
 
 	@FindBy(css = "#ctl00_MainContent_ddl_2375_Input")
-	public WebElement AddressingParty;
+	public WebElement SalutationHand;
 
 //	@FindBy(css = "#MainContent_uploadFile_2472_LinklblMessages")
 //	public WebElement AttachmentsButton;
@@ -130,13 +130,13 @@ public class CannedPage extends AbstractPage<CannedPage> {
 //	public  WebElement UploadButton;
 
 	@FindBy(css = "#_details2")
-	public WebElement UsersDirectedTo;
+	public WebElement OutgoingUsersDirectedTo;
 
-	@FindBy(xpath = "//td[contains(text(),'pres.sec01')]")
-	public WebElement User1;
+	@FindBy(xpath = "//*[@id=\"ctl00_MainContent_GVUserAssign_ctl00__2\"]/td[2]")
+	public WebElement OutgoingUserNameDirectedTo1;
 
-	@FindBy(xpath = "//td[contains(text(),'pres.sec02')]")
-	public WebElement User2;
+	@FindBy(xpath = "//*[@id=\"ctl00_MainContent_GVUserAssign_ctl00__3\"]/td[2]")
+	public WebElement OutgoingUserNameDirectedTo2;
 
 	@FindBy(css = "#ctl00_MainContent_btnApprove")
 	public WebElement ApproveButton;
@@ -183,6 +183,15 @@ public class CannedPage extends AbstractPage<CannedPage> {
 
 	@FindBy(css = "#ctl00_MainContent_btnCloseProcess")
 	public WebElement CloseButton;
+
+	@FindBy(xpath = "//*[@id=\"ctl00_MainContent_GVUserOrg_ctl00__0\"]/td[2]")
+	public WebElement DepartmentLiaisonOfficerName;
+
+	@FindBy(css = "#MainContent_summary2")
+	public WebElement IncomingUsersDirectedTo;
+
+	@FindBy(xpath = "//*[@id=\"ctl00_MainContent_GVUserAssign_ctl00__1\"]/td[2]")
+	public WebElement IncomingUserNameDirectedTo1;
 
 	/**
 	 * Method to open link

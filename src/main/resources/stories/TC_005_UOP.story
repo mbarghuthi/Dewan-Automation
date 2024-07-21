@@ -8,19 +8,23 @@ And [Input] I click on 'Incoming Button'
 When [Input] Set 'Subject Field' value to 'random'
 And [Input] Set 'Num Book From The Source' value to 'nanotime'
 And [Input] I select 'p:InternalControlAndAuditUnit' from the 'Commissioner Destination' combo box
-!-- Get the department liaison officer name and save it in variable
 And [Input] I select 'p:TheMinistryOfEducation' from the 'Source Book By Name' combo box
 And [Input] Select 'p:HeadOfArtisticCulturalAn' value from 'Receiver Name'
 And [Input] I select '1578' from the 'Delivery' combo box
 And [Input] I click on 'Save Draft Button'
+And [Action] I get value from 'Commissioner Destination' and save it as 'ComboBoxValue'
 And [Action] I get text from 'Subject Field' and save it as 'SubjectText'
 And [Action] I get value from 'Incoming Get Serial Number' and save it as 'IncomingSerialNumberValue'
 And [Input] I click on 'Direction Button'
-!-- Assertion the department liaison officer name
+And [Assertion] Verify text of 'Department Liaison Officer Name' contains saved value 'ComboBoxValue'
 And [Input] I click on 'Approve Button'
 And [Progress] I wait for '4' sec
 And [Input] I click on 'My Processes List Header Button'
 And [Assertion] Verify 'Process Status' equals 'p:ProcessUnCompletedStatus' text
+And [Input] I click on 'View Process Button'
+And [Input] I click on 'Incoming Users Directed To'
+And [Assertion] Verify 'Incoming User Name Directed To1' equals 'p:UOPuser.audit1' text
+
 And [Input] I click on 'Completed Tasks'
 And [Assertion] Verify text of 'Completed Tasks First Subject Text' equals saved value 'SubjectText'
 And [Input] I click on 'logout Button'

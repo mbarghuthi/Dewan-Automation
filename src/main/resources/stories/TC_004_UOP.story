@@ -5,14 +5,14 @@ And [Input] I login as 'p:UOPuser.alaa' with password 'p:password'
 And [Input] I click on 'Add Process Button'
 And [Input] I click on 'Outgoing Button'
 When [Input] Set 'Subject Field' value to 'random'
-And [Input] I select 'p:Presidency' from the 'Source Work Center' combo box
-And [Input] I select 'p:TheMinistryOfEducation' from the 'Addressing Party' combo box
+And [Input] I select 'p:Presidency' from the 'Commissioners Exporting' combo box
+And [Input] I select 'p:TheMinistryOfEducation' from the 'Salutation Hand' combo box
 And [Input] I click on 'Save Button'
 And [Action] I get text from 'Subject Field' and save it as 'SubjectText'
 And [Action] I get value from 'Outgoing Get Serial Number' and save it as 'OutgoingSerialNumberValue'
-And [Input] I click on 'Users Directed To'
-And [Assertion] Verify 'User1' equals 'p:UOPuser.pressec01' text
-And [Assertion] Verify 'User2' equals 'p:UOPuser.pressec02' text
+And [Input] I click on 'OutgoingUsers Directed To'
+And [Assertion] Verify 'Outgoing User Name Directed To1' equals 'p:UOPuser.pressec01' text
+And [Assertion] Verify 'Outgoing User Name Directed To2' equals 'p:UOPuser.pressec02' text
 And [Input] I click on 'Direction Button'
 And [Input] I click on 'Approve Button'
 And [Progress] I wait for '4' sec

@@ -114,6 +114,7 @@ public class CannedPage extends AbstractPage<CannedPage> {
 	@FindBy(css = "#MainContent_tbxUserName")
 	public WebElement UserNameValue;
 
+	// logIn Dewan // Outgoing Page elements
 	@FindBy(xpath = "//a[contains(text(),'بريد صادر الى الخارج')]")
 	public WebElement OutgoingButton;
 
@@ -157,6 +158,7 @@ public class CannedPage extends AbstractPage<CannedPage> {
 	public WebElement OutgoingGetSerialNumber; //value
 
 
+	// logIn Dewan // Incoming Page elements
 	@FindBy(xpath = "//a[contains(text(),'بريد وارد من الخارج')]")
 	public WebElement IncomingButton;
 
@@ -164,7 +166,7 @@ public class CannedPage extends AbstractPage<CannedPage> {
 	public WebElement NumBookFromTheSource;
 
 	@FindBy(css = "#ctl00_MainContent_ddlOrg_2496_Input")
-	public WebElement CommissionerDestination;
+	public WebElement IncomingCommissionerDestination;
 
 	@FindBy(css = "#ctl00_MainContent_ddl_2492_Input")
 	public WebElement SourceBookByName;
@@ -192,6 +194,38 @@ public class CannedPage extends AbstractPage<CannedPage> {
 
 	@FindBy(xpath = "//*[@id=\"ctl00_MainContent_GVUserAssign_ctl00__1\"]/td[2]")
 	public WebElement IncomingUserNameDirectedTo1;
+
+	@FindBy(css = "#MainContent_rdchkCopy")
+	public WebElement ToViewRadioButton;
+
+	@FindBy(css = "#ctl00_MainContent_btnAddHierarchy")
+	public WebElement AddButton;
+
+	@FindBy(css = "#ctl00_MainContent_GVUserOrg_ctl00_ctl02_ctl01_mainCB")
+	public WebElement ClickOnAllCheckBox;
+
+	@FindBy(css = "#ctl00_MainContent_GVUserOrg_ctl00_ctl02_ctl01_ImgDelete")
+	public WebElement DeleteButton;
+
+	@FindBy(css = "#ctl00_MainContent_notification_rnCloseIcon")
+	public WebElement CloseNotificationButton;
+
+
+	// logIn Dewan // Internal Correspondence Page elements
+	@FindBy(xpath = "//a[contains(text(),'مراسلات داخلية')]")
+	public WebElement InternalCorrespondenceButton;
+
+	@FindBy(css = "#ctl00_MainContent_ddlOrg_2593_Input")
+	public WebElement InternalCorrespondenceCommissionerDestination;
+
+	@FindBy(css = "#ctl00_MainContent_ddlDivision_Input")
+	public WebElement DivisionInput;
+
+	@FindBy(css = "#ctl00_MainContent_ddlDepartment_Input")
+	public WebElement DepartmentInput;
+
+	@FindBy(css = "#MainContent_txtSerial_2591")
+	public WebElement InternalCorrespondenceGetSerialNumber;
 
 	/**
 	 * Method to open link
@@ -494,11 +528,6 @@ public class CannedPage extends AbstractPage<CannedPage> {
 	}
 
 	public void selectOptionFromDropdown(String optionValue, String dropDownListName) throws Exception {
-//		WebElement dropdown = getElementWithWait(this, dropDownListName);
-//		Select selectList = new Select(dropdown);
-//
-//		selectList.selectByVisibleText(optionValue);
-
 		WebElement dropdown = getElementWithWait(this, dropDownListName);
 
 		try {

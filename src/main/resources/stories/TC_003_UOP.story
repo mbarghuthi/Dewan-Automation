@@ -19,7 +19,7 @@ And [Assertion] Verify text of 'Task List First Subject Text' equals saved value
 And [Input] I click on 'View Process Button'
 And [Input] I click on 'Direction Button'
 And [Input] I click on 'Generalize Button'
-And [Progress] I wait for '3' sec
+And [Progress] I wait for '15' sec
 And [Input] I click on 'Generalizations Header Button'
 And [Assertion] Verify text of 'Generalization First Subject Text' equals saved value 'GeneralizationSubjectText'
 !-- And [Assertion] Verify text of 'Generalization First Serial Number' equals saved value 'GeneralizationSerialNumberValue'

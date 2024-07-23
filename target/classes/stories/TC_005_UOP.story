@@ -75,6 +75,7 @@ And [Input] I click on 'Delete Button'
 And [Progress] I wait for '3' sec
 And [Input] I click on 'Close Notification Button'
 And [Input] I select 'p:InternalControlAndAuditUnit' from the 'Division Input' combo box
+And [Progress] I wait for '3' sec
 And [Input] I select the 'To View Radio Button'
 And [Progress] I wait for '3' sec
 And [Input] I click on 'Add Button'

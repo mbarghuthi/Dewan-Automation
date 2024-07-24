@@ -13,7 +13,7 @@ And [Action] I get value from 'Outgoing Get Serial Number' and save it as 'Outgo
 And [Progress] I wait for '3' sec
 And [Input] I click on 'OutgoingUsers Directed To'
 And [Assertion] Verify 'Outgoing User Name Directed To1' equals 'p:UOPuser.pressec01' text
-And [Assertion] Verify 'Outgoing User Name Directed To2' equals 'p:UOPuser.pressec02' text
+And [Assertion] Verify 'Outgoing User Name Directed To2' equals 'p:UOPuser.ZainabFarouqa' text
 And [Input] I click on 'Direction Button'
 And [Input] I click on 'Approve Button'
 And [Progress] I wait for '4' sec

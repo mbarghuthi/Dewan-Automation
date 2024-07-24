@@ -9,7 +9,7 @@ And [Input] Set 'Num Book From The Source' value to 'nanotime'
 And [Input] I select 'p:InternalControlAndAuditUnit' from the 'Incoming Commissioner Destination' combo box
 And [Input] I select 'p:TheMinistryOfEducation' from the 'Source Book By Name' combo box
 And [Input] Select 'p:HeadOfArtisticCulturalAn' value from 'Receiver Name'
-And [Input] I select '1578' from the 'Delivery' combo box
+And [Input] I select 'p:Aramex' from the 'Delivery' combo box
 And [Input] I click on 'Save Draft Button'
 And [Input] I click on 'Save Button'
 And [Progress] I wait for '3' sec
@@ -61,7 +61,7 @@ And [Input] Set 'Num Book From The Source' value to 'nanotime'
 And [Input] I select 'p:InternalControlAndAuditUnit' from the 'Incoming Commissioner Destination' combo box
 And [Input] I select 'p:TheMinistryOfEducation' from the 'Source Book By Name' combo box
 And [Input] Select 'p:HeadOfArtisticCulturalAn' value from 'Receiver Name'
-And [Input] I select '1578' from the 'Delivery' combo box
+And [Input] I select 'p:Aramex' from the 'Delivery' combo box
 And [Input] I click on 'Save Draft Button'
 And [Input] I click on 'Save Button'
 And [Progress] I wait for '3' sec

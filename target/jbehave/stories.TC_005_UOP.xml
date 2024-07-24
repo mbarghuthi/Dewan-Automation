@@ -9,7 +9,7 @@
 <step outcome="successful">And [Input] I select &apos;p:InternalControlAndAuditUnit&apos; from the &apos;Incoming Commissioner Destination&apos; combo box</step>
 <step outcome="successful">And [Input] I select &apos;p:TheMinistryOfEducation&apos; from the &apos;Source Book By Name&apos; combo box</step>
 <step outcome="successful">And [Input] Select &apos;p:HeadOfArtisticCulturalAn&apos; value from &apos;Receiver Name&apos;</step>
-<step outcome="successful">And [Input] I select &apos;1578&apos; from the &apos;Delivery&apos; combo box</step>
+<step outcome="successful">And [Input] I select &apos;p:Aramex&apos; from the &apos;Delivery&apos; combo box</step>
 <step outcome="successful">And [Input] I click on &apos;Save Draft Button&apos;</step>
 <step outcome="successful">And [Input] I click on &apos;Save Button&apos;</step>
 <step outcome="successful">And [Progress] I wait for &apos;3&apos; sec</step>
@@ -58,7 +58,7 @@
 <step outcome="successful">And [Input] I select &apos;p:InternalControlAndAuditUnit&apos; from the &apos;Incoming Commissioner Destination&apos; combo box</step>
 <step outcome="successful">And [Input] I select &apos;p:TheMinistryOfEducation&apos; from the &apos;Source Book By Name&apos; combo box</step>
 <step outcome="successful">And [Input] Select &apos;p:HeadOfArtisticCulturalAn&apos; value from &apos;Receiver Name&apos;</step>
-<step outcome="successful">And [Input] I select &apos;1578&apos; from the &apos;Delivery&apos; combo box</step>
+<step outcome="successful">And [Input] I select &apos;p:Aramex&apos; from the &apos;Delivery&apos; combo box</step>
 <step outcome="successful">And [Input] I click on &apos;Save Draft Button&apos;</step>
 <step outcome="successful">And [Input] I click on &apos;Save Button&apos;</step>
 <step outcome="successful">And [Progress] I wait for &apos;3&apos; sec</step>

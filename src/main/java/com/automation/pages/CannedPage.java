@@ -133,17 +133,20 @@ public class CannedPage extends AbstractPage<CannedPage> {
 	@FindBy(css = "#_details2")
 	public WebElement OutgoingUsersDirectedTo;
 
-	@FindBy(xpath = "//*[@id=\"ctl00_MainContent_GVUserAssign_ctl00__2\"]/td[2]")
+	@FindBy(xpath = "//*[@id=\"ctl00_MainContent_GVUserAssign_ctl00__0\"]/td[2]")
 	public WebElement OutgoingUserNameDirectedTo1;
 
-	@FindBy(xpath = "//*[@id=\"ctl00_MainContent_GVUserAssign_ctl00__3\"]/td[2]")
-	public WebElement OutgoingUserNameDirectedTo2;
+//	@FindBy(xpath = "//*[@id=\"ctl00_MainContent_GVUserAssign_ctl00__3\"]/td[2]")
+//	public WebElement OutgoingUserNameDirectedTo2;
 
 	@FindBy(css = "#ctl00_MainContent_btnApprove")
 	public WebElement ApproveButton;
 
 	@FindBy(xpath = "//*[@id=\"ctl00_RadMenu1\"]/ul/li[3]/a/span")
 	public WebElement TasksToView;
+
+	@FindBy(xpath = "//a[contains(text(),'تاريخ المهمة')]")
+	public WebElement TasksToViewDate;
 
 	@FindBy(xpath = "//span[contains(text(),'مشاهدة')]")
 	public WebElement ViewButton;

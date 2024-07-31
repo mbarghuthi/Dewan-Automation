@@ -108,7 +108,8 @@ public class CannedPage extends AbstractPage<CannedPage> {
 	@FindBy(xpath = "//*[@id=\"ctl00_MainContent_RadGrid1_ctl00__0\"]/td[6]")
 	public WebElement TaskListFirstSubjectTextGeneralization;
 
-	@FindBy(xpath="//*[@id=\"ctl00_RadMenu1\"]/ul/li[9]/span/span")
+//	@FindBy(xpath="//*[@id=\"ctl00_RadMenu1\"]/ul/li[9]/span/span")
+@FindBy(xpath="//*[@id=\"ctl00_RadMenu1\"]/ul/li[10]/span")
 	public WebElement UserNameHeaderButton;
 
 	@FindBy(xpath = "//a[contains(text(),'الملف الشخصي')]")

@@ -7,6 +7,7 @@ And [Input] I click on 'Outgoing Button'
 When [Input] Set 'Subject Field' value to 'random'
 And [Input] I select 'p:InternalControlAndAuditUnit' from the 'Commissioners Exporting' combo box
 And [Input] I select 'p:TheMinistryOfEducation' from the 'Salutation Hand' combo box
+And [Input] I click on 'Save Draft Button'
 And [Input] I click on 'Save Button'
 And [Action] I get text from 'Subject Field' and save it as 'SubjectText'
 And [Action] I get value from 'Outgoing Get Serial Number' and save it as 'OutgoingSerialNumberValue'

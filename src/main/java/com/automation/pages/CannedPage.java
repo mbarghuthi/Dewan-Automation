@@ -28,6 +28,8 @@ public class CannedPage extends AbstractPage<CannedPage> {
 	public WebElement userName;
 	@FindBy(css = "#tbxPassword")
 	public WebElement password;
+	@FindBy(css = "#chUnifiedLogin")
+	public WebElement UnifiedLogin;
 	@FindBy(css = "#btnlogin")
 	public WebElement loginButton;
 	@FindBy(css = ".rmItem.rmLast.text-align-center")
@@ -134,10 +136,10 @@ public class CannedPage extends AbstractPage<CannedPage> {
 //	@FindBy(css = "#btnUpload")
 //	public  WebElement UploadButton;
 
-	@FindBy(css = "#_details2")
+	@FindBy(css = "#MainContent_summary1")
 	public WebElement OutgoingUsersDirectedTo;
 
-	@FindBy(xpath = "//*[@id=\"ctl00_MainContent_GVUserAssign_ctl00__0\"]/td[2]")
+	@FindBy(xpath = "//*[@id=\"ctl00_MainContent_GVUserOrg_ctl00__0\"]/td[5]")
 	public WebElement OutgoingUserNameDirectedTo1;
 
 //	@FindBy(xpath = "//*[@id=\"ctl00_MainContent_GVUserAssign_ctl00__3\"]/td[2]")

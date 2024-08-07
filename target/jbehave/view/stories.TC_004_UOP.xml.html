@@ -17,35 +17,46 @@
 <step outcome="successful">When [Input] Set &apos;Subject Field&apos; value to &apos;random&apos;</step>
 <step outcome="successful">And [Input] I select &apos;p:InternalControlAndAuditUnit&apos; from the &apos;Commissioners Exporting&apos; combo box</step>
 <step outcome="successful">And [Input] I select &apos;p:TheMinistryOfEducation&apos; from the &apos;Salutation Hand&apos; combo box</step>
-<step outcome="successful">And [Input] I click on &apos;Save Button&apos;</step>
-<step outcome="successful">And [Action] I get text from &apos;Subject Field&apos; and save it as &apos;SubjectText&apos;</step>
-<step outcome="successful">And [Action] I get value from &apos;Outgoing Get Serial Number&apos; and save it as &apos;OutgoingSerialNumberValue&apos;</step>
-<step outcome="successful">And [Progress] I wait for &apos;3&apos; sec</step>
-<step outcome="successful">And [Input] I click on &apos;OutgoingUsers Directed To&apos;</step>
-<step outcome="successful">And [Assertion] Verify &apos;Outgoing User Name Directed To1&apos; equals &apos;p:UOPuser.audit1&apos; text</step>
+<step outcome="failed" keyword="FAILED">And [Input] I click on &apos;Save Button&apos;<failure>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.cssSelector: #ctl00_MainContent_btnSave&apos; (tried for 30 second(s) with 500 milliseconds interval)</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Action] I get text from &apos;Subject Field&apos; and save it as &apos;SubjectText&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Action] I get value from &apos;Outgoing Get Serial Number&apos; and save it as &apos;OutgoingSerialNumberValue&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Progress] I wait for &apos;3&apos; sec</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;OutgoingUsers Directed To&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify &apos;Outgoing User Name Directed To1&apos; equals &apos;p:UOPuser.audit1&apos; text</step>
 <step outcome="ignorable">!-- And [Assertion] Verify &apos;Outgoing User Name Directed To2&apos; equals &apos;p:UOPuser.ZainabFarouqa&apos; text</step>
-<step outcome="successful">And [Input] I click on &apos;Direction Button&apos;</step>
-<step outcome="successful">And [Input] I click on &apos;Approve Button&apos;</step>
-<step outcome="successful">And [Progress] I wait for &apos;4&apos; sec</step>
-<step outcome="successful">And [Input] I click on &apos;My Processes List Header Button&apos;</step>
-<step outcome="successful">And [Assertion] Verify &apos;Process Status&apos; equals &apos;p:ProcessCompletedStatus&apos; text</step>
-<step outcome="successful">Then [Input] I click on &apos;logout Button&apos;</step>
-<step outcome="successful">And [Assertion] Verify &apos;login Button&apos; is present</step>
-<step outcome="successful">And [Input] I login as &apos;p:UOPuser.audit1&apos; with password &apos;p:password&apos;</step>
-<step outcome="successful">And [Input] I click on &apos;Tasks To View&apos;</step>
-<step outcome="successful">And [Input] I click on &apos;Tasks To View Date&apos;</step>
-<step outcome="successful">And [Input] I click on &apos;Tasks To View Date&apos;</step>
-<step outcome="successful">And [Assertion] Verify text of &apos;Task List First Subject Text&apos; equals saved value &apos;SubjectText&apos;</step>
-<step outcome="successful">And [Input] I click on &apos;View Process Button&apos;</step>
-<step outcome="successful">And [Assertion] Verify text of &apos;Subject Field&apos; equals saved value &apos;SubjectText&apos;</step>
-<step outcome="successful">And [Assertion] Verify value of &apos;Outgoing Get Serial Number&apos; equals saved value &apos;OutgoingSerialNumberValue&apos;</step>
-<step outcome="successful">And [Input] I click on &apos;Direction Button&apos;</step>
-<step outcome="successful">And [Input] I click on &apos;View Button&apos;</step>
-<step outcome="successful">And [Progress] I wait for &apos;3&apos; sec</step>
-<step outcome="successful">And [Input] I click on &apos;Completed Tasks&apos;</step>
-<step outcome="successful">And [Assertion] Verify text of &apos;Completed Tasks First Subject Text&apos; equals saved value &apos;SubjectText&apos;</step>
-<step outcome="successful">And [Input] I click on &apos;logout Button&apos;</step>
-<step outcome="successful">And [Assertion] Verify &apos;login Button&apos; is present</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Direction Button&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Approve Button&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Progress] I wait for &apos;4&apos; sec</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;My Processes List Header Button&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify &apos;Process Status&apos; equals &apos;p:ProcessCompletedStatus&apos; text</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then [Input] I click on &apos;logout Button&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify &apos;login Button&apos; is present</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I login as &apos;p:UOPuser.audit1&apos; with password &apos;p:password&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Tasks To View&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Tasks To View Date&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Tasks To View Date&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify text of &apos;Task List First Subject Text&apos; equals saved value &apos;SubjectText&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;View Process Button&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify text of &apos;Subject Field&apos; equals saved value &apos;SubjectText&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify value of &apos;Outgoing Get Serial Number&apos; equals saved value &apos;OutgoingSerialNumberValue&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Direction Button&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;View Button&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Progress] I wait for &apos;3&apos; sec</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Completed Tasks&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify text of &apos;Completed Tasks First Subject Text&apos; equals saved value &apos;SubjectText&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;logout Button&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify &apos;login Button&apos; is present</step>
+<failure>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.cssSelector: #ctl00_MainContent_btnSave&apos; (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at com.automation.pages.AbstractPage.getElementWithWait(AbstractPage.java:43)
+	at com.automation.pages.CannedPage.click(CannedPage.java:280)
+	at com.automation.steps.CannedSteps.click(CannedSteps.java:376)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:599)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:340)
+...</failure>
 </scenario>
 </story>
 

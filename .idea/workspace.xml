@@ -4,12 +4,43 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0826a89a-9e89-42f5-b126-da99926bde7e" name="Changes" comment="Did some updates on TC_003 and TC_006">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_24_2024_11_38_AM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_24_2024_11_38_AM__Changes_.xml" beforeDir="false" />
+    <list default="true" id="0826a89a-9e89-42f5-b126-da99926bde7e" name="Changes" comment="Did some update on TC_002">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/Mon Jul 22 15-25-03 EET 2024/Dewan-Automation-Report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/Mon Jul 22 16-30-49 EET 2024/Dewan-Automation-Report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/Mon Jul 22 16-40-21 EET 2024/Dewan-Automation-Report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/Mon Jul 22 16-43-12 EET 2024/Dewan-Automation-Report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/Mon Jul 29 12-12-48 EET 2024/Dewan-Automation-Report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/Sun Jul 21 17-25-38 EET 2024/Dewan-Automation-Report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/Sun Jul 21 17-26-53 EET 2024/Dewan-Automation-Report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/Sun Jul 21 17-33-06 EET 2024/Dewan-Automation-Report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/Sun Jul 28 11-23-21 EET 2024/Dewan-Automation-Report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/Sun Jul 28 11-32-54 EET 2024/Dewan-Automation-Report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/Sun Jul 28 13-05-58 EET 2024/Dewan-Automation-Report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/Sun Jul 28 16-03-21 EET 2024/Dewan-Automation-Report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/Sun Jul 28 16-05-48 EET 2024/Dewan-Automation-Report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/Sun Jul 28 16-27-25 EET 2024/Dewan-Automation-Report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/Sun Jul 28 16-29-12 EET 2024/Dewan-Automation-Report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/Sun Jul 28 16-30-36 EET 2024/Dewan-Automation-Report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/Sun Jul 28 16-31-33 EET 2024/Dewan-Automation-Report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/Sun Jul 28 16-32-41 EET 2024/Dewan-Automation-Report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/Tue Jul 23 09-08-38 EET 2024/Dewan-Automation-Report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/Tue Jul 23 09-31-34 EET 2024/Dewan-Automation-Report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/Tue Jul 23 15-21-07 EET 2024/Dewan-Automation-Report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/Tue Jul 30 12-28-09 EET 2024/Dewan-Automation-Report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/Wed Jul 24 10-36-48 EET 2024/Dewan-Automation-Report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/Wed Jul 24 11-28-04 EET 2024/Dewan-Automation-Report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/Wed Jul 24 11-33-31 EET 2024/Dewan-Automation-Report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/Wed Jul 24 11-55-54 EET 2024/Dewan-Automation-Report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/Wed Jul 31 13-34-52 EET 2024/Dewan-Automation-Report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/Wed Jul 31 13-49-15 EET 2024/Dewan-Automation-Report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/Wed Jul 31 14-36-40 EET 2024/Dewan-Automation-Report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/Wed Jul 31 14-47-05 EET 2024/Dewan-Automation-Report.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/pages/CannedPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/pages/CannedPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/steps/CannedSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/steps/CannedSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/test_runner/AllStories.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/test_runner/AllStories.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/stories/TC_003_UOP.story" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/stories/TC_003_UOP.story" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/stories/TC_004_UOP.story" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/stories/TC_004_UOP.story" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +83,8 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Automation Quality Projects/Dewan-Automation&quot;
+    &quot;last_opened_file_path&quot;: &quot;D:/Automation Quality Projects/Dewan-Automation&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
   }
 }</component>
   <component name="RunManager">
@@ -190,7 +222,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722332165139</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Did some update on TC_002">
+      <option name="closed" value="true" />
+      <created>1722426820802</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1722426820802</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -213,6 +253,7 @@
     <MESSAGE value="add code for running the story multiple times" />
     <MESSAGE value="Did some updates" />
     <MESSAGE value="Did some updates on TC_003 and TC_006" />
-    <option name="LAST_COMMIT_MESSAGE" value="Did some updates on TC_003 and TC_006" />
+    <MESSAGE value="Did some update on TC_002" />
+    <option name="LAST_COMMIT_MESSAGE" value="Did some update on TC_002" />
   </component>
 </project>

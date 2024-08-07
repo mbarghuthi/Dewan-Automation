@@ -15,7 +15,7 @@
 <step outcome="successful">And [Assertion] Verify &apos;Process Status&apos; equals &apos;p:ProcessUnCompletedStatus&apos; text</step>
 <step outcome="successful">And [Progress] I wait for &apos;3&apos; sec</step>
 <step outcome="successful">And [Input] I click on &apos;Task List Header Button&apos;</step>
-<step outcome="successful">And [Assertion] Verify text of &apos;Task List First Subject Text Generalization&apos; equals saved value &apos;GeneralizationSubjectText&apos;</step>
+<step outcome="successful">And [Assertion] Verify text of &apos;Task List First Subject Text&apos; equals saved value &apos;GeneralizationSubjectText&apos;</step>
 <step outcome="successful">And [Input] I click on &apos;View Process Button&apos;</step>
 <step outcome="successful">And [Input] I click on &apos;Direction Button&apos;</step>
 <step outcome="successful">And [Input] I click on &apos;Generalize Button&apos;</step>

@@ -368,6 +368,7 @@ public class CannedSteps extends AbstractSteps {
 		cannedPage.selectRadioButton(elementName);
 	}
 
+
 	// click on web element
 	@Given("[Input] I click on '$elementName'")
 	@When("[Input] I click on '$elementName'")
@@ -386,6 +387,12 @@ public class CannedSteps extends AbstractSteps {
 		cannedPage.enterText("userName", userName).enterText("password", password).click("login Button");
 	}
 
+	@Given("[Input] I login admin as '$userName' with password '$password'")
+	@When("[Input] I login admin as '$userName' with password '$password'")
+	@Then("[Input] I login admin as '$userName' with password '$password'")
+	public void loginAdminAs(@Named("userName") String userName, @Named("password") String password) throws Throwable {
+		cannedPage.enterText("userName", userName).enterText("password", password).click("login Admin Button");
+	}
 
 
 

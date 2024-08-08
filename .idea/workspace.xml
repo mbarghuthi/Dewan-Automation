@@ -4,20 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0826a89a-9e89-42f5-b126-da99926bde7e" name="Changes" comment="Did some updates on code">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_24_2024_11_23_AM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_24_2024_11_23_AM__Changes_.xml" afterDir="false" />
+    <list default="true" id="0826a89a-9e89-42f5-b126-da99926bde7e" name="Changes" comment="Did some update on stories and login">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/stories/TC_001_UOP_PRECONDITION.story" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/stories/TC_007_UOP.story" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_8_7_2024_11_02_AM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_8_7_2024_11_02_AM__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/pages/CannedPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/pages/CannedPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/pages/CustomPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/pages/CustomPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/steps/CannedSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/steps/CannedSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/test_runner/AllStories.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/test_runner/AllStories.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/data/test-data.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/test-data.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/stories/TC_001_UOP.story" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/stories/TC_002_UOP.story" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/stories/TC_002_UOP.story" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/stories/TC_003_UOP.story" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/stories/TC_003_UOP.story" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/stories/TC_004_UOP.story" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/stories/TC_004_UOP.story" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/stories/TC_005_UOP.story" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/stories/TC_005_UOP.story" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/automation/pages/CannedPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/automation/pages/CannedPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/automation/steps/CannedSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/automation/steps/CannedSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/stories/TC_006_UOP.story" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/stories/TC_006_UOP.story" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/automation/test_runner/AllStories.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/automation/test_runner/AllStories.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/stories/TC_004_UOP.story" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/stories/TC_004_UOP.story" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/stories/TC_005_UOP.story" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/stories/TC_005_UOP.story" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/data/test-data.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/data/test-data.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jbehave/stories.TC_003_UOP.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/jbehave/stories.TC_003_UOP.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jbehave/stories.TC_003_UOP.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/jbehave/stories.TC_003_UOP.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/jbehave/stories.TC_004_UOP.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/jbehave/stories.TC_004_UOP.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/jbehave/stories.TC_004_UOP.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/jbehave/stories.TC_004_UOP.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/jbehave/stories.TC_005_UOP.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/jbehave/stories.TC_005_UOP.html" afterDir="false" />
@@ -58,7 +63,7 @@
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/mbarghuthi/Dewan-Automation.git",
-    "accountId": "e050cbc5-90d3-45ea-aa31-a62201e83048"
+    "accountId": "80a96b70-f206-4b90-bd20-b38040188261"
   }
 }]]></component>
   <component name="ProblemsViewState">
@@ -72,18 +77,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.AllStories.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Automation Quality Projects/Dewan-Automation",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.4448276"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.AllStories.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Automation Quality Projects/Dewan-Automation&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.4448276&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="AllStories" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Web" />

@@ -288,6 +288,7 @@ public class CannedSteps extends AbstractSteps {
 	@When("[Input] Set '$elementName' value to '$value'")
 	@Then("[Input] Set '$elementName' value to '$value'")
 	public void enter_text(String elementName, String value) throws Exception {
+		cannedPage.clearText(elementName);
 
 		if (value.toLowerCase().contains("random")) {
 			String key = value.toLowerCase().replace("random", "").trim();
@@ -337,6 +338,14 @@ public class CannedSteps extends AbstractSteps {
 		cannedPage.selectOptionFromDropdown(optionValue, dropDownListName);
 	}
 
+	@Given("[Input] Select '$elementName' value from '$optionValue'")
+	@When("[Input] Select '$elementName' value from '$optionValue'")
+	@Then("[Input] Select '$elementName' value from '$optionValue'")
+	public void select_value_from_dropdown(String elementName, String optionValue) throws Exception
+	{
+		cannedPage.selectFromDropdown(elementName, optionValue);
+	}
+
 
 
 	//check checkbox steps
@@ -367,6 +376,7 @@ public class CannedSteps extends AbstractSteps {
 	{
 		cannedPage.selectRadioButton(elementName);
 	}
+
 
 	// click on web element
 	@Given("[Input] I click on '$elementName'")

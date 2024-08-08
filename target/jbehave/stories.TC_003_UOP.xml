@@ -1,52 +1,11 @@
 <story path="stories/TC_003_UOP.story" title="">
-<scenario keyword="Scenario:" title="TC_001_UOP UOP Create Generalization">
-<step outcome="successful">Given [Navigation] I navigate to &apos;p:dewanUOP&apos;</step>
-<step outcome="successful">And [Input] I login as &apos;p:UOPuser.alaa&apos; with password &apos;p:password&apos;</step>
-<step outcome="successful">And [Input] I click on &apos;Add Process Button&apos;</step>
-<step outcome="successful">And [Input] I click on &apos;Generalization Button&apos;</step>
-<step outcome="successful">When [Input] Set &apos;Subject Field&apos; value to &apos;random&apos;</step>
-<step outcome="successful">And [Input] Set &apos;Generalization Date Field&apos; value to &apos;date&apos;</step>
-<step outcome="successful">And [Action] I get value from &apos;Generalization Get Year&apos; and save it as &apos;GeneralizationYearValue&apos;</step>
-<step outcome="successful">And [Assertion] Verify &apos;GeneralizationYearValue&apos; equals current year</step>
-<step outcome="successful">And [Input] I click on &apos;Save Button&apos;</step>
-<step outcome="successful">And [Action] I get value from &apos;Generalization Get Serial Number&apos; and save it as &apos;GeneralizationSerialNumberValue&apos;</step>
-<step outcome="successful">And [Action] I get text from &apos;Subject Field&apos; and save it as &apos;GeneralizationSubjectText&apos;</step>
-<step outcome="successful">And [Input] I click on &apos;My Processes List Header Button&apos;</step>
-<step outcome="successful">And [Assertion] Verify &apos;Process Status&apos; equals &apos;p:ProcessUnCompletedStatus&apos; text</step>
-<step outcome="successful">And [Progress] I wait for &apos;3&apos; sec</step>
-<step outcome="successful">And [Input] I click on &apos;Task List Header Button&apos;</step>
-<step outcome="successful">And [Assertion] Verify text of &apos;Task List First Subject Text&apos; equals saved value &apos;GeneralizationSubjectText&apos;</step>
-<step outcome="successful">And [Input] I click on &apos;View Process Button&apos;</step>
-<step outcome="successful">And [Input] I click on &apos;Direction Button&apos;</step>
-<step outcome="successful">And [Input] I click on &apos;Generalize Button&apos;</step>
-<step outcome="successful">And [Progress] I wait for &apos;15&apos; sec</step>
-<step outcome="successful">And [Input] I click on &apos;Generalizations Header Button&apos;</step>
-<step outcome="successful">And [Assertion] Verify text of &apos;Generalization First Subject Text&apos; equals saved value &apos;GeneralizationSubjectText&apos;</step>
-<step outcome="ignorable">!-- And [Assertion] Verify text of &apos;Generalization First Serial Number&apos; equals saved value &apos;GeneralizationSerialNumberValue&apos;</step>
-<step outcome="successful">And [Input] I click on &apos;View Process Button&apos;</step>
-<step outcome="successful">And [Input] I click on &apos;Direction Button&apos;</step>
-<step outcome="successful">And [Assertion] Verify &apos;Generalize Button&apos; not present</step>
-<step outcome="successful">And [Input] I click on &apos;My Processes List Header Button&apos;</step>
-<step outcome="successful">And [Assertion] Verify &apos;Process Status&apos; equals &apos;p:ProcessCompletedStatus&apos; text</step>
+<scenario keyword="Scenario:" title="TC_001_UOP UOP login">
+<step outcome="successful">Given [Navigation] I navigate to &apos;http://172.16.30.82:8888/login.aspx&apos;</step>
+<step outcome="successful">When [Input] I login as &apos;alaa.abdelbagi&apos; with password &apos;Aa1&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;User Name Header Button&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;Profile Header Button&apos;</step>
+<step outcome="successful">And [Assertion] Verify &apos;User Name Value&apos; have attribute &apos;value&apos; with &apos;alaa.abdelbagi&apos; <parameter>value</parameter></step>
 <step outcome="successful">Then [Input] I click on &apos;logout Button&apos;</step>
-<step outcome="successful">And [Assertion] Verify &apos;login Button&apos; is present</step>
-<step outcome="successful">And [Input] I login as &apos;p:UOPuser.mmalhis&apos; with password &apos;p:password&apos;</step>
-<step outcome="successful">And [Input] I click on &apos;Generalizations Header Button&apos;</step>
-<step outcome="successful">And [Assertion] Verify text of &apos;Generalization First Subject Text&apos; equals saved value &apos;GeneralizationSubjectText&apos;</step>
-<step outcome="ignorable">!-- And [Assertion] Verify text of &apos;Generalization First Serial Number&apos; equals saved value &apos;GeneralizationSerialNumberValue&apos;</step>
-<step outcome="successful">And [Input] I click on &apos;logout Button&apos;</step>
-<step outcome="successful">And [Assertion] Verify &apos;login Button&apos; is present</step>
-</scenario>
-<scenario keyword="Scenario:" title="TC_002_UOP UOP Check uniqueness serial number for Generalization">
-<step outcome="successful">Given [Navigation] I navigate to &apos;p:dewanUOP&apos;</step>
-<step outcome="successful">And [Input] I login as &apos;p:UOPuser.alaa&apos; with password &apos;p:password&apos;</step>
-<step outcome="successful">And [Input] I click on &apos;Generalizations Header Button&apos;</step>
-<step outcome="successful">When [Input] Set &apos;Generalization Size Page Input&apos; value to &apos;p:GeneralizationSizePage&apos;</step>
-<step outcome="successful">And [Input] I click on &apos;Change Button&apos;</step>
-<step outcome="successful">And [Progress] I wait for &apos;3&apos; sec</step>
-<step outcome="successful">And [Action] I get value from &apos;Generalization Size Page Input&apos; and save it as &apos;GeneralizationSizePageValue&apos;</step>
-<step outcome="successful">Then [Assertion] Verify uniqueness of values in column &apos;&#1585;&#1602;&#1605; &#1575;&#1604;&#1578;&#1593;&#1605;&#1610;&#1605;&apos; to approaches &apos;GeneralizationSizePageValue&apos;</step>
-<step outcome="successful">And [Input] I click on &apos;logout Button&apos;</step>
 <step outcome="successful">And [Assertion] Verify &apos;login Button&apos; is present</step>
 </scenario>
 </story>

@@ -8,7 +8,6 @@ import org.jbehave.core.io.StoryFinder;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class AllStories extends JBehaveReportFormatter {
@@ -30,13 +29,13 @@ public class AllStories extends JBehaveReportFormatter {
 //				String.format("stories/**/%s.story", STORY_NAME.trim()), "");
 
 // to specify running single story / scenario
-//				String.format("stories/TC_006_UOP.story", STORY_NAME.trim()), "");
+//				String.format("stories/TC_007_UOP.story", STORY_NAME.trim()), "");
 
 //Run a only for single test scenario
-//				String.format("stories/TC_001_SCC.story", STORY_NAME.trim()), "");
+				String.format("stories/TC_001_UOP_PRECONDITION.story", STORY_NAME.trim()), "");
 
 //Run a only UOP stories
-				String.format("stories/**/%s.story", STORY_NAME_PATTERN_UOP.trim()), "");
+//				String.format("stories/**/%s.story", STORY_NAME_PATTERN_UOP.trim()), "");
 
 //Run a only UOP stories
 //		String.format("stories/**/%s.story", STORY_NAME_PATTERN_SCC.trim()), "");
@@ -46,7 +45,7 @@ public class AllStories extends JBehaveReportFormatter {
 	}
 
 
-	private static final String SPECIFIC_STORY = "stories/TC_004_UOP.story";
+	private static final String SPECIFIC_STORY = "stories/TC_005_UOP.story";
 	private static final int RUN_COUNT = 3;
 
 // For running the story multiple times

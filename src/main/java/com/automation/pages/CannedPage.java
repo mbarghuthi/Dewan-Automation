@@ -236,7 +236,43 @@ public class CannedPage extends AbstractPage<CannedPage> {
 	@FindBy(css = "#MainContent_txtSerial_2591")
 	public WebElement InternalCorrespondenceGetSerialNumber;
 
+	@FindBy(xpath = "//*[@id=\"ctl00_li12\"]/a")
+	public WebElement ProcessModuleButton;
+	@FindBy(css = "#ctl00_Process")
+	public WebElement ProcessSubmoduleButton;
+	@FindBy(css = "#ctl00_MainContent_GVViewData_ctl02_lnkOption")
+	public WebElement InternalCorrespondenceOptions;
+
+	@FindBy(css = "#ctl00_MainContent_txtSaveDraftAR")
+	public WebElement SaveDraftArabicCaption;
+	@FindBy(css = "#ctl00_MainContent_txtSaveDraftEN")
+	public WebElement SaveDraftEnglishCaption;
+
+	@FindBy(css = "#ctl00_MainContent_ImgUpdate")
+	public WebElement UpdateButton;
+	@FindBy(css = "#ctl00_MainContent_ImgBack")
+	public WebElement BackButton;
+
+	@FindBy(xpath = "//span[contains(text(),'FORM DESIGN')]")
+	public WebElement FormDesignModuleButton;
+	@FindBy(css = "#ctl00_FormControls")
+	public WebElement ContentOfFormSubmoduleButton;
+	@FindBy(css = "#ctl00_MainContent_DdlForm")
+	public WebElement FormDropDownList;
+
+	@FindBy(xpath = "//tbody/tr[2]/td[5]/a[1]/img[1]")
+	public WebElement EditOutgoingMailAttachment;
+	@FindBy(xpath = "//option[contains(text(),'Outgoing Mail')]")
+	public WebElement OutgoingMailForm;
+
+	@FindBy(css = "#ctl00_MainContent_tbxlblen")
+    public WebElement ControlSearchEnglishField;
+
+	@FindBy(css = "#ctl00_MainContent_ImgSearch")
+	public WebElement ControlSearchButton;
+
 	/**
+	 *
 	 * Method to open link
 	 * 
 	 * @param url : String : URL for navigation
@@ -523,6 +559,8 @@ public class CannedPage extends AbstractPage<CannedPage> {
 			Assert.assertTrue("Checkbox is checked", checkbox.isSelected() && !shouldBeChecked);
 	}
 
+
+
 	public void isRadioButtonSelected(String elementName, boolean shouldBeSelected) throws Exception {
 		WebElement checkbox = getElementWithWait(this, elementName);
 		if ((!checkbox.isSelected()) && shouldBeSelected)
@@ -555,6 +593,12 @@ public class CannedPage extends AbstractPage<CannedPage> {
 				throw new Exception("Element is neither a <select> nor an <input> tag.");
 			}
 		}
+	}
+
+	public void selectFromDropdown(String elementName, String valueToSelect) throws Exception {
+		WebElement dropdownElement = getElementWithWait(this, elementName);
+		Select dropdown = new Select(dropdownElement);
+		dropdown.selectByVisibleText(valueToSelect);
 	}
 
 	public void checkCheckbox(String elementName) throws Exception {

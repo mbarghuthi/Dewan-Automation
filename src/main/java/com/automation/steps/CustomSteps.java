@@ -146,7 +146,31 @@ public class CustomSteps extends AbstractSteps {
 			throw new Exception("Assertion failed: expected value to be contained in actual value. Expected part '" + relevantPart + "', but actual value was '" + actualValue + "'");
 		}
 	}
-	
+
+
+	@Given("[Input] I login admin as '$userName' with password '$password'")
+	@When("[Input] I login admin as '$userName' with password '$password'")
+	@Then("[Input] I login admin as '$userName' with password '$password'")
+	public void loginAdminAs(@Named("adminUserName") String userName, @Named("adminPassword") String password) throws Throwable {
+		customPage.enterText("adminUserName", userName).enterText("adminPassword", password).click("login Admin Button");
+	}
+
+	//step to assert checkbox is unchecked
+	@Given("[Assertion] Verify Radio  '$elementName' is clicked on")
+	@When("[Assertion] Verify Radio  '$elementName' is clicked on")
+	@Then("[Assertion] Verify Radio  '$elementName' is clicked on")
+	public void is_radio_button_unchecked(String elementName) throws Exception
+	{
+		customPage.checkRadioButton(elementName, true);
+	}
+
+//	@Given("[Assertion] Verify Radio  '$elementName' is clicked on")
+//	@When("[Assertion] Verify Radio  '$elementName' is clicked on")
+//	@Then("[Assertion] Verify Radio  '$elementName' is clicked on")
+//	public void is_checkbox_unchecked(String elementName) throws Exception
+//	{
+//		customPage.checkRadioButton(elementName, true);
+//	}
 	
 
 }

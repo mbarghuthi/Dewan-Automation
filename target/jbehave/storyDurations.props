@@ -1,6 +1,6 @@
 #org.jbehave.core.embedder.StoryManager
-#Thu Aug 15 10:10:46 EET 2024
-stories/TC_001_UOP_PRECONDITION.story=82000
-threadAverage=82000
+#Sun Aug 25 14:52:57 EET 2024
+stories/TC_003_UOP.story=13000
+threadAverage=13000
 threads=1
-total=82000
+total=13000

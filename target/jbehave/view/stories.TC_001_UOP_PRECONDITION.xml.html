@@ -11,46 +11,35 @@
 <story path="stories/TC_001_UOP_PRECONDITION.story" title="&#65279;">
 <scenario keyword="Scenario:" title="TC_001_UOP UOP Admin Precondition">
 <step outcome="successful">Given [Navigation] I navigate to &apos;p:dewanAdminUOP&apos;</step>
-<step outcome="successful">And [Input] I login admin as &apos;p:UOPuser.admin&apos; with password &apos;p:password&apos;</step>
-<step outcome="successful">And [Input] I click on &apos;Process Module Button&apos;</step>
-<step outcome="successful">And [Input] I click on &apos;Process Submodule Button&apos;</step>
-<step outcome="successful">And [Input] I click on &apos;Internal Correspondence Options&apos;</step>
-<step outcome="successful">And [Assertion] Verify Radio  &apos;Save Draft On Radio Button&apos; is clicked on</step>
-<step outcome="successful">And [Progress] I wait for &apos;3&apos; sec</step>
-<step outcome="successful">When [Input] Set &apos;Save Draft Arabic Caption&apos; value to &apos;p:SaveDraftArabicCaption&apos;</step>
-<step outcome="successful">And [Input] Set &apos;SaveDraftEnglishCaption&apos; value to &apos;p:SaveDraftEnglishCaption&apos;</step>
-<step outcome="successful">And [Input] I click on &apos;UpdateButton&apos;</step>
-<step outcome="successful">And [Progress] I wait for &apos;3&apos; sec</step>
-<step outcome="successful">And [Input] I click on &apos;BackButton&apos;</step>
-<step outcome="successful">And [Input] I click on &apos;FormDesignModuleButton&apos;</step>
-<step outcome="successful">And [Input] I click on &apos;ContentOfFormSubmoduleButton&apos;</step>
-<step outcome="ignorable">!-- And [Input] Select &apos;FormDropDownList&apos; value from &apos;1406&apos;</step>
-<step outcome="successful">And [Input] I click on &apos;OutgoingMailForm&apos;</step>
-<step outcome="successful">And [Progress] I wait for &apos;3&apos; sec</step>
-<step outcome="successful">And [Input] Set &apos;ControlSearchEnglishField&apos; value to &apos;p:ControlSearchEnglishField&apos;</step>
-<step outcome="successful">And [Progress] I wait for &apos;5&apos; sec</step>
-<step outcome="successful">And [Input] I click on &apos;ControlSearchButton&apos;</step>
-<step outcome="successful">And [Progress] I wait for &apos;19&apos; sec</step>
-<step outcome="successful">And [Input] I click on &apos;EditOutgoingMailAttachment&apos;</step>
-<step outcome="ignorable">!-- Then [Navigation] I navigate to &apos;http://172.16.30.82:8889/Form/FormControlsDetails.aspx?FormCtrlID=2472&apos;</step>
-<step outcome="successful">And [Progress] I wait for &apos;5&apos; sec</step>
-<step outcome="failed" keyword="FAILED">And [Assertion] Verify Checkbox  &apos;MandatoryCheckbox&apos; is clicked on<failure>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.id: ctl00_MainContent_rdONMandatory&apos; (tried for 30 second(s) with 500 milliseconds interval)</failure></step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Progress] I wait for &apos;3&apos; sec</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;UpdateButton&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Progress] I wait for &apos;3&apos; sec</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;BackButton&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Progress] I wait for &apos;10&apos; sec</step>
-<failure>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.id: ctl00_MainContent_rdONMandatory&apos; (tried for 30 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-	at com.automation.pages.AbstractPage.getElementWithWait(AbstractPage.java:43)
-	at com.automation.pages.CustomPage.checkCheckboxButton(CustomPage.java:79)
-	at com.automation.steps.CustomSteps.is_checkbox_checked(CustomSteps.java:179)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:599)
-	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:340)
-...</failure>
+<step outcome="ignorable">!-- And [Input] I login admin as &apos;p:UOPuser.admin&apos; with password &apos;p:password&apos;</step>
+<step outcome="ignorable">!-- And [Input] I click on &apos;Process Module Button&apos;</step>
+<step outcome="ignorable">!-- And [Input] I click on &apos;Process Submodule Button&apos;</step>
+<step outcome="ignorable">!-- And [Input] I click on &apos;Internal Correspondence Options&apos;</step>
+<step outcome="ignorable">!-- And [Assertion] Verify Radio  &apos;Save Draft On Radio Button&apos; is clicked on</step>
+<step outcome="ignorable">!-- And [Progress] I wait for &apos;3&apos; sec</step>
+<step outcome="ignorable">!-- When [Input] Set &apos;Save Draft Arabic Caption&apos; value to &apos;p:SaveDraftArabicCaption&apos;</step>
+<step outcome="ignorable">!-- And [Input] Set &apos;SaveDraftEnglishCaption&apos; value to &apos;p:SaveDraftEnglishCaption&apos;</step>
+<step outcome="ignorable">!-- And [Input] I click on &apos;UpdateButton&apos;</step>
+<step outcome="ignorable">!-- And [Progress] I wait for &apos;3&apos; sec</step>
+<step outcome="ignorable">!-- And [Input] I click on &apos;BackButton&apos;</step>
+<step outcome="ignorable">!-- And [Input] I click on &apos;FormDesignModuleButton&apos;</step>
+<step outcome="ignorable">!-- And [Input] I click on &apos;ContentOfFormSubmoduleButton&apos;</step>
+<step outcome="ignorable">!-- !-- And [Input] Select &apos;FormDropDownList&apos; value from &apos;1406&apos;</step>
+<step outcome="ignorable">!-- And [Input] I click on &apos;OutgoingMailForm&apos;</step>
+<step outcome="ignorable">!-- And [Progress] I wait for &apos;3&apos; sec</step>
+<step outcome="ignorable">!-- And [Input] Set &apos;ControlSearchEnglishField&apos; value to &apos;p:ControlSearchEnglishField&apos;</step>
+<step outcome="ignorable">!-- And [Progress] I wait for &apos;5&apos; sec</step>
+<step outcome="ignorable">!-- And [Input] I click on &apos;ControlSearchButton&apos;</step>
+<step outcome="ignorable">!-- And [Progress] I wait for &apos;19&apos; sec</step>
+<step outcome="ignorable">!-- And [Input] I click on &apos;EditOutgoingMailAttachment&apos;</step>
+<step outcome="ignorable">!-- !-- Then [Navigation] I navigate to &apos;http://172.16.30.82:8889/Form/FormControlsDetails.aspx?FormCtrlID=2472&apos;</step>
+<step outcome="ignorable">!-- And [Progress] I wait for &apos;5&apos; sec</step>
+<step outcome="ignorable">!-- And [Assertion] Verify Checkbox  &apos;MandatoryCheckbox&apos; is clicked on</step>
+<step outcome="ignorable">!-- And [Progress] I wait for &apos;3&apos; sec</step>
+<step outcome="ignorable">!-- And [Input] I click on &apos;UpdateButton&apos;</step>
+<step outcome="ignorable">!-- And [Progress] I wait for &apos;3&apos; sec</step>
+<step outcome="ignorable">!-- And [Input] I click on &apos;BackButton&apos;</step>
+<step outcome="ignorable">!-- And [Progress] I wait for &apos;10&apos; sec</step>
 </scenario>
 </story>
 

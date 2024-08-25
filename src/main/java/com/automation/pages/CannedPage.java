@@ -32,8 +32,9 @@ public class CannedPage extends AbstractPage<CannedPage> {
 	public WebElement UnifiedLogin;
 	@FindBy(css = "#btnlogin")
 	public WebElement loginButton;
-	@FindBy(css = ".rmItem.rmLast.text-align-center")
+	@FindBy(xpath = "//span[contains(text(),'خروج')]")
 	public WebElement logoutButton;
+
 	@FindBy(css = "#ctl00_RadMenu1 > ul > li:nth-child(8) > a > span")
 	public WebElement dewanHeader;
 
@@ -44,6 +45,7 @@ public class CannedPage extends AbstractPage<CannedPage> {
 
 	@FindBy(xpath = "//a[contains(text(),'تعميم')]")
 	public WebElement GeneralizationButton;
+
 // filling generalization mandatory fields
 
 	@FindBy(css = "#tbxSubject")
@@ -113,7 +115,7 @@ public class CannedPage extends AbstractPage<CannedPage> {
 	public WebElement TasksToViewFirstSubjectText;
 
 //	@FindBy(xpath="//*[@id=\"ctl00_RadMenu1\"]/ul/li[9]/span/span")
-@FindBy(xpath="//*[@id=\"ctl00_RadMenu1\"]/ul/li[10]/span")
+	@FindBy(xpath="//*[@id=\"ctl00_RadMenu1\"]/ul/li[10]/span")
 	public WebElement UserNameHeaderButton;
 
 	@FindBy(xpath = "//a[contains(text(),'الملف الشخصي')]")

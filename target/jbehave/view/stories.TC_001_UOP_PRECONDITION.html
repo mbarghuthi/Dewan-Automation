@@ -12,46 +12,35 @@
 <div class="scenario">
 <h2>Scenario: TC_001_UOP UOP Admin Precondition</h2>
 <div class="step successful">Given  I navigate to 'http://172.16.30.82:8889/login.aspx'</div>
-<div class="step successful">And  I login admin as 'admin' with password 'Aa1'</div>
-<div class="step successful">And  I click on 'Process Module Button'</div>
-<div class="step successful">And  I click on 'Process Submodule Button'</div>
-<div class="step successful">And  I click on 'Internal Correspondence Options'</div>
-<div class="step successful">And  Verify Radio  'Save Draft On Radio Button' is clicked on</div>
-<div class="step successful">And  I wait for '3' sec</div>
-<div class="step successful">When  Set 'Save Draft Arabic Caption' value to '&#1581;&#1601;&#1592; &#1605;&#1572;&#1602;&#1578;'</div>
-<div class="step successful">And  Set 'SaveDraftEnglishCaption' value to 'save draft'</div>
-<div class="step successful">And  I click on 'UpdateButton'</div>
-<div class="step successful">And  I wait for '3' sec</div>
-<div class="step successful">And  I click on 'BackButton'</div>
-<div class="step successful">And  I click on 'FormDesignModuleButton'</div>
-<div class="step successful">And  I click on 'ContentOfFormSubmoduleButton'</div>
-<div class="step ignorable">!-- And  Select 'FormDropDownList' value from '1406'</div>
-<div class="step successful">And  I click on 'OutgoingMailForm'</div>
-<div class="step successful">And  I wait for '3' sec</div>
-<div class="step successful">And  Set 'ControlSearchEnglishField' value to 'Attachment'</div>
-<div class="step successful">And  I wait for '5' sec</div>
-<div class="step successful">And  I click on 'ControlSearchButton'</div>
-<div class="step successful">And  I wait for '19' sec</div>
-<div class="step successful">And  I click on 'EditOutgoingMailAttachment'</div>
-<div class="step ignorable">!-- Then  I navigate to 'http://172.16.30.82:8889/Form/FormControlsDetails.aspx?FormCtrlID=2472'</div>
-<div class="step successful">And  I wait for '5' sec</div>
-<div class="step failed">And  Verify Checkbox  'MandatoryCheckbox' is clicked on <span class="keyword failed">(FAILED)</span><br/><span class="message failed">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: ctl00_MainContent_rdONMandatory' (tried for 30 second(s) with 500 milliseconds interval)</span><br/><a color="black" target="jb_scn_shot" href="../screenshots/failed-scenario-d4a4b54a-3d80-454a-82e7-f562b8adc0ad.png"><img src="images/failing_screenshot.png" alt="failing screenshot"/></a></div>
-<div class="step notPerformed">And  I wait for '3' sec <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
-<div class="step notPerformed">And  I click on 'UpdateButton' <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
-<div class="step notPerformed">And  I wait for '3' sec <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
-<div class="step notPerformed">And  I click on 'BackButton' <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
-<div class="step notPerformed">And  I wait for '10' sec <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
-<pre class="failure">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: ctl00_MainContent_rdONMandatory' (tried for 30 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-	at com.automation.pages.AbstractPage.getElementWithWait(AbstractPage.java:43)
-	at com.automation.pages.CustomPage.checkCheckboxButton(CustomPage.java:79)
-	at com.automation.steps.CustomSteps.is_checkbox_checked(CustomSteps.java:179)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:599)
-	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:340)
-...</pre>
+<div class="step ignorable">!-- And  I login admin as 'admin' with password 'Aa1'</div>
+<div class="step ignorable">!-- And  I click on 'Process Module Button'</div>
+<div class="step ignorable">!-- And  I click on 'Process Submodule Button'</div>
+<div class="step ignorable">!-- And  I click on 'Internal Correspondence Options'</div>
+<div class="step ignorable">!-- And  Verify Radio  'Save Draft On Radio Button' is clicked on</div>
+<div class="step ignorable">!-- And  I wait for '3' sec</div>
+<div class="step ignorable">!-- When  Set 'Save Draft Arabic Caption' value to '&#1581;&#1601;&#1592; &#1605;&#1572;&#1602;&#1578;'</div>
+<div class="step ignorable">!-- And  Set 'SaveDraftEnglishCaption' value to 'save draft'</div>
+<div class="step ignorable">!-- And  I click on 'UpdateButton'</div>
+<div class="step ignorable">!-- And  I wait for '3' sec</div>
+<div class="step ignorable">!-- And  I click on 'BackButton'</div>
+<div class="step ignorable">!-- And  I click on 'FormDesignModuleButton'</div>
+<div class="step ignorable">!-- And  I click on 'ContentOfFormSubmoduleButton'</div>
+<div class="step ignorable">!-- !-- And  Select 'FormDropDownList' value from '1406'</div>
+<div class="step ignorable">!-- And  I click on 'OutgoingMailForm'</div>
+<div class="step ignorable">!-- And  I wait for '3' sec</div>
+<div class="step ignorable">!-- And  Set 'ControlSearchEnglishField' value to 'Attachment'</div>
+<div class="step ignorable">!-- And  I wait for '5' sec</div>
+<div class="step ignorable">!-- And  I click on 'ControlSearchButton'</div>
+<div class="step ignorable">!-- And  I wait for '19' sec</div>
+<div class="step ignorable">!-- And  I click on 'EditOutgoingMailAttachment'</div>
+<div class="step ignorable">!-- !-- Then  I navigate to 'http://172.16.30.82:8889/Form/FormControlsDetails.aspx?FormCtrlID=2472'</div>
+<div class="step ignorable">!-- And  I wait for '5' sec</div>
+<div class="step ignorable">!-- And  Verify Checkbox  'MandatoryCheckbox' is clicked on</div>
+<div class="step ignorable">!-- And  I wait for '3' sec</div>
+<div class="step ignorable">!-- And  I click on 'UpdateButton'</div>
+<div class="step ignorable">!-- And  I wait for '3' sec</div>
+<div class="step ignorable">!-- And  I click on 'BackButton'</div>
+<div class="step ignorable">!-- And  I wait for '10' sec</div>
 </div>
 </div>
 

@@ -1,0 +1,58 @@
+<div class="story">
+<h1>&#65279;</h1>
+<div class="path">stories/TC_005_SCC.story</div>
+<div class="scenario">
+<h2>Scenario: TC_001_SCC SCC Create Outgoing</h2>
+<div class="step successful">Given  I navigate to 'http://172.16.30.82:808/Diwan_Enduser/login.aspx'</div>
+<div class="step successful">And  I login as 'Sup-dew-1' with password 's'</div>
+<div class="step successful">And  I click on 'Add Process Button'</div>
+<div class="step successful">And  I click on 'Outgoing Button'</div>
+<div class="step successful">When  Set 'Subject Field' value to 'random'</div>
+<div class="step successful">And  I select '1 | &#1605;&#1583;&#1610;&#1585; / &#1593;&#1591;&#1608;&#1601;&#1577; &#1575;&#1604;&#1605;&#1583;&#1610;&#1585; &#1575;&#1604;&#1593;&#1575;&#1605;' from the 'General Manager Office SCC' combo box</div>
+<div class="step successful">And  I select '1' from the 'File Name SCC' combo box</div>
+<div class="step successful">And  Set 'File Subject SCC' value to 'random'</div>
+<div class="step successful">And  Select '&#1575;&#1582;&#1585;&#1609;' value from 'Receiver Name SCC'</div>
+<div class="step successful">And  I select '3496 | &#1571;&#1582;&#1585;&#1609;' from the 'Sub Receiver Name SCC' combo box</div>
+<div class="step ignorable">!-- And  I click on 'Save Draft Button'</div>
+<div class="step successful">And  I click on 'Save Button'</div>
+<div class="step successful">And  I get text from 'Subject Field' and save it as 'SubjectText'</div>
+<div class="step successful">And  I get value from 'Outgoing Get Serial Number' and save it as 'OutgoingSerialNumberValue'</div>
+<div class="step successful">And  I wait for '3' sec</div>
+<div class="step successful">And  I click on 'Direction Tab'</div>
+<div class="step successful">And  I click on 'Add Button'</div>
+<div class="step successful">And  I wait for '4' sec</div>
+<div class="step successful">And  I click on 'Close Notification Button'</div>
+<div class="step successful">And  Verify 'Outgoing User Name Directed To1 SCC' equals '&#1585;&#1574;&#1610;&#1587; &#1588;&#1593;&#1576;&#1577; &#1575;&#1604;&#1578;&#1586;&#1608;&#1610;&#1583;' text</div>
+<div class="step ignorable">!-- TEST</div>
+<div class="step ignorable">!-- recheck this part that the xpath or css are the same as UOP</div>
+<div class="step successful">And  I click on 'Direction Button'</div>
+<div class="step successful">And  I wait for '10' sec</div>
+<div class="step successful">And  I click on 'My Processes List Header Button'</div>
+<div class="step successful">And  Verify 'Process Status' equals '&#1578;&#1605;&#1578; &#1575;&#1604;&#1593;&#1605;&#1604;&#1610;&#1577; &#1576;&#1606;&#1580;&#1575;&#1581;' text</div>
+<div class="step successful">Then  I click on 'logout Button'</div>
+<div class="step successful">And  Verify 'login Button' is present</div>
+<div class="step successful">And  I login as 'supply-1' with password 's'</div>
+<div class="step ignorable">!-- recheck this part that the xpath or css are the same as UOP</div>
+<div class="step successful">And  I click on 'Tasks To View'</div>
+<div class="step ignorable">!-- And  I click on 'Tasks To View Date'</div>
+<div class="step ignorable">!-- And  I click on 'Tasks To View Date'</div>
+<div class="step failed">And  Verify text of 'Tasks To View First Subject Text' equals saved value 'SubjectText' <span class="keyword failed">(FAILED)</span><br/><span class="message failed">java.lang.Exception: Assertion failed: expected 'Auto715888609442900', but was '19/08/2024'</span><br/><a color="black" target="jb_scn_shot" href="../screenshots/failed-scenario-4054a5f7-6540-4248-b27a-60b444a23527.png"><img src="images/failing_screenshot.png" alt="failing screenshot"/></a></div>
+<div class="step notPerformed">And  I click on 'View Process Button' <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And  Verify text of 'Subject Field' equals saved value 'SubjectText' <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And  Verify value of 'Outgoing Get Serial Number' equals saved value 'OutgoingSerialNumberValue' <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And  I click on 'Direction Tab' <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And  I click on 'View Button' <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And  I wait for '3' sec <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And  I click on 'Completed Tasks' <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And  Verify text of 'Completed Tasks First Subject Text' equals saved value 'SubjectText' <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And  I click on 'logout Button' <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And  Verify 'login Button' is present <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<pre class="failure">java.lang.Exception: Assertion failed: expected 'Auto715888609442900', but was '19/08/2024'
+	at com.automation.steps.CustomSteps.assertElementTextEqualsSavedValue(CustomSteps.java:70)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:599)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:340)
+...</pre>
+</div>
+</div>

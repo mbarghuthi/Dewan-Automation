@@ -20,8 +20,6 @@ And [Input] I click on 'Add Button'
 And [Progress] I wait for '4' sec
 And [Input] I click on 'Close Notification Button'
 And [Assertion] Verify 'Outgoing User Name Directed To1 SCC' equals 'p:supply1.username' text
-!-- TEST
-!-- recheck this part that the xpath or css are the same as UOP
 And [Input] I click on 'Direction Button'
 And [Progress] I wait for '10' sec
 And [Input] I click on 'My Processes List Header Button'
@@ -29,10 +27,11 @@ And [Assertion] Verify 'Process Status' equals 'p:ProcessCompletedStatus' text
 Then [Input] I click on 'logout Button'
 And [Assertion] Verify 'login Button' is present
 And [Input] I login as 'p:SCCuser.supply1' with password 'p:SCC.password'
+!-- TEST
 !-- recheck this part that the xpath or css are the same as UOP
 And [Input] I click on 'Tasks To View'
-!-- And [Input] I click on 'Tasks To View Date'
-!-- And [Input] I click on 'Tasks To View Date'
+And [Input] I click on 'Tasks To View Date'
+And [Input] I click on 'Tasks To View Date'
 And [Assertion] Verify text of 'Tasks To View First Subject Text' equals saved value 'SubjectText'
 And [Input] I click on 'View Process Button'
 And [Assertion] Verify text of 'Subject Field' equals saved value 'SubjectText'

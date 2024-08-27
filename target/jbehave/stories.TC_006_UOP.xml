@@ -8,8 +8,8 @@
 <step outcome="successful">And [Input] Set &apos;Num Book From The Source&apos; value to &apos;nanotime&apos;</step>
 <step outcome="successful">And [Input] I select &apos;p:InternalControlAndAuditUnit&apos; from the &apos;Incoming Commissioner Destination&apos; combo box</step>
 <step outcome="successful">And [Input] I select &apos;p:TheMinistryOfEducation&apos; from the &apos;Source Book By Name&apos; combo box</step>
-<step outcome="successful">And [Progress] I wait for &apos;4&apos; sec</step>
-<step outcome="successful">And [Input] Select &apos;p:HeadOfArtisticCulturalAn&apos; value from &apos;Receiver Name&apos;</step>
+<step outcome="successful">And [Progress] I wait for &apos;6&apos; sec</step>
+<step outcome="successful">And [Input] Select &apos;p:AalaaMelhem&apos; value from &apos;Receiver Name&apos;</step>
 <step outcome="successful">And [Progress] I wait for &apos;4&apos; sec</step>
 <step outcome="successful">And [Input] I select &apos;p:Aramex&apos; from the &apos;Delivery&apos; combo box</step>
 <step outcome="successful">And [Input] I click on &apos;Save Draft Button&apos;</step>
@@ -18,9 +18,9 @@
 <step outcome="successful">And [Action] I get value from &apos;Incoming Commissioner Destination&apos; and save it as &apos;ComboBoxValue&apos;</step>
 <step outcome="successful">And [Action] I get text from &apos;Subject Field&apos; and save it as &apos;SubjectText&apos;</step>
 <step outcome="successful">And [Action] I get value from &apos;Incoming Get Serial Number&apos; and save it as &apos;IncomingSerialNumberValue&apos;</step>
-<step outcome="successful">And [Input] I click on &apos;Direction Button&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;Direction Tab&apos;</step>
 <step outcome="successful">And [Assertion] Verify text of &apos;Department Liaison Officer Name&apos; contains saved value &apos;ComboBoxValue&apos;</step>
-<step outcome="successful">And [Input] I click on &apos;Approve Button&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;Direction Button&apos;</step>
 <step outcome="successful">And [Progress] I wait for &apos;6&apos; sec</step>
 <step outcome="successful">And [Input] I click on &apos;My Processes List Header Button&apos;</step>
 <step outcome="successful">And [Assertion] Verify &apos;Process Status&apos; equals &apos;p:ProcessUnCompletedStatus&apos; text</step>
@@ -34,7 +34,7 @@
 <step outcome="successful">And [Input] I click on &apos;Task List Header Button&apos;</step>
 <step outcome="successful">And [Assertion] Verify text of &apos;Task List First Subject Text&apos; equals saved value &apos;SubjectText&apos;</step>
 <step outcome="successful">And [Input] I click on &apos;View Process Button&apos;</step>
-<step outcome="successful">And [Input] I click on &apos;Direction Button&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;Direction Tab&apos;</step>
 <step outcome="successful">And [Progress] I wait for &apos;5&apos; sec</step>
 <step outcome="successful">And [Input] I click on &apos;Close Button&apos;</step>
 <step outcome="successful">And [Progress] I wait for &apos;3&apos; sec</step>
@@ -61,7 +61,7 @@
 <step outcome="successful">And [Input] I select &apos;p:InternalControlAndAuditUnit&apos; from the &apos;Incoming Commissioner Destination&apos; combo box</step>
 <step outcome="successful">And [Input] I select &apos;p:TheMinistryOfEducation&apos; from the &apos;Source Book By Name&apos; combo box</step>
 <step outcome="successful">And [Progress] I wait for &apos;3&apos; sec</step>
-<step outcome="successful">And [Input] Select &apos;p:HeadOfArtisticCulturalAn&apos; value from &apos;Receiver Name&apos;</step>
+<step outcome="successful">And [Input] Select &apos;p:AalaaMelhem&apos; value from &apos;Receiver Name&apos;</step>
 <step outcome="successful">And [Progress] I wait for &apos;3&apos; sec</step>
 <step outcome="successful">And [Input] I select &apos;p:Aramex&apos; from the &apos;Delivery&apos; combo box</step>
 <step outcome="successful">And [Input] I click on &apos;Save Draft Button&apos;</step>
@@ -70,7 +70,7 @@
 <step outcome="successful">And [Action] I get value from &apos;Incoming Commissioner Destination&apos; and save it as &apos;ComboBoxValue&apos;</step>
 <step outcome="successful">And [Action] I get text from &apos;Subject Field&apos; and save it as &apos;SubjectText&apos;</step>
 <step outcome="successful">And [Action] I get value from &apos;Incoming Get Serial Number&apos; and save it as &apos;IncomingSerialNumberValue&apos;</step>
-<step outcome="successful">And [Input] I click on &apos;Direction Button&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;Direction Tab&apos;</step>
 <step outcome="ignorable">!-- And [Assertion] Verify text of &apos;Department Liaison Officer Name&apos; contains saved value &apos;ComboBoxValue&apos;</step>
 <step outcome="successful">And [Input] I click on &apos;Click On All Check Box&apos;</step>
 <step outcome="successful">And [Input] I click on &apos;Delete Button&apos;</step>
@@ -83,7 +83,7 @@
 <step outcome="successful">And [Input] I click on &apos;Add Button&apos;</step>
 <step outcome="successful">And [Progress] I wait for &apos;4&apos; sec</step>
 <step outcome="successful">And [Input] I click on &apos;Close Notification Button&apos;</step>
-<step outcome="successful">And [Input] I click on &apos;Approve Button&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;Direction Button&apos;</step>
 <step outcome="successful">And [Progress] I wait for &apos;4&apos; sec</step>
 <step outcome="successful">And [Input] I click on &apos;My Processes List Header Button&apos;</step>
 <step outcome="successful">And [Assertion] Verify &apos;Process Status&apos; equals &apos;p:ProcessCompletedStatus&apos; text</step>

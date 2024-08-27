@@ -8,8 +8,8 @@ When [Input] Set 'Subject Field' value to 'random'
 And [Input] Set 'Num Book From The Source' value to 'nanotime'
 And [Input] I select 'p:InternalControlAndAuditUnit' from the 'Incoming Commissioner Destination' combo box
 And [Input] I select 'p:TheMinistryOfEducation' from the 'Source Book By Name' combo box
-And [Progress] I wait for '4' sec
-And [Input] Select 'p:HeadOfArtisticCulturalAn' value from 'Receiver Name'
+And [Progress] I wait for '6' sec
+And [Input] Select 'p:AalaaMelhem' value from 'Receiver Name'
 And [Progress] I wait for '4' sec
 And [Input] I select 'p:Aramex' from the 'Delivery' combo box
 And [Input] I click on 'Save Draft Button'
@@ -18,9 +18,9 @@ And [Progress] I wait for '3' sec
 And [Action] I get value from 'Incoming Commissioner Destination' and save it as 'ComboBoxValue'
 And [Action] I get text from 'Subject Field' and save it as 'SubjectText'
 And [Action] I get value from 'Incoming Get Serial Number' and save it as 'IncomingSerialNumberValue'
-And [Input] I click on 'Direction Button'
+And [Input] I click on 'Direction Tab'
 And [Assertion] Verify text of 'Department Liaison Officer Name' contains saved value 'ComboBoxValue'
-And [Input] I click on 'Approve Button'
+And [Input] I click on 'Direction Button'
 And [Progress] I wait for '6' sec
 And [Input] I click on 'My Processes List Header Button'
 And [Assertion] Verify 'Process Status' equals 'p:ProcessUnCompletedStatus' text
@@ -34,7 +34,7 @@ And [Input] I login as 'p:UOPuser.audit1' with password 'p:password'
 And [Input] I click on 'Task List Header Button'
 And [Assertion] Verify text of 'Task List First Subject Text' equals saved value 'SubjectText'
 And [Input] I click on 'View Process Button'
-And [Input] I click on 'Direction Button'
+And [Input] I click on 'Direction Tab'
 And [Progress] I wait for '5' sec
 And [Input] I click on 'Close Button'
 And [Progress] I wait for '3' sec
@@ -64,7 +64,7 @@ And [Input] Set 'Num Book From The Source' value to 'nanotime'
 And [Input] I select 'p:InternalControlAndAuditUnit' from the 'Incoming Commissioner Destination' combo box
 And [Input] I select 'p:TheMinistryOfEducation' from the 'Source Book By Name' combo box
 And [Progress] I wait for '3' sec
-And [Input] Select 'p:HeadOfArtisticCulturalAn' value from 'Receiver Name'
+And [Input] Select 'p:AalaaMelhem' value from 'Receiver Name'
 And [Progress] I wait for '3' sec
 And [Input] I select 'p:Aramex' from the 'Delivery' combo box
 And [Input] I click on 'Save Draft Button'
@@ -73,7 +73,7 @@ And [Progress] I wait for '3' sec
 And [Action] I get value from 'Incoming Commissioner Destination' and save it as 'ComboBoxValue'
 And [Action] I get text from 'Subject Field' and save it as 'SubjectText'
 And [Action] I get value from 'Incoming Get Serial Number' and save it as 'IncomingSerialNumberValue'
-And [Input] I click on 'Direction Button'
+And [Input] I click on 'Direction Tab'
 !-- And [Assertion] Verify text of 'Department Liaison Officer Name' contains saved value 'ComboBoxValue'
 And [Input] I click on 'Click On All Check Box'
 And [Input] I click on 'Delete Button'
@@ -86,7 +86,7 @@ And [Progress] I wait for '3' sec
 And [Input] I click on 'Add Button'
 And [Progress] I wait for '4' sec
 And [Input] I click on 'Close Notification Button'
-And [Input] I click on 'Approve Button'
+And [Input] I click on 'Direction Button'
 And [Progress] I wait for '4' sec
 And [Input] I click on 'My Processes List Header Button'
 And [Assertion] Verify 'Process Status' equals 'p:ProcessCompletedStatus' text

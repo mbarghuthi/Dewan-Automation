@@ -11,7 +11,7 @@ And [Progress] I wait for '3' sec
 And [Action] I get value from 'Internal Correspondence Commissioner Destination' and save it as 'ComboBoxValue'
 And [Action] I get text from 'Subject Field' and save it as 'SubjectText'
 And [Action] I get value from 'Internal Correspondence Get Serial Number' and save it as 'InternalCorrespondenceSerialNumberValue'
-And [Input] I click on 'Direction Button'
+And [Input] I click on 'Direction Tab'
 !-- And [Assertion] Verify text of 'Department Liaison Officer Name' contains saved value 'ComboBoxValue'
 !-- And [Input] I select 'p:InternalControlAndAuditUnit' from the 'Division Input' combo box
 !-- And [Progress] I wait for '3' sec
@@ -26,7 +26,7 @@ And [Progress] I wait for '3' sec
 And [Input] I click on 'Close Notification Button'
 And [Progress] I wait for '3' sec
 And [Assertion] Verify text of 'Department Liaison Officer Name' contains saved value 'ComboBoxValue'
-And [Input] I click on 'Approve Button'
+And [Input] I click on 'Direction Button'
 And [Progress] I wait for '4' sec
 And [Input] I click on 'My Processes List Header Button'
 And [Assertion] Verify 'Process Status' equals 'p:ProcessUnCompletedStatus' text
@@ -40,7 +40,7 @@ And [Input] I login as 'p:UOPuser.audit1' with password 'p:password'
 And [Input] I click on 'Task List Header Button'
 And [Assertion] Verify text of 'Task List First Subject Text' equals saved value 'SubjectText'
 And [Input] I click on 'View Process Button'
-And [Input] I click on 'Direction Button'
+And [Input] I click on 'Direction Tab'
 And [Progress] I wait for '5' sec
 And [Input] I click on 'Close Button'
 And [Javascript] I accept alert
@@ -71,7 +71,7 @@ And [Progress] I wait for '3' sec
 And [Action] I get value from 'Internal Correspondence Commissioner Destination' and save it as 'ComboBoxValue'
 And [Action] I get text from 'Subject Field' and save it as 'SubjectText'
 And [Action] I get value from 'Internal Correspondence Get Serial Number' and save it as 'InternalCorrespondenceSerialNumberValue'
-And [Input] I click on 'Direction Button'
+And [Input] I click on 'Direction Tab'
 !-- And [Assertion] Verify text of 'Department Liaison Officer Name' contains saved value 'ComboBoxValue'
 !-- And [Input] I click on 'Click On All Check Box'
 !-- And [Input] I click on 'Delete Button'
@@ -85,7 +85,7 @@ And [Input] I click on 'Add Button'
 And [Progress] I wait for '3' sec
 And [Input] I click on 'Close Notification Button'
 And [Assertion] Verify text of 'Department Liaison Officer Name' contains saved value 'ComboBoxValue'
-And [Input] I click on 'Approve Button'
+And [Input] I click on 'Direction Button'
 And [Progress] I wait for '4' sec
 And [Input] I click on 'My Processes List Header Button'
 And [Assertion] Verify 'Process Status' equals 'p:ProcessCompletedStatus' text

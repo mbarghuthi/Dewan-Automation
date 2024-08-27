@@ -338,13 +338,13 @@ public class CannedSteps extends AbstractSteps {
 		cannedPage.selectOptionFromDropdown(optionValue, dropDownListName);
 	}
 
-	@Given("[Input] Select '$elementName' value from '$optionValue'")
-	@When("[Input] Select '$elementName' value from '$optionValue'")
-	@Then("[Input] Select '$elementName' value from '$optionValue'")
-	public void select_value_from_dropdown(String elementName, String optionValue) throws Exception
-	{
-		cannedPage.selectFromDropdown(elementName, optionValue);
-	}
+//	@Given("[Input] Select '$elementName' value from '$optionValue'")
+//	@When("[Input] Select '$elementName' value from '$optionValue'")
+//	@Then("[Input] Select '$elementName' value from '$optionValue'")
+//	public void select_value_from_dropdown(String elementName, String optionValue) throws Exception
+//	{
+//		cannedPage.selectFromDropdown(elementName, optionValue);
+//	}
 
 
 

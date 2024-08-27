@@ -7,7 +7,6 @@ import java.util.List;
 import org.junit.Assert;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -22,7 +21,11 @@ public class CannedPage extends AbstractPage<CannedPage> {
 //	@Value("${browser.screen.breakpoints}")
 //	private String breakpoints;
 
-// logIn Dewan // Login Page elements
+//	*********************************************************************************************************************************************************************
+//********************************************************************** (For all clients)**************************************************************************
+//	*********************************************************************************************************************************************************************
+
+//************************************************************ logIn Dewan // Login Page elements (For all clients)********************************************************************
 
 	@FindBy(css = "#tbxName")
 	public WebElement userName;
@@ -38,7 +41,7 @@ public class CannedPage extends AbstractPage<CannedPage> {
 	@FindBy(css = "#ctl00_RadMenu1 > ul > li:nth-child(8) > a > span")
 	public WebElement dewanHeader;
 
-// logIn Dewan // Generalization Page elements
+// ************************************************************ Generalization Page elements**********************************************************************************************
 
 	@FindBy(xpath = "//span[contains(text(),'إدخال معاملة')]")
 	public WebElement AddProcessButton;
@@ -46,7 +49,7 @@ public class CannedPage extends AbstractPage<CannedPage> {
 	@FindBy(xpath = "//a[contains(text(),'تعميم')]")
 	public WebElement GeneralizationButton;
 
-// filling generalization mandatory fields
+// **************************************************************filling generalization mandatory fields***************************************************************************************
 
 	@FindBy(css = "#tbxSubject")
 	public WebElement SubjectField;
@@ -56,9 +59,6 @@ public class CannedPage extends AbstractPage<CannedPage> {
 
 	@FindBy(css = "#ctl00_MainContent_btnSave")
 	public WebElement SaveButton;
-
-	@FindBy(css = "#tbxSubject")
-	public WebElement GeneralizationGetSubject;
 
 	@FindBy(css = "#MainContent_txtSerial_2583")
 	public WebElement GeneralizationGetSerialNumber; //value
@@ -70,7 +70,7 @@ public class CannedPage extends AbstractPage<CannedPage> {
 	public WebElement GeneralizeButton;
 
 	@FindBy(css = "#MainContent_summary1")
-	public WebElement DirectionButton;
+	public WebElement DirectionTab;
 
 	@FindBy(xpath = "//*[@id=\"ctl00_RadMenu1\"]/ul/li[6]/a/span")
 	public WebElement GeneralizationsHeaderButton;
@@ -79,42 +79,36 @@ public class CannedPage extends AbstractPage<CannedPage> {
 	public WebElement GeneralizationFirstSerialNumber;
 
 	@FindBy(xpath = "//*[@id=\"ctl00_MainContent_RadGrid1_ctl00__0\"]/td[2]")
-	////*[@id="ctl00_MainContent_RadGrid1_ctl00__0"]/td[2]
 	public WebElement GeneralizationFirstSubjectText;
 
-	// to check that direction button is not clickable
+// **************************************************************to check that direction button is not clickable**************************************************************************************
 	@FindBy(css = "#ctl00_MainContent_RadGrid1_ctl00_ctl04_TaskUrl")
 	public WebElement ViewProcessButton;
 
-// to check the process status
+// **************************************************************to check the process status*********************************************************************************************************
 	@FindBy(xpath = "//span[contains(text(),'معاملاتي')]")
 	public WebElement MyProcessesListHeaderButton;
 
-	//to enter page size
+// **************************************************************to enter page size*******************************************************************************************************************
 	@FindBy(xpath = "//*[@id=\"ctl00_MainContent_RadGrid1_ctl00_ctl03_ctl01_ChangePageSizeTextBox\"]")
 	public WebElement GeneralizationSizePageInput;
 
-	//change button
+// **************************************************************change button*************************************************************************************************************************
 	@FindBy(xpath = "//span[contains(text(),'تغيير')]")
-	public WebElement ChangeButton;
+	public WebElement ChangeGridSizeButton;
 
 	@FindBy(xpath = "//tbody/tr[@id='ctl00_MainContent_RadGrid1_ctl00__0']/td[5]")
 	public WebElement ProcessStatus;
-
-//	@FindBy(xpath = "//tbody/tr[@id=\"ctl00_MainContent_RadGrid1_ctl00__0\"]/td[1]")
-//	public WebElement ;
 
 	@FindBy(xpath = "//span[contains(text(),'مهام للإجراء')]")
 	public  WebElement TaskListHeaderButton;
 
 	@FindBy(xpath = "//*[@id=\"ctl00_MainContent_RadGrid1_ctl00__0\"]/td[5]")
 	public WebElement TaskListFirstSubjectText;
-	@FindBy(xpath = "//*[@id=\"ctl00_MainContent_RadGrid1_ctl00__0\"]/td[6]")
-	public WebElement TaskListFirstSubjectTextGeneralization;
+
 	@FindBy(xpath = "//*[@id=\"ctl00_MainContent_RadGrid1_ctl00__0\"]/td[6]")
 	public WebElement TasksToViewFirstSubjectText;
 
-//	@FindBy(xpath="//*[@id=\"ctl00_RadMenu1\"]/ul/li[9]/span/span")
 	@FindBy(xpath="//*[@id=\"ctl00_RadMenu1\"]/ul/li[10]/span")
 	public WebElement UserNameHeaderButton;
 
@@ -124,24 +118,11 @@ public class CannedPage extends AbstractPage<CannedPage> {
 	@FindBy(css = "#MainContent_tbxUserName")
 	public WebElement UserNameValue;
 
-	// logIn Dewan // Outgoing Page elements
-	@FindBy(xpath = "//a[contains(text(),'بريد صادر الى الخارج')]")
-	public WebElement OutgoingButton;
-
-	@FindBy(css = "#ctl00_MainContent_ddlOrg_2371_Input")
-	public WebElement CommissionersExporting;
-
-	@FindBy(css = "#ctl00_MainContent_ddl_2375_Input")
-	public WebElement SalutationHand;
-
-//	@FindBy(css = "#MainContent_uploadFile_2472_LinklblMessages")
-//	public WebElement AttachmentsButton;
-//
-//	@FindBy(css = "#btnUpload")
-//	public  WebElement UploadButton;
-
 	@FindBy(css = "#MainContent_summary1")
 	public WebElement OutgoingUsersDirectedTo;
+
+	@FindBy(css = "#ctl00_MainContent_btnApprove")
+	public WebElement DirectionButton;
 
 	@FindBy(xpath = "//*[@id=\"ctl00_MainContent_GVUserOrg_ctl00__0\"]/td[5]")
 	public WebElement OutgoingUserNameDirectedTo1;
@@ -149,9 +130,8 @@ public class CannedPage extends AbstractPage<CannedPage> {
 //	@FindBy(xpath = "//*[@id=\"ctl00_MainContent_GVUserAssign_ctl00__3\"]/td[2]")
 //	public WebElement OutgoingUserNameDirectedTo2;
 
-	@FindBy(css = "#ctl00_MainContent_btnApprove")
-	public WebElement ApproveButton;
-
+	@FindBy(xpath = "//a[contains(text(),'بريد صادر الى الخارج')]")
+	public WebElement OutgoingButton;
 	@FindBy(xpath = "//*[@id=\"ctl00_RadMenu1\"]/ul/li[3]/a/span")
 	public WebElement TasksToView;
 
@@ -169,6 +149,54 @@ public class CannedPage extends AbstractPage<CannedPage> {
 
 	@FindBy(css = "#MainContent_txt_2361")
 	public WebElement OutgoingGetSerialNumber; //value
+
+//	*********************************************************************************************************************************************************************
+//********************************************************************** (For all clients)**************************************************************************
+//	*********************************************************************************************************************************************************************
+
+// ****************************************************************Outgoing Page elements UOP****************************************************************************************************************
+
+
+	@FindBy(css = "#ctl00_MainContent_ddlOrg_2371_Input")
+	public WebElement DivisionExporterUOP;
+
+	@FindBy(css = "#ctl00_MainContent_ddl_2375_Input")
+	public WebElement SalutationHandUOP;
+
+//	@FindBy(css = "#MainContent_uploadFile_2472_LinklblMessages")
+//	public WebElement AttachmentsButtonUOP;
+//
+//	@FindBy(css = "#btnUpload")
+//	public  WebElement UploadButtonUOP;
+
+
+
+
+// ****************************************************************Outgoing Page elements SCC****************************************************************************************************************
+
+	@FindBy(css = "#ctl00_MainContent_ddlOrg_2371_Input")
+public WebElement GeneralManagerOfficeSCC;
+
+	@FindBy(css = "#ctl00_MainContent_ddl_2632_Input")
+	public WebElement FileNameSCC;
+
+	@FindBy(css = "#MainContent_txt_2643")
+	public WebElement FileSubjectSCC;
+
+	@FindBy(css = "#ctl00_MainContent_ddl_2375_Input")
+	public WebElement ReceiverNameSCC;
+
+
+	@FindBy(css = "#ctl00_MainContent_ddl_2635_Input")
+	public WebElement SubReceiverNameSCC;
+
+//	@FindBy(css = "#MainContent_uploadFile_2472_LinklblMessages")
+//	public WebElement AttachmentsButtonUOP;
+//
+//	@FindBy(css = "#btnUpload")
+//	public  WebElement UploadButtonUOP;
+
+
 
 
 	// logIn Dewan // Incoming Page elements
@@ -589,6 +617,7 @@ public class CannedPage extends AbstractPage<CannedPage> {
 		} catch (UnexpectedTagNameException e) {
 			// Handle the case where the element is not a <select> tag
 			if (dropdown.getTagName().equalsIgnoreCase("input")) {
+				dropdown.click();
 				dropdown.clear();
 				dropdown.sendKeys(optionValue);
 				dropdown.sendKeys(Keys.DOWN);

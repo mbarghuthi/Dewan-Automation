@@ -15,7 +15,7 @@ And [Action] I get value from 'Outgoing Get Serial Number' and save it as 'Outgo
 And [Progress] I wait for '3' sec
 !-- And [Input] I click on 'Outgoing Users Directed To'
 And [Input] I click on 'Direction Tab'
-And [Assertion] Verify 'Outgoing User Name Directed To1' equals 'p:UOPuser.audit1' text
+And [Assertion] Verify 'Outgoing User Name Directed To1 UOP' equals 'p:UOPuser.audit1' text
 !-- And [Assertion] Verify 'Outgoing User Name Directed To2' equals 'p:UOPuser.ZainabFarouqa' text
 !-- And [Input] I click on 'Direction Tab'
 And [Input] I click on 'Direction Button'

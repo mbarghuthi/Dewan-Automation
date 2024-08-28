@@ -124,9 +124,6 @@ public class CannedPage extends AbstractPage<CannedPage> {
 	@FindBy(css = "#ctl00_MainContent_btnApprove")
 	public WebElement DirectionButton;
 
-	@FindBy(xpath = "//*[@id=\"ctl00_MainContent_GVUserOrg_ctl00__0\"]/td[5]")
-	public WebElement OutgoingUserNameDirectedTo1;
-
 //	@FindBy(xpath = "//*[@id=\"ctl00_MainContent_GVUserAssign_ctl00__3\"]/td[2]")
 //	public WebElement OutgoingUserNameDirectedTo2;
 
@@ -169,7 +166,8 @@ public class CannedPage extends AbstractPage<CannedPage> {
 //	@FindBy(css = "#btnUpload")
 //	public  WebElement UploadButtonUOP;
 
-
+	@FindBy(xpath = "//*[@id=\"ctl00_MainContent_GVUserOrg_ctl00__0\"]/td[5]")
+	public WebElement OutgoingUserNameDirectedTo1UOP;
 
 
 // ****************************************************************Outgoing Page elements SCC****************************************************************************************************************
@@ -186,9 +184,11 @@ public WebElement GeneralManagerOfficeSCC;
 	@FindBy(css = "#ctl00_MainContent_ddl_2375_Input")
 	public WebElement ReceiverNameSCC;
 
-
 	@FindBy(css = "#ctl00_MainContent_ddl_2635_Input")
 	public WebElement SubReceiverNameSCC;
+
+	@FindBy(xpath = "//*[@id=\"ctl00_MainContent_GVUserOrg_ctl00__0\"]/td[4]")
+	public WebElement OutgoingUserNameDirectedTo1SCC;
 
 //	@FindBy(css = "#MainContent_uploadFile_2472_LinklblMessages")
 //	public WebElement AttachmentsButtonUOP;

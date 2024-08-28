@@ -16,23 +16,18 @@ And [Action] I get text from 'Subject Field' and save it as 'SubjectText'
 And [Action] I get value from 'Outgoing Get Serial Number' and save it as 'OutgoingSerialNumberValue'
 And [Progress] I wait for '3' sec
 And [Input] I click on 'Direction Tab'
-
-!-- TEST
-!-- Click on add For the user
-
-!-- assert user name
-And [Assertion] Verify 'Outgoing User Name Directed To1' equals 'p:UOPuser.audit1' text
-
-!-- recheck this part that the xpath or css are the same as UOP
+And [Input] I click on 'Add Button'
+And [Progress] I wait for '4' sec
+And [Input] I click on 'Close Notification Button'
+And [Assertion] Verify 'Outgoing User Name Directed To1 SCC' equals 'p:supply1.username' text
 And [Input] I click on 'Direction Button'
-And [Progress] I wait for '6' sec
+And [Progress] I wait for '10' sec
 And [Input] I click on 'My Processes List Header Button'
 And [Assertion] Verify 'Process Status' equals 'p:ProcessCompletedStatus' text
 Then [Input] I click on 'logout Button'
 And [Assertion] Verify 'login Button' is present
-!-- check the user name
 And [Input] I login as 'p:SCCuser.supply1' with password 'p:SCC.password'
-
+!-- TEST
 !-- recheck this part that the xpath or css are the same as UOP
 And [Input] I click on 'Tasks To View'
 And [Input] I click on 'Tasks To View Date'

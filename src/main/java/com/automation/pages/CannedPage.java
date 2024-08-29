@@ -60,6 +60,9 @@ public class CannedPage extends AbstractPage<CannedPage> {
 	@FindBy(css = "#ctl00_MainContent_btnSave")
 	public WebElement SaveButton;
 
+	@FindBy(css = "#ctl00_MainContent_btnSaveDraft")
+	public WebElement SaveDraftButton;
+
 	@FindBy(css = "#MainContent_txtSerial_2583")
 	public WebElement GeneralizationGetSerialNumber; //value
 
@@ -129,6 +132,7 @@ public class CannedPage extends AbstractPage<CannedPage> {
 
 	@FindBy(xpath = "//a[contains(text(),'بريد صادر الى الخارج')]")
 	public WebElement OutgoingButton;
+
 	@FindBy(xpath = "//*[@id=\"ctl00_RadMenu1\"]/ul/li[3]/a/span")
 	public WebElement TasksToView;
 
@@ -146,6 +150,12 @@ public class CannedPage extends AbstractPage<CannedPage> {
 
 	@FindBy(css = "#MainContent_txt_2361")
 	public WebElement OutgoingGetSerialNumber; //value
+
+	@FindBy(xpath = "//a[contains(text(),'بريد وارد من الخارج')]")
+	public WebElement IncomingButton;
+
+	@FindBy(css = "#MainContent_txt_2494")
+	public WebElement IncomingGetSerialNumber;
 
 //	*********************************************************************************************************************************************************************
 //********************************************************************** (For all clients)**************************************************************************
@@ -173,7 +183,7 @@ public class CannedPage extends AbstractPage<CannedPage> {
 // ****************************************************************Outgoing Page elements SCC****************************************************************************************************************
 
 	@FindBy(css = "#ctl00_MainContent_ddlOrg_2371_Input")
-public WebElement GeneralManagerOfficeSCC;
+	public WebElement GeneralManagerOfficeOutgoingSCC;
 
 	@FindBy(css = "#ctl00_MainContent_ddl_2632_Input")
 	public WebElement FileNameSCC;
@@ -182,10 +192,10 @@ public WebElement GeneralManagerOfficeSCC;
 	public WebElement FileSubjectSCC;
 
 	@FindBy(css = "#ctl00_MainContent_ddl_2375_Input")
-	public WebElement ReceiverNameSCC;
+	public WebElement ReceiverNameOutgoingSCC;
 
 	@FindBy(css = "#ctl00_MainContent_ddl_2635_Input")
-	public WebElement SubReceiverNameSCC;
+	public WebElement SubReceiverNameOutgoingSCC;
 
 	@FindBy(xpath = "//*[@id=\"ctl00_MainContent_GVUserOrg_ctl00__0\"]/td[4]")
 	public WebElement OutgoingUserNameDirectedTo1SCC;
@@ -198,10 +208,7 @@ public WebElement GeneralManagerOfficeSCC;
 
 
 
-
-	// logIn Dewan // Incoming Page elements
-	@FindBy(xpath = "//a[contains(text(),'بريد وارد من الخارج')]")
-	public WebElement IncomingButton;
+// ****************************************************************Incoming Page elements UOP****************************************************************************************************************
 
 	@FindBy(css = "#MainContent_txt_2488")
 	public WebElement NumBookFromTheSource;
@@ -218,11 +225,23 @@ public WebElement GeneralManagerOfficeSCC;
 	@FindBy(css = "#ctl00_MainContent_ddl_2606_Input")
 	public WebElement Delivery;
 
-	@FindBy(css = "#ctl00_MainContent_btnSaveDraft")
-	public WebElement SaveDraftButton;
 
-	@FindBy(css = "#MainContent_txt_2494")
-	public WebElement IncomingGetSerialNumber;
+// ****************************************************************Incoming Page elements SCC****************************************************************************************************************
+
+	@FindBy(css = "#ctl00_MainContent_ddlOrg_2496_Input")
+	public WebElement GeneralManagerOfficeIncomingSCC;
+
+	@FindBy(css = "#ctl00_MainContent_ddl_2492_Input")
+	public WebElement ReceiverNameIncomingSCC;
+
+	@FindBy(css = "#ctl00_MainContent_ddl_2628_Input")
+	public WebElement SubReceiverNameIncomingSCC;
+
+//	temporary
+	@FindBy(xpath = "//*[@id=\"ctl00_MainContent_RadGrid1_ctl00__0\"]/td[5]")
+	public WebElement TasksToViewFirstSubjectTextSCC;
+
+//**************************************************
 
 	@FindBy(css = "#ctl00_MainContent_btnCloseProcess")
 	public WebElement CloseButton;
@@ -252,7 +271,8 @@ public WebElement GeneralManagerOfficeSCC;
 	public WebElement CloseNotificationButton;
 
 
-	// logIn Dewan // Internal Correspondence Page elements
+	// ****************************************************************Internal correspondence Page elements UOP****************************************************************************************************************
+
 	@FindBy(xpath = "//a[contains(text(),'مراسلات داخلية')]")
 	public WebElement InternalCorrespondenceButton;
 
@@ -267,6 +287,28 @@ public WebElement GeneralManagerOfficeSCC;
 
 	@FindBy(css = "#MainContent_txtSerial_2591")
 	public WebElement InternalCorrespondenceGetSerialNumber;
+
+	// ****************************************************************Internal correspondence Page elements UOP****************************************************************************************************************
+
+
+	// ****************************************************************Internal correspondence Page elements SCC****************************************************************************************************************
+	@FindBy(xpath = "//a[contains(text(),'مذكرات وكتب داخلية')]")
+	public WebElement InternalCorrespondenceButtonSCC;
+
+	@FindBy(css = "#ctl00_MainContent_ddlOrg_2593_Input")
+	public WebElement GeneralManagerOfficeInternalCorrespondenceSCC;
+
+	@FindBy(css = "#ctl00_MainContent_ddl_2638_Input")
+	public WebElement FileNameInternalCorrespondenceSCC;
+
+	@FindBy(css = "#MainContent_txt_2642")
+	public WebElement FileSubjectInternalCorrespondenceSCC;
+
+	@FindBy(css = "#MainContent_txt_2639")
+	public WebElement InternalCorrespondenceGetSerialNumberSCC;
+
+	// ****************************************************************Internal correspondence Page elements SCC****************************************************************************************************************
+
 
 	@FindBy(xpath = "//*[@id=\"ctl00_li12\"]/a")
 	public WebElement ProcessModuleButton;

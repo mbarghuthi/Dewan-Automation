@@ -330,9 +330,9 @@ public class CannedSteps extends AbstractSteps {
 
 
 	// select option by text from dropdown
-	@Given("[Input] Select '$optionValue' value from '$dropDownListName'")
-	@When("[Input] Select '$optionValue' value from '$dropDownListName'")
-	@Then("[Input] Select '$optionValue' value from '$dropDownListName'")
+	@Given("[Input] Select '$optionValue' value from '$dropDownListName' dropdown list")
+	@When("[Input] Select '$optionValue' value from '$dropDownListName' dropdown list")
+	@Then("[Input] Select '$optionValue' value from '$dropDownListName' dropdown list")
 	public void select_option_from_dropdown(String optionValue,String dropDownListName) throws Exception
 	{
 		cannedPage.selectOptionFromDropdown(optionValue, dropDownListName);

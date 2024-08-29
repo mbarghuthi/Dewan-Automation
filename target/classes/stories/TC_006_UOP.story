@@ -9,7 +9,7 @@ And [Input] Set 'Num Book From The Source' value to 'nanotime'
 And [Input] I select 'p:InternalControlAndAuditUnit' from the 'Incoming Commissioner Destination' combo box
 And [Input] I select 'p:TheMinistryOfEducation' from the 'Source Book By Name' combo box
 And [Progress] I wait for '6' sec
-And [Input] Select 'p:AalaaMelhem' value from 'Receiver Name'
+And [Input] Select 'p:AalaaMelhem' value from 'Receiver Name' dropdown list
 And [Progress] I wait for '4' sec
 And [Input] I select 'p:Aramex' from the 'Delivery' combo box
 And [Input] I click on 'Save Draft Button'
@@ -64,7 +64,7 @@ And [Input] Set 'Num Book From The Source' value to 'nanotime'
 And [Input] I select 'p:InternalControlAndAuditUnit' from the 'Incoming Commissioner Destination' combo box
 And [Input] I select 'p:TheMinistryOfEducation' from the 'Source Book By Name' combo box
 And [Progress] I wait for '3' sec
-And [Input] Select 'p:AalaaMelhem' value from 'Receiver Name'
+And [Input] Select 'p:AalaaMelhem' value from 'Receiver Name' dropdown list
 And [Progress] I wait for '3' sec
 And [Input] I select 'p:Aramex' from the 'Delivery' combo box
 And [Input] I click on 'Save Draft Button'

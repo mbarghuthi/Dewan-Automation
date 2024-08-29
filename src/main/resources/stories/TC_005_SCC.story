@@ -5,11 +5,11 @@ And [Input] I login as 'p:SCCuser.supdew1' with password 'p:SCC.password'
 And [Input] I click on 'Add Process Button'
 And [Input] I click on 'Outgoing Button'
 When [Input] Set 'Subject Field' value to 'random'
-And [Input] I select 'p:GeneralManagerOffice' from the 'General Manager Office SCC' combo box
+And [Input] I select 'p:GeneralManagerOffice' from the 'General Manager Office Outgoing SCC' combo box
 And [Input] I select 'p:FileName' from the 'File Name SCC' combo box
 And [Input] Set 'File Subject SCC' value to 'random'
-And [Input] Select 'p:Other' value from 'Receiver Name SCC'
-And [Input] I select 'p:Other1' from the 'Sub Receiver Name SCC' combo box
+And [Input] Select 'p:Other' value from 'Receiver Name Outgoing SCC' dropdown list
+And [Input] I select 'p:Other3496' from the 'Sub Receiver Name Outgoing SCC' combo box
 !-- And [Input] I click on 'Save Draft Button'
 And [Input] I click on 'Save Button'
 And [Action] I get text from 'Subject Field' and save it as 'SubjectText'
@@ -30,9 +30,9 @@ And [Input] I login as 'p:SCCuser.supply1' with password 'p:SCC.password'
 !-- TEST
 !-- recheck this part that the xpath or css are the same as UOP
 And [Input] I click on 'Tasks To View'
-And [Input] I click on 'Tasks To View Date'
-And [Input] I click on 'Tasks To View Date'
-And [Assertion] Verify text of 'Tasks To View First Subject Text' equals saved value 'SubjectText'
+!-- And [Input] I click on 'Tasks To View Date'
+!-- And [Input] I click on 'Tasks To View Date'
+And [Assertion] Verify text of 'Tasks To View First Subject Text SCC' equals saved value 'SubjectText'
 And [Input] I click on 'View Process Button'
 And [Assertion] Verify text of 'Subject Field' equals saved value 'SubjectText'
 And [Assertion] Verify value of 'Outgoing Get Serial Number' equals saved value 'OutgoingSerialNumberValue'

@@ -1,5 +1,5 @@
 <story path="stories/TC_003_UOP.story" title="">
-<scenario keyword="Scenario:" title="TC_001_UOP UOP login">
+<scenario keyword="Scenario:" title="TC_003_UOP_001 UOP login">
 <step outcome="successful">Given [Navigation] I navigate to &apos;http://172.16.30.82:8888/login.aspx&apos;</step>
 <step outcome="successful">When [Input] I login as &apos;alaa.abdelbagi&apos; with password &apos;Aa1&apos;</step>
 <step outcome="successful">And [Input] I click on &apos;User Name Header Button&apos;</step>

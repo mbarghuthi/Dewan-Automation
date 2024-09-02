@@ -1,4 +1,4 @@
-﻿Scenario: TC_001_SCC SCC Create Incoming
+﻿Scenario: TC_006_SCC_001 SCC Create Incoming
 
 Given [Navigation] I navigate to 'p:dewanSCC'
 And [Input] I login as 'p:SCCuser.supdew1' with password 'p:SCC.password'
@@ -58,7 +58,7 @@ And [Assertion] Verify 'login Button' is present
 
 
 
-Scenario: TC_002_SCC SCC Create Incoming To view
+Scenario: TC_006_SCC_002 SCC Create Incoming To view
 
 Given [Navigation] I navigate to 'p:dewanSCC'
 And [Input] I login as 'p:SCCuser.supdew1' with password 'p:SCC.password'

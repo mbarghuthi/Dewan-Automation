@@ -1,4 +1,4 @@
-﻿Scenario: TC_001_UOP UOP  Create Internal Correspondence
+﻿Scenario: TC_007_UOP_001 UOP  Create Internal Correspondence
 
 Given [Navigation] I navigate to 'p:dewanUOP'
 And [Input] I login as 'p:UOPuser.alaa' with password 'p:password'
@@ -50,7 +50,7 @@ And [Assertion] Verify 'login Button' is present
 
 
 
-Scenario: TC_002_UOP UOP  Create Internal Correspondence To view
+Scenario: TC_007_UOP_002 UOP  Create Internal Correspondence To view
 
 Given [Navigation] I navigate to 'p:dewanUOP'
 And [Input] I login as 'p:UOPuser.alaa' with password 'p:password'

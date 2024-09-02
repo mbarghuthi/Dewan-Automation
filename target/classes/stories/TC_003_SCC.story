@@ -1,4 +1,4 @@
-﻿Scenario: TC_001_UOP UOP login
+﻿Scenario: TC_003_SCC_001 SCC login
 
 Given [Navigation] I navigate to 'p:dewanSCC'
 When [Input] I login as 'p:SCCuser.supdew1' with password 'p:SCC.password'

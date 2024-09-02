@@ -9,7 +9,7 @@
  
 <script type="syntaxhighlighter" class="brush: xml"><![CDATA[
 <story path="stories/TC_006_UOP.story" title="&#65279;">
-<scenario keyword="Scenario:" title="TC_001_UOP UOP Create Incoming">
+<scenario keyword="Scenario:" title="TC_006_UOP_001 UOP Create Incoming">
 <step outcome="successful">Given [Navigation] I navigate to &apos;p:dewanUOP&apos;</step>
 <step outcome="successful">And [Input] I login as &apos;p:UOPuser.alaa&apos; with password &apos;p:password&apos;</step>
 <step outcome="successful">And [Input] I click on &apos;Add Process Button&apos;</step>
@@ -19,7 +19,7 @@
 <step outcome="successful">And [Input] I select &apos;p:InternalControlAndAuditUnit&apos; from the &apos;Incoming Commissioner Destination&apos; combo box</step>
 <step outcome="successful">And [Input] I select &apos;p:TheMinistryOfEducation&apos; from the &apos;Source Book By Name&apos; combo box</step>
 <step outcome="successful">And [Progress] I wait for &apos;6&apos; sec</step>
-<step outcome="successful">And [Input] Select &apos;p:AalaaMelhem&apos; value from &apos;Receiver Name&apos;</step>
+<step outcome="successful">And [Input] Select &apos;p:AalaaMelhem&apos; value from &apos;Receiver Name&apos; dropdown list</step>
 <step outcome="successful">And [Progress] I wait for &apos;4&apos; sec</step>
 <step outcome="successful">And [Input] I select &apos;p:Aramex&apos; from the &apos;Delivery&apos; combo box</step>
 <step outcome="successful">And [Input] I click on &apos;Save Draft Button&apos;</step>
@@ -61,7 +61,7 @@
 <step outcome="successful">And [Assertion] Verify &apos;login Button&apos; is present</step>
 <step outcome="ignorable">!-- tc002</step>
 </scenario>
-<scenario keyword="Scenario:" title="TC_002_UOP UOP Create Incoming To view">
+<scenario keyword="Scenario:" title="TC_006_UOP_002 UOP Create Incoming To view">
 <step outcome="successful">Given [Navigation] I navigate to &apos;p:dewanUOP&apos;</step>
 <step outcome="successful">And [Input] I login as &apos;p:UOPuser.alaa&apos; with password &apos;p:password&apos;</step>
 <step outcome="successful">And [Input] I click on &apos;Add Process Button&apos;</step>
@@ -71,7 +71,7 @@
 <step outcome="successful">And [Input] I select &apos;p:InternalControlAndAuditUnit&apos; from the &apos;Incoming Commissioner Destination&apos; combo box</step>
 <step outcome="successful">And [Input] I select &apos;p:TheMinistryOfEducation&apos; from the &apos;Source Book By Name&apos; combo box</step>
 <step outcome="successful">And [Progress] I wait for &apos;3&apos; sec</step>
-<step outcome="successful">And [Input] Select &apos;p:AalaaMelhem&apos; value from &apos;Receiver Name&apos;</step>
+<step outcome="successful">And [Input] Select &apos;p:AalaaMelhem&apos; value from &apos;Receiver Name&apos; dropdown list</step>
 <step outcome="successful">And [Progress] I wait for &apos;3&apos; sec</step>
 <step outcome="successful">And [Input] I select &apos;p:Aramex&apos; from the &apos;Delivery&apos; combo box</step>
 <step outcome="successful">And [Input] I click on &apos;Save Draft Button&apos;</step>

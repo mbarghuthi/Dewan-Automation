@@ -1,4 +1,4 @@
-﻿Scenario: TC_001_SCC SCC  Create Internal Correspondence
+﻿Scenario: TC_007_SCC_001 SCC  Create Internal Correspondence
 
 Given [Navigation] I navigate to 'p:dewanSCC'
 And [Input] I login as 'p:SCCuser.supdew1' with password 'p:SCC.password'
@@ -56,7 +56,7 @@ And [Assertion] Verify 'login Button' is present
 
 
 
-Scenario: TC_002_SCC SCC  Create Internal Correspondence To view
+Scenario: TC_007_SCC_002 SCC  Create Internal Correspondence To view
 
 Given [Navigation] I navigate to 'p:dewanSCC'
 And [Input] I login as 'p:SCCuser.supdew1' with password 'p:SCC.password'

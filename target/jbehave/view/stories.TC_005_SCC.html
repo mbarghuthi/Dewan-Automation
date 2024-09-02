@@ -10,7 +10,7 @@
 <h1>&#65279;</h1>
 <div class="path">stories/TC_005_SCC.story</div>
 <div class="scenario">
-<h2>Scenario: TC_001_SCC SCC Create Outgoing</h2>
+<h2>Scenario: TC_005_SCC_001 SCC Create Outgoing</h2>
 <div class="step successful">Given  I navigate to 'http://172.16.30.82:808/Diwan_Enduser/login.aspx'</div>
 <div class="step successful">And  I login as 'Sup-dew-1' with password 's'</div>
 <div class="step successful">And  I click on 'Add Process Button'</div>
@@ -41,9 +41,9 @@
 <div class="step ignorable">!-- TEST</div>
 <div class="step ignorable">!-- recheck this part that the xpath or css are the same as UOP</div>
 <div class="step successful">And  I click on 'Tasks To View'</div>
-<div class="step successful">And  I click on 'Tasks To View Date'</div>
-<div class="step successful">And  I click on 'Tasks To View Date'</div>
-<div class="step failed">And  Verify text of 'Tasks To View First Subject Text' equals saved value 'SubjectText' <span class="keyword failed">(FAILED)</span><br/><span class="message failed">java.lang.Exception: Assertion failed: expected 'Auto3210888200689300', but was '29/08/2024'</span><br/><a color="black" target="jb_scn_shot" href="../screenshots/failed-scenario-04a298f2-d36c-46bf-90cd-c0adb5f9b1d9.png"><img src="images/failing_screenshot.png" alt="failing screenshot"/></a></div>
+<div class="step ignorable">!-- And  I click on 'Tasks To View Date'</div>
+<div class="step ignorable">!-- And  I click on 'Tasks To View Date'</div>
+<div class="step failed">And  Verify text of 'Tasks To View First Subject Text SCC' equals saved value 'SubjectText' <span class="keyword failed">(FAILED)</span><br/><span class="message failed">java.lang.Exception: Assertion failed: expected 'Auto1132566237619400', but was 'Auto1131839260768100'</span><br/><a color="black" target="jb_scn_shot" href="../screenshots/failed-scenario-8499d7c0-3575-4d88-a736-7afd9fca2b1e.png"><img src="images/failing_screenshot.png" alt="failing screenshot"/></a></div>
 <div class="step notPerformed">And  I click on 'View Process Button' <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
 <div class="step notPerformed">And  Verify text of 'Subject Field' equals saved value 'SubjectText' <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
 <div class="step notPerformed">And  Verify value of 'Outgoing Get Serial Number' equals saved value 'OutgoingSerialNumberValue' <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
@@ -54,7 +54,7 @@
 <div class="step notPerformed">And  Verify text of 'Completed Tasks First Subject Text' equals saved value 'SubjectText' <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
 <div class="step notPerformed">And  I click on 'logout Button' <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
 <div class="step notPerformed">And  Verify 'login Button' is present <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
-<pre class="failure">java.lang.Exception: Assertion failed: expected 'Auto3210888200689300', but was '29/08/2024'
+<pre class="failure">java.lang.Exception: Assertion failed: expected 'Auto1132566237619400', but was 'Auto1131839260768100'
 	at com.automation.steps.CustomSteps.assertElementTextEqualsSavedValue(CustomSteps.java:70)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)

@@ -1,5 +1,5 @@
 <story path="stories/TC_005_SCC.story" title="&#65279;">
-<scenario keyword="Scenario:" title="TC_001_SCC SCC Create Outgoing">
+<scenario keyword="Scenario:" title="TC_005_SCC_001 SCC Create Outgoing">
 <step outcome="successful">Given [Navigation] I navigate to &apos;p:dewanSCC&apos;</step>
 <step outcome="successful">And [Input] I login as &apos;p:SCCuser.supdew1&apos; with password &apos;p:SCC.password&apos;</step>
 <step outcome="successful">And [Input] I click on &apos;Add Process Button&apos;</step>
@@ -30,9 +30,9 @@
 <step outcome="ignorable">!-- TEST</step>
 <step outcome="ignorable">!-- recheck this part that the xpath or css are the same as UOP</step>
 <step outcome="successful">And [Input] I click on &apos;Tasks To View&apos;</step>
-<step outcome="successful">And [Input] I click on &apos;Tasks To View Date&apos;</step>
-<step outcome="successful">And [Input] I click on &apos;Tasks To View Date&apos;</step>
-<step outcome="failed" keyword="FAILED">And [Assertion] Verify text of &apos;Tasks To View First Subject Text&apos; equals saved value &apos;SubjectText&apos;<failure>java.lang.Exception: Assertion failed: expected &apos;Auto3210888200689300&apos;, but was &apos;29/08/2024&apos;</failure></step>
+<step outcome="ignorable">!-- And [Input] I click on &apos;Tasks To View Date&apos;</step>
+<step outcome="ignorable">!-- And [Input] I click on &apos;Tasks To View Date&apos;</step>
+<step outcome="failed" keyword="FAILED">And [Assertion] Verify text of &apos;Tasks To View First Subject Text SCC&apos; equals saved value &apos;SubjectText&apos;<failure>java.lang.Exception: Assertion failed: expected &apos;Auto1132566237619400&apos;, but was &apos;Auto1131839260768100&apos;</failure></step>
 <step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;View Process Button&apos;</step>
 <step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify text of &apos;Subject Field&apos; equals saved value &apos;SubjectText&apos;</step>
 <step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify value of &apos;Outgoing Get Serial Number&apos; equals saved value &apos;OutgoingSerialNumberValue&apos;</step>
@@ -43,7 +43,7 @@
 <step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify text of &apos;Completed Tasks First Subject Text&apos; equals saved value &apos;SubjectText&apos;</step>
 <step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;logout Button&apos;</step>
 <step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify &apos;login Button&apos; is present</step>
-<failure>java.lang.Exception: Assertion failed: expected &apos;Auto3210888200689300&apos;, but was &apos;29/08/2024&apos;
+<failure>java.lang.Exception: Assertion failed: expected &apos;Auto1132566237619400&apos;, but was &apos;Auto1131839260768100&apos;
 	at com.automation.steps.CustomSteps.assertElementTextEqualsSavedValue(CustomSteps.java:70)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)

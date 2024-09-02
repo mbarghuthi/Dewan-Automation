@@ -1,4 +1,4 @@
-﻿Scenario: TC_001_UOP UOP Create Outgoing
+﻿Scenario: TC_005_UOP_001 UOP Create Outgoing
 
 Given [Navigation] I navigate to 'p:dewanUOP'
 And [Input] I login as 'p:UOPuser.alaa' with password 'p:password'

@@ -20,8 +20,9 @@ public class EmailSender {
     private static final String password = "M@RT1299";
     private static final String from = "test-automation@optimizasolutions.com";
     private static final String reportDirectory = "D:\\Automation Quality Projects\\Dewan-Automation\\reports";
-    private static final String cc = "mbarghuthi@optimizasolutions.com";
-    private static final String[] to = { "mbarghuthi@optimizasolutions.com", "sjaber@optimizasolutions.com" };
+    private static final String cc = "hmeqdad@optimizasolutions.com";
+//    private static final String[] to = { "mbarghuthi@optimizasolutions.com", "sjaber@optimizasolutions.com" };
+    private static final String to = "DMS@optimizasolutions.com";
 
     public void sendSuccessEmail() {
         Properties properties = new Properties();
@@ -88,17 +89,19 @@ public class EmailSender {
         Message message = new MimeMessage(session);
         message.setFrom(new InternetAddress(from));
 
-        for (String recipient : to) {
-            message.addRecipient(Message.RecipientType.TO, new InternetAddress(recipient));
-        }
+//        for (String recipient : to) {
+//            message.addRecipient(Message.RecipientType.TO, new InternetAddress(recipient));
+//        }
+
+        message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
 
         message.addRecipient(Message.RecipientType.CC, new InternetAddress(cc));
-        message.setSubject("Extent Report");
+        message.setSubject("Recent Dewan Automation Test Report");
 
         Multipart multipart = new MimeMultipart();
 
         BodyPart messageBodyPart = new MimeBodyPart();
-        messageBodyPart.setText("Hello,\nPlease find the latest test report in the attachment.\nRegards,\nImageLinks Automation Team");
+        messageBodyPart.setText("Dear,\nI hope this message finds you well. Please find attached the most recent automation test report for Dewan.\n\nFeel free to review it and share any feedback or observations.\n\nBest regards,\nImageLinks Automation Team");
         multipart.addBodyPart(messageBodyPart);
 
         messageBodyPart = new MimeBodyPart();

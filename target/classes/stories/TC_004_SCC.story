@@ -1,4 +1,4 @@
-﻿Scenario: TC_001_SCC SCC Create Generalization
+﻿Scenario: TC_004_SCC_001 SCC Create Generalization
 
 Given [Navigation] I navigate to 'p:dewanSCC'
 And [Input] I login as 'p:SCCuser.supdew1' with password 'p:SCC.password'
@@ -8,6 +8,7 @@ When [Input] Set 'Subject Field' value to 'random'
 And [Input] Set 'Generalization Date Field' value to 'date'
 And [Action] I get value from 'Generalization Get Year' and save it as 'GeneralizationYearValue'
 And [Assertion] Verify 'GeneralizationYearValue' equals current year
+And [Navigation] I scroll to end of page
 And [Input] I click on 'Save Button'
 And [Action] I get value from 'Generalization Get Serial Number' and save it as 'GeneralizationSerialNumberValue'
 And [Action] I get text from 'Subject Field' and save it as 'GeneralizationSubjectText'
@@ -38,7 +39,7 @@ And [Input] I click on 'logout Button'
 And [Assertion] Verify 'login Button' is present
 
 
-Scenario: TC_002_SCC SCC Check uniqueness serial number for Generalization
+Scenario: TC_004_SCC_002 SCC Check uniqueness serial number for Generalization
 
 Given [Navigation] I navigate to 'p:dewanSCC'
 And [Input] I login as 'p:SCCuser.supdew1' with password 'p:SCC.password'

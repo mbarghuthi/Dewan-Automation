@@ -9,7 +9,7 @@
  
 <script type="syntaxhighlighter" class="brush: xml"><![CDATA[
 <story path="stories/TC_007_UOP.story" title="&#65279;">
-<scenario keyword="Scenario:" title="TC_001_UOP UOP  Create Internal Correspondence">
+<scenario keyword="Scenario:" title="TC_007_UOP_001 UOP  Create Internal Correspondence">
 <step outcome="successful">Given [Navigation] I navigate to &apos;p:dewanUOP&apos;</step>
 <step outcome="successful">And [Input] I login as &apos;p:UOPuser.alaa&apos; with password &apos;p:password&apos;</step>
 <step outcome="successful">And [Input] I click on &apos;Add Process Button&apos;</step>
@@ -22,13 +22,6 @@
 <step outcome="successful">And [Action] I get text from &apos;Subject Field&apos; and save it as &apos;SubjectText&apos;</step>
 <step outcome="successful">And [Action] I get value from &apos;Internal Correspondence Get Serial Number&apos; and save it as &apos;InternalCorrespondenceSerialNumberValue&apos;</step>
 <step outcome="successful">And [Input] I click on &apos;Direction Tab&apos;</step>
-<step outcome="ignorable">!-- And [Assertion] Verify text of &apos;Department Liaison Officer Name&apos; contains saved value &apos;ComboBoxValue&apos;</step>
-<step outcome="ignorable">!-- And [Input] I select &apos;p:InternalControlAndAuditUnit&apos; from the &apos;Division Input&apos; combo box</step>
-<step outcome="ignorable">!-- And [Progress] I wait for &apos;3&apos; sec</step>
-<step outcome="ignorable">!-- And [Input] I click on &apos;Add Button&apos;</step>
-<step outcome="ignorable">!-- And [Progress] I wait for &apos;3&apos; sec</step>
-<step outcome="ignorable">!-- And [Input] I click on &apos;Close Notification Button&apos;</step>
-<step outcome="ignorable">!-- And [Assertion] Verify text of &apos;Department Liaison Officer Name&apos; contains saved value &apos;ComboBoxValue&apos;</step>
 <step outcome="successful">And [Input] I select &apos;p:InternalControlAndAuditUnit&apos; from the &apos;Division Input&apos; combo box</step>
 <step outcome="successful">And [Progress] I wait for &apos;3&apos; sec</step>
 <step outcome="successful">And [Input] I click on &apos;Add Button&apos;</step>
@@ -65,7 +58,7 @@
 <step outcome="successful">And [Input] I click on &apos;logout Button&apos;</step>
 <step outcome="successful">And [Assertion] Verify &apos;login Button&apos; is present</step>
 </scenario>
-<scenario keyword="Scenario:" title="TC_002_UOP UOP  Create Internal Correspondence To view">
+<scenario keyword="Scenario:" title="TC_007_UOP_002 UOP  Create Internal Correspondence To view">
 <step outcome="successful">Given [Navigation] I navigate to &apos;p:dewanUOP&apos;</step>
 <step outcome="successful">And [Input] I login as &apos;p:UOPuser.alaa&apos; with password &apos;p:password&apos;</step>
 <step outcome="successful">And [Input] I click on &apos;Add Process Button&apos;</step>
@@ -79,11 +72,6 @@
 <step outcome="successful">And [Action] I get text from &apos;Subject Field&apos; and save it as &apos;SubjectText&apos;</step>
 <step outcome="successful">And [Action] I get value from &apos;Internal Correspondence Get Serial Number&apos; and save it as &apos;InternalCorrespondenceSerialNumberValue&apos;</step>
 <step outcome="successful">And [Input] I click on &apos;Direction Tab&apos;</step>
-<step outcome="ignorable">!-- And [Assertion] Verify text of &apos;Department Liaison Officer Name&apos; contains saved value &apos;ComboBoxValue&apos;</step>
-<step outcome="ignorable">!-- And [Input] I click on &apos;Click On All Check Box&apos;</step>
-<step outcome="ignorable">!-- And [Input] I click on &apos;Delete Button&apos;</step>
-<step outcome="ignorable">!-- And [Progress] I wait for &apos;3&apos; sec</step>
-<step outcome="ignorable">!-- And [Input] I click on &apos;Close Notification Button&apos;</step>
 <step outcome="successful">And [Input] I select &apos;p:InternalControlAndAuditUnit&apos; from the &apos;Division Input&apos; combo box</step>
 <step outcome="successful">And [Progress] I wait for &apos;3&apos; sec</step>
 <step outcome="successful">And [Input] I select the &apos;To View Radio Button&apos;</step>

@@ -1,11 +1,11 @@
 <story path="stories/TC_003_SCC.story" title="&#65279;">
-<scenario keyword="Scenario:" title="TC_001_UOP UOP login">
+<scenario keyword="Scenario:" title="TC_003_SCC_001 SCC login">
 <step outcome="successful">Given [Navigation] I navigate to &apos;p:dewanSCC&apos;</step>
 <step outcome="successful">When [Input] I login as &apos;p:SCCuser.supdew1&apos; with password &apos;p:SCC.password&apos;</step>
 <step outcome="successful">And [Input] I click on &apos;User Name Header Button&apos;</step>
 <step outcome="successful">And [Input] I click on &apos;Profile Header Button&apos;</step>
 <step outcome="successful">And [Assertion] Verify &apos;User Name Value&apos; have attribute &apos;value&apos; with &apos;p:SCCuser.supdew1&apos; <parameter>value</parameter></step>
-<step outcome="successful">Then [Input] I click on &apos;Scc logout Button&apos;</step>
+<step outcome="successful">Then [Input] I click on &apos;logout Button&apos;</step>
 <step outcome="successful">And [Assertion] Verify &apos;login Button&apos; is present</step>
 </scenario>
 </story>

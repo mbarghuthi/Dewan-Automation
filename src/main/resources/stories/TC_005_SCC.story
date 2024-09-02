@@ -1,4 +1,4 @@
-﻿Scenario: TC_001_SCC SCC Create Outgoing
+﻿Scenario: TC_005_SCC_001 SCC Create Outgoing
 
 Given [Navigation] I navigate to 'p:dewanSCC'
 And [Input] I login as 'p:SCCuser.supdew1' with password 'p:SCC.password'

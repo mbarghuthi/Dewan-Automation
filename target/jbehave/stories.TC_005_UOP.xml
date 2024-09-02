@@ -1,5 +1,5 @@
 <story path="stories/TC_005_UOP.story" title="&#65279;">
-<scenario keyword="Scenario:" title="TC_001_UOP UOP Create Outgoing">
+<scenario keyword="Scenario:" title="TC_005_UOP_001 UOP Create Outgoing">
 <step outcome="successful">Given [Navigation] I navigate to &apos;p:dewanUOP&apos;</step>
 <step outcome="successful">And [Input] I login as &apos;p:UOPuser.alaa&apos; with password &apos;p:password&apos;</step>
 <step outcome="successful">And [Input] I click on &apos;Add Process Button&apos;</step>

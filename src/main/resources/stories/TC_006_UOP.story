@@ -1,4 +1,4 @@
-﻿Scenario: TC_001_UOP UOP Create Incoming
+﻿Scenario: TC_006_UOP_001 UOP Create Incoming
 
 Given [Navigation] I navigate to 'p:dewanUOP'
 And [Input] I login as 'p:UOPuser.alaa' with password 'p:password'
@@ -53,7 +53,7 @@ And [Assertion] Verify 'login Button' is present
 
 
 !-- tc002
-Scenario: TC_002_UOP UOP Create Incoming To view
+Scenario: TC_006_UOP_002 UOP Create Incoming To view
 
 Given [Navigation] I navigate to 'p:dewanUOP'
 And [Input] I login as 'p:UOPuser.alaa' with password 'p:password'

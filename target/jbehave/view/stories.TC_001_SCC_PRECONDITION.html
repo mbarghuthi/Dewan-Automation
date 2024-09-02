@@ -1,26 +1,20 @@
 <html>
 <head>
-<title>stories.TC_003_SCC</title>
+<title>stories.TC_001_SCC_PRECONDITION</title>
 <style type="text/css" media="all">
 @import url( "./style/jbehave-core.css" );
 </style>
 </head>
 <body>
- 
-<script type="syntaxhighlighter" class="brush: xml"><![CDATA[
-<story path="stories/TC_003_SCC.story" title="&#65279;">
-<scenario keyword="Scenario:" title="TC_003_SCC_001 SCC login">
-<step outcome="successful">Given [Navigation] I navigate to &apos;p:dewanSCC&apos;</step>
-<step outcome="successful">When [Input] I login as &apos;p:SCCuser.supdew1&apos; with password &apos;p:SCC.password&apos;</step>
-<step outcome="successful">And [Input] I click on &apos;User Name Header Button&apos;</step>
-<step outcome="successful">And [Input] I click on &apos;Profile Header Button&apos;</step>
-<step outcome="successful">And [Assertion] Verify &apos;User Name Value&apos; have attribute &apos;value&apos; with &apos;p:SCCuser.supdew1&apos; <parameter>value</parameter></step>
-<step outcome="successful">Then [Input] I click on &apos;logout Button&apos;</step>
-<step outcome="successful">And [Assertion] Verify &apos;login Button&apos; is present</step>
-</scenario>
-</story>
+<div class="story">
+<h1></h1>
+<div class="path">stories/TC_001_SCC_PRECONDITION.story</div>
+<div class="scenario">
+<h2>Scenario: TC_001_SCC_001 SCC Admin Precondition</h2>
+<div class="step successful">Given  I navigate to 'http://172.16.30.82:808/Diwan_Admin/'</div>
+</div>
+</div>
 
-]]></script>
 </body>
 <!--  SyntaxHighlighter resources:  should be included at end of body -->
 <link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>

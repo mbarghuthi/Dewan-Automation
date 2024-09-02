@@ -9,7 +9,7 @@
  
 <script type="syntaxhighlighter" class="brush: xml"><![CDATA[
 <story path="stories/TC_004_SCC.story" title="&#65279;">
-<scenario keyword="Scenario:" title="TC_001_SCC SCC Create Generalization">
+<scenario keyword="Scenario:" title="TC_004_SCC_001 SCC Create Generalization">
 <step outcome="successful">Given [Navigation] I navigate to &apos;p:dewanSCC&apos;</step>
 <step outcome="successful">And [Input] I login as &apos;p:SCCuser.supdew1&apos; with password &apos;p:SCC.password&apos;</step>
 <step outcome="successful">And [Input] I click on &apos;Add Process Button&apos;</step>
@@ -18,24 +18,24 @@
 <step outcome="successful">And [Input] Set &apos;Generalization Date Field&apos; value to &apos;date&apos;</step>
 <step outcome="successful">And [Action] I get value from &apos;Generalization Get Year&apos; and save it as &apos;GeneralizationYearValue&apos;</step>
 <step outcome="successful">And [Assertion] Verify &apos;GeneralizationYearValue&apos; equals current year</step>
+<step outcome="successful">And [Navigation] I scroll to end of page</step>
 <step outcome="successful">And [Input] I click on &apos;Save Button&apos;</step>
 <step outcome="successful">And [Action] I get value from &apos;Generalization Get Serial Number&apos; and save it as &apos;GeneralizationSerialNumberValue&apos;</step>
 <step outcome="successful">And [Action] I get text from &apos;Subject Field&apos; and save it as &apos;GeneralizationSubjectText&apos;</step>
 <step outcome="successful">And [Input] I click on &apos;My Processes List Header Button&apos;</step>
 <step outcome="successful">And [Assertion] Verify &apos;Process Status&apos; equals &apos;p:ProcessUnCompletedStatus&apos; text</step>
 <step outcome="successful">And [Progress] I wait for &apos;3&apos; sec</step>
-<step outcome="ignorable">!-- TEST</step>
 <step outcome="successful">And [Input] I click on &apos;Task List Header Button&apos;</step>
 <step outcome="successful">And [Assertion] Verify text of &apos;Task List First Subject Text&apos; equals saved value &apos;GeneralizationSubjectText&apos;</step>
 <step outcome="successful">And [Input] I click on &apos;View Process Button&apos;</step>
-<step outcome="successful">And [Input] I click on &apos;Direction Button&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;Direction Tab&apos;</step>
 <step outcome="successful">And [Input] I click on &apos;Generalize Button&apos;</step>
 <step outcome="successful">And [Progress] I wait for &apos;15&apos; sec</step>
 <step outcome="successful">And [Input] I click on &apos;Generalizations Header Button&apos;</step>
 <step outcome="successful">And [Assertion] Verify text of &apos;Generalization First Subject Text&apos; equals saved value &apos;GeneralizationSubjectText&apos;</step>
 <step outcome="ignorable">!-- And [Assertion] Verify text of &apos;Generalization First Serial Number&apos; equals saved value &apos;GeneralizationSerialNumberValue&apos;</step>
 <step outcome="successful">And [Input] I click on &apos;View Process Button&apos;</step>
-<step outcome="successful">And [Input] I click on &apos;Direction Button&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;Direction Tab&apos;</step>
 <step outcome="successful">And [Assertion] Verify &apos;Generalize Button&apos; not present</step>
 <step outcome="successful">And [Input] I click on &apos;My Processes List Header Button&apos;</step>
 <step outcome="successful">And [Assertion] Verify &apos;Process Status&apos; equals &apos;p:ProcessCompletedStatus&apos; text</step>
@@ -48,7 +48,7 @@
 <step outcome="successful">And [Input] I click on &apos;logout Button&apos;</step>
 <step outcome="successful">And [Assertion] Verify &apos;login Button&apos; is present</step>
 </scenario>
-<scenario keyword="Scenario:" title="TC_002_SCC SCC Check uniqueness serial number for Generalization">
+<scenario keyword="Scenario:" title="TC_004_SCC_002 SCC Check uniqueness serial number for Generalization">
 <step outcome="successful">Given [Navigation] I navigate to &apos;p:dewanSCC&apos;</step>
 <step outcome="successful">And [Input] I login as &apos;p:SCCuser.supdew1&apos; with password &apos;p:SCC.password&apos;</step>
 <step outcome="successful">And [Input] I click on &apos;Generalizations Header Button&apos;</step>
@@ -60,7 +60,7 @@
 <step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;logout Button&apos;</step>
 <step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify &apos;login Button&apos; is present</step>
 <failure>java.lang.Exception: Duplicate value found: 28
-	at com.automation.pages.CannedPage.getValuesFromXpaths(CannedPage.java:651)
+	at com.automation.pages.CannedPage.getValuesFromXpaths(CannedPage.java:721)
 	at com.automation.steps.CustomSteps.verifyUniqueValuesInColumn(CustomSteps.java:107)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)

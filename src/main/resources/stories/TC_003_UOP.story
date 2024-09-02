@@ -1,4 +1,4 @@
-Scenario: TC_001_UOP UOP login
+Scenario: TC_003_UOP_001 UOP login
 
 Given [Navigation] I navigate to 'http://172.16.30.82:8888/login.aspx'
 When [Input] I login as 'alaa.abdelbagi' with password 'Aa1'

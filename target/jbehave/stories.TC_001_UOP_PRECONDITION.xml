@@ -1,5 +1,5 @@
 <story path="stories/TC_001_UOP_PRECONDITION.story" title="&#65279;">
-<scenario keyword="Scenario:" title="TC_001_UOP UOP Admin Precondition">
+<scenario keyword="Scenario:" title="TC_001_UOP_001 UOP Admin Precondition">
 <step outcome="successful">Given [Navigation] I navigate to &apos;p:dewanAdminUOP&apos;</step>
 <step outcome="ignorable">!-- And [Input] I login admin as &apos;p:UOPuser.admin&apos; with password &apos;p:password&apos;</step>
 <step outcome="ignorable">!-- And [Input] I click on &apos;Process Module Button&apos;</step>

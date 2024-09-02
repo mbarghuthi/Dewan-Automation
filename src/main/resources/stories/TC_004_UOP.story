@@ -1,4 +1,4 @@
-Scenario: TC_001_UOP UOP Create Generalization
+Scenario: TC_004_UOP_001 UOP Create Generalization
 
 Given [Navigation] I navigate to 'p:dewanUOP'
 And [Input] I login as 'p:UOPuser.alaa' with password 'p:password'
@@ -38,7 +38,7 @@ And [Input] I click on 'logout Button'
 And [Assertion] Verify 'login Button' is present
 
 
-Scenario: TC_002_UOP UOP Check uniqueness serial number for Generalization
+Scenario: TC_004_UOP_002 UOP Check uniqueness serial number for Generalization
 
 Given [Navigation] I navigate to 'p:dewanUOP'
 And [Input] I login as 'p:UOPuser.alaa' with password 'p:password'

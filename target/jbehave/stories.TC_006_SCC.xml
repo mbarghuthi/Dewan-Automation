@@ -1,5 +1,4 @@
 <story path="stories/TC_006_SCC.story" title="&#65279;">
-<scenario keyword="Scenario:" title="TC_001_SCC SCC Create Incoming">
 <step outcome="successful">Given [Navigation] I navigate to &apos;p:dewanSCC&apos;</step>
 <step outcome="successful">And [Input] I login as &apos;p:SCCuser.supdew1&apos; with password &apos;p:SCC.password&apos;</step>
 <step outcome="successful">And [Input] I click on &apos;Add Process Button&apos;</step>

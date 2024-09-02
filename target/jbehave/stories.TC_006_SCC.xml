@@ -1,0 +1,8 @@
+<story path="stories/TC_006_SCC.story" title="&#65279;">
+<scenario keyword="Scenario:" title="TC_001_SCC SCC Create Incoming">
+<step outcome="successful">Given [Navigation] I navigate to &apos;p:dewanSCC&apos;</step>
+<step outcome="successful">And [Input] I login as &apos;p:SCCuser.supdew1&apos; with password &apos;p:SCC.password&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;Add Process Button&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;Incoming Button&apos;</step>
+<step outcome="successful">When [Input] Set &apos;Subject Field&apos; value to &apos;random&apos;</step>
+<step outcome="successful">And [Input] Set &apos;Num Book From The Source&apos; value to &apos;nanotime&apos;</step>

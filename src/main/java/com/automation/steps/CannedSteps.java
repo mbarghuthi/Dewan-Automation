@@ -450,4 +450,18 @@ public class CannedSteps extends AbstractSteps {
 		cannedPage.selectFromComboBox(elementName, value);
 	}
 
+	@Given("[Javascript] I switch to the new tab")
+	@When("[Javascript] I switch to the new tab")
+	@Then("[Javascript] I switch to the new tab")
+	public void switch_to_new_tab() {
+		cannedPage.switchToNewTab();
+	}
+
+	@Given("[Javascript] I closed the new tab")
+	@When("[Javascript] I closed the new tab")
+	@Then("[Javascript] I closed the new tab")
+	public void close_the_new_tab() {
+		cannedPage.closeTheNewTab();
+	}
+
 }

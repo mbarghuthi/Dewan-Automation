@@ -4,5 +4,54 @@
 <div class="scenario">
 <h2>Scenario: TC_002_UOP_001 UOP Navigate to link</h2>
 <div class="step successful">Given  I navigate to 'http://172.16.30.82:8888/login.aspx'</div>
+<div class="step successful">And  I login as 'alaa.abdelbagi' with password 'Aa1'</div>
+<div class="step ignorable">!-- TEST</div>
+<div class="step successful">And  I click on 'Add Process Button'</div>
+<div class="step successful">And  I wait for '3' sec</div>
+<div class="step successful">And  I click on 'Outgoing Button'</div>
+<div class="step successful">When  Set 'Subject Field' value to 'random'</div>
+<div class="step successful">And  I select '2 | &#1608;&#1581;&#1583;&#1577; &#1575;&#1604;&#1585;&#1602;&#1575;&#1576;&#1577;' from the 'Division Exporter UOP' combo box</div>
+<div class="step successful">And  I select '1 | &#1608;&#1586;&#1575;&#1585;&#1577; &#1575;&#1604;&#1578;&#1585;&#1576;&#1610;&#1577;' from the 'Salutation Hand UOP' combo box</div>
+<div class="step successful">And  I click on 'Save Draft Button'</div>
+<div class="step successful">And  I click on 'Save Button'</div>
+<div class="step successful">And  I get text from 'Subject Field' and save it as 'SubjectText'</div>
+<div class="step successful">And  I get value from 'Outgoing Get Serial Number' and save it as 'OutgoingSerialNumberValue'</div>
+<div class="step successful">And  I wait for '3' sec</div>
+<div class="step successful">And  I click on 'Direction Tab'</div>
+<div class="step successful">And  Verify 'Outgoing User Name Directed To1 UOP' equals 'audit1' text</div>
+<div class="step successful">And  I click on 'Direction Button'</div>
+<div class="step successful">And  I wait for '6' sec</div>
+<div class="step successful">And  I click on 'My Processes List Header Button'</div>
+<div class="step successful">And  Verify 'Process Status' equals '&#1578;&#1605;&#1578; &#1575;&#1604;&#1593;&#1605;&#1604;&#1610;&#1577; &#1576;&#1606;&#1580;&#1575;&#1581;' text</div>
+<div class="step ignorable">!-- TEST</div>
+<div class="step successful">And  I click on 'SearchHeader'</div>
+<div class="step successful">And  I click on 'SearchButton'</div>
+<div class="step successful">And  I click on 'FirstView'</div>
+<div class="step successful">And  I switch to the new tab</div>
+<div class="step successful">And  Verify text of 'Subject Field' equals saved value 'SubjectText'</div>
+<div class="step successful">And  I closed the new tab</div>
+<div class="step failed">And  Verify 'SearchButton' is present <span class="keyword failed">(FAILED)</span><br/><span class="message failed">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.automation.pages.AbstractPage$1@8cc1e3f (tried for 60 second(s) with 500 milliseconds interval)</span><br/><a color="black" target="jb_scn_shot" href="../screenshots/failed-scenario-2e8b4799-37f1-4947-b6d8-0ef4af55bbd5.png"><img src="images/failing_screenshot.png" alt="failing screenshot"/></a></div>
+<div class="step failed">com.automation.steps.lifecycle.ExecutionLifecycle.afterScenario() <span class="keyword failed">(FAILED)</span><br/><span class="message failed">org.jbehave.core.failures.BeforeOrAfterFailed: Method afterScenario (annotated with @AfterScenario in class com.automation.steps.lifecycle.ExecutionLifecycle) failed: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=128.0.6613.114)
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2f7928e3a1274c80d06d07c99034de28, deleteAllCookies {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.114, chrome: {chromedriverVersion: 128.0.6613.86 (3045ed680fda..., userDataDir: C:\Users\sjaber\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60943}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60943/devtoo..., se:cdpVersion: 128.0.6613.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2f7928e3a1274c80d06d07c99034de28</span><br/><a color="black" target="jb_scn_shot" href="../screenshots/failed-scenario-30c64cea-8ea9-4ee0-8442-f4cf933c1773.png"><img src="images/failing_screenshot.png" alt="failing screenshot"/></a></div>
+<pre class="failure">org.jbehave.core.failures.BeforeOrAfterFailed: Method afterScenario (annotated with @AfterScenario in class com.automation.steps.lifecycle.ExecutionLifecycle) failed: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=128.0.6613.114)
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2f7928e3a1274c80d06d07c99034de28, deleteAllCookies {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.114, chrome: {chromedriverVersion: 128.0.6613.86 (3045ed680fda..., userDataDir: C:\Users\sjaber\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60943}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60943/devtoo..., se:cdpVersion: 128.0.6613.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2f7928e3a1274c80d06d07c99034de28
+	at org.jbehave.core.steps.StepCreator$BeforeOrAfterStep.perform(StepCreator.java:494)
+	at org.jbehave.core.steps.StepCreator$BeforeOrAfterStep.doNotPerform(StepCreator.java:507)
+	at org.jbehave.core.embedder.PerformableTree$SomethingHappened.run(PerformableTree.java:372)
+...</pre>
 </div>
 </div>

@@ -307,8 +307,7 @@ public class CannedPage extends AbstractPage<CannedPage> {
 	@FindBy(css = "#MainContent_txt_2639")
 	public WebElement InternalCorrespondenceGetSerialNumberSCC;
 
-	// ****************************************************************Internal correspondence Page elements SCC****************************************************************************************************************
-
+// ****************************************************************Internal correspondence Page elements SCC****************************************************************************************************************
 
 	@FindBy(xpath = "//*[@id=\"ctl00_li12\"]/a")
 	public WebElement ProcessModuleButton;
@@ -344,6 +343,15 @@ public class CannedPage extends AbstractPage<CannedPage> {
 
 	@FindBy(css = "#ctl00_MainContent_ImgSearch")
 	public WebElement ControlSearchButton;
+
+// ****************************************************************Search****************************************************************************************************************
+	@FindBy(xpath = "//a[contains(text(),'بحث متقدم')]")
+	public WebElement SearchHeader;
+	@FindBy(css = "#ctl00_MainContent_btnsearch")
+	public WebElement SearchButton;
+	@FindBy(xpath = "//tbody/tr[@id='ctl00_MainContent_GridView1_ctl00__0']/td[1]/a[1]")
+	public WebElement FirstView;
+
 
 	/**
 	 *
@@ -709,6 +717,7 @@ public class CannedPage extends AbstractPage<CannedPage> {
 			webDriverProvider.get().switchTo().alert().dismiss();
 	}
 
+
 	public List<String> getValuesFromXpaths(int rowCount) throws Exception {
 		List<String> values = new ArrayList<>();
 
@@ -744,5 +753,75 @@ public class CannedPage extends AbstractPage<CannedPage> {
 		Thread.sleep(1000);
 	}
 
+
+	public void switchToNewTab() {
+		String originalWindow = webDriverProvider.get().getWindowHandle();
+		// Get all window handles
+		ArrayList<String> tabs = new ArrayList<>(webDriverProvider.get().getWindowHandles());
+		// Switch to the new tab
+		webDriverProvider.get().switchTo().window(tabs.get(1));
+	}
+	public void closeTheNewTab() {
+//		String originalWindow = webDriverProvider.get().getWindowHandle();
+		// Ensure the new tab is present
+//		ArrayList<String> tabs = new ArrayList<>(webDriverProvider.get().getWindowHandles());
+//		if (tabs.size() > 1) {
+//			// Switch to the new tab
+//			webDriverProvider.get().switchTo().window(tabs.get(1));
+			// Close the new tab
+			webDriverProvider.get().close();
+//		} else {
+//			System.out.println("No new tab found to close.");
+//		}
+	}
+
+
+//public void switchToNewTab() {
+//	String originalWindow = webDriverProvider.get().getWindowHandle();
+//
+//	// Open a new tab
+//	((JavascriptExecutor) webDriverProvider.get()).executeScript("window.open()");
+//
+//	// Wait for the new tab to open and get all window handles
+//	new WebDriverWait(webDriverProvider.get(), Duration.ofSeconds(10))
+//			.until(driver -> driver.getWindowHandles().size() > 1);
+//
+//	ArrayList<String> tabs = new ArrayList<>(webDriverProvider.get().getWindowHandles());
+//
+//	// Check if there are at least two tabs available
+//	if (tabs.size() > 1) {
+//		// Switch to the new tab
+//		webDriverProvider.get().switchTo().window(tabs.get(1));
+//	} else {
+//		System.out.println("No new tab found to switch to.");
+//	}
+//}
+
+//	public void closeTheNewTab() {
+//		String originalWindow = webDriverProvider.get().getWindowHandle();
+//
+//		// Get all window handles
+//		ArrayList<String> tabs = new ArrayList<>(webDriverProvider.get().getWindowHandles());
+//
+//		// Ensure the new tab is present
+//		if (tabs.size() > 1) {
+//			// Switch to the new tab
+//			webDriverProvider.get().switchTo().window(tabs.get(1));
+//
+//			// Close the new tab
+//			webDriverProvider.get().close();
+////			webDriverProvider.get().close();
+//		} else {
+//			System.out.println("No new tab found to close.");
+//		}
+//
+//		// Switch back to the original window if still open
+//		if (webDriverProvider.get().getWindowHandles().contains(originalWindow)) {
+////			webDriverProvider.get().switchTo().window(originalWindow);
+//			webDriverProvider.get().switchTo().window(tabs.get(0));
+//		} else {
+//			System.out.println("Original window is no longer available.");
+//		}
+//	}
 
 }

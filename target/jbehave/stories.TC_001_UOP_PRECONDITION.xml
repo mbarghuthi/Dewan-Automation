@@ -1,3 +1,34 @@
 <story path="stories/TC_001_UOP_PRECONDITION.story" title="&#65279;">
 <scenario keyword="Scenario:" title="TC_001_UOP_001 UOP Admin Precondition">
 <step outcome="successful">Given [Navigation] I navigate to &apos;p:dewanAdminUOP&apos;</step>
+<step outcome="ignorable">!-- And [Input] I login admin as &apos;p:UOPuser.admin&apos; with password &apos;p:password&apos;</step>
+<step outcome="ignorable">!-- And [Input] I click on &apos;Process Module Button&apos;</step>
+<step outcome="ignorable">!-- And [Input] I click on &apos;Process Submodule Button&apos;</step>
+<step outcome="ignorable">!-- And [Input] I click on &apos;Internal Correspondence Options&apos;</step>
+<step outcome="ignorable">!-- And [Assertion] Verify Radio  &apos;Save Draft On Radio Button&apos; is clicked on</step>
+<step outcome="ignorable">!-- And [Progress] I wait for &apos;3&apos; sec</step>
+<step outcome="ignorable">!-- When [Input] Set &apos;Save Draft Arabic Caption&apos; value to &apos;p:SaveDraftArabicCaption&apos;</step>
+<step outcome="ignorable">!-- And [Input] Set &apos;SaveDraftEnglishCaption&apos; value to &apos;p:SaveDraftEnglishCaption&apos;</step>
+<step outcome="ignorable">!-- And [Input] I click on &apos;UpdateButton&apos;</step>
+<step outcome="ignorable">!-- And [Progress] I wait for &apos;3&apos; sec</step>
+<step outcome="ignorable">!-- And [Input] I click on &apos;BackButton&apos;</step>
+<step outcome="ignorable">!-- And [Input] I click on &apos;FormDesignModuleButton&apos;</step>
+<step outcome="ignorable">!-- And [Input] I click on &apos;ContentOfFormSubmoduleButton&apos;</step>
+<step outcome="ignorable">!-- !-- And [Input] Select &apos;FormDropDownList&apos; value from &apos;1406&apos;</step>
+<step outcome="ignorable">!-- And [Input] I click on &apos;OutgoingMailForm&apos;</step>
+<step outcome="ignorable">!-- And [Progress] I wait for &apos;3&apos; sec</step>
+<step outcome="ignorable">!-- And [Input] Set &apos;ControlSearchEnglishField&apos; value to &apos;p:ControlSearchEnglishField&apos;</step>
+<step outcome="ignorable">!-- And [Progress] I wait for &apos;5&apos; sec</step>
+<step outcome="ignorable">!-- And [Input] I click on &apos;ControlSearchButton&apos;</step>
+<step outcome="ignorable">!-- And [Progress] I wait for &apos;19&apos; sec</step>
+<step outcome="ignorable">!-- And [Input] I click on &apos;EditOutgoingMailAttachment&apos;</step>
+<step outcome="ignorable">!-- !-- Then [Navigation] I navigate to &apos;http://172.16.30.82:8889/Form/FormControlsDetails.aspx?FormCtrlID=2472&apos;</step>
+<step outcome="ignorable">!-- And [Progress] I wait for &apos;5&apos; sec</step>
+<step outcome="ignorable">!-- And [Assertion] Verify Checkbox  &apos;MandatoryCheckbox&apos; is clicked on</step>
+<step outcome="ignorable">!-- And [Progress] I wait for &apos;3&apos; sec</step>
+<step outcome="ignorable">!-- And [Input] I click on &apos;UpdateButton&apos;</step>
+<step outcome="ignorable">!-- And [Progress] I wait for &apos;3&apos; sec</step>
+<step outcome="ignorable">!-- And [Input] I click on &apos;BackButton&apos;</step>
+<step outcome="ignorable">!-- And [Progress] I wait for &apos;10&apos; sec</step>
+</scenario>
+</story>

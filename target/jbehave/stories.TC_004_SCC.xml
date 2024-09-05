@@ -50,7 +50,7 @@
 <step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;logout Button&apos;</step>
 <step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify &apos;login Button&apos; is present</step>
 <failure>java.lang.Exception: Duplicate value found: 28
-	at com.automation.pages.CannedPage.getValuesFromXpaths(CannedPage.java:721)
+	at com.automation.pages.CannedPage.getValuesFromXpaths(CannedPage.java:730)
 	at com.automation.steps.CustomSteps.verifyUniqueValuesInColumn(CustomSteps.java:107)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)

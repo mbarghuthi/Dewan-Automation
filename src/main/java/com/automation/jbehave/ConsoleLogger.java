@@ -1,6 +1,7 @@
 package com.automation.jbehave;
 
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 
 import org.apache.log4j.Logger;
@@ -41,6 +42,7 @@ public class ConsoleLogger implements StoryReporter {
 	private final WebDriverProvider webDriverProvider;
 
 	public ConsoleLogger(WebDriverProvider webDriverProvider) {
+		Locale.setDefault(Locale.ENGLISH);
 		this.webDriverProvider = webDriverProvider;
 	}
 

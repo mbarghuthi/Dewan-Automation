@@ -27,4 +27,5 @@ Given [Navigation] I navigate to 'p:dewanUOP'
 !-- And [Javascript] I switch to the new tab
 !-- And [Assertion] Verify text of 'Subject Field' equals saved value 'SubjectText'
 !-- And [Javascript] I closed the new tab
+!-- !-- And [Javascript] I switch to the new tab
 !-- And [Assertion] Verify 'SearchButton' is present

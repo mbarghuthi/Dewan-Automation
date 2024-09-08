@@ -461,7 +461,7 @@ public class CannedSteps extends AbstractSteps {
 	@When("[Javascript] I closed the new tab")
 	@Then("[Javascript] I closed the new tab")
 	public void close_the_new_tab() {
-		cannedPage.closeTheNewTab();
+		cannedPage.closeLatestTabAndReturnToFirstTab();
 	}
 
 }

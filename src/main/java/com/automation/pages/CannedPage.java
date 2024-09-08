@@ -3,6 +3,7 @@ package com.automation.pages;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 import org.junit.Assert;
 import org.openqa.selenium.*;
@@ -761,67 +762,51 @@ public class CannedPage extends AbstractPage<CannedPage> {
 		// Switch to the new tab
 		webDriverProvider.get().switchTo().window(tabs.get(1));
 	}
-	public void closeTheNewTab() {
-//		String originalWindow = webDriverProvider.get().getWindowHandle();
-		// Ensure the new tab is present
-//		ArrayList<String> tabs = new ArrayList<>(webDriverProvider.get().getWindowHandles());
-//		if (tabs.size() > 1) {
-//			// Switch to the new tab
-//			webDriverProvider.get().switchTo().window(tabs.get(1));
-			// Close the new tab
-			webDriverProvider.get().close();
-//		} else {
-//			System.out.println("No new tab found to close.");
-//		}
+	public void closeLatestTabAndReturnToFirstTab() {
+		WebDriver driver = webDriverProvider.get();
+
+		// Get all window handles
+		Set<String> allTabs = driver.getWindowHandles();
+		List<String> tabs = new ArrayList<>(allTabs);
+
+		// Check if there are more than one tab
+		if (tabs.size() > 1) {
+			try {
+				// Switch to the most recently opened tab
+				String latestTab = tabs.get(tabs.size() - 1);
+
+				// Ensure the latest tab handle is valid
+				if (driver.getWindowHandles().contains(latestTab)) {
+					driver.switchTo().window(latestTab);
+
+					// Close the latest tab
+					driver.close();
+
+					// Refresh the list of window handles
+					allTabs = driver.getWindowHandles();
+					tabs = new ArrayList<>(allTabs);
+
+					// If the original tab is still open, switch back to it
+					if (!tabs.isEmpty()) {
+						driver.switchTo().window(tabs.get(0));
+					}
+				} else {
+					System.err.println("Error: The latest tab handle is no longer valid.");
+					if (!tabs.isEmpty()) {
+						driver.switchTo().window(tabs.get(0));
+					}
+				}
+			} catch (NoSuchWindowException e) {
+				System.err.println("Error: The target window is already closed.");
+				// Switch back to the first available window in case of error
+				allTabs = driver.getWindowHandles();
+				tabs = new ArrayList<>(allTabs);
+				if (!tabs.isEmpty()) {
+					driver.switchTo().window(tabs.get(0));
+				}
+			}
+		} else {
+			System.out.println("No additional tabs to close.");
+		}
 	}
-
-
-//public void switchToNewTab() {
-//	String originalWindow = webDriverProvider.get().getWindowHandle();
-//
-//	// Open a new tab
-//	((JavascriptExecutor) webDriverProvider.get()).executeScript("window.open()");
-//
-//	// Wait for the new tab to open and get all window handles
-//	new WebDriverWait(webDriverProvider.get(), Duration.ofSeconds(10))
-//			.until(driver -> driver.getWindowHandles().size() > 1);
-//
-//	ArrayList<String> tabs = new ArrayList<>(webDriverProvider.get().getWindowHandles());
-//
-//	// Check if there are at least two tabs available
-//	if (tabs.size() > 1) {
-//		// Switch to the new tab
-//		webDriverProvider.get().switchTo().window(tabs.get(1));
-//	} else {
-//		System.out.println("No new tab found to switch to.");
-//	}
-//}
-
-//	public void closeTheNewTab() {
-//		String originalWindow = webDriverProvider.get().getWindowHandle();
-//
-//		// Get all window handles
-//		ArrayList<String> tabs = new ArrayList<>(webDriverProvider.get().getWindowHandles());
-//
-//		// Ensure the new tab is present
-//		if (tabs.size() > 1) {
-//			// Switch to the new tab
-//			webDriverProvider.get().switchTo().window(tabs.get(1));
-//
-//			// Close the new tab
-//			webDriverProvider.get().close();
-////			webDriverProvider.get().close();
-//		} else {
-//			System.out.println("No new tab found to close.");
-//		}
-//
-//		// Switch back to the original window if still open
-//		if (webDriverProvider.get().getWindowHandles().contains(originalWindow)) {
-////			webDriverProvider.get().switchTo().window(originalWindow);
-//			webDriverProvider.get().switchTo().window(tabs.get(0));
-//		} else {
-//			System.out.println("Original window is no longer available.");
-//		}
-//	}
-
 }

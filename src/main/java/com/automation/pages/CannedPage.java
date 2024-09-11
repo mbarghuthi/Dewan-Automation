@@ -116,7 +116,7 @@ public class CannedPage extends AbstractPage<CannedPage> {
 	@FindBy(xpath = "//span[contains(text(),'مهام للإجراء')]")
 	public  WebElement TaskListHeaderButton;
 
-	@FindBy(xpath = "//*[@id=\"ctl00_MainContent_RadGrid1_ctl00__0\"]/td[5]")
+	@FindBy(xpath = "//*[@id=\"ctl00_MainContent_RadGrid1_ctl00__0\"]/td[6]")
 	public WebElement TaskListFirstSubjectText;
 
 	@FindBy(xpath = "//*[@id=\"ctl00_RadMenu1\"]/ul/li[5]/a/span")

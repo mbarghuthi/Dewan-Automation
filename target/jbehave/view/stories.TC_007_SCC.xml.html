@@ -37,43 +37,37 @@
 <step outcome="successful">And [Assertion] Verify text of &apos;Department Liaison Officer Name&apos; contains saved value &apos;GeneralManagerOfficeComboBoxValue&apos;</step>
 <step outcome="successful">And [Input] I click on &apos;Direction Button&apos;</step>
 <step outcome="successful">And [Progress] I wait for &apos;4&apos; sec</step>
-<step outcome="failed" keyword="FAILED">And [Input] I click on &apos;My Processes List Header Button&apos;<failure>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //span[contains(text(),&apos;&#1605;&#1593;&#1575;&#1605;&#1604;&#1575;&#1578;&#1610;&apos;)]&apos; (tried for 30 second(s) with 500 milliseconds interval)</failure></step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify &apos;Process Status&apos; equals &apos;p:ProcessUnCompletedStatus&apos; text</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;View Process Button&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Incoming Users Directed To&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify &apos;Incoming User Name Directed To1&apos; equals &apos;p:supply1.username&apos; text</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Completed Tasks&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify text of &apos;Completed Tasks First Subject Text&apos; equals saved value &apos;SubjectText&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;logout Button&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I login as &apos;p:SCCuser.supply1&apos; with password &apos;p:SCC.password&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Task List Header Button&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify text of &apos;Task List First Subject Text&apos; equals saved value &apos;SubjectText&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;View Process Button&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Direction Tab&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Progress] I wait for &apos;5&apos; sec</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Close Button&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Javascript] I accept alert</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Progress] I wait for &apos;3&apos; sec</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Completed Tasks&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify text of &apos;Completed Tasks First Subject Text&apos; equals saved value &apos;SubjectText&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;logout Button&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify &apos;login Button&apos; is present</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">Then [Input] I login as &apos;p:SCCuser.supdew1&apos; with password &apos;p:SCC.password&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;My Processes List Header Button&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify &apos;Process Status&apos; equals &apos;p:ProcessCompletedStatus&apos; text</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;logout Button&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify &apos;login Button&apos; is present</step>
-<failure>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //span[contains(text(),&apos;&#1605;&#1593;&#1575;&#1605;&#1604;&#1575;&#1578;&#1610;&apos;)]&apos; (tried for 30 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-	at com.automation.pages.AbstractPage.getElementWithWait(AbstractPage.java:43)
-	at com.automation.pages.CannedPage.click(CannedPage.java:399)
-	at com.automation.steps.CannedSteps.click(CannedSteps.java:386)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:599)
-	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:340)
-...</failure>
+<step outcome="successful">And [Input] I hover and click on &apos;All Task Header Button&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;My Processes List Header Button&apos;</step>
+<step outcome="successful">And [Progress] I wait for &apos;3&apos; sec</step>
+<step outcome="successful">And [Assertion] Verify &apos;Process Status&apos; equals &apos;p:ProcessUnCompletedStatus&apos; text</step>
+<step outcome="successful">And [Input] I click on &apos;My Processes List View Process Button&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;Incoming Users Directed To&apos;</step>
+<step outcome="successful">And [Assertion] Verify &apos;Incoming User Name Directed To1&apos; equals &apos;p:supply1.username&apos; text</step>
+<step outcome="successful">And [Input] I hover and click on &apos;All Task Header Button&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;Completed Tasks&apos;</step>
+<step outcome="successful">And [Assertion] Verify text of &apos;Completed Tasks First Subject Text&apos; equals saved value &apos;SubjectText&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;logout Button&apos;</step>
+<step outcome="successful">And [Input] I login as &apos;p:SCCuser.supply1&apos; with password &apos;p:SCC.password&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;Task List Header Button&apos;</step>
+<step outcome="successful">And [Assertion] Verify text of &apos;Task List First Subject Text&apos; equals saved value &apos;SubjectText&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;Task List View Process Button&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;Direction Tab&apos;</step>
+<step outcome="successful">And [Progress] I wait for &apos;5&apos; sec</step>
+<step outcome="successful">And [Input] I click on &apos;Close Button&apos;</step>
+<step outcome="successful">And [Javascript] I accept alert</step>
+<step outcome="successful">And [Progress] I wait for &apos;3&apos; sec</step>
+<step outcome="successful">And [Input] I hover and click on &apos;All Task Header Button&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;Completed Tasks&apos;</step>
+<step outcome="successful">And [Assertion] Verify text of &apos;Completed Tasks First Subject Text&apos; equals saved value &apos;SubjectText&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;logout Button&apos;</step>
+<step outcome="successful">And [Assertion] Verify &apos;login Button&apos; is present</step>
+<step outcome="successful">Then [Input] I login as &apos;p:SCCuser.supdew1&apos; with password &apos;p:SCC.password&apos;</step>
+<step outcome="successful">And [Input] I hover and click on &apos;All Task Header Button&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;My Processes List Header Button&apos;</step>
+<step outcome="successful">And [Assertion] Verify &apos;Process Status&apos; equals &apos;p:ProcessCompletedStatus&apos; text</step>
+<step outcome="successful">And [Input] I click on &apos;logout Button&apos;</step>
+<step outcome="successful">And [Assertion] Verify &apos;login Button&apos; is present</step>
 </scenario>
 <scenario keyword="Scenario:" title="TC_007_SCC_002 SCC  Create Internal Correspondence To view">
 <step outcome="successful">Given [Navigation] I navigate to &apos;p:dewanSCC&apos;</step>
@@ -98,68 +92,31 @@
 <step outcome="successful">And [Progress] I wait for &apos;3&apos; sec</step>
 <step outcome="successful">And [Input] I select the &apos;To View Radio Button&apos;</step>
 <step outcome="successful">And [Progress] I wait for &apos;3&apos; sec</step>
-<step outcome="failed" keyword="FAILED">And [Input] I click on &apos;Add Button&apos;<failure>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;button&quot; name=&quot;ctl00$MainContent$btnAddHierarchy&quot; value=&quot;&#1573;&#1590;&#1575;&#1601;&#1577;&quot; id=&quot;ctl00_MainContent_btnAddHierarchy&quot; class=&quot;RadButton RadButton_Office2007 rbButton rbRounded rbIconButton btn btn-success rbRtl&quot; tabindex=&quot;0&quot;&gt;...&lt;/button&gt; is not clickable at point (317, 649). Other element would receive the click: &lt;body class=&quot;bkclass&quot;&gt;...&lt;/body&gt;
-  (Session info: chrome=128.0.6613.120)
-Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3a956350005b3869acce176bd71cd843, clickElement {id=f.7ED4F96BC8BBAB6F67CA5B36918A396C.d.10DB586F50689F3BD6360752753D6970.e.1607}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.120, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\sjaber\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63612}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63612/devtoo..., se:cdpVersion: 128.0.6613.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (3a956350005b3869acce176bd71cd843)] -&gt; css selector: #ctl00_MainContent_btnAddHierarchy]
-Session ID: 3a956350005b3869acce176bd71cd843</failure></step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Progress] I wait for &apos;3&apos; sec</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Close Notification Button&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify text of &apos;Department Liaison Officer Name&apos; contains saved value &apos;GeneralManagerOfficeComboBoxValue&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Direction Button&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Progress] I wait for &apos;4&apos; sec</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;My Processes List Header Button&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify &apos;Process Status&apos; equals &apos;p:ProcessCompletedStatus&apos; text</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;View Process Button&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Incoming Users Directed To&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify &apos;Incoming User Name Directed To1&apos; equals &apos;p:supply1.username&apos; text</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Completed Tasks&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify text of &apos;Completed Tasks First Subject Text&apos; equals saved value &apos;SubjectText&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;logout Button&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">Then [Input] I login as &apos;p:SCCuser.supply1&apos; with password &apos;p:SCC.password&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Tasks To View&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify text of &apos;Tasks To View First Subject Text SCC&apos; equals saved value &apos;SubjectText&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;View Process Button&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify text of &apos;Subject Field&apos; equals saved value &apos;SubjectText&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify value of &apos;Internal Correspondence Get Serial Number SCC&apos; equals saved value &apos;InternalCorrespondenceSerialNumberValue&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;logout Button&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify &apos;login Button&apos; is present</step>
-<failure>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;button&quot; name=&quot;ctl00$MainContent$btnAddHierarchy&quot; value=&quot;&#1573;&#1590;&#1575;&#1601;&#1577;&quot; id=&quot;ctl00_MainContent_btnAddHierarchy&quot; class=&quot;RadButton RadButton_Office2007 rbButton rbRounded rbIconButton btn btn-success rbRtl&quot; tabindex=&quot;0&quot;&gt;...&lt;/button&gt; is not clickable at point (317, 649). Other element would receive the click: &lt;body class=&quot;bkclass&quot;&gt;...&lt;/body&gt;
-  (Session info: chrome=128.0.6613.120)
-Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3a956350005b3869acce176bd71cd843, clickElement {id=f.7ED4F96BC8BBAB6F67CA5B36918A396C.d.10DB586F50689F3BD6360752753D6970.e.1607}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.120, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\sjaber\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63612}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63612/devtoo..., se:cdpVersion: 128.0.6613.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (3a956350005b3869acce176bd71cd843)] -&gt; css selector: #ctl00_MainContent_btnAddHierarchy]
-Session ID: 3a956350005b3869acce176bd71cd843
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:242)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy34.click(Unknown Source)
-	at com.automation.pages.CannedPage.click(CannedPage.java:400)
-	at com.automation.steps.CannedSteps.click(CannedSteps.java:386)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:599)
-	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:340)
-...</failure>
+<step outcome="successful">And [Navigation] I scroll to end of page</step>
+<step outcome="successful">And [Input] I click on &apos;Add Button&apos;</step>
+<step outcome="successful">And [Progress] I wait for &apos;3&apos; sec</step>
+<step outcome="successful">And [Input] I click on &apos;Close Notification Button&apos;</step>
+<step outcome="successful">And [Assertion] Verify text of &apos;Department Liaison Officer Name&apos; contains saved value &apos;GeneralManagerOfficeComboBoxValue&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;Direction Button&apos;</step>
+<step outcome="successful">And [Progress] I wait for &apos;4&apos; sec</step>
+<step outcome="successful">And [Input] I hover and click on &apos;All Task Header Button&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;My Processes List Header Button&apos;</step>
+<step outcome="successful">And [Assertion] Verify &apos;Process Status&apos; equals &apos;p:ProcessCompletedStatus&apos; text</step>
+<step outcome="successful">And [Input] I click on &apos;My Processes List View Process Button&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;Incoming Users Directed To&apos;</step>
+<step outcome="successful">And [Assertion] Verify &apos;Incoming User Name Directed To1&apos; equals &apos;p:supply1.username&apos; text</step>
+<step outcome="successful">And [Input] I hover and click on &apos;All Task Header Button&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;Completed Tasks&apos;</step>
+<step outcome="successful">And [Assertion] Verify text of &apos;Completed Tasks First Subject Text&apos; equals saved value &apos;SubjectText&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;logout Button&apos;</step>
+<step outcome="successful">Then [Input] I login as &apos;p:SCCuser.supply1&apos; with password &apos;p:SCC.password&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;Tasks To View&apos;</step>
+<step outcome="successful">And [Assertion] Verify text of &apos;Tasks To View First Subject Text SCC&apos; equals saved value &apos;SubjectText&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;Generalizations View Process Button&apos;</step>
+<step outcome="successful">And [Assertion] Verify text of &apos;Subject Field&apos; equals saved value &apos;SubjectText&apos;</step>
+<step outcome="successful">And [Assertion] Verify value of &apos;Internal Correspondence Get Serial Number SCC&apos; equals saved value &apos;InternalCorrespondenceSerialNumberValue&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;logout Button&apos;</step>
+<step outcome="successful">And [Assertion] Verify &apos;login Button&apos; is present</step>
 </scenario>
 </story>
 

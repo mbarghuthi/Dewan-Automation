@@ -11,42 +11,33 @@
 <step outcome="successful">And [Input] I click on &apos;Save Button&apos;</step>
 <step outcome="successful">And [Action] I get value from &apos;Generalization Get Serial Number&apos; and save it as &apos;GeneralizationSerialNumberValue&apos;</step>
 <step outcome="successful">And [Action] I get text from &apos;Subject Field&apos; and save it as &apos;GeneralizationSubjectText&apos;</step>
-<step outcome="failed" keyword="FAILED">And [Input] I click on &apos;My Processes List Header Button&apos;<failure>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //span[contains(text(),&apos;&#1605;&#1593;&#1575;&#1605;&#1604;&#1575;&#1578;&#1610;&apos;)]&apos; (tried for 30 second(s) with 500 milliseconds interval)</failure></step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify &apos;Process Status&apos; equals &apos;p:ProcessUnCompletedStatus&apos; text</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Progress] I wait for &apos;3&apos; sec</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Task List Header Button&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify text of &apos;Task List First Subject Text&apos; equals saved value &apos;GeneralizationSubjectText&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;View Process Button&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Direction Tab&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Generalize Button&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Progress] I wait for &apos;15&apos; sec</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Generalizations Header Button&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify text of &apos;Generalization First Subject Text&apos; equals saved value &apos;GeneralizationSubjectText&apos;</step>
+<step outcome="successful">And [Input] I hover and click on &apos;All Task Header Button&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;My Processes List Header Button&apos;</step>
+<step outcome="successful">And [Assertion] Verify &apos;Process Status&apos; equals &apos;p:ProcessUnCompletedStatus&apos; text</step>
+<step outcome="successful">And [Progress] I wait for &apos;3&apos; sec</step>
+<step outcome="successful">And [Input] I click on &apos;Task List Header Button&apos;</step>
+<step outcome="successful">And [Assertion] Verify text of &apos;Task List First Subject Text&apos; equals saved value &apos;GeneralizationSubjectText&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;Task List View Process Button&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;Direction Tab&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;Generalize Button&apos;</step>
+<step outcome="successful">And [Progress] I wait for &apos;15&apos; sec</step>
+<step outcome="successful">And [Input] I click on &apos;Generalizations Header Button&apos;</step>
+<step outcome="successful">And [Assertion] Verify text of &apos;Generalization First Subject Text&apos; equals saved value &apos;GeneralizationSubjectText&apos;</step>
 <step outcome="ignorable">!-- And [Assertion] Verify text of &apos;Generalization First Serial Number&apos; equals saved value &apos;GeneralizationSerialNumberValue&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;View Process Button&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Direction Tab&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify &apos;Generalize Button&apos; not present</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;My Processes List Header Button&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify &apos;Process Status&apos; equals &apos;p:ProcessCompletedStatus&apos; text</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">Then [Input] I click on &apos;logout Button&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify &apos;login Button&apos; is present</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I login as &apos;p:UOPuser.mmalhis&apos; with password &apos;p:password&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Generalizations Header Button&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify text of &apos;Generalization First Subject Text&apos; equals saved value &apos;GeneralizationSubjectText&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;Generalizations View Process Button&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;Direction Tab&apos;</step>
+<step outcome="successful">And [Assertion] Verify &apos;Generalize Button&apos; not present</step>
+<step outcome="successful">And [Input] I hover and click on &apos;All Task Header Button&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;My Processes List Header Button&apos;</step>
+<step outcome="successful">And [Assertion] Verify &apos;Process Status&apos; equals &apos;p:ProcessCompletedStatus&apos; text</step>
+<step outcome="successful">Then [Input] I click on &apos;logout Button&apos;</step>
+<step outcome="successful">And [Assertion] Verify &apos;login Button&apos; is present</step>
+<step outcome="successful">And [Input] I login as &apos;p:UOPuser.mmalhis&apos; with password &apos;p:password&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;Generalizations Header Button&apos;</step>
+<step outcome="successful">And [Assertion] Verify text of &apos;Generalization First Subject Text&apos; equals saved value &apos;GeneralizationSubjectText&apos;</step>
 <step outcome="ignorable">!-- And [Assertion] Verify text of &apos;Generalization First Serial Number&apos; equals saved value &apos;GeneralizationSerialNumberValue&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;logout Button&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify &apos;login Button&apos; is present</step>
-<failure>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //span[contains(text(),&apos;&#1605;&#1593;&#1575;&#1605;&#1604;&#1575;&#1578;&#1610;&apos;)]&apos; (tried for 30 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-	at com.automation.pages.AbstractPage.getElementWithWait(AbstractPage.java:43)
-	at com.automation.pages.CannedPage.click(CannedPage.java:399)
-	at com.automation.steps.CannedSteps.click(CannedSteps.java:386)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:599)
-	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:340)
-...</failure>
+<step outcome="successful">And [Input] I click on &apos;logout Button&apos;</step>
+<step outcome="successful">And [Assertion] Verify &apos;login Button&apos; is present</step>
 </scenario>
 <scenario keyword="Scenario:" title="TC_004_UOP_002 UOP Check uniqueness serial number for Generalization">
 <step outcome="successful">Given [Navigation] I navigate to &apos;p:dewanUOP&apos;</step>

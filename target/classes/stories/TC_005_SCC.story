@@ -10,7 +10,6 @@ And [Input] I select 'p:FileName' from the 'File Name SCC' combo box
 And [Input] Set 'File Subject SCC' value to 'random'
 And [Input] Select 'p:Other' value from 'Receiver Name Outgoing SCC' dropdown list
 And [Input] I select 'p:Other3496' from the 'Sub Receiver Name Outgoing SCC' combo box
-!-- And [Input] I click on 'Save Draft Button'
 And [Input] I click on 'Save Button'
 And [Action] I get text from 'Subject Field' and save it as 'SubjectText'
 And [Action] I get value from 'Outgoing Get Serial Number' and save it as 'OutgoingSerialNumberValue'
@@ -29,10 +28,7 @@ Then [Input] I click on 'logout Button'
 And [Assertion] Verify 'login Button' is present
 And [Input] I login as 'p:SCCuser.supply1' with password 'p:SCC.password'
 !-- TEST
-!-- recheck this part that the xpath or css are the same as UOP
 And [Input] I click on 'Tasks To View'
-!-- And [Input] I click on 'Tasks To View Date'
-!-- And [Input] I click on 'Tasks To View Date'
 And [Assertion] Verify text of 'Tasks To View First Subject Text SCC' equals saved value 'SubjectText'
 And [Input] I click on 'Task List View Process Button'
 And [Assertion] Verify text of 'Subject Field' equals saved value 'SubjectText'

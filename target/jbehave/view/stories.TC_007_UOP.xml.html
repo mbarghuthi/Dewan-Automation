@@ -31,7 +31,12 @@
 <step outcome="successful">And [Assertion] Verify text of &apos;Department Liaison Officer Name&apos; contains saved value &apos;ComboBoxValue&apos;</step>
 <step outcome="successful">And [Input] I click on &apos;Direction Button&apos;</step>
 <step outcome="successful">And [Progress] I wait for &apos;4&apos; sec</step>
-<step outcome="failed" keyword="FAILED">And [Input] I click on &apos;My Processes List Header Button&apos;<failure>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //span[contains(text(),&apos;&#1605;&#1593;&#1575;&#1605;&#1604;&#1575;&#1578;&#1610;&apos;)]&apos; (tried for 30 second(s) with 500 milliseconds interval)</failure></step>
+<step outcome="failed" keyword="FAILED">And [Input] I click on &apos;My Processes List Header Button&apos;<failure>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (6185248b7027981bee9c3365689d5909)] -&gt; xpath: //a[contains(text(),&apos;&#1605;&#1593;&#1575;&#1605;&#1604;&#1575;&#1578;&#1610;&apos;)]] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.120, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\MBARGH~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49140}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49140/devtoo..., se:cdpVersion: 128.0.6613.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6185248b7027981bee9c3365689d5909</failure></step>
 <step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify &apos;Process Status&apos; equals &apos;p:ProcessUnCompletedStatus&apos; text</step>
 <step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;View Process Button&apos;</step>
 <step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Incoming Users Directed To&apos;</step>
@@ -57,11 +62,16 @@
 <step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify &apos;Process Status&apos; equals &apos;p:ProcessCompletedStatus&apos; text</step>
 <step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;logout Button&apos;</step>
 <step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify &apos;login Button&apos; is present</step>
-<failure>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //span[contains(text(),&apos;&#1605;&#1593;&#1575;&#1605;&#1604;&#1575;&#1578;&#1610;&apos;)]&apos; (tried for 30 second(s) with 500 milliseconds interval)
+<failure>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (6185248b7027981bee9c3365689d5909)] -&gt; xpath: //a[contains(text(),&apos;&#1605;&#1593;&#1575;&#1605;&#1604;&#1575;&#1578;&#1610;&apos;)]] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.120, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\MBARGH~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49140}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49140/devtoo..., se:cdpVersion: 128.0.6613.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6185248b7027981bee9c3365689d5909
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
 	at com.automation.pages.AbstractPage.getElementWithWait(AbstractPage.java:43)
-	at com.automation.pages.CannedPage.click(CannedPage.java:399)
+	at com.automation.pages.CannedPage.click(CannedPage.java:405)
 	at com.automation.steps.CannedSteps.click(CannedSteps.java:386)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -88,14 +98,14 @@
 <step outcome="successful">And [Input] I select the &apos;To View Radio Button&apos;</step>
 <step outcome="successful">And [Progress] I wait for &apos;3&apos; sec</step>
 <step outcome="failed" keyword="FAILED">And [Input] I click on &apos;Add Button&apos;<failure>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;button&quot; name=&quot;ctl00$MainContent$btnAddHierarchy&quot; value=&quot;&#1573;&#1590;&#1575;&#1601;&#1577;&quot; id=&quot;ctl00_MainContent_btnAddHierarchy&quot; class=&quot;RadButton RadButton_Office2007 rbButton rbRounded rbIconButton btn btn-success rbRtl&quot; tabindex=&quot;0&quot;&gt;...&lt;/button&gt; is not clickable at point (317, 649). Other element would receive the click: &lt;body class=&quot;bkclass&quot;&gt;...&lt;/body&gt;
-  (Session info: chrome=128.0.6613.85)
+  (Session info: chrome=128.0.6613.120)
 Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c6501401f7409a56b3fc26ed7abf66fb, clickElement {id=f.4018892DA6376B9B23033E9B5A31B494.d.766C9695A4EC29B505D091D95F0BAAA3.e.5255}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.85, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\MBARGH~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:46970}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:46970/devtoo..., se:cdpVersion: 128.0.6613.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (c6501401f7409a56b3fc26ed7abf66fb)] -&gt; css selector: #ctl00_MainContent_btnAddHierarchy]
-Session ID: c6501401f7409a56b3fc26ed7abf66fb</failure></step>
+Command: [6185248b7027981bee9c3365689d5909, clickElement {id=f.57B44862787ACDC7EDF693C276AA9487.d.55A00E69421E1852CB3C1D064AC6EAF3.e.5289}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.120, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\MBARGH~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49140}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49140/devtoo..., se:cdpVersion: 128.0.6613.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (6185248b7027981bee9c3365689d5909)] -&gt; css selector: #ctl00_MainContent_btnAddHierarchy]
+Session ID: 6185248b7027981bee9c3365689d5909</failure></step>
 <step outcome="notPerformed" keyword="NOT PERFORMED">And [Progress] I wait for &apos;3&apos; sec</step>
 <step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Close Notification Button&apos;</step>
 <step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify text of &apos;Department Liaison Officer Name&apos; contains saved value &apos;ComboBoxValue&apos;</step>
@@ -118,14 +128,14 @@ Session ID: c6501401f7409a56b3fc26ed7abf66fb</failure></step>
 <step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;logout Button&apos;</step>
 <step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify &apos;login Button&apos; is present</step>
 <failure>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;button&quot; name=&quot;ctl00$MainContent$btnAddHierarchy&quot; value=&quot;&#1573;&#1590;&#1575;&#1601;&#1577;&quot; id=&quot;ctl00_MainContent_btnAddHierarchy&quot; class=&quot;RadButton RadButton_Office2007 rbButton rbRounded rbIconButton btn btn-success rbRtl&quot; tabindex=&quot;0&quot;&gt;...&lt;/button&gt; is not clickable at point (317, 649). Other element would receive the click: &lt;body class=&quot;bkclass&quot;&gt;...&lt;/body&gt;
-  (Session info: chrome=128.0.6613.85)
+  (Session info: chrome=128.0.6613.120)
 Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c6501401f7409a56b3fc26ed7abf66fb, clickElement {id=f.4018892DA6376B9B23033E9B5A31B494.d.766C9695A4EC29B505D091D95F0BAAA3.e.5255}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.85, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\MBARGH~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:46970}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:46970/devtoo..., se:cdpVersion: 128.0.6613.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (c6501401f7409a56b3fc26ed7abf66fb)] -&gt; css selector: #ctl00_MainContent_btnAddHierarchy]
-Session ID: c6501401f7409a56b3fc26ed7abf66fb
+Command: [6185248b7027981bee9c3365689d5909, clickElement {id=f.57B44862787ACDC7EDF693C276AA9487.d.55A00E69421E1852CB3C1D064AC6EAF3.e.5289}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.120, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\MBARGH~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49140}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49140/devtoo..., se:cdpVersion: 128.0.6613.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (6185248b7027981bee9c3365689d5909)] -&gt; css selector: #ctl00_MainContent_btnAddHierarchy]
+Session ID: 6185248b7027981bee9c3365689d5909
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -142,7 +152,7 @@ Session ID: c6501401f7409a56b3fc26ed7abf66fb
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 	at jdk.proxy2/jdk.proxy2.$Proxy32.click(Unknown Source)
-	at com.automation.pages.CannedPage.click(CannedPage.java:400)
+	at com.automation.pages.CannedPage.click(CannedPage.java:406)
 	at com.automation.steps.CannedSteps.click(CannedSteps.java:386)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)

@@ -1,5 +1,1 @@
 <story path="stories/TC_004_UOP.story" title="">
-<scenario keyword="Scenario:" title="TC_004_UOP_001 UOP Create Generalization">
-<step outcome="successful">Given [Navigation] I navigate to &apos;p:dewanUOP&apos;</step>
-<step outcome="successful">And [Input] I login as &apos;p:UOPuser.alaa&apos; with password &apos;p:password&apos;</step>
-<step outcome="successful">And [Input] I click on &apos;Add Process Button&apos;</step>

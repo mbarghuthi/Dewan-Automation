@@ -1,22 +1,12 @@
 <story path="stories/TC_003_UOP.story" title="">
 <scenario keyword="Scenario:" title="TC_003_UOP_001 UOP login">
-<step outcome="successful">Given [Navigation] I navigate to &apos;http://172.16.30.82:8888/login.aspx&apos;</step>
-<step outcome="successful">When [Input] I login as &apos;alaa.abdelbagi&apos; with password &apos;Aa1&apos;</step>
-<step outcome="failed" keyword="FAILED">And [Input] I click on &apos;User Name Header Button&apos;<failure>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //*[@id=&quot;ctl00_RadMenu1&quot;]/ul/li[1]/a&apos; (tried for 30 second(s) with 500 milliseconds interval)</failure></step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Profile Header Button&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify &apos;User Name Value&apos; have attribute &apos;value&apos; with &apos;alaa.abdelbagi&apos; <parameter>value</parameter></step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">Then [Input] I click on &apos;logout Button&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify &apos;login Button&apos; is present</step>
-<failure>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //*[@id=&quot;ctl00_RadMenu1&quot;]/ul/li[1]/a&apos; (tried for 30 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-	at com.automation.pages.AbstractPage.getElementWithWait(AbstractPage.java:43)
-	at com.automation.pages.CannedPage.click(CannedPage.java:408)
-	at com.automation.steps.CannedSteps.click(CannedSteps.java:386)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:599)
-	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:340)
-...</failure>
+<step outcome="successful">Given [Navigation] I navigate to &apos;p:dewanUOP&apos;</step>
+<step outcome="successful">When [Input] I login as &apos;p:UOPuser.alaa&apos; with password &apos;p:password&apos;</step>
+<step outcome="successful">And [Navigation] I hover over &apos;User Profile DDL&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;Profile Header Button&apos;</step>
+<step outcome="successful">And [Assertion] Verify &apos;User Name Value&apos; have attribute &apos;value&apos; with &apos;p:UOPuser.alaa&apos; <parameter>value</parameter></step>
+<step outcome="successful">Then [Navigation] I hover over &apos;User Profile DDL&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;logout Button&apos;</step>
+<step outcome="successful">And [Assertion] Verify &apos;login Button&apos; is present</step>
 </scenario>
 </story>

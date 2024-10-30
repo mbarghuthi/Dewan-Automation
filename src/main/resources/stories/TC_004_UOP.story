@@ -15,6 +15,7 @@ And [Input] I hover and click on 'All Task Header Button'
 And [Input] I click on 'My Processes List Header Button'
 And [Assertion] Verify 'Process Status' equals 'p:ProcessUnCompletedStatus' text
 And [Progress] I wait for '3' sec
+And [Input] I hover and click on 'All Task Header Button'
 And [Input] I click on 'Task List Header Button'
 And [Assertion] Verify text of 'Task List First Subject Text' equals saved value 'GeneralizationSubjectText'
 And [Input] I click on 'Task List View Process Button'
@@ -30,14 +31,17 @@ And [Assertion] Verify 'Generalize Button' not present
 And [Input] I hover and click on 'All Task Header Button'
 And [Input] I click on 'My Processes List Header Button'
 And [Assertion] Verify 'Process Status' equals 'p:ProcessCompletedStatus' text
+And [Navigation] I hover over 'User Profile DDL'
 Then [Input] I click on 'logout Button'
 And [Assertion] Verify 'login Button' is present
 And [Input] I login as 'p:UOPuser.mmalhis' with password 'p:password'
 And [Input] I click on 'Generalizations Header Button'
 And [Assertion] Verify text of 'Generalization First Subject Text' equals saved value 'GeneralizationSubjectText'
 !-- And [Assertion] Verify text of 'Generalization First Serial Number' equals saved value 'GeneralizationSerialNumberValue'
+And [Navigation] I hover over 'User Profile DDL'
 And [Input] I click on 'logout Button'
 And [Assertion] Verify 'login Button' is present
+
 
 
 Scenario: TC_004_UOP_002 UOP Check uniqueness serial number for Generalization
@@ -52,3 +56,5 @@ And [Action] I get value from 'Generalization Size Page Input' and save it as 'G
 Then [Assertion] Verify uniqueness of values in column 'رقم التعميم' to approaches 'GeneralizationSizePageValue'
 And [Input] I click on 'logout Button'
 And [Assertion] Verify 'login Button' is present
+
+

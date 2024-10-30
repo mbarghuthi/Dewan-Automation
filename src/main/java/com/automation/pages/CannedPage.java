@@ -76,17 +76,18 @@ public class CannedPage extends AbstractPage<CannedPage> {
 	@FindBy(css = "#MainContent_summary1")
 	public WebElement DirectionTab;
 
-	@FindBy(xpath = "//*[@id=\"ctl00_RadMenu1\"]/ul/li[6]/a/span")
+	@FindBy(xpath = "//*[@id=\"ctl00_RadMenu1\"]/ul/li[5]/a")
 	public WebElement GeneralizationsHeaderButton;
 
-	@FindBy(xpath = "//tbody/tr[@id='ctl00_MainContent_RadGrid1_ctl00__0']/td[1]")
+	@FindBy(xpath = "//tbody/tr[@id='ctl00_MainContent_RadGrid1_ctl00__0']/td[2]")
 	public WebElement GeneralizationFirstSerialNumber;
 
-	@FindBy(xpath = "//*[@id=\"ctl00_MainContent_RadGrid1_ctl00__0\"]/td[2]")
+	@FindBy(xpath = "//*[@id=\"ctl00_MainContent_RadGrid1_ctl00__0\"]/td[3]")
 	public WebElement GeneralizationFirstSubjectText;
 
 // **************************************************************to check that direction button is not clickable**************************************************************************************
-	@FindBy(css = "#ctl00_MainContent_RadGrid1_ctl00_ctl04_TaskUrl")
+	@FindBy(css = "#ctl00_MainContent_RadGrid1_ctl00_ctl04_OpenLink")
+
 	public WebElement GeneralizationsViewProcessButton;
 
 	@FindBy(css = "#ctl00_MainContent_RadGrid1_ctl00_ctl04_OpenLink")
@@ -96,8 +97,8 @@ public class CannedPage extends AbstractPage<CannedPage> {
 	public WebElement MyProcessesListViewProcessButton;
 
 // **************************************************************to check the process status*********************************************************************************************************
-//	@FindBy(xpath = "//span[contains(text(),'جميع المهام')]")
-//	public WebElement AllTaskHeaderButton;
+	@FindBy(xpath = "//span[contains(text(),'جميع المهام')]")
+	public WebElement AllTaskHeaderButton;
 
 	@FindBy(xpath = "//a[contains(text(),'معاملاتي')]")
 	public WebElement MyProcessesListHeaderButton;
@@ -113,10 +114,11 @@ public class CannedPage extends AbstractPage<CannedPage> {
 	@FindBy(xpath = "//tbody/tr[@id='ctl00_MainContent_rgmyRequest_ctl00__0']/td[5]")
 	public WebElement ProcessStatus;
 
-	@FindBy(xpath = "//span[contains(text(),'مهام للإجراء')]")
+	@FindBy(xpath = "//*[@id=\"ctl00_RadMenu1\"]/ul/li[4]/div/ul/li[1]/a")
 	public  WebElement TaskListHeaderButton;
 
-	@FindBy(xpath = "//*[@id=\"ctl00_MainContent_RadGrid1_ctl00__0\"]/td[6]")
+
+	@FindBy(xpath = "//*[@id=\"ctl00_MainContent_RadGrid1_ctl00__0\"]/td[5]")
 	public WebElement TaskListFirstSubjectText;
 
 	@FindBy(xpath = "//*[@id=\"ctl00_RadMenu1\"]/ul/li[5]/a/span")
@@ -735,7 +737,7 @@ public class CannedPage extends AbstractPage<CannedPage> {
 		List<String> values = new ArrayList<>();
 
 		for (int i = 0; i < rowCount; i++) {
-			String xpath = "//*[@id='ctl00_MainContent_RadGrid1_ctl00__" + i + "']/td[1]";
+			String xpath = "//*[@id='ctl00_MainContent_RadGrid1_ctl00__" + i + "']/td[2]";
 			WebElement element = webDriverProvider.get().findElement(By.xpath(xpath));
 			String text = element.getText().trim(); // Trim to remove any leading or trailing whitespace
 

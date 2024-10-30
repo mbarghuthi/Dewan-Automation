@@ -393,7 +393,9 @@ public class CannedSteps extends AbstractSteps {
 	@Then("[Input] I login as '$userName' with password '$password'")
 	public void loginAs(@Named("userName") String userName, @Named("password") String password) throws Throwable {
 //		cannedPage.uncheckCheckbox("Unified Login");
-		cannedPage.enterText("userName", userName).enterText("password", password).click("login Button");
+		cannedPage.enterText("userName", userName).enterText("password", password);
+		Thread.sleep(3000);
+		cannedPage.click("login Button");
 	}
 
 	@Given("[Input] I login admin as '$userName' with password '$password'")

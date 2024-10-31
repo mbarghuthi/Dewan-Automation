@@ -31,8 +31,10 @@ And [Assertion] Verify 'Incoming User Name Directed To1' equals 'p:UOPuser.audit
 And [Input] I hover and click on 'All Task Header Button'
 And [Input] I click on 'Completed Tasks'
 And [Assertion] Verify text of 'Completed Tasks First Subject Text' equals saved value 'SubjectText'
+Then [Navigation] I hover over 'User Profile DDL'
 And [Input] I click on 'logout Button'
 And [Input] I login as 'p:UOPuser.audit1' with password 'p:password'
+And [Input] I hover and click on 'All Task Header Button'
 And [Input] I click on 'Task List Header Button'
 And [Assertion] Verify text of 'Task List First Subject Text' equals saved value 'SubjectText'
 And [Input] I click on 'Task List View Process Button'
@@ -45,12 +47,14 @@ And [Progress] I wait for '3' sec
 And [Input] I hover and click on 'All Task Header Button'
 And [Input] I click on 'Completed Tasks'
 And [Assertion] Verify text of 'Completed Tasks First Subject Text' equals saved value 'SubjectText'
+Then [Navigation] I hover over 'User Profile DDL'
 And [Input] I click on 'logout Button'
 And [Assertion] Verify 'login Button' is present
 Then [Input] I login as 'p:UOPuser.alaa' with password 'p:password'
 And [Input] I hover and click on 'All Task Header Button'
 And [Input] I click on 'My Processes List Header Button'
 And [Assertion] Verify 'Process Status' equals 'p:ProcessCompletedStatus' text
+Then [Navigation] I hover over 'User Profile DDL'
 And [Input] I click on 'logout Button'
 And [Assertion] Verify 'login Button' is present
 
@@ -102,12 +106,15 @@ And [Assertion] Verify 'Incoming User Name Directed To1' equals 'p:UOPuser.audit
 And [Input] I hover and click on 'All Task Header Button'
 And [Input] I click on 'Completed Tasks'
 And [Assertion] Verify text of 'Completed Tasks First Subject Text' equals saved value 'SubjectText'
+Then [Navigation] I hover over 'User Profile DDL'
 And [Input] I click on 'logout Button'
 Then [Input] I login as 'p:UOPuser.audit1' with password 'p:password'
+And [Input] I hover and click on 'All Task Header Button'
 And [Input] I click on 'Tasks To View'
 And [Assertion] Verify text of 'Tasks To View First Subject Text' equals saved value 'SubjectText'
 And [Input] I click on 'Generalizations View Process Button'
 And [Assertion] Verify text of 'Subject Field' equals saved value 'SubjectText'
 And [Assertion] Verify value of 'Incoming Get Serial Number' equals saved value 'IncomingSerialNumberValue'
+Then [Navigation] I hover over 'User Profile DDL'
 And [Input] I click on 'logout Button'
 And [Assertion] Verify 'login Button' is present

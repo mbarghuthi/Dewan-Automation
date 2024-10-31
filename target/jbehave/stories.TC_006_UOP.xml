@@ -13,58 +13,51 @@
 <step outcome="successful">And [Progress] I wait for &apos;4&apos; sec</step>
 <step outcome="successful">And [Input] I select &apos;p:Aramex&apos; from the &apos;Delivery&apos; combo box</step>
 <step outcome="successful">And [Input] I click on &apos;Save Draft Button&apos;</step>
-<step outcome="failed" keyword="FAILED">And [Input] I click on &apos;Save Button&apos;<failure>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.cssSelector: #ctl00_MainContent_btnSave&apos; (tried for 30 second(s) with 500 milliseconds interval)</failure></step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Progress] I wait for &apos;3&apos; sec</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Action] I get value from &apos;Incoming Commissioner Destination&apos; and save it as &apos;ComboBoxValue&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Action] I get text from &apos;Subject Field&apos; and save it as &apos;SubjectText&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Action] I get value from &apos;Incoming Get Serial Number&apos; and save it as &apos;IncomingSerialNumberValue&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Direction Tab&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify text of &apos;Department Liaison Officer Name&apos; contains saved value &apos;ComboBoxValue&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Direction Button&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Progress] I wait for &apos;6&apos; sec</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I hover and click on &apos;All Task Header Button&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;My Processes List Header Button&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify &apos;Process Status&apos; equals &apos;p:ProcessUnCompletedStatus&apos; text</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;My Processes List View Process Button&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Incoming Users Directed To&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify &apos;Incoming User Name Directed To1&apos; equals &apos;p:UOPuser.audit1&apos; text</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I hover and click on &apos;All Task Header Button&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Completed Tasks&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify text of &apos;Completed Tasks First Subject Text&apos; equals saved value &apos;SubjectText&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;logout Button&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I login as &apos;p:UOPuser.audit1&apos; with password &apos;p:password&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Task List Header Button&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify text of &apos;Task List First Subject Text&apos; equals saved value &apos;SubjectText&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Task List View Process Button&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Direction Tab&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Progress] I wait for &apos;5&apos; sec</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Close Button&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Progress] I wait for &apos;3&apos; sec</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Javascript] I accept alert</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Progress] I wait for &apos;3&apos; sec</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I hover and click on &apos;All Task Header Button&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Completed Tasks&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify text of &apos;Completed Tasks First Subject Text&apos; equals saved value &apos;SubjectText&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;logout Button&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify &apos;login Button&apos; is present</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">Then [Input] I login as &apos;p:UOPuser.alaa&apos; with password &apos;p:password&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I hover and click on &apos;All Task Header Button&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;My Processes List Header Button&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify &apos;Process Status&apos; equals &apos;p:ProcessCompletedStatus&apos; text</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;logout Button&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify &apos;login Button&apos; is present</step>
+<step outcome="successful">And [Input] I click on &apos;Save Button&apos;</step>
+<step outcome="successful">And [Progress] I wait for &apos;3&apos; sec</step>
+<step outcome="successful">And [Action] I get value from &apos;Incoming Commissioner Destination&apos; and save it as &apos;ComboBoxValue&apos;</step>
+<step outcome="successful">And [Action] I get text from &apos;Subject Field&apos; and save it as &apos;SubjectText&apos;</step>
+<step outcome="successful">And [Action] I get value from &apos;Incoming Get Serial Number&apos; and save it as &apos;IncomingSerialNumberValue&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;Direction Tab&apos;</step>
+<step outcome="successful">And [Assertion] Verify text of &apos;Department Liaison Officer Name&apos; contains saved value &apos;ComboBoxValue&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;Direction Button&apos;</step>
+<step outcome="successful">And [Progress] I wait for &apos;6&apos; sec</step>
+<step outcome="successful">And [Input] I hover and click on &apos;All Task Header Button&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;My Processes List Header Button&apos;</step>
+<step outcome="successful">And [Assertion] Verify &apos;Process Status&apos; equals &apos;p:ProcessUnCompletedStatus&apos; text</step>
+<step outcome="successful">And [Input] I click on &apos;My Processes List View Process Button&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;Incoming Users Directed To&apos;</step>
+<step outcome="successful">And [Assertion] Verify &apos;Incoming User Name Directed To1&apos; equals &apos;p:UOPuser.audit1&apos; text</step>
+<step outcome="successful">And [Input] I hover and click on &apos;All Task Header Button&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;Completed Tasks&apos;</step>
+<step outcome="successful">And [Assertion] Verify text of &apos;Completed Tasks First Subject Text&apos; equals saved value &apos;SubjectText&apos;</step>
+<step outcome="successful">Then [Navigation] I hover over &apos;User Profile DDL&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;logout Button&apos;</step>
+<step outcome="successful">And [Input] I login as &apos;p:UOPuser.audit1&apos; with password &apos;p:password&apos;</step>
+<step outcome="successful">And [Input] I hover and click on &apos;All Task Header Button&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;Task List Header Button&apos;</step>
+<step outcome="successful">And [Assertion] Verify text of &apos;Task List First Subject Text&apos; equals saved value &apos;SubjectText&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;Task List View Process Button&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;Direction Tab&apos;</step>
+<step outcome="successful">And [Progress] I wait for &apos;5&apos; sec</step>
+<step outcome="successful">And [Input] I click on &apos;Close Button&apos;</step>
+<step outcome="successful">And [Progress] I wait for &apos;3&apos; sec</step>
+<step outcome="successful">And [Javascript] I accept alert</step>
+<step outcome="successful">And [Progress] I wait for &apos;3&apos; sec</step>
+<step outcome="successful">And [Input] I hover and click on &apos;All Task Header Button&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;Completed Tasks&apos;</step>
+<step outcome="successful">And [Assertion] Verify text of &apos;Completed Tasks First Subject Text&apos; equals saved value &apos;SubjectText&apos;</step>
+<step outcome="successful">Then [Navigation] I hover over &apos;User Profile DDL&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;logout Button&apos;</step>
+<step outcome="successful">And [Assertion] Verify &apos;login Button&apos; is present</step>
+<step outcome="successful">Then [Input] I login as &apos;p:UOPuser.alaa&apos; with password &apos;p:password&apos;</step>
+<step outcome="successful">And [Input] I hover and click on &apos;All Task Header Button&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;My Processes List Header Button&apos;</step>
+<step outcome="successful">And [Assertion] Verify &apos;Process Status&apos; equals &apos;p:ProcessCompletedStatus&apos; text</step>
+<step outcome="successful">Then [Navigation] I hover over &apos;User Profile DDL&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;logout Button&apos;</step>
+<step outcome="successful">And [Assertion] Verify &apos;login Button&apos; is present</step>
 <step outcome="ignorable">!-- tc002</step>
-<failure>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.cssSelector: #ctl00_MainContent_btnSave&apos; (tried for 30 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-	at com.automation.pages.AbstractPage.getElementWithWait(AbstractPage.java:43)
-	at com.automation.pages.CannedPage.click(CannedPage.java:408)
-	at com.automation.steps.CannedSteps.click(CannedSteps.java:386)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:599)
-	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:340)
-...</failure>
 </scenario>
 <scenario keyword="Scenario:" title="TC_006_UOP_002 UOP Create Incoming To view">
 <step outcome="successful">Given [Navigation] I navigate to &apos;p:dewanUOP&apos;</step>
@@ -80,55 +73,47 @@
 <step outcome="successful">And [Progress] I wait for &apos;3&apos; sec</step>
 <step outcome="successful">And [Input] I select &apos;p:Aramex&apos; from the &apos;Delivery&apos; combo box</step>
 <step outcome="successful">And [Input] I click on &apos;Save Draft Button&apos;</step>
-<step outcome="failed" keyword="FAILED">And [Input] I click on &apos;Save Button&apos;<failure>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.cssSelector: #ctl00_MainContent_btnSave&apos; (tried for 30 second(s) with 500 milliseconds interval)</failure></step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Progress] I wait for &apos;3&apos; sec</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Action] I get value from &apos;Incoming Commissioner Destination&apos; and save it as &apos;ComboBoxValue&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Action] I get text from &apos;Subject Field&apos; and save it as &apos;SubjectText&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Action] I get value from &apos;Incoming Get Serial Number&apos; and save it as &apos;IncomingSerialNumberValue&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Direction Tab&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;Save Button&apos;</step>
+<step outcome="successful">And [Progress] I wait for &apos;3&apos; sec</step>
+<step outcome="successful">And [Action] I get value from &apos;Incoming Commissioner Destination&apos; and save it as &apos;ComboBoxValue&apos;</step>
+<step outcome="successful">And [Action] I get text from &apos;Subject Field&apos; and save it as &apos;SubjectText&apos;</step>
+<step outcome="successful">And [Action] I get value from &apos;Incoming Get Serial Number&apos; and save it as &apos;IncomingSerialNumberValue&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;Direction Tab&apos;</step>
 <step outcome="ignorable">!-- And [Assertion] Verify text of &apos;Department Liaison Officer Name&apos; contains saved value &apos;ComboBoxValue&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Click On All Check Box&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Delete Button&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Progress] I wait for &apos;3&apos; sec</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Close Notification Button&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I select &apos;p:InternalControlAndAuditUnit&apos; from the &apos;Division Input&apos; combo box</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Progress] I wait for &apos;3&apos; sec</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I select the &apos;To View Radio Button&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Progress] I wait for &apos;3&apos; sec</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Navigation] I scroll to end of page</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Add Button&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Progress] I wait for &apos;4&apos; sec</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Close Notification Button&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Direction Button&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Progress] I wait for &apos;4&apos; sec</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I hover and click on &apos;All Task Header Button&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;My Processes List Header Button&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify &apos;Process Status&apos; equals &apos;p:ProcessCompletedStatus&apos; text</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;My Processes List View Process Button&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Incoming Users Directed To&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify &apos;Incoming User Name Directed To1&apos; equals &apos;p:UOPuser.audit1&apos; text</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I hover and click on &apos;All Task Header Button&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Completed Tasks&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify text of &apos;Completed Tasks First Subject Text&apos; equals saved value &apos;SubjectText&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;logout Button&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">Then [Input] I login as &apos;p:UOPuser.audit1&apos; with password &apos;p:password&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Tasks To View&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify text of &apos;Tasks To View First Subject Text&apos; equals saved value &apos;SubjectText&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Generalizations View Process Button&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify text of &apos;Subject Field&apos; equals saved value &apos;SubjectText&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify value of &apos;Incoming Get Serial Number&apos; equals saved value &apos;IncomingSerialNumberValue&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;logout Button&apos;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify &apos;login Button&apos; is present</step>
-<failure>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.cssSelector: #ctl00_MainContent_btnSave&apos; (tried for 30 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-	at com.automation.pages.AbstractPage.getElementWithWait(AbstractPage.java:43)
-	at com.automation.pages.CannedPage.click(CannedPage.java:408)
-	at com.automation.steps.CannedSteps.click(CannedSteps.java:386)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:599)
-	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:340)
-...</failure>
+<step outcome="successful">And [Input] I click on &apos;Click On All Check Box&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;Delete Button&apos;</step>
+<step outcome="successful">And [Progress] I wait for &apos;3&apos; sec</step>
+<step outcome="successful">And [Input] I click on &apos;Close Notification Button&apos;</step>
+<step outcome="successful">And [Input] I select &apos;p:InternalControlAndAuditUnit&apos; from the &apos;Division Input&apos; combo box</step>
+<step outcome="successful">And [Progress] I wait for &apos;3&apos; sec</step>
+<step outcome="successful">And [Input] I select the &apos;To View Radio Button&apos;</step>
+<step outcome="successful">And [Progress] I wait for &apos;3&apos; sec</step>
+<step outcome="successful">And [Navigation] I scroll to end of page</step>
+<step outcome="successful">And [Input] I click on &apos;Add Button&apos;</step>
+<step outcome="successful">And [Progress] I wait for &apos;4&apos; sec</step>
+<step outcome="successful">And [Input] I click on &apos;Close Notification Button&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;Direction Button&apos;</step>
+<step outcome="successful">And [Progress] I wait for &apos;4&apos; sec</step>
+<step outcome="successful">And [Input] I hover and click on &apos;All Task Header Button&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;My Processes List Header Button&apos;</step>
+<step outcome="successful">And [Assertion] Verify &apos;Process Status&apos; equals &apos;p:ProcessCompletedStatus&apos; text</step>
+<step outcome="successful">And [Input] I click on &apos;My Processes List View Process Button&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;Incoming Users Directed To&apos;</step>
+<step outcome="successful">And [Assertion] Verify &apos;Incoming User Name Directed To1&apos; equals &apos;p:UOPuser.audit1&apos; text</step>
+<step outcome="successful">And [Input] I hover and click on &apos;All Task Header Button&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;Completed Tasks&apos;</step>
+<step outcome="successful">And [Assertion] Verify text of &apos;Completed Tasks First Subject Text&apos; equals saved value &apos;SubjectText&apos;</step>
+<step outcome="successful">Then [Navigation] I hover over &apos;User Profile DDL&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;logout Button&apos;</step>
+<step outcome="successful">Then [Input] I login as &apos;p:UOPuser.audit1&apos; with password &apos;p:password&apos;</step>
+<step outcome="successful">And [Input] I hover and click on &apos;All Task Header Button&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;Tasks To View&apos;</step>
+<step outcome="successful">And [Assertion] Verify text of &apos;Tasks To View First Subject Text&apos; equals saved value &apos;SubjectText&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;Generalizations View Process Button&apos;</step>
+<step outcome="successful">And [Assertion] Verify text of &apos;Subject Field&apos; equals saved value &apos;SubjectText&apos;</step>
+<step outcome="successful">And [Assertion] Verify value of &apos;Incoming Get Serial Number&apos; equals saved value &apos;IncomingSerialNumberValue&apos;</step>
+<step outcome="successful">Then [Navigation] I hover over &apos;User Profile DDL&apos;</step>
+<step outcome="successful">And [Input] I click on &apos;logout Button&apos;</step>
+<step outcome="successful">And [Assertion] Verify &apos;login Button&apos; is present</step>
 </scenario>
 </story>

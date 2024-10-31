@@ -5,26 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0826a89a-9e89-42f5-b126-da99926bde7e" name="Changes" comment="Did some updates on for the latest release">
-      <change afterPath="$PROJECT_DIR$/reports/Thu Oct 31 12-38-57 EET 2024/Dewan-Automation-Report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/Thu Oct 31 13-43-49 EET 2024/Dewan-Automation-Report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/Thu Oct 31 14-39-58 EET 2024/Dewan-Automation-Report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/Thu Oct 31 14-46-04 EET 2024/Dewan-Automation-Report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/Thu Oct 31 14-50-10 EET 2024/Dewan-Automation-Report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/Thu Oct 31 14-55-28 EET 2024/Dewan-Automation-Report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/Thu Oct 31 14-59-45 EET 2024/Dewan-Automation-Report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/Thu Oct 31 15-12-12 EET 2024/Dewan-Automation-Report.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reports/Thu Oct 31 16-52-59 EET 2024/Dewan-Automation-Report.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reports/Thu Oct 31 16-55-12 EET 2024/Dewan-Automation-Report.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reports/Thu Oct 31 16-57-27 EET 2024/Dewan-Automation-Report.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reports/Thu Oct 31 17-00-50 EET 2024/Dewan-Automation-Report.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reports/Thu Oct 31 17-03-23 EET 2024/Dewan-Automation-Report.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reports/Thu Oct 31 17-06-25 EET 2024/Dewan-Automation-Report.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reports/Thu Oct 31 17-10-36 EET 2024/Dewan-Automation-Report.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reports/Thu Oct 31 17-17-23 EET 2024/Dewan-Automation-Report.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reports/Thu Oct 31 17-21-04 EET 2024/Dewan-Automation-Report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/pages/CannedPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/pages/CannedPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/test_runner/AllStories.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/test_runner/AllStories.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/stories/TC_006_UOP.story" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/stories/TC_006_UOP.story" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/stories/TC_007_UOP.story" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/stories/TC_007_UOP.story" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/automation/pages/CannedPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/automation/pages/CannedPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/automation/test_runner/AllStories.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/automation/test_runner/AllStories.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/stories/TC_006_UOP.story" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/stories/TC_006_UOP.story" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/stories.TC_006_UOP.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/jbehave/stories.TC_006_UOP.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/stories.TC_006_UOP.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/jbehave/stories.TC_006_UOP.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/stories/TC_007_UOP.story" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/stories/TC_007_UOP.story" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jbehave/stories.TC_007_UOP.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/jbehave/stories.TC_007_UOP.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jbehave/stories.TC_007_UOP.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/jbehave/stories.TC_007_UOP.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/jbehave/storyDurations.props" beforeDir="false" afterPath="$PROJECT_DIR$/target/jbehave/storyDurations.props" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/jbehave/view/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/jbehave/view/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/jbehave/view/reports.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/jbehave/view/reports.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/stories.TC_006_UOP.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/jbehave/view/stories.TC_006_UOP.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/stories.TC_006_UOP.xml.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/jbehave/view/stories.TC_006_UOP.xml.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jbehave/view/stories.TC_007_UOP.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/jbehave/view/stories.TC_007_UOP.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jbehave/view/stories.TC_007_UOP.xml.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/jbehave/view/stories.TC_007_UOP.xml.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

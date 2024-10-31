@@ -91,6 +91,7 @@ public class CannedPage extends AbstractPage<CannedPage> {
 	public WebElement GeneralizationsViewProcessButton;
 
 	@FindBy(css = "#ctl00_MainContent_RadGrid1_ctl00_ctl04_OpenLink")
+
 	public WebElement TaskListViewProcessButton;
 
 	@FindBy(css = "#ctl00_MainContent_rgmyRequest_ctl00_ctl04_OpenLink")

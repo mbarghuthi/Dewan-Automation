@@ -2,6 +2,7 @@
 
 Given [Navigation] I navigate to 'p:dewanUOP'
 And [Input] I login as 'p:UOPuser.alaa' with password 'p:password'
+And [Progress] I wait for '3' sec
 And [Input] I click on 'Add Process Button'
 And [Progress] I wait for '3' sec
 And [Input] I click on 'Outgoing Button'
@@ -23,12 +24,15 @@ And [Progress] I wait for '6' sec
 And [Input] I hover and click on 'All Task Header Button'
 And [Input] I click on 'My Processes List Header Button'
 And [Assertion] Verify 'Process Status' equals 'p:ProcessCompletedStatus' text
+Then [Navigation] I hover over 'User Profile DDL'
 Then [Input] I click on 'logout Button'
+And [Progress] I wait for '3' sec
 And [Assertion] Verify 'login Button' is present
 And [Input] I login as 'p:UOPuser.audit1' with password 'p:password'
+And [Navigation] I hover over 'AllTaskHeaderButton'
 And [Input] I click on 'Tasks To View'
-And [Input] I click on 'Tasks To View Date'
-And [Input] I click on 'Tasks To View Date'
+!-- And [Input] I click on 'Tasks To View Date'
+!-- And [Input] I click on 'Tasks To View Date'
 And [Assertion] Verify text of 'Tasks To View First Subject Text' equals saved value 'SubjectText'
 And [Input] I click on 'Task List View Process Button'
 And [Assertion] Verify text of 'Subject Field' equals saved value 'SubjectText'
@@ -36,7 +40,9 @@ And [Assertion] Verify value of 'Outgoing Get Serial Number' equals saved value 
 And [Input] I click on 'Direction Tab'
 And [Input] I click on 'View Button'
 And [Progress] I wait for '3' sec
+And [Navigation] I hover over 'AllTaskHeaderButton'
 And [Input] I click on 'Completed Tasks'
 And [Assertion] Verify text of 'Completed Tasks First Subject Text' equals saved value 'SubjectText'
+Then [Navigation] I hover over 'User Profile DDL'
 And [Input] I click on 'logout Button'
 And [Assertion] Verify 'login Button' is present

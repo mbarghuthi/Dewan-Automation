@@ -12,7 +12,8 @@
 <div class="scenario">
 <h2>Scenario: TC_005_UOP_001 UOP Create Outgoing</h2>
 <div class="step successful">Given  I navigate to 'http://172.16.30.82:8888/login.aspx'</div>
-<div class="step successful">And  I login as 'alaa.abdelbagi' with password 'Aa1'</div>
+<div class="step successful">And  I login as 'alaa.abdelbagi' with password 's'</div>
+<div class="step successful">And  I wait for '3' sec</div>
 <div class="step successful">And  I click on 'Add Process Button'</div>
 <div class="step successful">And  I wait for '3' sec</div>
 <div class="step successful">And  I click on 'Outgoing Button'</div>
@@ -20,48 +21,42 @@
 <div class="step successful">And  I select '2 | &#1608;&#1581;&#1583;&#1577; &#1575;&#1604;&#1585;&#1602;&#1575;&#1576;&#1577;' from the 'Division Exporter UOP' combo box</div>
 <div class="step successful">And  I select '1 | &#1608;&#1586;&#1575;&#1585;&#1577; &#1575;&#1604;&#1578;&#1585;&#1576;&#1610;&#1577;' from the 'Salutation Hand UOP' combo box</div>
 <div class="step successful">And  I click on 'Save Draft Button'</div>
-<div class="step failed">And  I click on 'Save Button' <span class="keyword failed">(FAILED)</span><br/><span class="message failed">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.cssSelector: #ctl00_MainContent_btnSave' (tried for 30 second(s) with 500 milliseconds interval)</span><br/><a color="black" target="jb_scn_shot" href="../screenshots/failed-scenario-594a81a4-1ba0-4fce-b438-d6172ae3f4e6.png"><img src="images/failing_screenshot.png" alt="failing screenshot"/></a></div>
-<div class="step notPerformed">And  I get text from 'Subject Field' and save it as 'SubjectText' <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
-<div class="step notPerformed">And  I get value from 'Outgoing Get Serial Number' and save it as 'OutgoingSerialNumberValue' <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
-<div class="step notPerformed">And  I wait for '3' sec <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step successful">And  I click on 'Save Button'</div>
+<div class="step successful">And  I get text from 'Subject Field' and save it as 'SubjectText'</div>
+<div class="step successful">And  I get value from 'Outgoing Get Serial Number' and save it as 'OutgoingSerialNumberValue'</div>
+<div class="step successful">And  I wait for '3' sec</div>
 <div class="step ignorable">!-- And  I click on 'Outgoing Users Directed To'</div>
-<div class="step notPerformed">And  I click on 'Direction Tab' <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
-<div class="step notPerformed">And  Verify 'Outgoing User Name Directed To1 UOP' equals 'audit1' text <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step successful">And  I click on 'Direction Tab'</div>
+<div class="step successful">And  Verify 'Outgoing User Name Directed To1 UOP' equals 'audit1' text</div>
 <div class="step ignorable">!-- And  Verify 'Outgoing User Name Directed To2' equals '&#1586;&#1610;&#1606;&#1576; &#1601;&#1585;&#1608;&#1602;&#1577;' text</div>
 <div class="step ignorable">!-- And  I click on 'Direction Tab'</div>
-<div class="step notPerformed">And  I click on 'Direction Button' <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
-<div class="step notPerformed">And  I wait for '6' sec <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
-<div class="step notPerformed">And  I hover and click on 'All Task Header Button' <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
-<div class="step notPerformed">And  I click on 'My Processes List Header Button' <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
-<div class="step notPerformed">And  Verify 'Process Status' equals '&#1578;&#1605;&#1578; &#1575;&#1604;&#1593;&#1605;&#1604;&#1610;&#1577; &#1576;&#1606;&#1580;&#1575;&#1581;' text <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
-<div class="step notPerformed">Then  I click on 'logout Button' <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
-<div class="step notPerformed">And  Verify 'login Button' is present <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
-<div class="step notPerformed">And  I login as 'audit1' with password 'Aa1' <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
-<div class="step notPerformed">And  I click on 'Tasks To View' <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
-<div class="step notPerformed">And  I click on 'Tasks To View Date' <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
-<div class="step notPerformed">And  I click on 'Tasks To View Date' <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
-<div class="step notPerformed">And  Verify text of 'Tasks To View First Subject Text' equals saved value 'SubjectText' <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
-<div class="step notPerformed">And  I click on 'Task List View Process Button' <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
-<div class="step notPerformed">And  Verify text of 'Subject Field' equals saved value 'SubjectText' <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
-<div class="step notPerformed">And  Verify value of 'Outgoing Get Serial Number' equals saved value 'OutgoingSerialNumberValue' <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
-<div class="step notPerformed">And  I click on 'Direction Tab' <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
-<div class="step notPerformed">And  I click on 'View Button' <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
-<div class="step notPerformed">And  I wait for '3' sec <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
-<div class="step notPerformed">And  I click on 'Completed Tasks' <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
-<div class="step notPerformed">And  Verify text of 'Completed Tasks First Subject Text' equals saved value 'SubjectText' <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
-<div class="step notPerformed">And  I click on 'logout Button' <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
-<div class="step notPerformed">And  Verify 'login Button' is present <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
-<pre class="failure">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.cssSelector: #ctl00_MainContent_btnSave' (tried for 30 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-	at com.automation.pages.AbstractPage.getElementWithWait(AbstractPage.java:43)
-	at com.automation.pages.CannedPage.click(CannedPage.java:405)
-	at com.automation.steps.CannedSteps.click(CannedSteps.java:386)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:599)
-	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:340)
-...</pre>
+<div class="step successful">And  I click on 'Direction Button'</div>
+<div class="step successful">And  I wait for '6' sec</div>
+<div class="step successful">And  I hover and click on 'All Task Header Button'</div>
+<div class="step successful">And  I click on 'My Processes List Header Button'</div>
+<div class="step successful">And  Verify 'Process Status' equals '&#1578;&#1605;&#1578; &#1575;&#1604;&#1593;&#1605;&#1604;&#1610;&#1577; &#1576;&#1606;&#1580;&#1575;&#1581;' text</div>
+<div class="step successful">Then  I hover over 'User Profile DDL'</div>
+<div class="step successful">Then  I click on 'logout Button'</div>
+<div class="step successful">And  I wait for '3' sec</div>
+<div class="step successful">And  Verify 'login Button' is present</div>
+<div class="step successful">And  I login as 'audit1' with password 's'</div>
+<div class="step successful">And  I hover over 'AllTaskHeaderButton'</div>
+<div class="step successful">And  I click on 'Tasks To View'</div>
+<div class="step ignorable">!-- And  I click on 'Tasks To View Date'</div>
+<div class="step ignorable">!-- And  I click on 'Tasks To View Date'</div>
+<div class="step successful">And  Verify text of 'Tasks To View First Subject Text' equals saved value 'SubjectText'</div>
+<div class="step successful">And  I click on 'Task List View Process Button'</div>
+<div class="step successful">And  Verify text of 'Subject Field' equals saved value 'SubjectText'</div>
+<div class="step successful">And  Verify value of 'Outgoing Get Serial Number' equals saved value 'OutgoingSerialNumberValue'</div>
+<div class="step successful">And  I click on 'Direction Tab'</div>
+<div class="step successful">And  I click on 'View Button'</div>
+<div class="step successful">And  I wait for '3' sec</div>
+<div class="step successful">And  I hover over 'AllTaskHeaderButton'</div>
+<div class="step successful">And  I click on 'Completed Tasks'</div>
+<div class="step successful">And  Verify text of 'Completed Tasks First Subject Text' equals saved value 'SubjectText'</div>
+<div class="step successful">Then  I hover over 'User Profile DDL'</div>
+<div class="step successful">And  I click on 'logout Button'</div>
+<div class="step successful">And  Verify 'login Button' is present</div>
 </div>
 </div>
 

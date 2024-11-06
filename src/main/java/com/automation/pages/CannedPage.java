@@ -370,6 +370,74 @@ public class CannedPage extends AbstractPage<CannedPage> {
 	@FindBy(xpath = "//tbody/tr[@id='ctl00_MainContent_GridView1_ctl00__0']/td[1]/a[1]")
 	public WebElement FirstView;
 
+// ****************************************************************Home Page****************************************************************************************************************
+
+	@FindBy(xpath = "//a[contains(text(),'الرئيسية')]")
+public WebElement HomePage;
+
+
+	// ******************************************************Home Page submodule counts************************************************************************************************
+	@FindBy(xpath = "//span[@id='MainContent_lblMyRequestCount']")
+public WebElement MyTasksCount;
+
+	@FindBy(xpath = "//span[@id='MainContent_lblTasksCount']")
+	public WebElement TasksListCount;
+
+	@FindBy(xpath = "//span[@id='MainContent_lblCopingTaskCount']")
+	public WebElement TaskListToViewCount;
+
+	@FindBy(xpath = "//span[@id='MainContent_lblAnnouncementCount']")
+	public WebElement GeneralizationCount;
+
+	@FindBy(xpath = "//*[@id=\"ctl00_RadMenu1\"]/ul/li[5]/a/span/span")
+	public WebElement GeneralizationCountMainBar;
+
+	@FindBy(xpath = "//span[@id='MainContent_lblNotificationCount']")
+	public WebElement NotificationsCount;
+
+	@FindBy(xpath = "//*[@id=\"ctl00_RadMenu1\"]/ul/li[6]/a/span/span")
+	public WebElement NotificationsCountMainBar;
+
+	@FindBy(xpath = "//*[@id=\"MainContent_lblFollowupCount\"]")
+
+	public WebElement ManagerFollowCount;
+
+	@FindBy(xpath = "//span[@id='MainContent_lblCompletedTaskCount']")
+	public WebElement CompletedTasksCount;
+
+	// ****************************************************** Submodule Grid counts************************************************************************************************
+
+
+
+	@FindBy(xpath = "//*[@id=\"ctl00_MainContent_rgmyRequest_ctl00\"]/tfoot/tr/td/div/div[5]/strong[5]")
+	public WebElement MyTasksGridCount;
+
+
+	@FindBy(xpath = "//*[@id=\"ctl00_MainContent_RadGrid1_ctl00_ctl03_ctl01_ChangePageSizeTextBox\"]")
+	public WebElement TasksListGridSize;
+
+	@FindBy(xpath = "//*[@id=\"ctl00_MainContent_RadGrid1_ctl00_ctl03_ctl01_ChangePageSizeTextBox\"]")
+	public WebElement TaskListToViewGridSize;
+
+	@FindBy(xpath = "//*[@id=\"ctl00_MainContent_RadGrid1_ctl00\"]/tfoot/tr/td/div/div[4]/strong[5]")
+	public WebElement GeneralizationGridCount;
+
+	@FindBy(xpath = "//*[@id=\"ctl00_MainContent_RadGrid1_ctl00\"]/tfoot/tr/td/div/div[5]/strong[5]")
+	public WebElement NotificationsGridCount;
+
+	@FindBy(xpath = "//input[@id='ctl00_MainContent_TaskFollowup_ctl00_ctl03_ctl01_ChangePageSizeTextBox']")
+	public WebElement ManagerFollowGridSize;
+
+	@FindBy(xpath = "//*[@id=\"ctl00_MainContent_CompletedTasksGrid_ctl00\"]/tfoot/tr/td/div/div[4]/strong[5]")
+	public WebElement CompletedTasksGridCount;
+
+	@FindBy(xpath = "//div[contains(text(),'لا يوجد بيانات لإظهارها')]")
+	public WebElement NoDataToView;
+
+	// ****************************************************** Tasks list Page************************************************************************************************
+
+	@FindBy(xpath = "//*[@id=\"ctl00_MainContent_RadGrid1_ctl00_ctl02_ctl02_ImgMassAction\"]")
+	public WebElement MassActionButton;
 
 	/**
 	 *
@@ -633,6 +701,13 @@ public class CannedPage extends AbstractPage<CannedPage> {
 		WebElement element = getElementWithWait(this, elementName);
 		return element.getAttribute(attributeName);
 	}
+	public boolean isElementPresent(String xpath) {
+		try {
+			return webDriverProvider.get().findElements(By.xpath(xpath)).size() > 0;
+		} catch (Exception e) {
+			return false;
+		}
+	}
 
 	public void checkElementEnable(String elementName, boolean testCase) throws Exception {
 		boolean result = isElementEnabled(elementName);
@@ -826,4 +901,5 @@ public class CannedPage extends AbstractPage<CannedPage> {
 			System.out.println("No additional tabs to close.");
 		}
 	}
+
 }

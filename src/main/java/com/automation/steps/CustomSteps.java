@@ -18,7 +18,7 @@ import java.time.LocalDate;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-
+import java.util.ArrayList;
 @Component
 public class CustomSteps extends AbstractSteps {
 
@@ -70,6 +70,38 @@ public class CustomSteps extends AbstractSteps {
 			throw new Exception("Assertion failed: expected '" + expectedValue + "', but was '" + actualValue + "'");
 		}
 	}
+	@Given("[Assertion] Verify text of '$elementName' equals saved value or zero '$variableName'")
+	@When("[Assertion] Verify text of '$elementName' equals saved value or zero '$variableName'")
+	@Then("[Assertion] Verify text of '$elementName' equals saved value or zero '$variableName''")
+	public void assertElementTextEqualsSavedValueOrZero(@Named("elementName") String elementName, @Named("variableName") String variableName) throws Exception {
+		String expectedValue = (String) stateManager.get(variableName);
+		String actualValue = cannedPage.getElementWithWaitText(elementName);
+
+		// Debug log
+		System.out.println("Expected value (from stateManager, key='" + variableName + "'): " + expectedValue);
+		System.out.println("Actual value (from element '" + elementName + "'): " + actualValue);
+
+		// Check if actual text is "0"
+		if ("0".equals(expectedValue)) {
+			// Locate the element with the text 'لا يوجد بيانات لإظهارها'
+			boolean elementExists = cannedPage.isElementPresent("//div[contains(text(),'لا يوجد بيانات لإظهارها')]");
+
+			if (elementExists) {
+				System.out.println("Element indicating no data is present. Assertion passed.");
+				return; // Exit the method as the assertion is true
+			} else {
+				throw new Exception("Assertion failed: expected '0', but no element indicating no data was found.");
+			}
+		}
+
+		// Perform usual assertion if the text is not "0"
+		if (!expectedValue.equals(actualValue)) {
+			throw new Exception("Assertion failed: expected '" + expectedValue + "', but was '" + actualValue + "'");
+		}
+	}
+
+
+
 
 	@Given("[Assertion] Verify value of '$elementName' equals saved value '$variableName'")
 	@When("[Assertion] Verify value of '$elementName' equals saved value '$variableName'")
@@ -87,6 +119,35 @@ public class CustomSteps extends AbstractSteps {
 		}
 	}
 
+	@Given("[Assertion] Verify value of '$elementName' equals saved value or zero '$variableName'")
+	@When("[Assertion] Verify value of '$elementName' equals saved value or zero '$variableName'")
+	@Then("[Assertion] Verify value of '$elementName' equals saved value or zero '$variableName")
+	public void assertElementValueEqualsSavedValueOrZero(@Named("elementName") String elementName, @Named("variableName") String variableName) throws Exception {
+		String expectedValue = (String) stateManager.get(variableName);
+		String actualValue = cannedPage.getElementAttribute(elementName, "value");
+
+		// Debug log
+		System.out.println("Expected value (from stateManager, key='" + variableName + "'): " + expectedValue);
+		System.out.println("Actual value (from element '" + elementName + "'): " + actualValue);
+
+		// Check if actual value is zero
+		if ("0".equals(expectedValue)) {
+			// Locate the element with the text 'لا يوجد بيانات لإظهارها'
+			boolean elementExists = cannedPage.isElementPresent("//div[contains(text(),'لا يوجد بيانات لإظهارها')]");
+
+			if (elementExists) {
+				System.out.println("Element indicating no data is present. Assertion passed.");
+				return; // Exit the method as the assertion is true
+			} else {
+				throw new Exception("Assertion failed: expected '0', but no element indicating no data was found.");
+			}
+		}
+
+		// Perform usual assertion if the value is not zero
+		if (!expectedValue.equals(actualValue)) {
+			throw new Exception("Assertion failed: expected '" + expectedValue + "', but was '" + actualValue + "'");
+		}
+	}
 
 	// Step to verify uniqueness of values in column "رقم التعميم"
 	@Given("[Assertion] Verify uniqueness of values in column 'رقم التعميم' to approaches '$variableName'")
@@ -112,6 +173,9 @@ public class CustomSteps extends AbstractSteps {
 			throw new Exception("Assertion failed: Values in column 'رقم التعميم' are not unique.");
 		}
 	}
+
+	// to check the unwatched generalizations
+
 
 
 	// Step to assert that GeneralizationYearValue equals CurrentYear
@@ -207,6 +271,44 @@ public class CustomSteps extends AbstractSteps {
 	public void elementToHover(String elementName) throws Exception {
 		customPage.elementToHover(elementName);
 	}
-	
+
+	@Given("[Assertion] Verify number of unwatched generalizations in column 'الاجرائات' to approaches '$variableName'")
+	@When("[Assertion] Verify number of unwatched generalizations in column 'الاجرائات' to approaches '$variableName'")
+	@Then("[Assertion] Verify number of unwatched generalizations in column 'الاجرائات' to approaches '$variableName'")
+	public void verifyRowsOfUnseenBooks(@Named("variableName") String variableName) throws Exception {
+		// Fetch the row count from the state manager
+		Object rowCountObj = stateManager.get(variableName); // Fetch as Object
+
+		if (rowCountObj == null) {
+			throw new Exception("Value for '" + variableName + "' not found in stateManager.");
+		}
+
+		// Convert the fetched row count to an integer
+		int rowCount = Integer.parseInt(rowCountObj.toString().trim()); // Convert to integer
+
+		// Fetch the count of rows without the specified image
+		int countWithoutImage = customPage.countRowsWithoutImage(rowCount);
+
+		// Fetch the expected value using the variable name provided in the steps
+		Object expectedValueObj = stateManager.get(variableName); // Use the variable name dynamically
+
+		if (expectedValueObj == null) {
+			throw new Exception("Expected value not found in stateManager for variable: " + variableName);
+		}
+
+		// Convert the expected value to an integer
+		int expectedValue = Integer.parseInt(expectedValueObj.toString().trim()); // Convert to integer
+
+		// Assert that the actual count equals the expected value
+		if (countWithoutImage != expectedValue) {
+			throw new Exception("Assertion failed: Count of rows without the image (" + countWithoutImage + ") does not equal expected value (" + expectedValue + ").");
+		} else {
+			System.out.println("Assertion passed: Count of rows without the image matches the expected value: " + expectedValue);
+		}
+	}
+
+
+
+
 
 }

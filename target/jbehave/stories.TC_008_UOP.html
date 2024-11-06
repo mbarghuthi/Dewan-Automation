@@ -1,0 +1,67 @@
+<div class="story">
+<h1>&#65279;</h1>
+<div class="path">stories/TC_008_UOP.story</div>
+<div class="scenario">
+<h2>Scenario: TC_008_UOP_001 UOP  Home Page counters assertion</h2>
+<div class="step successful">Given  I navigate to 'http://172.16.30.82:8888/login.aspx'</div>
+<div class="step successful">And  I login as 'alaa.abdelbagi' with password 's'</div>
+<div class="step ignorable">!-- My tasks list counter assertion</div>
+<div class="step successful">And  I get text from 'My Tasks Count' and save it as 'NumberOfTasks'</div>
+<div class="step successful">When  I click on 'My Tasks Count'</div>
+<div class="step successful">And  Verify text of 'My Tasks Grid Count' equals saved value or zero 'NumberOfTasks'</div>
+<div class="step ignorable">!-- Tasks list counter assertion</div>
+<div class="step successful">And  I click on 'Home Page'</div>
+<div class="step successful">And  I get text from 'Tasks List Count' and save it as 'NumberOfUnCompletedTask'</div>
+<div class="step successful">And  I click on 'Tasks List Count'</div>
+<div class="step successful">And  Set 'Tasks List Grid Size' value to '10000000'</div>
+<div class="step successful">And  I click on 'Change Grid Size Button'</div>
+<div class="step successful">And  Verify value of 'Tasks List GridSize' equals saved value or zero 'NumberOfUnCompletedTask'</div>
+<div class="step ignorable">!-- Tasks list to view counter assertion</div>
+<div class="step successful">And  I click on 'Home Page'</div>
+<div class="step successful">And  I get text from 'Task List To View Count' and save it as 'TasksforCopyCount'</div>
+<div class="step successful">And  I click on 'Task List To View Count'</div>
+<div class="step successful">And  Set 'Task List To View Grid Size' value to '10000000'</div>
+<div class="step successful">And  I click on 'Change Grid Size Button'</div>
+<div class="step successful">And  Verify value of 'Task List To View Grid Size' equals saved value or zero 'TasksforCopyCount'</div>
+<div class="step ignorable">!-- Generalization counter assertion</div>
+<div class="step successful">And  I click on 'Home Page'</div>
+<div class="step successful">And  I get text from 'Generalization Count' and save it as 'NumberOfGeneralizationTask'</div>
+<div class="step successful">And  I click on 'Generalization Count'</div>
+<div class="step successful">And  Set 'Task List To View Grid Size' value to '10000000'</div>
+<div class="step successful">And  I click on 'Change Grid Size Button'</div>
+<div class="step successful">And  Verify number of unwatched generalizations in column '&#1575;&#1604;&#1575;&#1580;&#1585;&#1575;&#1574;&#1575;&#1578;' to approaches 'NumberOfGeneralizationTask'</div>
+<div class="step ignorable">!-- Generalization counter assertion from main bar</div>
+<div class="step successful">And  I get text from 'Generalization Count Main Bar' and save it as 'NumberOfGeneralizationTask'</div>
+<div class="step successful">And  I click on 'Generalization Count Main Bar'</div>
+<div class="step successful">And  Set 'Task List To View Grid Size' value to '10000000'</div>
+<div class="step successful">And  I click on 'Change Grid Size Button'</div>
+<div class="step successful">And  Verify number of unwatched generalizations in column '&#1575;&#1604;&#1575;&#1580;&#1585;&#1575;&#1574;&#1575;&#1578;' to approaches 'NumberOfGeneralizationTask'</div>
+<div class="step ignorable">!-- Notifications counter assertion</div>
+<div class="step successful">And  I click on 'Home Page'</div>
+<div class="step successful">And  I get text from 'Notifications Count' and save it as 'NumberOfNotifications'</div>
+<div class="step successful">And  I click on 'Notifications Count'</div>
+<div class="step successful">And  Verify text of 'Notifications Grid Count' equals saved value or zero 'NumberOfNotifications'</div>
+<div class="step ignorable">!-- Notifications counter assertion from main bar</div>
+<div class="step successful">And  I get text from 'Notifications Count Main Bar' and save it as 'NumberOfNotifications'</div>
+<div class="step successful">And  I click on 'Notifications Count Main Bar'</div>
+<div class="step successful">And  Verify text of 'Notifications Grid Count' equals saved value or zero 'NumberOfNotifications'</div>
+<div class="step ignorable">!-- Manager Follow-up counter assertion</div>
+<div class="step successful">And  I click on 'Home Page'</div>
+<div class="step successful">And  I get text from 'Manager Follow Count' and save it as 'NumberOfProcessesFollowUp'</div>
+<div class="step successful">And  I click on 'Manager Follow Count'</div>
+<div class="step successful">And  Set 'Manager Follow Grid Size' value to '10000000'</div>
+<div class="step successful">And  I click on 'Change Grid Size Button'</div>
+<div class="step successful">And  Verify value of 'Manager Follow Grid Size' equals saved value or zero 'NumberOfProcessesFollowUp'</div>
+<div class="step ignorable">!-- Completed tasks counter assertion
+!-------------------------------------------------</div>
+<div class="step ignorable">!-- Failed case of completed tasks
+!-------------------------------------------------</div>
+<div class="step ignorable">!-- And  I click on 'Home Page'</div>
+<div class="step ignorable">!-- And  I get text from 'Completed Tasks Count' and save it as 'NumberOfTasks'</div>
+<div class="step ignorable">!-- When  I click on 'Completed Tasks Count'</div>
+<div class="step ignorable">!-- And  Verify text of 'Completed Tasks Grid Count' equals saved value or zero 'NumberOfTasks'</div>
+<div class="step successful">Then  I hover over 'User Profile DDL'</div>
+<div class="step successful">And  I click on 'logout Button'</div>
+<div class="step successful">And  Verify 'login Button' is present</div>
+</div>
+</div>

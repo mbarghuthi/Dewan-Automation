@@ -1,10 +1,16 @@
 package com.automation.pages;
 
 import com.automation.configuration.pageobjects.PageObject;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.junit.Assert;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
 
 
 @PageObject
@@ -34,7 +40,8 @@ public class CustomPage extends AbstractPage<CustomPage> {
     @FindBy(xpath = "//span[contains(text(),'جميع المهام')]")
     public WebElement AllTaskHeaderButton;
 
-
+    @FindBy(xpath = "//*[@id=\"ctl00_MainContent_RadGrid1_ctl00_ctl02_ctl02_ImgMassAction\"]")
+    public WebElement MassActionButton;
     /**
      * Method to enter text into text field
      *
@@ -99,6 +106,27 @@ public class CustomPage extends AbstractPage<CustomPage> {
         actions.moveToElement(element).perform();
         log.info("Clicked on '" + elementName + "'");
         return this;
+    }
+
+    public int countRowsWithoutImage(int rowCount) throws Exception {
+        int count = 0;
+
+        for (int i = 0; i < rowCount; i++) {
+            // XPath to find the image with the specified src in the specified cell
+            String imgXpath = "//*[@id='ctl00_MainContent_RadGrid1_ctl00__" + i + "']/td[5]//img[@src='http://172.16.30.82:8888/Images/View.png']";
+
+            // Check if the image exists in the specified cell
+            List<WebElement> images = webDriverProvider.get().findElements(By.xpath(imgXpath));
+
+            // Only count the row if the image is not present
+            if (images.isEmpty()) {
+                count++;
+            }
+        }
+
+        // Print the count of rows without the image
+        System.out.println("Count of rows without the specified image: " + count);
+        return count;
     }
 
 

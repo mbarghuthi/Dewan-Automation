@@ -47,7 +47,7 @@
 			nav { background-color: #ebebeb!important; }
             .report-name { padding-left: 40%; color: black; font-weight: bold;}
             .test-desc { font-size: 18px; }
-            .test-name { width: 0% !important; word-break: unset; }
+            .test-name { width: fit-content }
             .cyan { display: none; }
             .orange { display: none; }
             .darken-4 { display: none; }

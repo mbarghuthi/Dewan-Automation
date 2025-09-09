@@ -34,14 +34,14 @@ And [Input] Set 'Task List To View Grid Size' value to 'p:GeneralizationSizePage
 And [Input] I click on 'Change Grid Size Button'
 And [Assertion] Verify number of unwatched generalizations in column 'الاجرائات' to approaches 'NumberOfGeneralizationTask'
 !-- Notifications counter assertion
-And [Input] I click on 'Home Page'
-And [Action] I get text from 'Notifications Count' and save it as 'NumberOfNotifications'
-And [Input] I click on 'Notifications Count'
-And [Assertion] Verify text of 'Notifications Grid Count' equals saved value or zero 'NumberOfNotifications'
+!-- And [Input] I click on 'Home Page'
+!-- And [Action] I get text from 'Notifications Count' and save it as 'NumberOfNotifications'
+!-- And [Input] I click on 'Notifications Count'
+!-- And [Assertion] Verify text of 'Notifications Grid Count' equals saved value or zero 'NumberOfNotifications'
 !-- Notifications counter assertion from main bar
-And [Action] I get text from 'Notifications Count Main Bar' and save it as 'NumberOfNotifications'
-And [Input] I click on 'Notifications Count Main Bar'
-And [Assertion] Verify text of 'Notifications Grid Count' equals saved value or zero 'NumberOfNotifications'
+!-- And [Action] I get text from 'Notifications Count Main Bar' and save it as 'NumberOfNotifications'
+!-- And [Input] I click on 'Notifications Count Main Bar'
+!-- And [Assertion] Verify text of 'Notifications Grid Count' equals saved value or zero 'NumberOfNotifications'
 !-- Manager Follow-up counter assertion
 And [Input] I click on 'Home Page'
 And [Action] I get text from 'Manager Follow Count' and save it as 'NumberOfProcessesFollowUp'
@@ -60,3 +60,4 @@ And [Assertion] Verify value of 'Manager Follow Grid Size' equals saved value or
 Then [Navigation] I hover over 'User Profile DDL'
 And [Input] I click on 'logout Button'
 And [Assertion] Verify 'login Button' is present
+

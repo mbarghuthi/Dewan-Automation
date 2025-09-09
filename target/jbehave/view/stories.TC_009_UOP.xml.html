@@ -12,12 +12,6 @@
 <scenario keyword="Scenario:" title="TC_009_UOP_001 UOP   Tasks list mass action">
 <step outcome="successful">Given [Navigation] I navigate to &apos;p:dewanUOP&apos;</step>
 <step outcome="successful">And [Input] I login as &apos;p:UOPuser.audit1&apos; with password &apos;p:password&apos;</step>
-<step outcome="successful">And [Input] I click on &apos;Tasks List Count&apos;</step>
-<step outcome="successful">And [Input] Set &apos;Tasks List Grid Size&apos; value to &apos;p:GeneralizationSizePage&apos;</step>
-<step outcome="successful">And [Input] I click on &apos;Change Grid Size Button&apos;</step>
-<step outcome="successful">And [Action] I get value from &apos;Tasks List Grid Size&apos; and save it as &apos;TasksListBeforeClose&apos;</step>
-<step outcome="successful">And [Assertion] Verify Random Checkbox Selection and Mass Action in Grid</step>
-<step outcome="successful">And [Progress] I wait for &apos;5&apos; sec</step>
 </scenario>
 </story>
 

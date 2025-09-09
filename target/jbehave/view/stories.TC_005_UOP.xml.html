@@ -33,29 +33,39 @@
 <step outcome="successful">And [Progress] I wait for &apos;6&apos; sec</step>
 <step outcome="successful">And [Input] I hover and click on &apos;All Task Header Button&apos;</step>
 <step outcome="successful">And [Input] I click on &apos;My Processes List Header Button&apos;</step>
-<step outcome="successful">And [Assertion] Verify &apos;Process Status&apos; equals &apos;p:ProcessCompletedStatus&apos; text</step>
-<step outcome="successful">Then [Navigation] I hover over &apos;User Profile DDL&apos;</step>
-<step outcome="successful">Then [Input] I click on &apos;logout Button&apos;</step>
-<step outcome="successful">And [Progress] I wait for &apos;3&apos; sec</step>
-<step outcome="successful">And [Assertion] Verify &apos;login Button&apos; is present</step>
-<step outcome="successful">And [Input] I login as &apos;p:UOPuser.audit1&apos; with password &apos;p:password&apos;</step>
-<step outcome="successful">And [Navigation] I hover over &apos;AllTaskHeaderButton&apos;</step>
-<step outcome="successful">And [Input] I click on &apos;Tasks To View&apos;</step>
+<step outcome="failed" keyword="FAILED">And [Assertion] Verify &apos;Process Status&apos; equals &apos;p:ProcessCompletedStatus&apos; text<failure>org.junit.ComparisonFailure: expected:&lt;[&#1578;&#1605;&#1578; &#1575;&#1604;&#1593;&#1605;&#1604;&#1610;&#1577; &#1576;&#1606;&#1580;&#1575;&#1581;]&gt; but was:&lt;[&#1581;&#1601;&#1592; &#1605;&#1572;&#1602;&#1578;]&gt;</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then [Navigation] I hover over &apos;User Profile DDL&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then [Input] I click on &apos;logout Button&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Progress] I wait for &apos;3&apos; sec</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify &apos;login Button&apos; is present</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I login as &apos;p:UOPuser.audit1&apos; with password &apos;p:password&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Navigation] I hover over &apos;AllTaskHeaderButton&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Tasks To View&apos;</step>
 <step outcome="ignorable">!-- And [Input] I click on &apos;Tasks To View Date&apos;</step>
 <step outcome="ignorable">!-- And [Input] I click on &apos;Tasks To View Date&apos;</step>
-<step outcome="successful">And [Assertion] Verify text of &apos;Tasks To View First Subject Text&apos; equals saved value &apos;SubjectText&apos;</step>
-<step outcome="successful">And [Input] I click on &apos;Task List View Process Button&apos;</step>
-<step outcome="successful">And [Assertion] Verify text of &apos;Subject Field&apos; equals saved value &apos;SubjectText&apos;</step>
-<step outcome="successful">And [Assertion] Verify value of &apos;Outgoing Get Serial Number&apos; equals saved value &apos;OutgoingSerialNumberValue&apos;</step>
-<step outcome="successful">And [Input] I click on &apos;Direction Tab&apos;</step>
-<step outcome="successful">And [Input] I click on &apos;View Button&apos;</step>
-<step outcome="successful">And [Progress] I wait for &apos;3&apos; sec</step>
-<step outcome="successful">And [Navigation] I hover over &apos;AllTaskHeaderButton&apos;</step>
-<step outcome="successful">And [Input] I click on &apos;Completed Tasks&apos;</step>
-<step outcome="successful">And [Assertion] Verify text of &apos;Completed Tasks First Subject Text&apos; equals saved value &apos;SubjectText&apos;</step>
-<step outcome="successful">Then [Navigation] I hover over &apos;User Profile DDL&apos;</step>
-<step outcome="successful">And [Input] I click on &apos;logout Button&apos;</step>
-<step outcome="successful">And [Assertion] Verify &apos;login Button&apos; is present</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify text of &apos;Tasks To View First Subject Text&apos; equals saved value &apos;SubjectText&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Task List View Process Button&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify text of &apos;Subject Field&apos; equals saved value &apos;SubjectText&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify value of &apos;Outgoing Get Serial Number&apos; equals saved value &apos;OutgoingSerialNumberValue&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Direction Tab&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;View Button&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Progress] I wait for &apos;3&apos; sec</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Navigation] I hover over &apos;AllTaskHeaderButton&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Completed Tasks&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify text of &apos;Completed Tasks First Subject Text&apos; equals saved value &apos;SubjectText&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then [Navigation] I hover over &apos;User Profile DDL&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;logout Button&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify &apos;login Button&apos; is present</step>
+<failure>org.junit.ComparisonFailure: expected:&lt;[&#1578;&#1605;&#1578; &#1575;&#1604;&#1593;&#1605;&#1604;&#1610;&#1577; &#1576;&#1606;&#1580;&#1575;&#1581;]&gt; but was:&lt;[&#1581;&#1601;&#1592; &#1605;&#1572;&#1602;&#1578;]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.automation.pages.CannedPage.checkElementText(CannedPage.java:538)
+	at com.automation.steps.CannedSteps.check_element_text(CannedSteps.java:158)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:599)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:340)
+...</failure>
 </scenario>
 </story>
 

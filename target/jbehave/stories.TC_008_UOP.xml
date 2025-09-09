@@ -3,52 +3,52 @@
 <step outcome="successful">Given [Navigation] I navigate to &apos;p:dewanUOP&apos;</step>
 <step outcome="successful">And [Input] I login as &apos;p:UOPuser.alaa&apos; with password &apos;p:password&apos;</step>
 <step outcome="ignorable">!-- My tasks list counter assertion</step>
-<step outcome="successful">And [Action] I get text from &apos;My Tasks Count&apos; and save it as &apos;NumberOfTasks&apos;</step>
-<step outcome="successful">When [Input] I click on &apos;My Tasks Count&apos;</step>
-<step outcome="successful">And [Assertion] Verify text of &apos;My Tasks Grid Count&apos; equals saved value or zero &apos;NumberOfTasks&apos;</step>
+<step outcome="failed" keyword="FAILED">And [Action] I get text from &apos;My Tasks Count&apos; and save it as &apos;NumberOfTasks&apos;<failure>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //span[@id=&apos;MainContent_lblMyRequestCount&apos;]&apos; (tried for 30 second(s) with 500 milliseconds interval)</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When [Input] I click on &apos;My Tasks Count&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify text of &apos;My Tasks Grid Count&apos; equals saved value or zero &apos;NumberOfTasks&apos;</step>
 <step outcome="ignorable">!-- Tasks list counter assertion</step>
-<step outcome="successful">And [Input] I click on &apos;Home Page&apos;</step>
-<step outcome="successful">And [Action] I get text from &apos;Tasks List Count&apos; and save it as &apos;NumberOfUnCompletedTask&apos;</step>
-<step outcome="successful">And [Input] I click on &apos;Tasks List Count&apos;</step>
-<step outcome="successful">And [Input] Set &apos;Tasks List Grid Size&apos; value to &apos;p:GeneralizationSizePage&apos;</step>
-<step outcome="successful">And [Input] I click on &apos;Change Grid Size Button&apos;</step>
-<step outcome="successful">And [Assertion] Verify value of &apos;Tasks List GridSize&apos; equals saved value or zero &apos;NumberOfUnCompletedTask&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Home Page&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Action] I get text from &apos;Tasks List Count&apos; and save it as &apos;NumberOfUnCompletedTask&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Tasks List Count&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] Set &apos;Tasks List Grid Size&apos; value to &apos;p:GeneralizationSizePage&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Change Grid Size Button&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify value of &apos;Tasks List GridSize&apos; equals saved value or zero &apos;NumberOfUnCompletedTask&apos;</step>
 <step outcome="ignorable">!-- Tasks list to view counter assertion</step>
-<step outcome="successful">And [Input] I click on &apos;Home Page&apos;</step>
-<step outcome="successful">And [Action] I get text from &apos;Task List To View Count&apos; and save it as &apos;TasksforCopyCount&apos;</step>
-<step outcome="successful">And [Input] I click on &apos;Task List To View Count&apos;</step>
-<step outcome="successful">And [Input] Set &apos;Task List To View Grid Size&apos; value to &apos;p:GeneralizationSizePage&apos;</step>
-<step outcome="successful">And [Input] I click on &apos;Change Grid Size Button&apos;</step>
-<step outcome="successful">And [Assertion] Verify value of &apos;Task List To View Grid Size&apos; equals saved value or zero &apos;TasksforCopyCount&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Home Page&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Action] I get text from &apos;Task List To View Count&apos; and save it as &apos;TasksforCopyCount&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Task List To View Count&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] Set &apos;Task List To View Grid Size&apos; value to &apos;p:GeneralizationSizePage&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Change Grid Size Button&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify value of &apos;Task List To View Grid Size&apos; equals saved value or zero &apos;TasksforCopyCount&apos;</step>
 <step outcome="ignorable">!-- Generalization counter assertion</step>
-<step outcome="successful">And [Input] I click on &apos;Home Page&apos;</step>
-<step outcome="successful">And [Action] I get text from &apos;Generalization Count&apos; and save it as &apos;NumberOfGeneralizationTask&apos;</step>
-<step outcome="successful">And [Input] I click on &apos;Generalization Count&apos;</step>
-<step outcome="successful">And [Input] Set &apos;Task List To View Grid Size&apos; value to &apos;p:GeneralizationSizePage&apos;</step>
-<step outcome="successful">And [Input] I click on &apos;Change Grid Size Button&apos;</step>
-<step outcome="successful">And [Assertion] Verify number of unwatched generalizations in column &apos;&#1575;&#1604;&#1575;&#1580;&#1585;&#1575;&#1574;&#1575;&#1578;&apos; to approaches &apos;NumberOfGeneralizationTask&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Home Page&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Action] I get text from &apos;Generalization Count&apos; and save it as &apos;NumberOfGeneralizationTask&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Generalization Count&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] Set &apos;Task List To View Grid Size&apos; value to &apos;p:GeneralizationSizePage&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Change Grid Size Button&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify number of unwatched generalizations in column &apos;&#1575;&#1604;&#1575;&#1580;&#1585;&#1575;&#1574;&#1575;&#1578;&apos; to approaches &apos;NumberOfGeneralizationTask&apos;</step>
 <step outcome="ignorable">!-- Generalization counter assertion from main bar</step>
-<step outcome="successful">And [Action] I get text from &apos;Generalization Count Main Bar&apos; and save it as &apos;NumberOfGeneralizationTask&apos;</step>
-<step outcome="successful">And [Input] I click on &apos;Generalization Count Main Bar&apos;</step>
-<step outcome="successful">And [Input] Set &apos;Task List To View Grid Size&apos; value to &apos;p:GeneralizationSizePage&apos;</step>
-<step outcome="successful">And [Input] I click on &apos;Change Grid Size Button&apos;</step>
-<step outcome="successful">And [Assertion] Verify number of unwatched generalizations in column &apos;&#1575;&#1604;&#1575;&#1580;&#1585;&#1575;&#1574;&#1575;&#1578;&apos; to approaches &apos;NumberOfGeneralizationTask&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Action] I get text from &apos;Generalization Count Main Bar&apos; and save it as &apos;NumberOfGeneralizationTask&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Generalization Count Main Bar&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] Set &apos;Task List To View Grid Size&apos; value to &apos;p:GeneralizationSizePage&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Change Grid Size Button&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify number of unwatched generalizations in column &apos;&#1575;&#1604;&#1575;&#1580;&#1585;&#1575;&#1574;&#1575;&#1578;&apos; to approaches &apos;NumberOfGeneralizationTask&apos;</step>
 <step outcome="ignorable">!-- Notifications counter assertion</step>
-<step outcome="successful">And [Input] I click on &apos;Home Page&apos;</step>
-<step outcome="successful">And [Action] I get text from &apos;Notifications Count&apos; and save it as &apos;NumberOfNotifications&apos;</step>
-<step outcome="successful">And [Input] I click on &apos;Notifications Count&apos;</step>
-<step outcome="successful">And [Assertion] Verify text of &apos;Notifications Grid Count&apos; equals saved value or zero &apos;NumberOfNotifications&apos;</step>
+<step outcome="ignorable">!-- And [Input] I click on &apos;Home Page&apos;</step>
+<step outcome="ignorable">!-- And [Action] I get text from &apos;Notifications Count&apos; and save it as &apos;NumberOfNotifications&apos;</step>
+<step outcome="ignorable">!-- And [Input] I click on &apos;Notifications Count&apos;</step>
+<step outcome="ignorable">!-- And [Assertion] Verify text of &apos;Notifications Grid Count&apos; equals saved value or zero &apos;NumberOfNotifications&apos;</step>
 <step outcome="ignorable">!-- Notifications counter assertion from main bar</step>
-<step outcome="successful">And [Action] I get text from &apos;Notifications Count Main Bar&apos; and save it as &apos;NumberOfNotifications&apos;</step>
-<step outcome="successful">And [Input] I click on &apos;Notifications Count Main Bar&apos;</step>
-<step outcome="successful">And [Assertion] Verify text of &apos;Notifications Grid Count&apos; equals saved value or zero &apos;NumberOfNotifications&apos;</step>
+<step outcome="ignorable">!-- And [Action] I get text from &apos;Notifications Count Main Bar&apos; and save it as &apos;NumberOfNotifications&apos;</step>
+<step outcome="ignorable">!-- And [Input] I click on &apos;Notifications Count Main Bar&apos;</step>
+<step outcome="ignorable">!-- And [Assertion] Verify text of &apos;Notifications Grid Count&apos; equals saved value or zero &apos;NumberOfNotifications&apos;</step>
 <step outcome="ignorable">!-- Manager Follow-up counter assertion</step>
-<step outcome="successful">And [Input] I click on &apos;Home Page&apos;</step>
-<step outcome="successful">And [Action] I get text from &apos;Manager Follow Count&apos; and save it as &apos;NumberOfProcessesFollowUp&apos;</step>
-<step outcome="successful">And [Input] I click on &apos;Manager Follow Count&apos;</step>
-<step outcome="successful">And [Input] Set &apos;Manager Follow Grid Size&apos; value to &apos;p:GeneralizationSizePage&apos;</step>
-<step outcome="successful">And [Input] I click on &apos;Change Grid Size Button&apos;</step>
-<step outcome="successful">And [Assertion] Verify value of &apos;Manager Follow Grid Size&apos; equals saved value or zero &apos;NumberOfProcessesFollowUp&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Home Page&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Action] I get text from &apos;Manager Follow Count&apos; and save it as &apos;NumberOfProcessesFollowUp&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Manager Follow Count&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] Set &apos;Manager Follow Grid Size&apos; value to &apos;p:GeneralizationSizePage&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;Change Grid Size Button&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify value of &apos;Manager Follow Grid Size&apos; equals saved value or zero &apos;NumberOfProcessesFollowUp&apos;</step>
 <step outcome="ignorable">!-- Completed tasks counter assertion
 !-------------------------------------------------</step>
 <step outcome="ignorable">!-- Failed case of completed tasks
@@ -57,8 +57,19 @@
 <step outcome="ignorable">!-- And [Action] I get text from &apos;Completed Tasks Count&apos; and save it as &apos;NumberOfTasks&apos;</step>
 <step outcome="ignorable">!-- When [Input] I click on &apos;Completed Tasks Count&apos;</step>
 <step outcome="ignorable">!-- And [Assertion] Verify text of &apos;Completed Tasks Grid Count&apos; equals saved value or zero &apos;NumberOfTasks&apos;</step>
-<step outcome="successful">Then [Navigation] I hover over &apos;User Profile DDL&apos;</step>
-<step outcome="successful">And [Input] I click on &apos;logout Button&apos;</step>
-<step outcome="successful">And [Assertion] Verify &apos;login Button&apos; is present</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then [Navigation] I hover over &apos;User Profile DDL&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Input] I click on &apos;logout Button&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And [Assertion] Verify &apos;login Button&apos; is present</step>
+<failure>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //span[@id=&apos;MainContent_lblMyRequestCount&apos;]&apos; (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at com.automation.pages.AbstractPage.getElementWithWait(AbstractPage.java:43)
+	at com.automation.pages.CannedPage.getElementWithWaitText(CannedPage.java:576)
+	at com.automation.steps.CustomSteps.getElementTextAndSave(CustomSteps.java:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:599)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:340)
+...</failure>
 </scenario>
 </story>

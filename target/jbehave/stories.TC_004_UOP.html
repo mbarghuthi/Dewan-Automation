@@ -4,7 +4,7 @@
 <div class="scenario">
 <h2>Scenario: TC_004_UOP_001 UOP Create Generalization</h2>
 <div class="step successful">Given  I navigate to 'http://172.16.30.82:8888/login.aspx'</div>
-<div class="step successful">And  I login as 'alaa.abdelbagi' with password 's'</div>
+<div class="step successful">And  I login as 'alaa.abdelbagi' with password 'Aa1'</div>
 <div class="step successful">And  I click on 'Add Process Button'</div>
 <div class="step successful">And  I click on 'Generalization Button'</div>
 <div class="step successful">When  Set 'Subject Field' value to 'random'</div>
@@ -37,7 +37,7 @@
 <div class="step successful">Then  I hover over 'User Profile DDL'</div>
 <div class="step successful">And  I click on 'logout Button'</div>
 <div class="step successful">And  Verify 'login Button' is present</div>
-<div class="step successful">And  I login as 'mmalhis' with password 's'</div>
+<div class="step successful">And  I login as 'mmalhis' with password 'Aa1'</div>
 <div class="step successful">And  I click on 'Generalizations Header Button'</div>
 <div class="step successful">And  Verify text of 'Generalization First Subject Text' equals saved value 'GeneralizationSubjectText'</div>
 <div class="step ignorable">!-- And  Verify text of 'Generalization First Serial Number' equals saved value 'GeneralizationSerialNumberValue'</div>
@@ -48,18 +48,31 @@
 <div class="scenario">
 <h2>Scenario: TC_004_UOP_002 UOP Check uniqueness serial number for Generalization</h2>
 <div class="step successful">Given  I navigate to 'http://172.16.30.82:8888/login.aspx'</div>
-<div class="step successful">And  I login as 'alaa.abdelbagi' with password 's'</div>
+<div class="step successful">And  I login as 'alaa.abdelbagi' with password 'Aa1'</div>
 <div class="step successful">And  I click on 'Generalizations Header Button'</div>
 <div class="step successful">When  Set 'Generalization Size Page Input' value to '10000000'</div>
 <div class="step successful">And  I click on 'Change Grid Size Button'</div>
 <div class="step successful">And  I wait for '3' sec</div>
 <div class="step successful">And  I get value from 'Generalization Size Page Input' and save it as 'GeneralizationSizePageValue'</div>
-<div class="step failed">Then  Verify uniqueness of values in column '&#1585;&#1602;&#1605; &#1575;&#1604;&#1578;&#1593;&#1605;&#1610;&#1605;' to approaches 'GeneralizationSizePageValue' <span class="keyword failed">(FAILED)</span><br/><span class="message failed">java.lang.Exception: Duplicate value found: 25</span><br/><a color="black" target="jb_scn_shot" href="../screenshots/failed-scenario-1f4cd4b3-b4bb-482c-bc20-bf1649b20d8e.png"><img src="images/failing_screenshot.png" alt="failing screenshot"/></a></div>
-<div class="step notPerformed">And  I click on 'logout Button' <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step successful">Then  Verify uniqueness of values in column '&#1585;&#1602;&#1605; &#1575;&#1604;&#1578;&#1593;&#1605;&#1610;&#1605;' to approaches 'GeneralizationSizePageValue'</div>
+<div class="step failed">And  I click on 'logout Button' <span class="keyword failed">(FAILED)</span><br/><span class="message failed">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (6c7bd1e30e5e72949a82f413b4fd0468)] -&gt; xpath: //a[contains(text(),'&#1582;&#1585;&#1608;&#1580;')]] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\MBARGH~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:2676}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:2676/devtool..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6c7bd1e30e5e72949a82f413b4fd0468</span><br/><a color="black" target="jb_scn_shot" href="../screenshots/failed-scenario-94710582-a947-4e04-ab28-08d49d3739b9.png"><img src="images/failing_screenshot.png" alt="failing screenshot"/></a></div>
 <div class="step notPerformed">And  Verify 'login Button' is present <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
-<pre class="failure">java.lang.Exception: Duplicate value found: 25
-	at com.automation.pages.CannedPage.getValuesFromXpaths(CannedPage.java:748)
-	at com.automation.steps.CustomSteps.verifyUniqueValuesInColumn(CustomSteps.java:107)
+<pre class="failure">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (6c7bd1e30e5e72949a82f413b4fd0468)] -&gt; xpath: //a[contains(text(),'&#1582;&#1585;&#1608;&#1580;')]] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\MBARGH~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:2676}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:2676/devtool..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6c7bd1e30e5e72949a82f413b4fd0468
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at com.automation.pages.AbstractPage.getElementWithWait(AbstractPage.java:43)
+	at com.automation.pages.CannedPage.click(CannedPage.java:484)
+	at com.automation.steps.CannedSteps.click(CannedSteps.java:386)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:599)

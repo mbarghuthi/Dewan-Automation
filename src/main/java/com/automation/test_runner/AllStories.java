@@ -29,7 +29,7 @@ public class AllStories extends JBehaveReportFormatter {
 //				String.format("stories/**/%s.story", STORY_NAME.trim()), "");
 
 // to specify running single story / scenario
-				String.format("stories/TC_008_UOP.story", STORY_NAME.trim()), "");
+				String.format("stories/TC_003_UOP.story", STORY_NAME.trim()), "");
 
 //Run a only for single test scenario
 //				String.format("stories/TC_003_SCC.story", STORY_NAME.trim()), "");

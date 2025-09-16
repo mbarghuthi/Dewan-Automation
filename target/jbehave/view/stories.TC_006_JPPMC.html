@@ -1,0 +1,157 @@
+<html>
+<head>
+<title>stories.TC_006_JPPMC</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+<div class="story">
+<h1>&#65279;</h1>
+<div class="path">stories/TC_006_JPPMC.story</div>
+<div class="scenario">
+<h2>Scenario: TC_006_JPPMC_001 JPPMC Create Incoming</h2>
+<div class="step successful">Given  I navigate to 'http://172.16.30.83:5555/JPPMC_EndUser/login.aspx'</div>
+<div class="step successful">And  I login as 'Hikmat.Zomat' with password 'Aa1'</div>
+<div class="step successful">And  I click on 'Add Process Button'</div>
+<div class="step successful">And  I click on 'Incoming Button'</div>
+<div class="step successful">When  Set 'Subject Field' value to 'random'</div>
+<div class="step successful">And  I select '1 | &#1605;&#1603;&#1578;&#1576; &#1575;&#1604;&#1605;&#1583;&#1610;&#1585; &#1575;&#1604;&#1593;&#1575;&#1605;' from the 'Commissioners Exporting Incoming JPPMC' combo box</div>
+<div class="step successful">And  I wait for '3' sec</div>
+<div class="step successful">And  Select '1 | &#1583;&#1575;&#1574;&#1585;&#1577; &#1575;&#1604;&#1585;&#1602;&#1575;&#1576;&#1577; &#1608;&#1590;&#1576;&#1591; &#1575;&#1604;&#1580;&#1608;&#1583;&#1577;' value from 'Recipients Incoming JPPMC' dropdown list</div>
+<div class="step successful">And  I scroll to end of page</div>
+<div class="step successful">And  I click on 'Save Draft Button'</div>
+<div class="step successful">And  I wait for '5' sec</div>
+<div class="step successful">And  I scroll to end of page</div>
+<div class="step successful">And  I click on 'Save Button'</div>
+<div class="step successful">And  I wait for '3' sec</div>
+<div class="step successful">And  I get value from 'Commissioners Exporting Incoming JPPMC' and save it as 'GeneralManagerOfficeComboBoxValue'</div>
+<div class="step successful">And  I get text from 'Subject Field' and save it as 'SubjectText'</div>
+<div class="step successful">And  I get value from 'Incoming Get Serial Number' and save it as 'IncomingSerialNumberValue'</div>
+<div class="step successful">And  I wait for '3' sec</div>
+<div class="step successful">And  I scroll to end of page</div>
+<div class="step successful">And  I scroll to end of page</div>
+<div class="step successful">And  I click on 'Direction Tab'</div>
+<div class="step successful">And  I wait for '3' sec</div>
+<div class="step successful">And  I scroll to end of page</div>
+<div class="step successful">And  I scroll to end of page</div>
+<div class="step successful">And  I wait for '3' sec</div>
+<div class="step successful">And  I click on 'Direction Button'</div>
+<div class="step successful">And  I wait for '6' sec</div>
+<div class="step successful">And  I hover on 'All Task Header Button'</div>
+<div class="step successful">And  I click on 'My Processes List Header Button'</div>
+<div class="step successful">And  Verify 'Process Status' equals '&#1578;&#1581;&#1578; &#1575;&#1604;&#1575;&#1580;&#1585;&#1575;&#1569;' text</div>
+<div class="step successful">And  I click on 'My Processes List View Process Button'</div>
+<div class="step ignorable">!-- And  I wait for '6' sec</div>
+<div class="step successful">And  I scroll to end of page</div>
+<div class="step successful">And  I scroll to end of page</div>
+<div class="step successful">And  I scroll to end of page</div>
+<div class="step successful">And  I click on 'Incoming Users Directed To'</div>
+<div class="step successful">And  Verify 'Incoming User Name Directed To1' equals '&#1605;&#1604;&#1603; &#1605;&#1581;&#1605;&#1583; &#1605;&#1588;&#1607;&#1608;&#1585; &#1588;&#1605;&#1587; &#1575;&#1604;&#1583;&#1610;&#1606; &#1575;&#1604;&#1588;&#1575;&#1588;' text</div>
+<div class="step successful">And  I hover on 'All Task Header Button'</div>
+<div class="step successful">And  I click on 'Completed Tasks'</div>
+<div class="step successful">And  Verify text of 'Completed Tasks First Subject Text' equals saved value 'SubjectText'</div>
+<div class="step successful">And  I hover on  'User Name Header Button'</div>
+<div class="step successful">And  I click on 'logout Button'</div>
+<div class="step successful">And  I login as 'MALAK.ALSHISHANI' with password 'Aa1'</div>
+<div class="step successful">And  I hover on  'All Task Header Button'</div>
+<div class="step successful">And  I click on 'Task List Header Button'</div>
+<div class="step successful">And  Verify text of 'Task List First Subject Text' equals saved value 'SubjectText'</div>
+<div class="step successful">And  I click on 'Task List View Process Button'</div>
+<div class="step successful">And  I wait for '6' sec</div>
+<div class="step successful">And  I scroll to end of page</div>
+<div class="step successful">And  I click on 'Close Button'</div>
+<div class="step successful">And  I wait for '3' sec</div>
+<div class="step successful">And  I accept alert</div>
+<div class="step successful">And  I wait for '3' sec</div>
+<div class="step successful">And  I hover on 'All Task Header Button'</div>
+<div class="step successful">And  I click on 'Completed Tasks'</div>
+<div class="step successful">And  Verify text of 'Completed Tasks First Subject Text' equals saved value 'SubjectText'</div>
+<div class="step successful">And  I hover on  'User Name Header Button'</div>
+<div class="step successful">And  I click on 'logout Button'</div>
+<div class="step successful">And  Verify 'login Button' is present</div>
+<div class="step successful">Then  I login as 'Hikmat.Zomat' with password 'Aa1'</div>
+<div class="step successful">And  I hover on 'All Task Header Button'</div>
+<div class="step successful">And  I click on 'My Processes List Header Button'</div>
+<div class="step successful">And  Verify 'Process Status' equals '&#1578;&#1605;&#1578; &#1575;&#1604;&#1593;&#1605;&#1604;&#1610;&#1577; &#1576;&#1606;&#1580;&#1575;&#1581;' text</div>
+<div class="step successful">And  I hover on  'User Name Header Button'</div>
+<div class="step successful">And  I click on 'logout Button'</div>
+<div class="step successful">And  Verify 'login Button' is present</div>
+</div>
+<div class="scenario">
+<h2>Scenario: TC_006_JPPMC_002 JPPMC Create Incoming To view</h2>
+<div class="step successful">Given  I navigate to 'http://172.16.30.83:5555/JPPMC_EndUser/login.aspx'</div>
+<div class="step ignorable">!-- And  I login as 'Hikmat.Zomat' with password 'Aa1'</div>
+<div class="step ignorable">!-- And  I click on 'Add Process Button'</div>
+<div class="step ignorable">!-- And  I click on 'Incoming Button'</div>
+<div class="step ignorable">!-- When  Set 'Subject Field' value to 'random'</div>
+<div class="step ignorable">!-- !-- And  Set 'Num Book From The Source' value to 'nanotime'</div>
+<div class="step ignorable">!-- And  I select '&#1593; | &#1605;&#1583;&#1610;&#1585; / &#1593;&#1591;&#1608;&#1601;&#1577; &#1575;&#1604;&#1605;&#1583;&#1610;&#1585; &#1575;&#1604;&#1593;&#1575;&#1605;' from the 'General Manager Office Incoming JPPMC' combo box</div>
+<div class="step ignorable">!-- And  I wait for '3' sec</div>
+<div class="step ignorable">!-- And  Select '1 | &#1583;&#1575;&#1574;&#1585;&#1577; &#1575;&#1604;&#1585;&#1602;&#1575;&#1576;&#1577; &#1608;&#1590;&#1576;&#1591; &#1575;&#1604;&#1580;&#1608;&#1583;&#1577;' value from 'Recipients Incoming JPPMC' dropdown list</div>
+<div class="step ignorable">!-- And  I click on 'Save Draft Button'</div>
+<div class="step ignorable">!-- And  I click on 'Save Button'</div>
+<div class="step ignorable">!-- And  I wait for '3' sec</div>
+<div class="step ignorable">!-- And  I get value from 'General Manager Office Incoming JPPMC' and save it as 'GeneralManagerOfficeComboBoxValue'</div>
+<div class="step ignorable">!-- And  I get text from 'Subject Field' and save it as 'SubjectText'</div>
+<div class="step ignorable">!-- And  I get value from 'Incoming Get Serial Number' and save it as 'IncomingSerialNumberValue'</div>
+<div class="step ignorable">!-- And  I scroll to end of page</div>
+<div class="step ignorable">!-- And  I scroll to end of page</div>
+<div class="step ignorable">!-- And  I click on 'Direction Tab'</div>
+<div class="step ignorable">!-- And  I click on 'Click On All Check Box'</div>
+<div class="step ignorable">!-- And  I click on 'Delete Button'</div>
+<div class="step ignorable">!-- And  I wait for '3' sec</div>
+<div class="step ignorable">!-- And  I click on 'Close Notification Button'</div>
+<div class="step ignorable">!-- And  I wait for '3' sec</div>
+<div class="step ignorable">!-- And  I select the 'To View Radio Button'</div>
+<div class="step ignorable">!-- And  I wait for '5' sec</div>
+<div class="step ignorable">!-- And  I scroll to end of page</div>
+<div class="step ignorable">!-- And  I click on 'Add Button'</div>
+<div class="step ignorable">!-- And  I wait for '4' sec</div>
+<div class="step ignorable">!-- And  I click on 'Close Notification Button'</div>
+<div class="step ignorable">!-- And  I click on 'Direction Button'</div>
+<div class="step ignorable">!-- And  I wait for '4' sec</div>
+<div class="step ignorable">!-- And  I hover on 'All Task Header Button'</div>
+<div class="step ignorable">!-- And  I click on 'My Processes List Header Button'</div>
+<div class="step ignorable">!-- And  Verify 'Process Status' equals '&#1578;&#1605;&#1578; &#1575;&#1604;&#1593;&#1605;&#1604;&#1610;&#1577; &#1576;&#1606;&#1580;&#1575;&#1581;' text</div>
+<div class="step ignorable">!-- And  I click on 'My Processes List View Process Button'</div>
+<div class="step ignorable">!-- And  I click on 'Incoming Users Directed To'</div>
+<div class="step ignorable">!-- And  Verify 'Incoming User Name Directed To1' equals '&#1605;&#1606;&#1575;&#1585; &#1605;&#1581;&#1605;&#1583; &#1605;&#1581;&#1605;&#1608;&#1583; &#1583;&#1608;&#1580;&#1575;&#1606;' text</div>
+<div class="step ignorable">!-- And  I hover on 'All Task Header Button'</div>
+<div class="step ignorable">!-- And  I click on 'Completed Tasks'</div>
+<div class="step ignorable">!-- And  Verify text of 'Completed Tasks First Subject Text' equals saved value 'SubjectText'</div>
+<div class="step ignorable">!-- And  I click on 'logout Button'</div>
+<div class="step ignorable">!-- Then  I login as 'manar.dojan' with password 'Aa1'</div>
+<div class="step ignorable">!-- And  I click on 'Tasks To View'</div>
+<div class="step ignorable">!-- And  Verify text of 'Tasks To View First Subject Text SCC' equals saved value 'SubjectText'</div>
+<div class="step ignorable">!-- And  I click on 'Generalizations View Process Button'</div>
+<div class="step ignorable">!-- And  Verify text of 'Subject Field' equals saved value 'SubjectText'</div>
+<div class="step ignorable">!-- And  Verify value of 'Incoming Get Serial Number' equals saved value 'IncomingSerialNumberValue'</div>
+<div class="step ignorable">!-- And  I click on 'logout Button'</div>
+<div class="step ignorable">!-- And  Verify 'login Button' is present</div>
+</div>
+</div>
+
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>

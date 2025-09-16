@@ -265,10 +265,10 @@ public class CustomSteps extends AbstractSteps {
 //		}
 	}
 
-	@Given("[Input] I hover and click on '$elementName'")
-	@When("[Input] I hover and click on '$elementName'")
-	@Then("[Input] I hover and click on '$elementName'")
-	public void elementToHover(String elementName) throws Exception {
+	@Given("[Input] I hover on '$elementName'")
+	@When("[Input] I hover on '$elementName'")
+	@Then("[Input] I hover on '$elementName'")
+	public void elementToHoverStep(String elementName) throws Exception {
 		customPage.elementToHover(elementName);
 	}
 

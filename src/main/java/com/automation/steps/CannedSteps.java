@@ -392,7 +392,8 @@ public class CannedSteps extends AbstractSteps {
 	@When("[Input] I login as '$userName' with password '$password'")
 	@Then("[Input] I login as '$userName' with password '$password'")
 	public void loginAs(@Named("userName") String userName, @Named("password") String password) throws Throwable {
-//		cannedPage.uncheckCheckbox("Unified Login");
+		cannedPage.uncheckCheckbox("Unified Login");
+				Thread.sleep(3000);
 		cannedPage.enterText("userName", userName);
 				Thread.sleep(3000);
 		cannedPage.click("password");

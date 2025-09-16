@@ -91,7 +91,6 @@ public class CannedPage extends AbstractPage<CannedPage> {
 	public WebElement GeneralizationsViewProcessButton;
 
 	@FindBy(css = "#ctl00_MainContent_RadGrid1_ctl00_ctl04_OpenLink")
-
 	public WebElement TaskListViewProcessButton;
 
 	@FindBy(css = "#ctl00_MainContent_rgmyRequest_ctl00_ctl04_OpenLink")
@@ -115,7 +114,7 @@ public class CannedPage extends AbstractPage<CannedPage> {
 	@FindBy(xpath = "//tbody/tr[@id='ctl00_MainContent_rgmyRequest_ctl00__0']/td[5]")
 	public WebElement ProcessStatus;
 
-	@FindBy(xpath = "//*[@id=\"ctl00_RadMenu1\"]/ul/li[4]/div/ul/li[1]/a")
+	@FindBy(xpath = "//a[contains(text(),'مهام للإجراء')]")
 	public  WebElement TaskListHeaderButton;
 
 
@@ -125,7 +124,7 @@ public class CannedPage extends AbstractPage<CannedPage> {
 	@FindBy(xpath = "//*[@id=\"ctl00_MainContent_RadGrid1_ctl00__0\"]/td[5]")
 	public WebElement TasksToViewFirstSubjectText;
 
-	@FindBy(xpath="//*[@id=\"ctl00_RadMenu1\"]/ul/li[1]/a")
+	@FindBy(css = "ul.rmRootGroup li.profile a.rmLink.rmRootLink")
 	public WebElement UserNameHeaderButton;
 
 	@FindBy(xpath = "//a[contains(text(),'الملف الشخصي')]")
@@ -198,25 +197,16 @@ public class CannedPage extends AbstractPage<CannedPage> {
 	public WebElement OutgoingUserNameDirectedTo1UOP;
 
 
-// ****************************************************************Outgoing Page elements SCC****************************************************************************************************************
+// ****************************************************************Outgoing Page elements JPPMC****************************************************************************************************************
 
 	@FindBy(css = "#ctl00_MainContent_ddlOrg_2371_Input")
-	public WebElement GeneralManagerOfficeOutgoingSCC;
-
-	@FindBy(css = "#ctl00_MainContent_ddl_2632_Input")
-	public WebElement FileNameSCC;
-
-	@FindBy(css = "#MainContent_txt_2643")
-	public WebElement FileSubjectSCC;
+	public WebElement CommissionersExportingOutgoingJPPMC;
 
 	@FindBy(css = "#ctl00_MainContent_ddl_2375_Input")
-	public WebElement ReceiverNameOutgoingSCC;
-
-	@FindBy(css = "#ctl00_MainContent_ddl_2635_Input")
-	public WebElement SubReceiverNameOutgoingSCC;
+	public WebElement AddresseeNameOutgoingJPPMC;
 
 	@FindBy(xpath = "//*[@id=\"ctl00_MainContent_GVUserOrg_ctl00__0\"]/td[4]")
-	public WebElement OutgoingUserNameDirectedTo1SCC;
+	public WebElement OutgoingUserNameDirectedTo1JPPMC;
 
 //	@FindBy(css = "#MainContent_uploadFile_2472_LinklblMessages")
 //	public WebElement AttachmentsButtonUOP;
@@ -244,20 +234,20 @@ public class CannedPage extends AbstractPage<CannedPage> {
 	public WebElement Delivery;
 
 
-// ****************************************************************Incoming Page elements SCC****************************************************************************************************************
+// ****************************************************************Incoming Page elements JPPMC****************************************************************************************************************
 
 	@FindBy(css = "#ctl00_MainContent_ddlOrg_2496_Input")
-	public WebElement GeneralManagerOfficeIncomingSCC;
+	public WebElement CommissionersExportingIncomingJPPMC;
 
-	@FindBy(css = "#ctl00_MainContent_ddl_2492_Input")
-	public WebElement ReceiverNameIncomingSCC;
+	@FindBy(css = "#ctl00_MainContent_ddl_2668_Input")
+	public WebElement RecipientsIncomingJPPMC;
 
 	@FindBy(css = "#ctl00_MainContent_ddl_2628_Input")
-	public WebElement SubReceiverNameIncomingSCC;
+	public WebElement SubReceiverNameIncomingJPPMC;
 
 //	temporary
 	@FindBy(xpath = "//*[@id=\"ctl00_MainContent_RadGrid1_ctl00__0\"]/td[5]")
-	public WebElement TasksToViewFirstSubjectTextSCC;
+	public WebElement TasksToViewFirstSubjectTextJPPMC;
 
 //**************************************************
 
@@ -309,23 +299,23 @@ public class CannedPage extends AbstractPage<CannedPage> {
 	// ****************************************************************Internal correspondence Page elements UOP****************************************************************************************************************
 
 
-	// ****************************************************************Internal correspondence Page elements SCC****************************************************************************************************************
-	@FindBy(xpath = "//a[contains(text(),'مذكرات وكتب داخلية')]")
-	public WebElement InternalCorrespondenceButtonSCC;
+	// ****************************************************************Internal correspondence Page elements JPPMC****************************************************************************************************************
+	@FindBy(xpath = "(//a[@class='rmLink'][contains(text(),'الكتب الداخلية')])[1]")
+	public WebElement InternalCorrespondenceButtonJPPMC;
 
 	@FindBy(css = "#ctl00_MainContent_ddlOrg_2593_Input")
-	public WebElement GeneralManagerOfficeInternalCorrespondenceSCC;
+	public WebElement CommissionerInternalCorrespondenceJPPMC;
 
-	@FindBy(css = "#ctl00_MainContent_ddl_2638_Input")
-	public WebElement FileNameInternalCorrespondenceSCC;
+	@FindBy(css = "#ctl00_MainContent_ddl_2648_Input")
+	public WebElement MainClassificationInternalCorrespondenceJPPMC;
 
 	@FindBy(css = "#MainContent_txt_2642")
-	public WebElement FileSubjectInternalCorrespondenceSCC;
+	public WebElement FileSubjectInternalCorrespondenceJPPMC;
 
-	@FindBy(css = "#MainContent_txt_2639")
-	public WebElement InternalCorrespondenceGetSerialNumberSCC;
+	@FindBy(css = "#MainContent_txtSerial_2591")
+	public WebElement InternalCorrespondenceGetSerialNumberJPPMC;
 
-// ****************************************************************Internal correspondence Page elements SCC****************************************************************************************************************
+// ****************************************************************Internal correspondence Page elements JPPMC****************************************************************************************************************
 
 	@FindBy(xpath = "//*[@id=\"ctl00_li12\"]/a")
 	public WebElement ProcessModuleButton;
@@ -466,7 +456,7 @@ public WebElement MyTasksCount;
 	 */
 	public CannedPage enterText(String elementName, String text) throws Exception {
 		WebElement element = getElementWithWait(this, elementName);
-		// element.clear();
+		 element.clear();
 		element.sendKeys(text);
 		log.info("Filled '" + elementName + "' with value: " + text);
 		return this;

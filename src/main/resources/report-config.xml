@@ -16,7 +16,7 @@
 	<reportName>
 	<![CDATA[
         <div class="logo-container" style= width:130px>
-            <img src='http://172.16.30.82:808/Diwan_Enduser/Images/OptimizaLogo.png' style='height: inherit; width: inherit; margin-top:0px'/>
+            <img src='http://172.16.30.83:5555/JPPMC_EndUser/Images/OptimizaLogo.png' style='height: inherit; width: inherit; margin-top:0px'/>
         </div>
         Dewan Automation Report
     ]]>

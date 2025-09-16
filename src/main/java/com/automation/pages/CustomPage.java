@@ -3,11 +3,15 @@ package com.automation.pages;
 import com.automation.configuration.pageobjects.PageObject;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.junit.Assert;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -99,14 +103,33 @@ public class CustomPage extends AbstractPage<CustomPage> {
     }
 
     public CustomPage elementToHover(String elementName) throws Exception {
-        // wait element
-        WebElement element = getElementWithWait(this, elementName);
-		Actions actions = new Actions(webDriverProvider.get());
-//        // Perform the mouse hover action
-        actions.moveToElement(element).perform();
-        log.info("Clicked on '" + elementName + "'");
+        WebDriver driver = webDriverProvider.get();
+
+        new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("ul.rmRootGroup")));
+
+        if ("User Name Header Button".equalsIgnoreCase(elementName)) {
+            WebElement element = new WebDriverWait(driver, Duration.ofSeconds(10))
+                    .until(ExpectedConditions.presenceOfElementLocated(
+                            By.cssSelector("ul.rmRootGroup li.profile a.rmLink.rmRootLink")));
+
+            new WebDriverWait(driver, Duration.ofSeconds(10))
+                    .until(ExpectedConditions.visibilityOf(element));
+
+            ((JavascriptExecutor) driver).executeScript(
+                    "arguments[0].scrollIntoView({block:'center'});", element);
+
+            new Actions(driver).moveToElement(element).pause(Duration.ofMillis(150)).perform();
+            log.info("Hovered on 'User Name Header Button'");
+            return this;
+        }
+
+        WebElement el = getElementWithWait(this, elementName);
+        new Actions(driver).moveToElement(el).perform();
+        log.info("Hovered on '" + elementName + "'");
         return this;
     }
+
 
     public int countRowsWithoutImage(int rowCount) throws Exception {
         int count = 0;

@@ -1,5 +1,0 @@
-<story path="stories/TC_002_SCC.story" title="&#65279;">
-<scenario keyword="Scenario:" title="TC_002_SCC_001 SCC Navigate to link">
-<step outcome="successful">Given [Navigation] I navigate to &apos;p:dewanSCC&apos;</step>
-</scenario>
-</story>

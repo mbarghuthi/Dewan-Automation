@@ -1,5 +1,0 @@
-<story path="stories/TC_001_SCC_PRECONDITION.story" title="">
-<scenario keyword="Scenario:" title="TC_001_SCC_001 SCC Admin Precondition">
-<step outcome="successful">Given [Navigation] I navigate to &apos;p:dewanAdminSCC&apos;</step>
-</scenario>
-</story>

@@ -1,5 +1,0 @@
-<story path="stories/TC_001.story" title="">
-<scenario keyword="Scenario:" title="TC_001 Navigate to link">
-<step outcome="successful">Given [Navigation] I navigate to &apos;p:dewanPetra&apos;</step>
-</scenario>
-</story>

@@ -29,7 +29,11 @@ And [Input] I click on 'Generalizations Header Button'
 And [Assertion] Verify text of 'Generalization First Subject Text' equals saved value 'GeneralizationSubjectText'
 !-- And [Assertion] Verify text of 'Generalization First Serial Number' equals saved value 'GeneralizationSerialNumberValue'
 And [Input] I click on 'Generalizations View Process Button'
+And [Progress] I wait for '3' sec
 And [Navigation] I scroll to end of page
+And [Progress] I wait for '3' sec
+And [Navigation] I scroll to end of page
+And [Progress] I wait for '3' sec
 And [Input] I click on 'Direction Tab'
 And [Assertion] Verify 'Generalize Button' not present
 And [Progress] I wait for '3' sec

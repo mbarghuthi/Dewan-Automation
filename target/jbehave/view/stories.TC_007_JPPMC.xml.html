@@ -34,8 +34,6 @@
 <step outcome="successful">And [Progress] I wait for &apos;3&apos; sec</step>
 <step outcome="successful">And [Navigation] I scroll to end of page</step>
 <step outcome="successful">And [Progress] I wait for &apos;3&apos; sec</step>
-<step outcome="ignorable">!-- And [Navigation] I scroll to end of page</step>
-<step outcome="ignorable">!-- And [Navigation] I scroll to end of page</step>
 <step outcome="successful">And [Input] I click on &apos;Direction Tab&apos;</step>
 <step outcome="successful">And [Progress] I wait for &apos;3&apos; sec</step>
 <step outcome="successful">And [Navigation] I scroll to end of page</step>
@@ -82,8 +80,6 @@
 <step outcome="successful">And [Progress] I wait for &apos;3&apos; sec</step>
 <step outcome="successful">And [Navigation] I scroll to end of page</step>
 <step outcome="successful">And [Progress] I wait for &apos;3&apos; sec</step>
-<step outcome="ignorable">!-- And [Input] I click on &apos;Direction Tab&apos;</step>
-<step outcome="ignorable">!-- And [Progress] I wait for &apos;5&apos; sec</step>
 <step outcome="successful">And [Input] I click on &apos;Close Button&apos;</step>
 <step outcome="successful">And [Javascript] I accept alert</step>
 <step outcome="successful">And [Progress] I wait for &apos;3&apos; sec</step>
@@ -101,7 +97,12 @@
 <step outcome="successful">And [Input] I click on &apos;logout Button&apos;</step>
 <step outcome="successful">And [Assertion] Verify &apos;login Button&apos; is present</step>
 </scenario>
-</story>
+<scenario keyword="Scenario:" title="TC_007_JPPMC_002 JPPMC  Create Internal Correspondence To view">
+<step outcome="successful">Given [Navigation] I navigate to &apos;p:dewanJPPMC&apos;</step>
+<step outcome="ignorable">!-- And [Input] I login as &apos;p:JPPMCuser.HikmatZomat&apos; with password &apos;p:JPPMC.password&apos;</step>
+<step outcome="ignorable">!-- And [Input] I click on &apos;Add Process Button&apos;</step>
+<step outcome="ignorable">!-- And [Input] I click on &apos;Internal Correspondence Button SCC&apos;</step>
+<step outcome="ignorable">!-- When [Input] Set &apos;Subject Field&apos; value to &apos;random&apos;</step>
 
 ]]></script>
 </body>

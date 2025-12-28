@@ -8,3 +8,4 @@ And [Assertion] Verify 'User Name Value' have attribute 'value' with 'p:UOPuser.
 Then [Navigation] I hover over 'User Profile DDL'
 And [Input] I click on 'logout Button'
 And [Assertion] Verify 'login Button' is present
+And inp

@@ -1,6 +1,0 @@
-<story path="stories/TC_009_UOP.story" title="&#65279;">
-<scenario keyword="Scenario:" title="TC_009_UOP_001 UOP   Tasks list mass action">
-<step outcome="successful">Given [Navigation] I navigate to &apos;p:dewanUOP&apos;</step>
-<step outcome="successful">And [Input] I login as &apos;p:UOPuser.audit1&apos; with password &apos;p:password&apos;</step>
-</scenario>
-</story>

@@ -14,15 +14,21 @@ And [Action] I get value from 'Outgoing Get Serial Number' and save it as 'Outgo
 And [Progress] I wait for '5' sec
 And [Navigation] I scroll to end of page
 And [Input] I click on 'Save Button'
-And [Progress] I wait for '5' sec
+And [Progress] I wait for '3' sec
 And [Navigation] I scroll to end of page
+And [Progress] I wait for '3' sec
+And [Navigation] I scroll to end of page
+And [Progress] I wait for '3' sec
 And [Input] I click on 'Direction Tab'
 !-- And [Input] I click on 'Add Button'
 !-- And [Progress] I wait for '4' sec
 !-- And [Input] I click on 'Close Notification Button'
 !-- And [Assertion] Verify 'Outgoing User Name Directed To1 JPPMC' equals 'p:manarDojan.username' text
+And [Progress] I wait for '3' sec
 And [Navigation] I scroll to end of page
-And [Progress] I wait for '5' sec
+And [Progress] I wait for '3' sec
+And [Navigation] I scroll to end of page
+And [Progress] I wait for '3' sec
 And [Input] I click on 'Direction Button'
 And [Progress] I wait for '10' sec
 And [Input] I hover on  'All Task Header Button'
@@ -38,8 +44,11 @@ And [Assertion] Verify text of 'Tasks To View First Subject Text JPPMC' equals s
 And [Input] I click on 'Generalizations View Process Button'
 And [Assertion] Verify text of 'Subject Field' equals saved value 'SubjectText'
 And [Assertion] Verify value of 'Outgoing Get Serial Number' equals saved value 'OutgoingSerialNumberValue'
+And [Progress] I wait for '3' sec
 And [Navigation] I scroll to end of page
+And [Progress] I wait for '3' sec
 And [Navigation] I scroll to end of page
+And [Progress] I wait for '3' sec
 And [Input] I click on 'Direction Tab'
 And [Input] I click on 'View Button'
 And [Progress] I wait for '5' sec

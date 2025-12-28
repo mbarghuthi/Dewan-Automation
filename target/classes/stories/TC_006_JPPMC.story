@@ -19,10 +19,13 @@ And [Action] I get text from 'Subject Field' and save it as 'SubjectText'
 And [Action] I get value from 'Incoming Get Serial Number' and save it as 'IncomingSerialNumberValue'
 And [Progress] I wait for '3' sec
 And [Navigation] I scroll to end of page
+And [Progress] I wait for '3' sec
 And [Navigation] I scroll to end of page
+And [Progress] I wait for '3' sec
 And [Input] I click on 'Direction Tab'
 And [Progress] I wait for '3' sec
 And [Navigation] I scroll to end of page
+And [Progress] I wait for '3' sec
 And [Navigation] I scroll to end of page
 And [Progress] I wait for '3' sec
 And [Input] I click on 'Direction Button'
@@ -31,10 +34,11 @@ And [Input] I hover on 'All Task Header Button'
 And [Input] I click on 'My Processes List Header Button'
 And [Assertion] Verify 'Process Status' equals 'p:ProcessUnCompletedStatus' text
 And [Input] I click on 'My Processes List View Process Button'
-!-- And [Progress] I wait for '6' sec
+And [Progress] I wait for '3' sec
 And [Navigation] I scroll to end of page
+And [Progress] I wait for '3' sec
 And [Navigation] I scroll to end of page
-And [Navigation] I scroll to end of page
+And [Progress] I wait for '3' sec
 And [Input] I click on 'Incoming Users Directed To'
 And [Assertion] Verify 'Incoming User Name Directed To1' equals 'p:MalakAlshishani.username' text
 And [Input] I hover on 'All Task Header Button'
@@ -47,8 +51,11 @@ And [Input] I hover on  'All Task Header Button'
 And [Input] I click on 'Task List Header Button'
 And [Assertion] Verify text of 'Task List First Subject Text' equals saved value 'SubjectText'
 And [Input] I click on 'Task List View Process Button'
-And [Progress] I wait for '6' sec
+And [Progress] I wait for '3' sec
 And [Navigation] I scroll to end of page
+And [Progress] I wait for '3' sec
+And [Navigation] I scroll to end of page
+And [Progress] I wait for '3' sec
 And [Input] I click on 'Close Button'
 And [Progress] I wait for '3' sec
 And [Javascript] I accept alert

@@ -24,7 +24,7 @@
 		<javax.mail.version>1.6.2</javax.mail.version>
 		<spring.core.version>5.3.21</spring.core.version>
 		<spring.context.version>5.3.21</spring.context.version>
-		<spring.beans.version>5.3.21</spring.beans.version>
+		<spring.beans.version>5.3.39</spring.beans.version>
 	</properties>
 
 	<dependencies>

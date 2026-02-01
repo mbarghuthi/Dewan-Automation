@@ -9,7 +9,7 @@
 	<name>Web</name>
 
 	<properties>
-		<jbehave.core.version>4.1</jbehave.core.version>
+		<jbehave.core.version>4.0.5</jbehave.core.version>
 		<jbehave.site.version>3.3.1</jbehave.site.version>
 		<junit.runner.version>1.2.0</junit.runner.version>
 		<log4j.version>1.2.17</log4j.version>
@@ -17,14 +17,14 @@
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<selenium.version>4.10.0</selenium.version>
-		<cglib.version>3.2.11</cglib.version>
-		<spring.version>3.2.2.RELEASE</spring.version>
+		<cglib.version>3.3.0</cglib.version>
+		<spring.version>3.1.1.RELEASE</spring.version>
 		<extent.version>2.41.2</extent.version>
 		<testng.version>7.8.0</testng.version>
 		<javax.mail.version>1.6.2</javax.mail.version>
-		<spring.core.version>6.1.14</spring.core.version>
-		<spring.context.version>5.3.26</spring.context.version>
-		<spring.beans.version>6.1.14</spring.beans.version>
+		<spring.core.version>5.3.21</spring.core.version>
+		<spring.context.version>5.3.21</spring.context.version>
+		<spring.beans.version>5.3.21</spring.beans.version>
 	</properties>
 
 	<dependencies>
@@ -67,7 +67,7 @@
 		<dependency>
 			<groupId>io.github.bonigarcia</groupId>
 			<artifactId>webdrivermanager</artifactId>
-			<version>6.0.1</version>
+			<version>5.8.0</version>
 		</dependency>
 		<!-- add it when update selenium version -->
 		<!-- https://mvnrepository.com/artifact/cglib/cglib -->

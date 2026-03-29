@@ -50,11 +50,11 @@ Given [Navigation] I navigate to 'p:dewanJPPMC'
 !-- And [Input] I hover on  'User Name Header Button'
 !-- And [Input] I click on 'logout Button'
 !-- And [Assertion] Verify 'login Button' is present
-!--
-!--
-!-- Scenario: TC_004_JPPMC_002 JPPMC Check uniqueness serial number for Generalization
-!--
-!-- Given [Navigation] I navigate to 'p:dewanJPPMC'
+
+
+Scenario: TC_004_JPPMC_002 JPPMC Check uniqueness serial number for Generalization
+
+Given [Navigation] I navigate to 'p:dewanJPPMC'
 !-- And [Input] I login as 'p:JPPMCuser.HikmatZomat' with password 'p:JPPMC.password'
 !-- And [Input] I click on 'Generalizations Header Button'
 !-- When [Input] Set 'Generalization Size Page Input' value to 'p:GeneralizationSizePage'

@@ -19,7 +19,9 @@ public class EmailSender {
     private static final String username = "test-automation@optimizasolutions.com";
     private static final String password = "M@RT1299";
     private static final String from = "test-automation@optimizasolutions.com";
-    private static final String reportDirectory = "D:\\Automation Quality Projects\\Dewan-Automation\\reports";
+//    private static final String reportDirectory = "D:\\Automation Quality Projects\\Dewan-Automation\\reports";
+    private static final String reportDirectory = "C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\Dewan-Automation\\reports";
+
 //    private static final String cc = "hmeqdad@optimizasolutions.com";
 //    private static final String to = "DMS@optimizasolutions.com";
     private static final String to = "sjaber@optimizasolutions.com";

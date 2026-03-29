@@ -1,5 +1,0 @@
-<story path="stories/TC_002_JPPMC.story" title="&#65279;">
-<scenario keyword="Scenario:" title="TC_002_JPPMC_001 JPPMC Navigate to link">
-<step outcome="successful">Given [Navigation] I navigate to &apos;p:dewanJPPMC&apos;</step>
-</scenario>
-</story>

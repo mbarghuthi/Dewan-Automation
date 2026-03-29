@@ -1,5 +1,0 @@
-<story path="stories/TC_001_JPPMC_PRECONDITION.story" title="">
-<scenario keyword="Scenario:" title="TC_001_JPPMC_001 JPPMC Admin Precondition">
-<step outcome="successful">Given [Navigation] I navigate to &apos;p:dewanAdminJPPMC&apos;</step>
-</scenario>
-</story>

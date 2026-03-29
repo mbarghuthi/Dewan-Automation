@@ -228,7 +228,6 @@
 					</dependency>
 				</dependencies>
 				<configuration>
-					<argLine>--add-opens java.base/java.lang=ALL-UNNAMED</argLine>
 					<includes>
 						<include>**/*Test.java</include>
 					</includes>

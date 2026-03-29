@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="AllStoriesTest" time="161.115" tests="1" errors="1" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="AllStoriesTest" time="105.683" tests="1" errors="1" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="22"/>
     <property name="webdriver.chrome.driver" value="C:\Users\mbarghuthi\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-22\bin"/>
-    <property name="sun.java.command" value="C:\Users\mbarghuthi\AppData\Local\Temp\surefire6214892872903657947\surefirebooter1679167153551568630.jar C:\Users\mbarghuthi\AppData\Local\Temp\surefire6214892872903657947 2026-03-29T15-08-44_907-jvmRun1 surefire126260378295507416tmp surefire_0287424113529081980tmp"/>
+    <property name="sun.java.command" value="C:\Users\mbarghuthi\AppData\Local\Temp\surefire13923005238826690954\surefirebooter1302583802569566682.jar C:\Users\mbarghuthi\AppData\Local\Temp\surefire13923005238826690954 2026-03-29T15-29-20_006-jvmRun1 surefire6931372409620912001tmp surefire_02466222074139720602tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="D:\Automation Quality Projects\Dewan-Automation\target\test-classes;D:\Automation Quality Projects\Dewan-Automation\target\classes;C:\Users\mbarghuthi\.m2\repository\com\sun\mail\javax.mail\1.6.2\javax.mail-1.6.2.jar;C:\Users\mbarghuthi\.m2\repository\javax\activation\activation\1.1\activation-1.1.jar;C:\Users\mbarghuthi\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\mbarghuthi\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\mbarghuthi\.m2\repository\org\slf4j\slf4j-simple\1.7.36\slf4j-simple-1.7.36.jar;C:\Users\mbarghuthi\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\mbarghuthi\.m2\repository\org\springframework\spring-core\5.3.21\spring-core-5.3.21.jar;C:\Users\mbarghuthi\.m2\repository\org\springframework\spring-jcl\5.3.21\spring-jcl-5.3.21.jar;C:\Users\mbarghuthi\.m2\repository\org\springframework\spring-context\5.3.21\spring-context-5.3.21.jar;C:\Users\mbarghuthi\.m2\repository\org\springframework\spring-aop\5.3.21\spring-aop-5.3.21.jar;C:\Users\mbarghuthi\.m2\repository\org\springframework\spring-expression\5.3.21\spring-expression-5.3.21.jar;C:\Users\mbarghuthi\.m2\repository\org\springframework\spring-beans\5.3.21\spring-beans-5.3.21.jar;C:\Users\mbarghuthi\.m2\repository\org\testng\testng\7.8.0\testng-7.8.0.jar;C:\Users\mbarghuthi\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\mbarghuthi\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\mbarghuthi\.m2\repository\io\github\bonigarcia\webdrivermanager\5.8.0\webdrivermanager-5.8.0.jar;C:\Users\mbarghuthi\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\mbarghuthi\.m2\repository\com\github\docker-java\docker-java\3.3.6\docker-java-3.3.6.jar;C:\Users\mbarghuthi\.m2\repository\com\github\docker-java\docker-java-core\3.3.6\docker-java-core-3.3.6.jar;C:\Users\mbarghuthi\.m2\repository\com\github\docker-java\docker-java-api\3.3.6\docker-java-api-3.3.6.jar;C:\Users\mbarghuthi\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\mbarghuthi\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\mbarghuthi\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\mbarghuthi\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.76\bcpkix-jdk18on-1.76.jar;C:\Users\mbarghuthi\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.76\bcprov-jdk18on-1.76.jar;C:\Users\mbarghuthi\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.76\bcutil-jdk18on-1.76.jar;C:\Users\mbarghuthi\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\mbarghuthi\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.6\docker-java-transport-httpclient5-3.3.6.jar;C:\Users\mbarghuthi\.m2\repository\com\github\docker-java\docker-java-transport\3.3.6\docker-java-transport-3.3.6.jar;C:\Users\mbarghuthi\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\mbarghuthi\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\mbarghuthi\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\mbarghuthi\.m2\repository\org\apache\commons\commons-compress\1.26.1\commons-compress-1.26.1.jar;C:\Users\mbarghuthi\.m2\repository\commons-codec\commons-codec\1.16.1\commons-codec-1.16.1.jar;C:\Users\mbarghuthi\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\mbarghuthi\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\mbarghuthi\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\mbarghuthi\.m2\repository\cglib\cglib\3.2.8\cglib-3.2.8.jar;C:\Users\mbarghuthi\.m2\repository\org\ow2\asm\asm\6.2.1\asm-6.2.1.jar;C:\Users\mbarghuthi\.m2\repository\org\apache\ant\ant\1.10.3\ant-1.10.3.jar;C:\Users\mbarghuthi\.m2\repository\org\apache\ant\ant-launcher\1.10.3\ant-launcher-1.10.3.jar;C:\Users\mbarghuthi\.m2\repository\com\relevantcodes\extentreports\2.41.2\extentreports-2.41.2.jar;C:\Users\mbarghuthi\.m2\repository\org\jsoup\jsoup\1.8.3\jsoup-1.8.3.jar;C:\Users\mbarghuthi\.m2\repository\org\xerial\sqlite-jdbc\3.8.11.1\sqlite-jdbc-3.8.11.1.jar;C:\Users\mbarghuthi\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\mbarghuthi\.m2\repository\org\mongodb\mongodb-driver\3.0.4\mongodb-driver-3.0.4.jar;C:\Users\mbarghuthi\.m2\repository\org\mongodb\bson\3.0.4\bson-3.0.4.jar;C:\Users\mbarghuthi\.m2\repository\org\mongodb\mongodb-driver-core\3.0.4\mongodb-driver-core-3.0.4.jar;C:\Users\mbarghuthi\.m2\repository\org\seleniumhq\selenium\selenium-java\4.10.0\selenium-java-4.10.0.jar;C:\Users\mbarghuthi\.m2\repository\org\seleniumhq\selenium\selenium-api\4.10.0\selenium-api-4.10.0.jar;C:\Users\mbarghuthi\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.10.0\selenium-chrome-driver-4.10.0.jar;C:\Users\mbarghuthi\.m2\repository\com\google\auto\service\auto-service\1.0.1\auto-service-1.0.1.jar;C:\Users\mbarghuthi\.m2\repository\com\google\auto\auto-common\1.2\auto-common-1.2.jar;C:\Users\mbarghuthi\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.10.0\selenium-chromium-driver-4.10.0.jar;C:\Users\mbarghuthi\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.10.0\selenium-manager-4.10.0.jar;C:\Users\mbarghuthi\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v112\4.10.0\selenium-devtools-v112-4.10.0.jar;C:\Users\mbarghuthi\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v113\4.10.0\selenium-devtools-v113-4.10.0.jar;C:\Users\mbarghuthi\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v114\4.10.0\selenium-devtools-v114-4.10.0.jar;C:\Users\mbarghuthi\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.10.0\selenium-devtools-v85-4.10.0.jar;C:\Users\mbarghuthi\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.10.0\selenium-edge-driver-4.10.0.jar;C:\Users\mbarghuthi\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.10.0\selenium-firefox-driver-4.10.0.jar;C:\Users\mbarghuthi\.m2\repository\org\seleniumhq\selenium\selenium-http\4.10.0\selenium-http-4.10.0.jar;C:\Users\mbarghuthi\.m2\repository\dev\failsafe\failsafe\3.3.1\failsafe-3.3.1.jar;C:\Users\mbarghuthi\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.10.0\selenium-ie-driver-4.10.0.jar;C:\Users\mbarghuthi\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.10.0\selenium-remote-driver-4.10.0.jar;C:\Users\mbarghuthi\.m2\repository\io\netty\netty-buffer\4.1.92.Final\netty-buffer-4.1.92.Final.jar;C:\Users\mbarghuthi\.m2\repository\io\netty\netty-codec-http\4.1.92.Final\netty-codec-http-4.1.92.Final.jar;C:\Users\mbarghuthi\.m2\repository\io\netty\netty-codec\4.1.92.Final\netty-codec-4.1.92.Final.jar;C:\Users\mbarghuthi\.m2\repository\io\netty\netty-handler\4.1.92.Final\netty-handler-4.1.92.Final.jar;C:\Users\mbarghuthi\.m2\repository\io\netty\netty-common\4.1.92.Final\netty-common-4.1.92.Final.jar;C:\Users\mbarghuthi\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.92.Final\netty-transport-classes-epoll-4.1.92.Final.jar;C:\Users\mbarghuthi\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.92.Final\netty-transport-classes-kqueue-4.1.92.Final.jar;C:\Users\mbarghuthi\.m2\repository\io\netty\netty-transport-native-epoll\4.1.92.Final\netty-transport-native-epoll-4.1.92.Final.jar;C:\Users\mbarghuthi\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.92.Final\netty-transport-native-kqueue-4.1.92.Final.jar;C:\Users\mbarghuthi\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.92.Final\netty-transport-native-unix-common-4.1.92.Final.jar;C:\Users\mbarghuthi\.m2\repository\io\netty\netty-transport\4.1.92.Final\netty-transport-4.1.92.Final.jar;C:\Users\mbarghuthi\.m2\repository\io\netty\netty-resolver\4.1.92.Final\netty-resolver-4.1.92.Final.jar;C:\Users\mbarghuthi\.m2\repository\io\opentelemetry\opentelemetry-api\1.26.0\opentelemetry-api-1.26.0.jar;C:\Users\mbarghuthi\.m2\repository\io\opentelemetry\opentelemetry-context\1.26.0\opentelemetry-context-1.26.0.jar;C:\Users\mbarghuthi\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.26.0\opentelemetry-exporter-logging-1.26.0.jar;C:\Users\mbarghuthi\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.26.0\opentelemetry-sdk-metrics-1.26.0.jar;C:\Users\mbarghuthi\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.26.0-alpha\opentelemetry-extension-incubator-1.26.0-alpha.jar;C:\Users\mbarghuthi\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.26.0-alpha\opentelemetry-sdk-logs-1.26.0-alpha.jar;C:\Users\mbarghuthi\.m2\repository\io\opentelemetry\opentelemetry-api-logs\1.26.0-alpha\opentelemetry-api-logs-1.26.0-alpha.jar;C:\Users\mbarghuthi\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.26.0-alpha\opentelemetry-api-events-1.26.0-alpha.jar;C:\Users\mbarghuthi\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.26.0\opentelemetry-sdk-common-1.26.0.jar;C:\Users\mbarghuthi\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.26.0\opentelemetry-sdk-extension-autoconfigure-spi-1.26.0.jar;C:\Users\mbarghuthi\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.26.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.26.0-alpha.jar;C:\Users\mbarghuthi\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.26.0\opentelemetry-sdk-trace-1.26.0.jar;C:\Users\mbarghuthi\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.26.0\opentelemetry-sdk-1.26.0.jar;C:\Users\mbarghuthi\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.26.0-alpha\opentelemetry-semconv-1.26.0-alpha.jar;C:\Users\mbarghuthi\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\mbarghuthi\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\mbarghuthi\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\mbarghuthi\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\mbarghuthi\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\mbarghuthi\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\mbarghuthi\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\mbarghuthi\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\mbarghuthi\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\mbarghuthi\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\mbarghuthi\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.10.0\selenium-safari-driver-4.10.0.jar;C:\Users\mbarghuthi\.m2\repository\de\codecentric\jbehave-junit-runner\1.2.0\jbehave-junit-runner-1.2.0.jar;C:\Users\mbarghuthi\.m2\repository\org\hamcrest\hamcrest-library\1.3\hamcrest-library-1.3.jar;C:\Users\mbarghuthi\.m2\repository\org\hamcrest\hamcrest-integration\1.3\hamcrest-integration-1.3.jar;C:\Users\mbarghuthi\.m2\repository\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar;C:\Users\mbarghuthi\.m2\repository\commons-io\commons-io\2.4\commons-io-2.4.jar;C:\Users\mbarghuthi\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\mbarghuthi\.m2\repository\org\codehaus\plexus\plexus-utils\3.0.10\plexus-utils-3.0.10.jar;C:\Users\mbarghuthi\.m2\repository\com\thoughtworks\paranamer\paranamer\2.4\paranamer-2.4.jar;C:\Users\mbarghuthi\.m2\repository\com\thoughtworks\xstream\xstream\1.4.7\xstream-1.4.7.jar;C:\Users\mbarghuthi\.m2\repository\xmlpull\xmlpull\1.1.3.1\xmlpull-1.1.3.1.jar;C:\Users\mbarghuthi\.m2\repository\xpp3\xpp3_min\1.1.4c\xpp3_min-1.1.4c.jar;C:\Users\mbarghuthi\.m2\repository\org\jbehave\jbehave-spring\4.0.5\jbehave-spring-4.0.5.jar;C:\Users\mbarghuthi\.m2\repository\org\jbehave\jbehave-core\4.0.5\jbehave-core-4.0.5.jar;C:\Users\mbarghuthi\.m2\repository\org\springframework\spring-test\3.1.1.RELEASE\spring-test-3.1.1.RELEASE.jar;C:\Users\mbarghuthi\.m2\repository\org\jbehave\web\jbehave-web-selenium\3.5.5\jbehave-web-selenium-3.5.5.jar;C:\Users\mbarghuthi\.m2\repository\org\springframework\spring-web\3.1.1.RELEASE\spring-web-3.1.1.RELEASE.jar;C:\Users\mbarghuthi\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\mbarghuthi\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\mbarghuthi\.m2\repository\org\seleniumhq\selenium\selenium-support\4.22.0\selenium-support-4.22.0.jar;C:\Users\mbarghuthi\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\mbarghuthi\.m2\repository\com\google\guava\guava\33.2.1-jre\guava-33.2.1-jre.jar;C:\Users\mbarghuthi\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\mbarghuthi\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\mbarghuthi\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\mbarghuthi\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\mbarghuthi\.m2\repository\com\google\errorprone\error_prone_annotations\2.26.1\error_prone_annotations-2.26.1.jar;C:\Users\mbarghuthi\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\mbarghuthi\.m2\repository\net\bytebuddy\byte-buddy\1.14.17\byte-buddy-1.14.17.jar;C:\Users\mbarghuthi\.m2\repository\org\seleniumhq\selenium\selenium-json\4.22.0\selenium-json-4.22.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\mbarghuthi\AppData\Local\Temp\surefire6214892872903657947\surefirebooter1679167153551568630.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\mbarghuthi\AppData\Local\Temp\surefire13923005238826690954\surefirebooter1302583802569566682.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="22.0.1+8-16"/>
@@ -59,675 +59,668 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="66.0"/>
   </properties>
-  <testcase name="run" classname="AllStoriesTest" time="161.109">
+  <testcase name="run" classname="AllStoriesTest" time="105.677">
     <error message="JBehave detected failed stories. Failing Maven build." type="java.lang.RuntimeException"><![CDATA[java.lang.RuntimeException: JBehave detected failed stories. Failing Maven build.
 	at AllStoriesTest.run(AllStoriesTest.java:66)
 ]]></error>
-    <system-out><![CDATA[Directory: D:\Automation Quality Projects\Dewan-Automation\reports\Sun Mar 29 15-08-47 EET 2026\ is created!
-Report Path: D:\Automation Quality Projects\Dewan-Automation\reports\Sun Mar 29 15-08-47 EET 2026\
+    <system-out><![CDATA[Directory: D:\Automation Quality Projects\Dewan-Automation\reports\Sun Mar 29 15-29-22 EET 2026\ is created!
+Report Path: D:\Automation Quality Projects\Dewan-Automation\reports\Sun Mar 29 15-29-22 EET 2026\
 
 Processing system properties {}
 Using controls EmbedderControls[batch=false,skip=false,generateViewAfterStories=true,ignoreFailureInStories=false,ignoreFailureInView=false,verboseFailures=true,verboseFiltering=false,storyTimeouts=7200,threads=1,failOnStoryTimeout=true]
 Running story stories/TC_001_JPPMC_PRECONDITION.story
-29 Mar 2026 15:08:48,344 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
-29 Mar 2026 15:08:48,345 INFO : com.automation.jbehave.ConsoleLogger - Begin Story: TC_001_JPPMC_PRECONDITION.story
-29 Mar 2026 15:08:48,345 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
-29 Mar 2026 15:08:48,346 INFO : com.automation.jbehave.ConsoleLogger - Narrative[inOrderTo=,asA=,iWantTo=,soThat=]
-29 Mar 2026 15:08:48,348 INFO : com.automation.jbehave.ConsoleLogger - Lifecycle[before=Lifecycle.Steps[outcome=<null>,metaFilter=<null>,steps=[]],after={}]
+29 Mar 2026 15:29:23,668 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
+29 Mar 2026 15:29:23,668 INFO : com.automation.jbehave.ConsoleLogger - Begin Story: TC_001_JPPMC_PRECONDITION.story
+29 Mar 2026 15:29:23,668 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
+29 Mar 2026 15:29:23,668 INFO : com.automation.jbehave.ConsoleLogger - Narrative[inOrderTo=,asA=,iWantTo=,soThat=]
+29 Mar 2026 15:29:23,669 INFO : com.automation.jbehave.ConsoleLogger - Lifecycle[before=Lifecycle.Steps[outcome=<null>,metaFilter=<null>,steps=[]],after={}]
 Using timeout for story TC_001_JPPMC_PRECONDITION.story of 7200 secs.
-29 Mar 2026 15:08:52,687 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
-29 Mar 2026 15:08:52,687 INFO : com.automation.jbehave.ConsoleLogger - Scenario: TC_001_JPPMC_001
-29 Mar 2026 15:08:52,688 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
-29 Mar 2026 15:08:52,689 INFO : com.automation.jbehave.PropertyParameterConverter - Parameter converted:[p:dewanAdminJPPMC] >> [http://172.16.30.83:5555/JPPMC_Admin/]
-29 Mar 2026 15:08:54,908 INFO : com.automation.pages.CannedPage - Navigating to the page: http://172.16.30.83:5555/JPPMC_Admin/
-29 Mar 2026 15:08:54,965 INFO : com.automation.jbehave.ConsoleLogger - Given [Navigation] I navigate to 'p:dewanAdminJPPMC' (SUCCESSFUL)
-29 Mar 2026 15:08:55,755 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
-29 Mar 2026 15:08:55,755 INFO : com.automation.jbehave.ConsoleLogger - End Story:  TC_001_JPPMC_PRECONDITION.story
-29 Mar 2026 15:08:55,755 INFO : com.automation.jbehave.ConsoleLogger - Status:  PASSED 
-29 Mar 2026 15:08:55,755 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
+29 Mar 2026 15:29:26,916 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
+29 Mar 2026 15:29:26,917 INFO : com.automation.jbehave.ConsoleLogger - Scenario: TC_001_JPPMC_001
+29 Mar 2026 15:29:26,917 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
+29 Mar 2026 15:29:26,918 INFO : com.automation.jbehave.PropertyParameterConverter - Parameter converted:[p:dewanAdminJPPMC] >> [http://172.16.30.83:5555/JPPMC_Admin/]
+29 Mar 2026 15:29:28,934 INFO : com.automation.pages.CannedPage - Navigating to the page: http://172.16.30.83:5555/JPPMC_Admin/
+29 Mar 2026 15:29:28,983 INFO : com.automation.jbehave.ConsoleLogger - Given [Navigation] I navigate to 'p:dewanAdminJPPMC' (SUCCESSFUL)
+29 Mar 2026 15:29:29,706 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
+29 Mar 2026 15:29:29,706 INFO : com.automation.jbehave.ConsoleLogger - End Story:  TC_001_JPPMC_PRECONDITION.story
+29 Mar 2026 15:29:29,706 INFO : com.automation.jbehave.ConsoleLogger - Status:  PASSED 
+29 Mar 2026 15:29:29,706 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
 Running story stories/TC_002_JPPMC.story
-29 Mar 2026 15:08:55,762 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
-29 Mar 2026 15:08:55,763 INFO : com.automation.jbehave.ConsoleLogger - Begin Story: TC_002_JPPMC.story
-29 Mar 2026 15:08:55,763 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
-29 Mar 2026 15:08:55,763 INFO : com.automation.jbehave.ConsoleLogger - Narrative[inOrderTo=,asA=,iWantTo=,soThat=]
-29 Mar 2026 15:08:55,764 INFO : com.automation.jbehave.ConsoleLogger - Lifecycle[before=Lifecycle.Steps[outcome=<null>,metaFilter=<null>,steps=[]],after={}]
+29 Mar 2026 15:29:29,712 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
+29 Mar 2026 15:29:29,712 INFO : com.automation.jbehave.ConsoleLogger - Begin Story: TC_002_JPPMC.story
+29 Mar 2026 15:29:29,712 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
+29 Mar 2026 15:29:29,712 INFO : com.automation.jbehave.ConsoleLogger - Narrative[inOrderTo=,asA=,iWantTo=,soThat=]
+29 Mar 2026 15:29:29,713 INFO : com.automation.jbehave.ConsoleLogger - Lifecycle[before=Lifecycle.Steps[outcome=<null>,metaFilter=<null>,steps=[]],after={}]
 Using timeout for story TC_002_JPPMC.story of 7200 secs.
-29 Mar 2026 15:08:57,315 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
-29 Mar 2026 15:08:57,317 INFO : com.automation.jbehave.ConsoleLogger - Scenario: TC_002_JPPMC_001
-29 Mar 2026 15:08:57,319 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
-29 Mar 2026 15:08:57,324 INFO : com.automation.jbehave.PropertyParameterConverter - Parameter converted:[p:dewanJPPMC] >> [http://172.16.30.83:5555/JPPMC_EndUser/login.aspx]
-29 Mar 2026 15:08:58,108 INFO : com.automation.pages.CannedPage - Navigating to the page: http://172.16.30.83:5555/JPPMC_EndUser/login.aspx
-29 Mar 2026 15:08:58,178 INFO : com.automation.jbehave.ConsoleLogger - Given [Navigation] I navigate to 'p:dewanJPPMC' (SUCCESSFUL)
-29 Mar 2026 15:08:58,716 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
-29 Mar 2026 15:08:58,716 INFO : com.automation.jbehave.ConsoleLogger - End Story:  TC_002_JPPMC.story
-29 Mar 2026 15:08:58,716 INFO : com.automation.jbehave.ConsoleLogger - Status:  PASSED 
-29 Mar 2026 15:08:58,716 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
+29 Mar 2026 15:29:31,206 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
+29 Mar 2026 15:29:31,206 INFO : com.automation.jbehave.ConsoleLogger - Scenario: TC_002_JPPMC_001
+29 Mar 2026 15:29:31,207 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
+29 Mar 2026 15:29:31,208 INFO : com.automation.jbehave.PropertyParameterConverter - Parameter converted:[p:dewanJPPMC] >> [http://172.16.30.83:5555/JPPMC_EndUser/login.aspx]
+29 Mar 2026 15:29:32,210 INFO : com.automation.pages.CannedPage - Navigating to the page: http://172.16.30.83:5555/JPPMC_EndUser/login.aspx
+29 Mar 2026 15:29:32,262 INFO : com.automation.jbehave.ConsoleLogger - Given [Navigation] I navigate to 'p:dewanJPPMC' (SUCCESSFUL)
+29 Mar 2026 15:29:32,689 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
+29 Mar 2026 15:29:32,690 INFO : com.automation.jbehave.ConsoleLogger - End Story:  TC_002_JPPMC.story
+29 Mar 2026 15:29:32,690 INFO : com.automation.jbehave.ConsoleLogger - Status:  PASSED 
+29 Mar 2026 15:29:32,690 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
 Running story stories/TC_003_JPPMC.story
-29 Mar 2026 15:08:58,723 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
-29 Mar 2026 15:08:58,725 INFO : com.automation.jbehave.ConsoleLogger - Begin Story: TC_003_JPPMC.story
-29 Mar 2026 15:08:58,725 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
-29 Mar 2026 15:08:58,725 INFO : com.automation.jbehave.ConsoleLogger - Narrative[inOrderTo=,asA=,iWantTo=,soThat=]
-29 Mar 2026 15:08:58,726 INFO : com.automation.jbehave.ConsoleLogger - Lifecycle[before=Lifecycle.Steps[outcome=<null>,metaFilter=<null>,steps=[]],after={}]
+29 Mar 2026 15:29:32,693 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
+29 Mar 2026 15:29:32,693 INFO : com.automation.jbehave.ConsoleLogger - Begin Story: TC_003_JPPMC.story
+29 Mar 2026 15:29:32,693 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
+29 Mar 2026 15:29:32,693 INFO : com.automation.jbehave.ConsoleLogger - Narrative[inOrderTo=,asA=,iWantTo=,soThat=]
+29 Mar 2026 15:29:32,694 INFO : com.automation.jbehave.ConsoleLogger - Lifecycle[before=Lifecycle.Steps[outcome=<null>,metaFilter=<null>,steps=[]],after={}]
 Using timeout for story TC_003_JPPMC.story of 7200 secs.
-29 Mar 2026 15:09:00,418 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
-29 Mar 2026 15:09:00,419 INFO : com.automation.jbehave.ConsoleLogger - Scenario: TC_003_JPPMC_001
-29 Mar 2026 15:09:00,419 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
-29 Mar 2026 15:09:00,420 INFO : com.automation.jbehave.PropertyParameterConverter - Parameter converted:[p:dewanJPPMC] >> [http://172.16.30.83:5555/JPPMC_EndUser/login.aspx]
-29 Mar 2026 15:09:01,436 INFO : com.automation.pages.CannedPage - Navigating to the page: http://172.16.30.83:5555/JPPMC_EndUser/login.aspx
-29 Mar 2026 15:09:01,485 INFO : com.automation.jbehave.ConsoleLogger - Given [Navigation] I navigate to 'p:dewanJPPMC' (SUCCESSFUL)
-29 Mar 2026 15:09:01,490 INFO : com.automation.jbehave.PropertyParameterConverter - Parameter converted:[p:JPPMCuser.HikmatZomat] >> [Hikmat.Zomat]
-29 Mar 2026 15:09:01,490 INFO : com.automation.jbehave.PropertyParameterConverter - Parameter converted:[p:JPPMC.password] >> [Aa1]
-29 Mar 2026 15:09:05,266 INFO : com.automation.pages.CannedPage - Filled 'userName' with value: Hikmat.Zomat
-29 Mar 2026 15:09:08,419 INFO : com.automation.pages.CannedPage - Clicked on 'password'
-29 Mar 2026 15:09:11,570 INFO : com.automation.pages.CannedPage - Filled 'password' with value: Aa1
-29 Mar 2026 15:09:11,694 INFO : com.automation.pages.CannedPage - Clicked on 'login Button'
-29 Mar 2026 15:09:11,718 INFO : com.automation.jbehave.ConsoleLogger - When [Input] I login as 'p:JPPMCuser.HikmatZomat' with password 'p:JPPMC.password' (SUCCESSFUL)
-29 Mar 2026 15:09:14,216 INFO : com.automation.pages.CustomPage - Hovered on 'User Name Header Button'
-29 Mar 2026 15:09:14,246 INFO : com.automation.jbehave.ConsoleLogger - And [Input] I hover on 'User Name Header Button' (SUCCESSFUL)
-29 Mar 2026 15:09:15,558 INFO : com.automation.pages.CannedPage - Clicked on 'Profile Header Button'
-29 Mar 2026 15:09:15,595 INFO : com.automation.jbehave.ConsoleLogger - And [Input] I click on 'Profile Header Button' (SUCCESSFUL)
-29 Mar 2026 15:09:15,596 INFO : com.automation.jbehave.PropertyParameterConverter - Parameter converted:[p:JPPMCuser.HikmatZomat] >> [Hikmat.Zomat]
-29 Mar 2026 15:09:15,802 INFO : com.automation.jbehave.ConsoleLogger - And [Assertion] Verify 'User Name Value' have attribute 'value' with 'p:JPPMCuser.HikmatZomat' ｟value｠ (SUCCESSFUL)
-29 Mar 2026 15:09:16,114 INFO : com.automation.pages.CustomPage - Hovered on 'User Name Header Button'
-29 Mar 2026 15:09:16,143 INFO : com.automation.jbehave.ConsoleLogger - And [Input] I hover on 'User Name Header Button' (SUCCESSFUL)
-29 Mar 2026 15:09:16,745 INFO : com.automation.pages.CannedPage - Clicked on 'logout Button'
-29 Mar 2026 15:09:16,777 INFO : com.automation.jbehave.ConsoleLogger - Then [Input] I click on 'logout Button' (SUCCESSFUL)
-29 Mar 2026 15:09:16,938 INFO : com.automation.jbehave.ConsoleLogger - And [Assertion] Verify 'login Button' is present (SUCCESSFUL)
-29 Mar 2026 15:09:17,515 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
-29 Mar 2026 15:09:17,516 INFO : com.automation.jbehave.ConsoleLogger - End Story:  TC_003_JPPMC.story
-29 Mar 2026 15:09:17,516 INFO : com.automation.jbehave.ConsoleLogger - Status:  PASSED 
-29 Mar 2026 15:09:17,516 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
+29 Mar 2026 15:29:34,112 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
+29 Mar 2026 15:29:34,113 INFO : com.automation.jbehave.ConsoleLogger - Scenario: TC_003_JPPMC_001
+29 Mar 2026 15:29:34,113 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
+29 Mar 2026 15:29:34,113 INFO : com.automation.jbehave.PropertyParameterConverter - Parameter converted:[p:dewanJPPMC] >> [http://172.16.30.83:5555/JPPMC_EndUser/login.aspx]
+29 Mar 2026 15:29:34,551 INFO : com.automation.pages.CannedPage - Navigating to the page: http://172.16.30.83:5555/JPPMC_EndUser/login.aspx
+29 Mar 2026 15:29:34,619 INFO : com.automation.jbehave.ConsoleLogger - Given [Navigation] I navigate to 'p:dewanJPPMC' (SUCCESSFUL)
+29 Mar 2026 15:29:34,624 INFO : com.automation.jbehave.PropertyParameterConverter - Parameter converted:[p:JPPMCuser.HikmatZomat] >> [Hikmat.Zomat]
+29 Mar 2026 15:29:34,624 INFO : com.automation.jbehave.PropertyParameterConverter - Parameter converted:[p:JPPMC.password] >> [Aa1]
+29 Mar 2026 15:29:38,557 INFO : com.automation.pages.CannedPage - Filled 'userName' with value: Hikmat.Zomat
+29 Mar 2026 15:29:41,680 INFO : com.automation.pages.CannedPage - Clicked on 'password'
+29 Mar 2026 15:29:44,822 INFO : com.automation.pages.CannedPage - Filled 'password' with value: Aa1
+29 Mar 2026 15:29:44,930 INFO : com.automation.pages.CannedPage - Clicked on 'login Button'
+29 Mar 2026 15:29:44,955 INFO : com.automation.jbehave.ConsoleLogger - When [Input] I login as 'p:JPPMCuser.HikmatZomat' with password 'p:JPPMC.password' (SUCCESSFUL)
+29 Mar 2026 15:29:47,569 INFO : com.automation.pages.CustomPage - Hovered on 'User Name Header Button'
+29 Mar 2026 15:29:47,592 INFO : com.automation.jbehave.ConsoleLogger - And [Input] I hover on 'User Name Header Button' (SUCCESSFUL)
+29 Mar 2026 15:29:48,736 INFO : com.automation.pages.CannedPage - Clicked on 'Profile Header Button'
+29 Mar 2026 15:29:48,767 INFO : com.automation.jbehave.ConsoleLogger - And [Input] I click on 'Profile Header Button' (SUCCESSFUL)
+29 Mar 2026 15:29:48,767 INFO : com.automation.jbehave.PropertyParameterConverter - Parameter converted:[p:JPPMCuser.HikmatZomat] >> [Hikmat.Zomat]
+29 Mar 2026 15:29:48,919 INFO : com.automation.jbehave.ConsoleLogger - And [Assertion] Verify 'User Name Value' have attribute 'value' with 'p:JPPMCuser.HikmatZomat' ｟value｠ (SUCCESSFUL)
+29 Mar 2026 15:29:49,235 INFO : com.automation.pages.CustomPage - Hovered on 'User Name Header Button'
+29 Mar 2026 15:29:49,271 INFO : com.automation.jbehave.ConsoleLogger - And [Input] I hover on 'User Name Header Button' (SUCCESSFUL)
+29 Mar 2026 15:29:50,317 INFO : com.automation.pages.CannedPage - Clicked on 'logout Button'
+29 Mar 2026 15:29:50,352 INFO : com.automation.jbehave.ConsoleLogger - Then [Input] I click on 'logout Button' (SUCCESSFUL)
+29 Mar 2026 15:29:50,478 INFO : com.automation.jbehave.ConsoleLogger - And [Assertion] Verify 'login Button' is present (SUCCESSFUL)
+29 Mar 2026 15:29:50,783 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
+29 Mar 2026 15:29:50,784 INFO : com.automation.jbehave.ConsoleLogger - End Story:  TC_003_JPPMC.story
+29 Mar 2026 15:29:50,784 INFO : com.automation.jbehave.ConsoleLogger - Status:  PASSED 
+29 Mar 2026 15:29:50,784 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
 Running story stories/TC_004_JPPMC.story
-29 Mar 2026 15:09:17,523 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
-29 Mar 2026 15:09:17,523 INFO : com.automation.jbehave.ConsoleLogger - Begin Story: TC_004_JPPMC.story
-29 Mar 2026 15:09:17,523 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
-29 Mar 2026 15:09:17,524 INFO : com.automation.jbehave.ConsoleLogger - Narrative[inOrderTo=,asA=,iWantTo=,soThat=]
-29 Mar 2026 15:09:17,524 INFO : com.automation.jbehave.ConsoleLogger - Lifecycle[before=Lifecycle.Steps[outcome=<null>,metaFilter=<null>,steps=[]],after={}]
+29 Mar 2026 15:29:50,786 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
+29 Mar 2026 15:29:50,786 INFO : com.automation.jbehave.ConsoleLogger - Begin Story: TC_004_JPPMC.story
+29 Mar 2026 15:29:50,786 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
+29 Mar 2026 15:29:50,786 INFO : com.automation.jbehave.ConsoleLogger - Narrative[inOrderTo=,asA=,iWantTo=,soThat=]
+29 Mar 2026 15:29:50,786 INFO : com.automation.jbehave.ConsoleLogger - Lifecycle[before=Lifecycle.Steps[outcome=<null>,metaFilter=<null>,steps=[]],after={}]
 Using timeout for story TC_004_JPPMC.story of 7200 secs.
-29 Mar 2026 15:09:19,109 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
-29 Mar 2026 15:09:19,109 INFO : com.automation.jbehave.ConsoleLogger - Scenario: TC_004_JPPMC_001
-29 Mar 2026 15:09:19,109 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
-29 Mar 2026 15:09:19,110 INFO : com.automation.jbehave.PropertyParameterConverter - Parameter converted:[p:dewanJPPMC] >> [http://172.16.30.83:5555/JPPMC_EndUser/login.aspx]
-29 Mar 2026 15:09:19,531 INFO : com.automation.pages.CannedPage - Navigating to the page: http://172.16.30.83:5555/JPPMC_EndUser/login.aspx
-29 Mar 2026 15:09:19,598 INFO : com.automation.jbehave.ConsoleLogger - Given [Navigation] I navigate to 'p:dewanJPPMC' (SUCCESSFUL)
-29 Mar 2026 15:09:19,600 INFO : com.automation.jbehave.PropertyParameterConverter - Parameter converted:[p:JPPMCuser.HikmatZomat] >> [Hikmat.Zomat]
-29 Mar 2026 15:09:19,600 INFO : com.automation.jbehave.PropertyParameterConverter - Parameter converted:[p:JPPMC.password] >> [Aa1]
-29 Mar 2026 15:09:24,133 INFO : com.automation.pages.CannedPage - Filled 'userName' with value: Hikmat.Zomat
-29 Mar 2026 15:09:27,245 INFO : com.automation.pages.CannedPage - Clicked on 'password'
-29 Mar 2026 15:09:30,364 INFO : com.automation.pages.CannedPage - Filled 'password' with value: Aa1
-29 Mar 2026 15:09:30,492 INFO : com.automation.pages.CannedPage - Clicked on 'login Button'
-29 Mar 2026 15:09:30,524 INFO : com.automation.jbehave.ConsoleLogger - And [Input] I login as 'p:JPPMCuser.HikmatZomat' with password 'p:JPPMC.password' (SUCCESSFUL)
-29 Mar 2026 15:09:32,410 INFO : com.automation.pages.CannedPage - Clicked on 'Add Process Button'
-29 Mar 2026 15:09:32,445 INFO : com.automation.jbehave.ConsoleLogger - And [Input] I click on 'Add Process Button' (SUCCESSFUL)
-29 Mar 2026 15:09:34,004 INFO : com.automation.pages.CannedPage - Clicked on 'Generalization Button'
-29 Mar 2026 15:09:34,028 INFO : com.automation.jbehave.ConsoleLogger - And [Input] I click on 'Generalization Button' (SUCCESSFUL)
-Putting value in StateManager: key=, value=Auto1740899056010900
-29 Mar 2026 15:09:34,272 INFO : com.automation.pages.CannedPage - Filled 'Subject Field' with value: Auto1740899056010900
-29 Mar 2026 15:09:34,294 INFO : com.automation.jbehave.ConsoleLogger - When [Input] Set 'Subject Field' value to 'random' (SUCCESSFUL)
-Putting value in StateManager: key=, value=2026-03-29
-29 Mar 2026 15:09:34,533 INFO : com.automation.pages.CannedPage - Filled 'Generalization Date Field' with value: 2026-03-29
-29 Mar 2026 15:09:34,563 INFO : com.automation.jbehave.ConsoleLogger - And [Input] Set 'Generalization Date Field' value to 'date' (SUCCESSFUL)
-Fetched value from Generalization Get Year: 2026
-Putting value in StateManager: key=GeneralizationYearValue, value=2026
-GeneralizationYearValue saved as: 2026
-29 Mar 2026 15:09:34,680 INFO : com.automation.jbehave.ConsoleLogger - And [Action] I get value from 'Generalization Get Year' and save it as 'GeneralizationYearValue' (SUCCESSFUL)
-Getting value from StateManager: key=GeneralizationYearValue, value=2026
-Assertion passed: GeneralizationYearValue equals current year
-29 Mar 2026 15:09:34,707 INFO : com.automation.jbehave.ConsoleLogger - And [Assertion] Verify 'GeneralizationYearValue' equals current year (SUCCESSFUL)
-29 Mar 2026 15:09:34,715 INFO : com.automation.pages.CannedPage - I scroll to end of page
-29 Mar 2026 15:09:34,744 INFO : com.automation.jbehave.ConsoleLogger - And [Navigation] I scroll to end of page (SUCCESSFUL)
-29 Mar 2026 15:09:37,889 INFO : com.automation.pages.CannedPage - Clicked on 'Save Button'
-29 Mar 2026 15:09:37,935 INFO : com.automation.jbehave.ConsoleLogger - And [Input] I click on 'Save Button' (SUCCESSFUL)
-Fetched value from Generalization Get Serial Number: ٢٦
-Putting value in StateManager: key=GeneralizationSerialNumberValue, value=٢٦
-GeneralizationSerialNumberValue saved as: ٢٦
-29 Mar 2026 15:09:38,117 INFO : com.automation.jbehave.ConsoleLogger - And [Action] I get value from 'Generalization Get Serial Number' and save it as 'GeneralizationSerialNumberValue' (SUCCESSFUL)
-Fetched text from Subject Field: Auto1740899056010900
-Putting value in StateManager: key=GeneralizationSubjectText, value=Auto1740899056010900
-GeneralizationSubjectText saved as: Auto1740899056010900
-29 Mar 2026 15:09:38,324 INFO : com.automation.jbehave.ConsoleLogger - And [Action] I get text from 'Subject Field' and save it as 'GeneralizationSubjectText' (SUCCESSFUL)
-29 Mar 2026 15:09:41,357 INFO : com.automation.jbehave.ConsoleLogger - And [Progress] I wait for '3' sec (SUCCESSFUL)
-29 Mar 2026 15:09:41,597 INFO : com.automation.pages.CustomPage - Hovered on 'All Task Header Button'
-29 Mar 2026 15:09:41,622 INFO : com.automation.jbehave.ConsoleLogger - And [Input] I hover on  'All Task Header Button' (SUCCESSFUL)
-29 Mar 2026 15:09:42,315 INFO : com.automation.pages.CannedPage - Clicked on 'My Processes List Header Button'
-29 Mar 2026 15:09:42,344 INFO : com.automation.jbehave.ConsoleLogger - And [Input] I click on 'My Processes List Header Button' (SUCCESSFUL)
-29 Mar 2026 15:09:42,345 INFO : com.automation.jbehave.PropertyParameterConverter - Parameter converted:[p:ProcessUnCompletedStatus] >> [تحت الاجراء]
-29 Mar 2026 15:09:42,519 INFO : com.automation.jbehave.ConsoleLogger - And [Assertion] Verify 'Process Status' equals 'p:ProcessUnCompletedStatus' text (SUCCESSFUL)
-29 Mar 2026 15:09:45,556 INFO : com.automation.jbehave.ConsoleLogger - And [Progress] I wait for '3' sec (SUCCESSFUL)
-29 Mar 2026 15:09:45,766 INFO : com.automation.pages.CustomPage - Hovered on 'All Task Header Button'
-29 Mar 2026 15:09:45,788 INFO : com.automation.jbehave.ConsoleLogger - And [Input] I hover on  'All Task Header Button' (SUCCESSFUL)
-29 Mar 2026 15:09:46,499 INFO : com.automation.pages.CannedPage - Clicked on 'Task List Header Button'
-29 Mar 2026 15:09:46,535 INFO : com.automation.jbehave.ConsoleLogger - And [Input] I click on 'Task List Header Button' (SUCCESSFUL)
-Getting value from StateManager: key=GeneralizationSubjectText, value=Auto1740899056010900
-Expected value (from stateManager, key='GeneralizationSubjectText'): Auto1740899056010900
-Actual value (from element 'Task List First Subject Text'): Auto1740899056010900
-29 Mar 2026 15:09:46,688 INFO : com.automation.jbehave.ConsoleLogger - And [Assertion] Verify text of 'Task List First Subject Text' equals saved value 'GeneralizationSubjectText' (SUCCESSFUL)
-29 Mar 2026 15:09:48,178 INFO : com.automation.pages.CannedPage - Clicked on 'Task List View Process Button'
-29 Mar 2026 15:09:48,226 INFO : com.automation.jbehave.ConsoleLogger - And [Input] I click on 'Task List View Process Button' (SUCCESSFUL)
-29 Mar 2026 15:09:48,240 INFO : com.automation.pages.CannedPage - I scroll to end of page
-29 Mar 2026 15:09:48,310 INFO : com.automation.jbehave.ConsoleLogger - And [Navigation] I scroll to end of page (SUCCESSFUL)
-29 Mar 2026 15:09:48,494 INFO : com.automation.pages.CannedPage - Clicked on 'Direction Tab'
-29 Mar 2026 15:09:48,535 INFO : com.automation.jbehave.ConsoleLogger - And [Input] I click on 'Direction Tab' (SUCCESSFUL)
-29 Mar 2026 15:09:48,698 INFO : com.automation.pages.CannedPage - Clicked on 'Generalize Button'
-29 Mar 2026 15:09:48,729 INFO : com.automation.jbehave.ConsoleLogger - And [Input] I click on 'Generalize Button' (SUCCESSFUL)
-29 Mar 2026 15:10:03,770 INFO : com.automation.jbehave.ConsoleLogger - And [Progress] I wait for '15' sec (SUCCESSFUL)
-29 Mar 2026 15:10:04,640 INFO : com.automation.pages.CannedPage - Clicked on 'Generalizations Header Button'
-29 Mar 2026 15:10:04,667 INFO : com.automation.jbehave.ConsoleLogger - And [Input] I click on 'Generalizations Header Button' (SUCCESSFUL)
-Getting value from StateManager: key=GeneralizationSubjectText, value=Auto1740899056010900
-Expected value (from stateManager, key='GeneralizationSubjectText'): Auto1740899056010900
-Actual value (from element 'Generalization First Subject Text'): Auto1740899056010900
-29 Mar 2026 15:10:04,774 INFO : com.automation.jbehave.ConsoleLogger - And [Assertion] Verify text of 'Generalization First Subject Text' equals saved value 'GeneralizationSubjectText' (SUCCESSFUL)
-29 Mar 2026 15:10:04,775 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify text of 'Generalization First Serial Number' equals saved value 'GeneralizationSerialNumberValue' (IGNORED)
-29 Mar 2026 15:10:05,901 INFO : com.automation.pages.CannedPage - Clicked on 'Generalizations View Process Button'
-29 Mar 2026 15:10:05,926 INFO : com.automation.jbehave.ConsoleLogger - And [Input] I click on 'Generalizations View Process Button' (SUCCESSFUL)
-29 Mar 2026 15:10:08,968 INFO : com.automation.jbehave.ConsoleLogger - And [Progress] I wait for '3' sec (SUCCESSFUL)
-29 Mar 2026 15:10:08,978 INFO : com.automation.pages.CannedPage - I scroll to end of page
-29 Mar 2026 15:10:09,002 INFO : com.automation.jbehave.ConsoleLogger - And [Navigation] I scroll to end of page (SUCCESSFUL)
-29 Mar 2026 15:10:12,037 INFO : com.automation.jbehave.ConsoleLogger - And [Progress] I wait for '3' sec (SUCCESSFUL)
-29 Mar 2026 15:10:12,047 INFO : com.automation.pages.CannedPage - I scroll to end of page
-29 Mar 2026 15:10:12,066 INFO : com.automation.jbehave.ConsoleLogger - And [Navigation] I scroll to end of page (SUCCESSFUL)
-29 Mar 2026 15:10:15,106 INFO : com.automation.jbehave.ConsoleLogger - And [Progress] I wait for '3' sec (SUCCESSFUL)
-29 Mar 2026 15:10:15,205 INFO : com.automation.pages.CannedPage - Clicked on 'Direction Tab'
-29 Mar 2026 15:10:15,225 INFO : com.automation.jbehave.ConsoleLogger - And [Input] I click on 'Direction Tab' (SUCCESSFUL)
-29 Mar 2026 15:10:45,488 INFO : com.automation.jbehave.ConsoleLogger - And [Assertion] Verify 'Generalize Button' not present (SUCCESSFUL)
-29 Mar 2026 15:10:48,522 INFO : com.automation.jbehave.ConsoleLogger - And [Progress] I wait for '3' sec (SUCCESSFUL)
-29 Mar 2026 15:10:48,714 INFO : com.automation.pages.CustomPage - Hovered on 'All Task Header Button'
-29 Mar 2026 15:10:48,742 INFO : com.automation.jbehave.ConsoleLogger - And [Input] I hover on  'All Task Header Button' (SUCCESSFUL)
-29 Mar 2026 15:10:49,193 INFO : com.automation.pages.CannedPage - Clicked on 'My Processes List Header Button'
-29 Mar 2026 15:10:49,218 INFO : com.automation.jbehave.ConsoleLogger - And [Input] I click on 'My Processes List Header Button' (SUCCESSFUL)
-29 Mar 2026 15:10:49,219 INFO : com.automation.jbehave.PropertyParameterConverter - Parameter converted:[p:ProcessCompletedStatus] >> [تمت العملية بنجاح]
-29 Mar 2026 15:10:49,328 INFO : com.automation.jbehave.ConsoleLogger - And [Assertion] Verify 'Process Status' equals 'p:ProcessCompletedStatus' text (SUCCESSFUL)
-29 Mar 2026 15:10:49,664 INFO : com.automation.pages.CustomPage - Hovered on 'User Name Header Button'
-29 Mar 2026 15:10:49,685 INFO : com.automation.jbehave.ConsoleLogger - And [Input] I hover on  'User Name Header Button' (SUCCESSFUL)
-29 Mar 2026 15:10:50,430 INFO : com.automation.pages.CannedPage - Clicked on 'logout Button'
-29 Mar 2026 15:10:50,462 INFO : com.automation.jbehave.ConsoleLogger - Then [Input] I click on 'logout Button' (SUCCESSFUL)
-29 Mar 2026 15:10:50,598 INFO : com.automation.jbehave.ConsoleLogger - And [Assertion] Verify 'login Button' is present (SUCCESSFUL)
-29 Mar 2026 15:10:50,599 INFO : com.automation.jbehave.PropertyParameterConverter - Parameter converted:[p:JPPMCuser.manarDojan] >> [manar.dojan]
-29 Mar 2026 15:10:50,599 INFO : com.automation.jbehave.PropertyParameterConverter - Parameter converted:[p:JPPMC.password] >> [Aa1]
-29 Mar 2026 15:10:53,881 INFO : com.automation.pages.CannedPage - Filled 'userName' with value: manar.dojan
-29 Mar 2026 15:10:56,992 INFO : com.automation.pages.CannedPage - Clicked on 'password'
-29 Mar 2026 15:11:00,159 INFO : com.automation.pages.CannedPage - Filled 'password' with value: Aa1
-29 Mar 2026 15:11:00,247 INFO : com.automation.pages.CannedPage - Clicked on 'login Button'
-29 Mar 2026 15:11:00,268 INFO : com.automation.jbehave.ConsoleLogger - And [Input] I login as 'p:JPPMCuser.manarDojan' with password 'p:JPPMC.password' (SUCCESSFUL)
-29 Mar 2026 15:11:00,946 INFO : com.automation.pages.CannedPage - Clicked on 'Generalizations Header Button'
-29 Mar 2026 15:11:00,973 INFO : com.automation.jbehave.ConsoleLogger - And [Input] I click on 'Generalizations Header Button' (SUCCESSFUL)
-Getting value from StateManager: key=GeneralizationSubjectText, value=Auto1740899056010900
-Expected value (from stateManager, key='GeneralizationSubjectText'): Auto1740899056010900
-Actual value (from element 'Generalization First Subject Text'): Auto1740899056010900
-29 Mar 2026 15:11:01,083 INFO : com.automation.jbehave.ConsoleLogger - And [Assertion] Verify text of 'Generalization First Subject Text' equals saved value 'GeneralizationSubjectText' (SUCCESSFUL)
-29 Mar 2026 15:11:01,084 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify text of 'Generalization First Serial Number' equals saved value 'GeneralizationSerialNumberValue' (IGNORED)
-29 Mar 2026 15:11:01,381 INFO : com.automation.pages.CustomPage - Hovered on 'User Name Header Button'
-29 Mar 2026 15:11:01,412 INFO : com.automation.jbehave.ConsoleLogger - And [Input] I hover on  'User Name Header Button' (SUCCESSFUL)
-29 Mar 2026 15:11:02,000 INFO : com.automation.pages.CannedPage - Clicked on 'logout Button'
-29 Mar 2026 15:11:02,026 INFO : com.automation.jbehave.ConsoleLogger - And [Input] I click on 'logout Button' (SUCCESSFUL)
-29 Mar 2026 15:11:02,170 INFO : com.automation.jbehave.ConsoleLogger - And [Assertion] Verify 'login Button' is present (SUCCESSFUL)
-29 Mar 2026 15:11:02,249 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
-29 Mar 2026 15:11:02,249 INFO : com.automation.jbehave.ConsoleLogger - Scenario: TC_004_JPPMC_002
-29 Mar 2026 15:11:02,249 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
-29 Mar 2026 15:11:02,249 INFO : com.automation.jbehave.PropertyParameterConverter - Parameter converted:[p:dewanJPPMC] >> [http://172.16.30.83:5555/JPPMC_EndUser/login.aspx]
-29 Mar 2026 15:11:02,430 INFO : com.automation.pages.CannedPage - Navigating to the page: http://172.16.30.83:5555/JPPMC_EndUser/login.aspx
-29 Mar 2026 15:11:02,456 INFO : com.automation.jbehave.ConsoleLogger - Given [Navigation] I navigate to 'p:dewanJPPMC' (SUCCESSFUL)
-29 Mar 2026 15:11:02,457 INFO : com.automation.jbehave.PropertyParameterConverter - Parameter converted:[p:JPPMCuser.HikmatZomat] >> [Hikmat.Zomat]
-29 Mar 2026 15:11:02,457 INFO : com.automation.jbehave.PropertyParameterConverter - Parameter converted:[p:JPPMC.password] >> [Aa1]
-29 Mar 2026 15:11:05,717 INFO : com.automation.pages.CannedPage - Filled 'userName' with value: Hikmat.Zomat
-29 Mar 2026 15:11:08,835 INFO : com.automation.pages.CannedPage - Clicked on 'password'
-29 Mar 2026 15:11:11,950 INFO : com.automation.pages.CannedPage - Filled 'password' with value: Aa1
-29 Mar 2026 15:11:12,037 INFO : com.automation.pages.CannedPage - Clicked on 'login Button'
-29 Mar 2026 15:11:12,058 INFO : com.automation.jbehave.ConsoleLogger - And [Input] I login as 'p:JPPMCuser.HikmatZomat' with password 'p:JPPMC.password' (SUCCESSFUL)
-29 Mar 2026 15:11:12,703 INFO : com.automation.pages.CannedPage - Clicked on 'Generalizations Header Button'
-29 Mar 2026 15:11:12,723 INFO : com.automation.jbehave.ConsoleLogger - And [Input] I click on 'Generalizations Header Button' (SUCCESSFUL)
-29 Mar 2026 15:11:12,723 INFO : com.automation.jbehave.PropertyParameterConverter - Parameter converted:[p:GeneralizationSizePage] >> [10000000]
-29 Mar 2026 15:11:12,978 INFO : com.automation.pages.CannedPage - Filled 'Generalization Size Page Input' with value: 10000000
-29 Mar 2026 15:11:13,009 INFO : com.automation.jbehave.ConsoleLogger - When [Input] Set 'Generalization Size Page Input' value to 'p:GeneralizationSizePage' (SUCCESSFUL)
-29 Mar 2026 15:11:13,341 INFO : com.automation.pages.CannedPage - Clicked on 'Change Grid Size Button'
-29 Mar 2026 15:11:13,368 INFO : com.automation.jbehave.ConsoleLogger - And [Input] I click on 'Change Grid Size Button' (SUCCESSFUL)
-29 Mar 2026 15:11:16,401 INFO : com.automation.jbehave.ConsoleLogger - And [Progress] I wait for '3' sec (SUCCESSFUL)
+29 Mar 2026 15:29:52,408 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
+29 Mar 2026 15:29:52,408 INFO : com.automation.jbehave.ConsoleLogger - Scenario: TC_004_JPPMC_001
+29 Mar 2026 15:29:52,408 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
+29 Mar 2026 15:29:52,409 INFO : com.automation.jbehave.PropertyParameterConverter - Parameter converted:[p:dewanJPPMC] >> [http://172.16.30.83:5555/JPPMC_EndUser/login.aspx]
+29 Mar 2026 15:29:52,775 INFO : com.automation.pages.CannedPage - Navigating to the page: http://172.16.30.83:5555/JPPMC_EndUser/login.aspx
+29 Mar 2026 15:29:52,865 INFO : com.automation.jbehave.ConsoleLogger - Given [Navigation] I navigate to 'p:dewanJPPMC' (SUCCESSFUL)
+29 Mar 2026 15:29:52,866 INFO : com.automation.jbehave.PropertyParameterConverter - Parameter converted:[p:JPPMCuser.HikmatZomat] >> [Hikmat.Zomat]
+29 Mar 2026 15:29:52,866 INFO : com.automation.jbehave.PropertyParameterConverter - Parameter converted:[p:JPPMC.password] >> [Aa1]
+29 Mar 2026 15:29:56,941 INFO : com.automation.pages.CannedPage - Filled 'userName' with value: Hikmat.Zomat
+29 Mar 2026 15:30:00,129 INFO : com.automation.pages.CannedPage - Clicked on 'password'
+29 Mar 2026 15:30:03,251 INFO : com.automation.pages.CannedPage - Filled 'password' with value: Aa1
+29 Mar 2026 15:30:03,378 INFO : com.automation.pages.CannedPage - Clicked on 'login Button'
+29 Mar 2026 15:30:03,407 INFO : com.automation.jbehave.ConsoleLogger - And [Input] I login as 'p:JPPMCuser.HikmatZomat' with password 'p:JPPMC.password' (SUCCESSFUL)
+29 Mar 2026 15:30:07,454 INFO : com.automation.pages.CannedPage - Clicked on 'Add Process Button'
+29 Mar 2026 15:30:07,517 INFO : com.automation.jbehave.ConsoleLogger - And [Input] I click on 'Add Process Button' (SUCCESSFUL)
+29 Mar 2026 15:30:37,898 ERROR: com.automation.jbehave.ConsoleLogger - org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (e8a2bac8d1fa8d824c557948a18a4355)] -> xpath: //a[contains(text(),'تعميم')]] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\MBARGH~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:48229}, goog:processID: 25284, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:48229/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e8a2bac8d1fa8d824c557948a18a4355
+29 Mar 2026 15:30:38,078 INFO : com.automation.jbehave.ConsoleLogger - Screenshot saved successfully
+29 Mar 2026 15:30:38,110 INFO : com.automation.jbehave.ConsoleLogger - And [Input] I click on 'Generalization Button' (FAILED)
+29 Mar 2026 15:30:38,141 INFO : com.automation.jbehave.ConsoleLogger - When [Input] Set 'Subject Field' value to 'random' (NOT PERFORMED)
+29 Mar 2026 15:30:38,171 INFO : com.automation.jbehave.ConsoleLogger - And [Input] Set 'Generalization Date Field' value to 'date' (NOT PERFORMED)
+29 Mar 2026 15:30:38,206 INFO : com.automation.jbehave.ConsoleLogger - And [Action] I get value from 'Generalization Get Year' and save it as 'GeneralizationYearValue' (NOT PERFORMED)
+29 Mar 2026 15:30:38,242 INFO : com.automation.jbehave.ConsoleLogger - And [Assertion] Verify 'GeneralizationYearValue' equals current year (NOT PERFORMED)
+29 Mar 2026 15:30:38,274 INFO : com.automation.jbehave.ConsoleLogger - And [Navigation] I scroll to end of page (NOT PERFORMED)
+29 Mar 2026 15:30:38,307 INFO : com.automation.jbehave.ConsoleLogger - And [Input] I click on 'Save Button' (NOT PERFORMED)
+29 Mar 2026 15:30:38,335 INFO : com.automation.jbehave.ConsoleLogger - And [Action] I get value from 'Generalization Get Serial Number' and save it as 'GeneralizationSerialNumberValue' (NOT PERFORMED)
+29 Mar 2026 15:30:38,362 INFO : com.automation.jbehave.ConsoleLogger - And [Action] I get text from 'Subject Field' and save it as 'GeneralizationSubjectText' (NOT PERFORMED)
+29 Mar 2026 15:30:38,392 INFO : com.automation.jbehave.ConsoleLogger - And [Progress] I wait for '3' sec (NOT PERFORMED)
+29 Mar 2026 15:30:38,422 INFO : com.automation.jbehave.ConsoleLogger - And [Input] I hover on  'All Task Header Button' (NOT PERFORMED)
+29 Mar 2026 15:30:38,455 INFO : com.automation.jbehave.ConsoleLogger - And [Input] I click on 'My Processes List Header Button' (NOT PERFORMED)
+29 Mar 2026 15:30:38,455 INFO : com.automation.jbehave.PropertyParameterConverter - Parameter converted:[p:ProcessUnCompletedStatus] >> [تحت الاجراء]
+29 Mar 2026 15:30:38,486 INFO : com.automation.jbehave.ConsoleLogger - And [Assertion] Verify 'Process Status' equals 'p:ProcessUnCompletedStatus' text (NOT PERFORMED)
+29 Mar 2026 15:30:38,516 INFO : com.automation.jbehave.ConsoleLogger - And [Progress] I wait for '3' sec (NOT PERFORMED)
+29 Mar 2026 15:30:38,552 INFO : com.automation.jbehave.ConsoleLogger - And [Input] I hover on  'All Task Header Button' (NOT PERFORMED)
+29 Mar 2026 15:30:38,587 INFO : com.automation.jbehave.ConsoleLogger - And [Input] I click on 'Task List Header Button' (NOT PERFORMED)
+29 Mar 2026 15:30:38,619 INFO : com.automation.jbehave.ConsoleLogger - And [Assertion] Verify text of 'Task List First Subject Text' equals saved value 'GeneralizationSubjectText' (NOT PERFORMED)
+29 Mar 2026 15:30:38,652 INFO : com.automation.jbehave.ConsoleLogger - And [Input] I click on 'Task List View Process Button' (NOT PERFORMED)
+29 Mar 2026 15:30:38,692 INFO : com.automation.jbehave.ConsoleLogger - And [Navigation] I scroll to end of page (NOT PERFORMED)
+29 Mar 2026 15:30:38,728 INFO : com.automation.jbehave.ConsoleLogger - And [Input] I click on 'Direction Tab' (NOT PERFORMED)
+29 Mar 2026 15:30:38,763 INFO : com.automation.jbehave.ConsoleLogger - And [Input] I click on 'Generalize Button' (NOT PERFORMED)
+29 Mar 2026 15:30:38,792 INFO : com.automation.jbehave.ConsoleLogger - And [Progress] I wait for '15' sec (NOT PERFORMED)
+29 Mar 2026 15:30:38,822 INFO : com.automation.jbehave.ConsoleLogger - And [Input] I click on 'Generalizations Header Button' (NOT PERFORMED)
+29 Mar 2026 15:30:38,849 INFO : com.automation.jbehave.ConsoleLogger - And [Assertion] Verify text of 'Generalization First Subject Text' equals saved value 'GeneralizationSubjectText' (NOT PERFORMED)
+29 Mar 2026 15:30:38,850 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify text of 'Generalization First Serial Number' equals saved value 'GeneralizationSerialNumberValue' (IGNORED)
+29 Mar 2026 15:30:38,879 INFO : com.automation.jbehave.ConsoleLogger - And [Input] I click on 'Generalizations View Process Button' (NOT PERFORMED)
+29 Mar 2026 15:30:38,905 INFO : com.automation.jbehave.ConsoleLogger - And [Progress] I wait for '3' sec (NOT PERFORMED)
+29 Mar 2026 15:30:38,935 INFO : com.automation.jbehave.ConsoleLogger - And [Navigation] I scroll to end of page (NOT PERFORMED)
+29 Mar 2026 15:30:38,965 INFO : com.automation.jbehave.ConsoleLogger - And [Progress] I wait for '3' sec (NOT PERFORMED)
+29 Mar 2026 15:30:38,991 INFO : com.automation.jbehave.ConsoleLogger - And [Navigation] I scroll to end of page (NOT PERFORMED)
+29 Mar 2026 15:30:39,018 INFO : com.automation.jbehave.ConsoleLogger - And [Progress] I wait for '3' sec (NOT PERFORMED)
+29 Mar 2026 15:30:39,046 INFO : com.automation.jbehave.ConsoleLogger - And [Input] I click on 'Direction Tab' (NOT PERFORMED)
+29 Mar 2026 15:30:39,072 INFO : com.automation.jbehave.ConsoleLogger - And [Assertion] Verify 'Generalize Button' not present (NOT PERFORMED)
+29 Mar 2026 15:30:39,104 INFO : com.automation.jbehave.ConsoleLogger - And [Progress] I wait for '3' sec (NOT PERFORMED)
+29 Mar 2026 15:30:39,137 INFO : com.automation.jbehave.ConsoleLogger - And [Input] I hover on  'All Task Header Button' (NOT PERFORMED)
+29 Mar 2026 15:30:39,170 INFO : com.automation.jbehave.ConsoleLogger - And [Input] I click on 'My Processes List Header Button' (NOT PERFORMED)
+29 Mar 2026 15:30:39,171 INFO : com.automation.jbehave.PropertyParameterConverter - Parameter converted:[p:ProcessCompletedStatus] >> [تمت العملية بنجاح]
+29 Mar 2026 15:30:39,201 INFO : com.automation.jbehave.ConsoleLogger - And [Assertion] Verify 'Process Status' equals 'p:ProcessCompletedStatus' text (NOT PERFORMED)
+29 Mar 2026 15:30:39,230 INFO : com.automation.jbehave.ConsoleLogger - And [Input] I hover on  'User Name Header Button' (NOT PERFORMED)
+29 Mar 2026 15:30:39,263 INFO : com.automation.jbehave.ConsoleLogger - Then [Input] I click on 'logout Button' (NOT PERFORMED)
+29 Mar 2026 15:30:39,298 INFO : com.automation.jbehave.ConsoleLogger - And [Assertion] Verify 'login Button' is present (NOT PERFORMED)
+29 Mar 2026 15:30:39,298 INFO : com.automation.jbehave.PropertyParameterConverter - Parameter converted:[p:JPPMCuser.manarDojan] >> [manar.dojan]
+29 Mar 2026 15:30:39,298 INFO : com.automation.jbehave.PropertyParameterConverter - Parameter converted:[p:JPPMC.password] >> [Aa1]
+29 Mar 2026 15:30:39,329 INFO : com.automation.jbehave.ConsoleLogger - And [Input] I login as 'p:JPPMCuser.manarDojan' with password 'p:JPPMC.password' (NOT PERFORMED)
+29 Mar 2026 15:30:39,366 INFO : com.automation.jbehave.ConsoleLogger - And [Input] I click on 'Generalizations Header Button' (NOT PERFORMED)
+29 Mar 2026 15:30:39,399 INFO : com.automation.jbehave.ConsoleLogger - And [Assertion] Verify text of 'Generalization First Subject Text' equals saved value 'GeneralizationSubjectText' (NOT PERFORMED)
+29 Mar 2026 15:30:39,399 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify text of 'Generalization First Serial Number' equals saved value 'GeneralizationSerialNumberValue' (IGNORED)
+29 Mar 2026 15:30:39,436 INFO : com.automation.jbehave.ConsoleLogger - And [Input] I hover on  'User Name Header Button' (NOT PERFORMED)
+29 Mar 2026 15:30:39,467 INFO : com.automation.jbehave.ConsoleLogger - And [Input] I click on 'logout Button' (NOT PERFORMED)
+29 Mar 2026 15:30:39,502 INFO : com.automation.jbehave.ConsoleLogger - And [Assertion] Verify 'login Button' is present (NOT PERFORMED)
+29 Mar 2026 15:30:39,607 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
+29 Mar 2026 15:30:39,607 INFO : com.automation.jbehave.ConsoleLogger - Scenario: TC_004_JPPMC_002
+29 Mar 2026 15:30:39,607 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
+29 Mar 2026 15:30:39,608 INFO : com.automation.jbehave.PropertyParameterConverter - Parameter converted:[p:dewanJPPMC] >> [http://172.16.30.83:5555/JPPMC_EndUser/login.aspx]
+29 Mar 2026 15:30:39,816 INFO : com.automation.pages.CannedPage - Navigating to the page: http://172.16.30.83:5555/JPPMC_EndUser/login.aspx
+29 Mar 2026 15:30:39,858 INFO : com.automation.jbehave.ConsoleLogger - Given [Navigation] I navigate to 'p:dewanJPPMC' (SUCCESSFUL)
+29 Mar 2026 15:30:39,858 INFO : com.automation.jbehave.PropertyParameterConverter - Parameter converted:[p:JPPMCuser.HikmatZomat] >> [Hikmat.Zomat]
+29 Mar 2026 15:30:39,859 INFO : com.automation.jbehave.PropertyParameterConverter - Parameter converted:[p:JPPMC.password] >> [Aa1]
+29 Mar 2026 15:30:43,175 INFO : com.automation.pages.CannedPage - Filled 'userName' with value: Hikmat.Zomat
+29 Mar 2026 15:30:46,298 INFO : com.automation.pages.CannedPage - Clicked on 'password'
+29 Mar 2026 15:30:49,447 INFO : com.automation.pages.CannedPage - Filled 'password' with value: Aa1
+29 Mar 2026 15:30:49,549 INFO : com.automation.pages.CannedPage - Clicked on 'login Button'
+29 Mar 2026 15:30:49,585 INFO : com.automation.jbehave.ConsoleLogger - And [Input] I login as 'p:JPPMCuser.HikmatZomat' with password 'p:JPPMC.password' (SUCCESSFUL)
+29 Mar 2026 15:30:51,322 INFO : com.automation.pages.CannedPage - Clicked on 'Generalizations Header Button'
+29 Mar 2026 15:30:51,364 INFO : com.automation.jbehave.ConsoleLogger - And [Input] I click on 'Generalizations Header Button' (SUCCESSFUL)
+29 Mar 2026 15:30:51,365 INFO : com.automation.jbehave.PropertyParameterConverter - Parameter converted:[p:GeneralizationSizePage] >> [10000000]
+29 Mar 2026 15:30:51,642 INFO : com.automation.pages.CannedPage - Filled 'Generalization Size Page Input' with value: 10000000
+29 Mar 2026 15:30:51,676 INFO : com.automation.jbehave.ConsoleLogger - When [Input] Set 'Generalization Size Page Input' value to 'p:GeneralizationSizePage' (SUCCESSFUL)
+29 Mar 2026 15:30:52,012 INFO : com.automation.pages.CannedPage - Clicked on 'Change Grid Size Button'
+29 Mar 2026 15:30:52,063 INFO : com.automation.jbehave.ConsoleLogger - And [Input] I click on 'Change Grid Size Button' (SUCCESSFUL)
+29 Mar 2026 15:30:55,103 INFO : com.automation.jbehave.ConsoleLogger - And [Progress] I wait for '3' sec (SUCCESSFUL)
 Fetched value from Generalization Size Page Input: 35
 Putting value in StateManager: key=GeneralizationSizePageValue, value=35
 GeneralizationSizePageValue saved as: 35
-29 Mar 2026 15:11:16,491 INFO : com.automation.jbehave.ConsoleLogger - And [Action] I get value from 'Generalization Size Page Input' and save it as 'GeneralizationSizePageValue' (SUCCESSFUL)
+29 Mar 2026 15:30:55,239 INFO : com.automation.jbehave.ConsoleLogger - And [Action] I get value from 'Generalization Size Page Input' and save it as 'GeneralizationSizePageValue' (SUCCESSFUL)
 Getting value from StateManager: key=GeneralizationSizePageValue, value=35
-29 Mar 2026 15:11:16,851 ERROR: com.automation.jbehave.ConsoleLogger - java.lang.Exception: Duplicate value found: 11
-29 Mar 2026 15:11:16,945 INFO : com.automation.jbehave.ConsoleLogger - Screenshot saved successfully
-29 Mar 2026 15:11:16,976 INFO : com.automation.jbehave.ConsoleLogger - Then [Assertion] Verify uniqueness of values in column 'رقم التعميم' to approaches 'GeneralizationSizePageValue' (FAILED)
-29 Mar 2026 15:11:17,006 INFO : com.automation.jbehave.ConsoleLogger - And [Input] I hover on  'User Name Header Button' (NOT PERFORMED)
-29 Mar 2026 15:11:17,034 INFO : com.automation.jbehave.ConsoleLogger - And [Input] I click on 'logout Button' (NOT PERFORMED)
-29 Mar 2026 15:11:17,060 INFO : com.automation.jbehave.ConsoleLogger - And [Assertion] Verify 'login Button' is present (NOT PERFORMED)
-29 Mar 2026 15:11:17,486 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
-29 Mar 2026 15:11:17,486 INFO : com.automation.jbehave.ConsoleLogger - End Story:  TC_004_JPPMC.story
-29 Mar 2026 15:11:17,486 INFO : com.automation.jbehave.ConsoleLogger - Status:  FAILED 
-29 Mar 2026 15:11:17,486 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
+29 Mar 2026 15:30:55,643 ERROR: com.automation.jbehave.ConsoleLogger - java.lang.Exception: Duplicate value found: 11
+29 Mar 2026 15:30:55,752 INFO : com.automation.jbehave.ConsoleLogger - Screenshot saved successfully
+29 Mar 2026 15:30:55,789 INFO : com.automation.jbehave.ConsoleLogger - Then [Assertion] Verify uniqueness of values in column 'رقم التعميم' to approaches 'GeneralizationSizePageValue' (FAILED)
+29 Mar 2026 15:30:55,837 INFO : com.automation.jbehave.ConsoleLogger - And [Input] I hover on  'User Name Header Button' (NOT PERFORMED)
+29 Mar 2026 15:30:55,881 INFO : com.automation.jbehave.ConsoleLogger - And [Input] I click on 'logout Button' (NOT PERFORMED)
+29 Mar 2026 15:30:55,922 INFO : com.automation.jbehave.ConsoleLogger - And [Assertion] Verify 'login Button' is present (NOT PERFORMED)
+29 Mar 2026 15:30:56,283 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
+29 Mar 2026 15:30:56,284 INFO : com.automation.jbehave.ConsoleLogger - End Story:  TC_004_JPPMC.story
+29 Mar 2026 15:30:56,284 INFO : com.automation.jbehave.ConsoleLogger - Status:  FAILED 
+29 Mar 2026 15:30:56,284 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
 Running story stories/TC_005_JPPMC.story
-29 Mar 2026 15:11:17,492 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
-29 Mar 2026 15:11:17,492 INFO : com.automation.jbehave.ConsoleLogger - Begin Story: TC_005_JPPMC.story
-29 Mar 2026 15:11:17,492 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
-29 Mar 2026 15:11:17,493 INFO : com.automation.jbehave.ConsoleLogger - Narrative[inOrderTo=,asA=,iWantTo=,soThat=]
-29 Mar 2026 15:11:17,493 INFO : com.automation.jbehave.ConsoleLogger - Lifecycle[before=Lifecycle.Steps[outcome=<null>,metaFilter=<null>,steps=[]],after={}]
+29 Mar 2026 15:30:56,285 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
+29 Mar 2026 15:30:56,285 INFO : com.automation.jbehave.ConsoleLogger - Begin Story: TC_005_JPPMC.story
+29 Mar 2026 15:30:56,285 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
+29 Mar 2026 15:30:56,286 INFO : com.automation.jbehave.ConsoleLogger - Narrative[inOrderTo=,asA=,iWantTo=,soThat=]
+29 Mar 2026 15:30:56,286 INFO : com.automation.jbehave.ConsoleLogger - Lifecycle[before=Lifecycle.Steps[outcome=<null>,metaFilter=<null>,steps=[]],after={}]
 Using timeout for story TC_005_JPPMC.story of 7200 secs.
-29 Mar 2026 15:11:18,597 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
-29 Mar 2026 15:11:18,597 INFO : com.automation.jbehave.ConsoleLogger - Scenario: TC_005_JPPMC_001
-29 Mar 2026 15:11:18,597 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
-29 Mar 2026 15:11:18,598 INFO : com.automation.jbehave.PropertyParameterConverter - Parameter converted:[p:dewanJPPMC] >> [http://172.16.30.83:5555/JPPMC_EndUser/login.aspx]
-29 Mar 2026 15:11:18,979 INFO : com.automation.pages.CannedPage - Navigating to the page: http://172.16.30.83:5555/JPPMC_EndUser/login.aspx
-29 Mar 2026 15:11:19,011 INFO : com.automation.jbehave.ConsoleLogger - Given [Navigation] I navigate to 'p:dewanJPPMC' (SUCCESSFUL)
-29 Mar 2026 15:11:19,011 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I login as 'p:JPPMCuser.HikmatZomat' with password 'p:JPPMC.password' (IGNORED)
-29 Mar 2026 15:11:19,012 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Add Process Button' (IGNORED)
-29 Mar 2026 15:11:19,012 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Outgoing Button' (IGNORED)
-29 Mar 2026 15:11:19,012 INFO : com.automation.jbehave.ConsoleLogger - !-- When [Input] Set 'Subject Field' value to 'random' (IGNORED)
-29 Mar 2026 15:11:19,013 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I select 'p:CommissionersExportingUser' from the 'Commissioners Exporting Outgoing JPPMC' combo box (IGNORED)
-29 Mar 2026 15:11:19,013 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] Select 'p:AddresseeNameValue' value from 'Addressee Name Outgoing JPPMC' dropdown list (IGNORED)
-29 Mar 2026 15:11:19,013 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
-29 Mar 2026 15:11:19,013 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Save Draft Button' (IGNORED)
-29 Mar 2026 15:11:19,014 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Action] I get text from 'Subject Field' and save it as 'SubjectText' (IGNORED)
-29 Mar 2026 15:11:19,014 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Action] I get value from 'Outgoing Get Serial Number' and save it as 'OutgoingSerialNumberValue' (IGNORED)
-29 Mar 2026 15:11:19,014 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '5' sec (IGNORED)
-29 Mar 2026 15:11:19,014 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
-29 Mar 2026 15:11:19,015 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Save Button' (IGNORED)
-29 Mar 2026 15:11:19,015 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
-29 Mar 2026 15:11:19,015 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
-29 Mar 2026 15:11:19,015 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
-29 Mar 2026 15:11:19,015 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
-29 Mar 2026 15:11:19,015 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
-29 Mar 2026 15:11:19,016 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Direction Tab' (IGNORED)
-29 Mar 2026 15:11:19,016 INFO : com.automation.jbehave.ConsoleLogger - !-- !-- And [Input] I click on 'Add Button' (IGNORED)
-29 Mar 2026 15:11:19,016 INFO : com.automation.jbehave.ConsoleLogger - !-- !-- And [Progress] I wait for '4' sec (IGNORED)
-29 Mar 2026 15:11:19,016 INFO : com.automation.jbehave.ConsoleLogger - !-- !-- And [Input] I click on 'Close Notification Button' (IGNORED)
-29 Mar 2026 15:11:19,016 INFO : com.automation.jbehave.ConsoleLogger - !-- !-- And [Assertion] Verify 'Outgoing User Name Directed To1 JPPMC' equals 'p:manarDojan.username' text (IGNORED)
-29 Mar 2026 15:11:19,016 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
-29 Mar 2026 15:11:19,017 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
-29 Mar 2026 15:11:19,017 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
-29 Mar 2026 15:11:19,018 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
-29 Mar 2026 15:11:19,018 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
-29 Mar 2026 15:11:19,018 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Direction Button' (IGNORED)
-29 Mar 2026 15:11:19,018 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '10' sec (IGNORED)
-29 Mar 2026 15:11:19,018 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I hover on  'All Task Header Button' (IGNORED)
-29 Mar 2026 15:11:19,018 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'My Processes List Header Button' (IGNORED)
-29 Mar 2026 15:11:19,018 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify 'Process Status' equals 'p:ProcessCompletedStatus' text (IGNORED)
-29 Mar 2026 15:11:19,018 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I hover on  'User Name Header Button' (IGNORED)
-29 Mar 2026 15:11:19,018 INFO : com.automation.jbehave.ConsoleLogger - !-- Then [Input] I click on 'logout Button' (IGNORED)
-29 Mar 2026 15:11:19,019 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify 'login Button' is present (IGNORED)
-29 Mar 2026 15:11:19,019 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I login as 'p:JPPMCuser.MalakAlshishani' with password 'p:JPPMC.password' (IGNORED)
-29 Mar 2026 15:11:19,020 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I hover on  'All Task Header Button' (IGNORED)
-29 Mar 2026 15:11:19,020 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Tasks To View' (IGNORED)
-29 Mar 2026 15:11:19,020 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify text of 'Tasks To View First Subject Text JPPMC' equals saved value 'SubjectText' (IGNORED)
-29 Mar 2026 15:11:19,022 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Generalizations View Process Button' (IGNORED)
-29 Mar 2026 15:11:19,022 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify text of 'Subject Field' equals saved value 'SubjectText' (IGNORED)
-29 Mar 2026 15:11:19,022 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify value of 'Outgoing Get Serial Number' equals saved value 'OutgoingSerialNumberValue' (IGNORED)
-29 Mar 2026 15:11:19,022 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
-29 Mar 2026 15:11:19,022 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
-29 Mar 2026 15:11:19,022 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
-29 Mar 2026 15:11:19,023 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
-29 Mar 2026 15:11:19,023 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
-29 Mar 2026 15:11:19,023 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Direction Tab' (IGNORED)
-29 Mar 2026 15:11:19,024 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'View Button' (IGNORED)
-29 Mar 2026 15:11:19,024 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '5' sec (IGNORED)
-29 Mar 2026 15:11:19,024 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I hover on  'All Task Header Button' (IGNORED)
-29 Mar 2026 15:11:19,024 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Completed Tasks' (IGNORED)
-29 Mar 2026 15:11:19,024 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify text of 'Completed Tasks First Subject Text' equals saved value 'SubjectText' (IGNORED)
-29 Mar 2026 15:11:19,024 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I hover on  'User Name Header Button' (IGNORED)
-29 Mar 2026 15:11:19,024 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'logout Button' (IGNORED)
-29 Mar 2026 15:11:19,024 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify 'login Button' is present (IGNORED)
-29 Mar 2026 15:11:19,358 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
-29 Mar 2026 15:11:19,358 INFO : com.automation.jbehave.ConsoleLogger - End Story:  TC_005_JPPMC.story
-29 Mar 2026 15:11:19,358 INFO : com.automation.jbehave.ConsoleLogger - Status:  PASSED 
-29 Mar 2026 15:11:19,358 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
+29 Mar 2026 15:30:57,543 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
+29 Mar 2026 15:30:57,544 INFO : com.automation.jbehave.ConsoleLogger - Scenario: TC_005_JPPMC_001
+29 Mar 2026 15:30:57,544 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
+29 Mar 2026 15:30:57,544 INFO : com.automation.jbehave.PropertyParameterConverter - Parameter converted:[p:dewanJPPMC] >> [http://172.16.30.83:5555/JPPMC_EndUser/login.aspx]
+29 Mar 2026 15:30:58,346 INFO : com.automation.pages.CannedPage - Navigating to the page: http://172.16.30.83:5555/JPPMC_EndUser/login.aspx
+29 Mar 2026 15:30:58,397 INFO : com.automation.jbehave.ConsoleLogger - Given [Navigation] I navigate to 'p:dewanJPPMC' (SUCCESSFUL)
+29 Mar 2026 15:30:58,398 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I login as 'p:JPPMCuser.HikmatZomat' with password 'p:JPPMC.password' (IGNORED)
+29 Mar 2026 15:30:58,398 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Add Process Button' (IGNORED)
+29 Mar 2026 15:30:58,399 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Outgoing Button' (IGNORED)
+29 Mar 2026 15:30:58,399 INFO : com.automation.jbehave.ConsoleLogger - !-- When [Input] Set 'Subject Field' value to 'random' (IGNORED)
+29 Mar 2026 15:30:58,400 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I select 'p:CommissionersExportingUser' from the 'Commissioners Exporting Outgoing JPPMC' combo box (IGNORED)
+29 Mar 2026 15:30:58,401 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] Select 'p:AddresseeNameValue' value from 'Addressee Name Outgoing JPPMC' dropdown list (IGNORED)
+29 Mar 2026 15:30:58,401 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
+29 Mar 2026 15:30:58,401 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Save Draft Button' (IGNORED)
+29 Mar 2026 15:30:58,401 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Action] I get text from 'Subject Field' and save it as 'SubjectText' (IGNORED)
+29 Mar 2026 15:30:58,401 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Action] I get value from 'Outgoing Get Serial Number' and save it as 'OutgoingSerialNumberValue' (IGNORED)
+29 Mar 2026 15:30:58,402 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '5' sec (IGNORED)
+29 Mar 2026 15:30:58,402 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
+29 Mar 2026 15:30:58,402 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Save Button' (IGNORED)
+29 Mar 2026 15:30:58,402 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
+29 Mar 2026 15:30:58,403 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
+29 Mar 2026 15:30:58,403 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
+29 Mar 2026 15:30:58,403 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
+29 Mar 2026 15:30:58,403 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
+29 Mar 2026 15:30:58,403 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Direction Tab' (IGNORED)
+29 Mar 2026 15:30:58,403 INFO : com.automation.jbehave.ConsoleLogger - !-- !-- And [Input] I click on 'Add Button' (IGNORED)
+29 Mar 2026 15:30:58,404 INFO : com.automation.jbehave.ConsoleLogger - !-- !-- And [Progress] I wait for '4' sec (IGNORED)
+29 Mar 2026 15:30:58,404 INFO : com.automation.jbehave.ConsoleLogger - !-- !-- And [Input] I click on 'Close Notification Button' (IGNORED)
+29 Mar 2026 15:30:58,404 INFO : com.automation.jbehave.ConsoleLogger - !-- !-- And [Assertion] Verify 'Outgoing User Name Directed To1 JPPMC' equals 'p:manarDojan.username' text (IGNORED)
+29 Mar 2026 15:30:58,405 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
+29 Mar 2026 15:30:58,405 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
+29 Mar 2026 15:30:58,405 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
+29 Mar 2026 15:30:58,405 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
+29 Mar 2026 15:30:58,405 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
+29 Mar 2026 15:30:58,405 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Direction Button' (IGNORED)
+29 Mar 2026 15:30:58,405 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '10' sec (IGNORED)
+29 Mar 2026 15:30:58,406 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I hover on  'All Task Header Button' (IGNORED)
+29 Mar 2026 15:30:58,406 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'My Processes List Header Button' (IGNORED)
+29 Mar 2026 15:30:58,406 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify 'Process Status' equals 'p:ProcessCompletedStatus' text (IGNORED)
+29 Mar 2026 15:30:58,406 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I hover on  'User Name Header Button' (IGNORED)
+29 Mar 2026 15:30:58,407 INFO : com.automation.jbehave.ConsoleLogger - !-- Then [Input] I click on 'logout Button' (IGNORED)
+29 Mar 2026 15:30:58,407 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify 'login Button' is present (IGNORED)
+29 Mar 2026 15:30:58,408 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I login as 'p:JPPMCuser.MalakAlshishani' with password 'p:JPPMC.password' (IGNORED)
+29 Mar 2026 15:30:58,408 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I hover on  'All Task Header Button' (IGNORED)
+29 Mar 2026 15:30:58,408 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Tasks To View' (IGNORED)
+29 Mar 2026 15:30:58,408 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify text of 'Tasks To View First Subject Text JPPMC' equals saved value 'SubjectText' (IGNORED)
+29 Mar 2026 15:30:58,409 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Generalizations View Process Button' (IGNORED)
+29 Mar 2026 15:30:58,409 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify text of 'Subject Field' equals saved value 'SubjectText' (IGNORED)
+29 Mar 2026 15:30:58,410 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify value of 'Outgoing Get Serial Number' equals saved value 'OutgoingSerialNumberValue' (IGNORED)
+29 Mar 2026 15:30:58,410 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
+29 Mar 2026 15:30:58,410 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
+29 Mar 2026 15:30:58,410 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
+29 Mar 2026 15:30:58,410 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
+29 Mar 2026 15:30:58,410 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
+29 Mar 2026 15:30:58,410 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Direction Tab' (IGNORED)
+29 Mar 2026 15:30:58,411 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'View Button' (IGNORED)
+29 Mar 2026 15:30:58,411 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '5' sec (IGNORED)
+29 Mar 2026 15:30:58,411 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I hover on  'All Task Header Button' (IGNORED)
+29 Mar 2026 15:30:58,411 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Completed Tasks' (IGNORED)
+29 Mar 2026 15:30:58,411 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify text of 'Completed Tasks First Subject Text' equals saved value 'SubjectText' (IGNORED)
+29 Mar 2026 15:30:58,411 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I hover on  'User Name Header Button' (IGNORED)
+29 Mar 2026 15:30:58,412 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'logout Button' (IGNORED)
+29 Mar 2026 15:30:58,412 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify 'login Button' is present (IGNORED)
+29 Mar 2026 15:30:58,851 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
+29 Mar 2026 15:30:58,851 INFO : com.automation.jbehave.ConsoleLogger - End Story:  TC_005_JPPMC.story
+29 Mar 2026 15:30:58,851 INFO : com.automation.jbehave.ConsoleLogger - Status:  PASSED 
+29 Mar 2026 15:30:58,851 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
 Running story stories/TC_006_JPPMC.story
-29 Mar 2026 15:11:19,366 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
-29 Mar 2026 15:11:19,366 INFO : com.automation.jbehave.ConsoleLogger - Begin Story: TC_006_JPPMC.story
-29 Mar 2026 15:11:19,366 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
-29 Mar 2026 15:11:19,367 INFO : com.automation.jbehave.ConsoleLogger - Narrative[inOrderTo=,asA=,iWantTo=,soThat=]
-29 Mar 2026 15:11:19,367 INFO : com.automation.jbehave.ConsoleLogger - Lifecycle[before=Lifecycle.Steps[outcome=<null>,metaFilter=<null>,steps=[]],after={}]
+29 Mar 2026 15:30:58,854 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
+29 Mar 2026 15:30:58,854 INFO : com.automation.jbehave.ConsoleLogger - Begin Story: TC_006_JPPMC.story
+29 Mar 2026 15:30:58,854 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
+29 Mar 2026 15:30:58,854 INFO : com.automation.jbehave.ConsoleLogger - Narrative[inOrderTo=,asA=,iWantTo=,soThat=]
+29 Mar 2026 15:30:58,854 INFO : com.automation.jbehave.ConsoleLogger - Lifecycle[before=Lifecycle.Steps[outcome=<null>,metaFilter=<null>,steps=[]],after={}]
 Using timeout for story TC_006_JPPMC.story of 7200 secs.
-29 Mar 2026 15:11:20,612 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
-29 Mar 2026 15:11:20,612 INFO : com.automation.jbehave.ConsoleLogger - Scenario: TC_006_JPPMC_001
-29 Mar 2026 15:11:20,612 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
-29 Mar 2026 15:11:20,613 INFO : com.automation.jbehave.PropertyParameterConverter - Parameter converted:[p:dewanJPPMC] >> [http://172.16.30.83:5555/JPPMC_EndUser/login.aspx]
-29 Mar 2026 15:11:21,584 INFO : com.automation.pages.CannedPage - Navigating to the page: http://172.16.30.83:5555/JPPMC_EndUser/login.aspx
-29 Mar 2026 15:11:21,650 INFO : com.automation.jbehave.ConsoleLogger - Given [Navigation] I navigate to 'p:dewanJPPMC' (SUCCESSFUL)
-29 Mar 2026 15:11:21,651 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I login as 'p:JPPMCuser.HikmatZomat' with password 'p:JPPMC.password' (IGNORED)
-29 Mar 2026 15:11:21,651 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Add Process Button' (IGNORED)
-29 Mar 2026 15:11:21,651 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Incoming Button' (IGNORED)
-29 Mar 2026 15:11:21,651 INFO : com.automation.jbehave.ConsoleLogger - !-- When [Input] Set 'Subject Field' value to 'random' (IGNORED)
-29 Mar 2026 15:11:21,652 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I select 'p:CommissionersExportingUser' from the 'Commissioners Exporting Incoming JPPMC' combo box (IGNORED)
-29 Mar 2026 15:11:21,653 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
-29 Mar 2026 15:11:21,653 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] Select 'p:RecipientsValue' value from 'Recipients Incoming JPPMC' dropdown list (IGNORED)
-29 Mar 2026 15:11:21,653 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
-29 Mar 2026 15:11:21,653 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Save Draft Button' (IGNORED)
-29 Mar 2026 15:11:21,654 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '5' sec (IGNORED)
-29 Mar 2026 15:11:21,654 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
-29 Mar 2026 15:11:21,654 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Save Button' (IGNORED)
-29 Mar 2026 15:11:21,654 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
-29 Mar 2026 15:11:21,654 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Action] I get value from 'Commissioners Exporting Incoming JPPMC' and save it as 'GeneralManagerOfficeComboBoxValue' (IGNORED)
-29 Mar 2026 15:11:21,654 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Action] I get text from 'Subject Field' and save it as 'SubjectText' (IGNORED)
-29 Mar 2026 15:11:21,655 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Action] I get value from 'Incoming Get Serial Number' and save it as 'IncomingSerialNumberValue' (IGNORED)
-29 Mar 2026 15:11:21,655 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
-29 Mar 2026 15:11:21,655 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
-29 Mar 2026 15:11:21,655 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
-29 Mar 2026 15:11:21,655 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
-29 Mar 2026 15:11:21,655 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
-29 Mar 2026 15:11:21,655 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Direction Tab' (IGNORED)
-29 Mar 2026 15:11:21,655 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
-29 Mar 2026 15:11:21,655 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
-29 Mar 2026 15:11:21,656 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
-29 Mar 2026 15:11:21,656 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
-29 Mar 2026 15:11:21,656 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
-29 Mar 2026 15:11:21,656 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Direction Button' (IGNORED)
-29 Mar 2026 15:11:21,657 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '6' sec (IGNORED)
-29 Mar 2026 15:11:21,657 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I hover on 'All Task Header Button' (IGNORED)
-29 Mar 2026 15:11:21,657 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'My Processes List Header Button' (IGNORED)
-29 Mar 2026 15:11:21,657 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify 'Process Status' equals 'p:ProcessUnCompletedStatus' text (IGNORED)
-29 Mar 2026 15:11:21,657 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'My Processes List View Process Button' (IGNORED)
-29 Mar 2026 15:11:21,657 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
-29 Mar 2026 15:11:21,657 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
-29 Mar 2026 15:11:21,657 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
-29 Mar 2026 15:11:21,658 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
-29 Mar 2026 15:11:21,658 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
-29 Mar 2026 15:11:21,658 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Incoming Users Directed To' (IGNORED)
-29 Mar 2026 15:11:21,658 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify 'Incoming User Name Directed To1' equals 'p:MalakAlshishani.username' text (IGNORED)
-29 Mar 2026 15:11:21,658 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I hover on 'All Task Header Button' (IGNORED)
-29 Mar 2026 15:11:21,658 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Completed Tasks' (IGNORED)
-29 Mar 2026 15:11:21,658 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify text of 'Completed Tasks First Subject Text' equals saved value 'SubjectText' (IGNORED)
-29 Mar 2026 15:11:21,659 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I hover on  'User Name Header Button' (IGNORED)
-29 Mar 2026 15:11:21,659 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'logout Button' (IGNORED)
-29 Mar 2026 15:11:21,659 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I login as 'p:JPPMCuser.MalakAlshishani' with password 'p:JPPMC.password' (IGNORED)
-29 Mar 2026 15:11:21,660 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I hover on  'All Task Header Button' (IGNORED)
-29 Mar 2026 15:11:21,660 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Task List Header Button' (IGNORED)
-29 Mar 2026 15:11:21,660 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify text of 'Task List First Subject Text' equals saved value 'SubjectText' (IGNORED)
-29 Mar 2026 15:11:21,660 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Task List View Process Button' (IGNORED)
-29 Mar 2026 15:11:21,660 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
-29 Mar 2026 15:11:21,661 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
-29 Mar 2026 15:11:21,661 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
-29 Mar 2026 15:11:21,661 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
-29 Mar 2026 15:11:21,661 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
-29 Mar 2026 15:11:21,661 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Close Button' (IGNORED)
-29 Mar 2026 15:11:21,662 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
-29 Mar 2026 15:11:21,662 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Javascript] I accept alert (IGNORED)
-29 Mar 2026 15:11:21,662 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
-29 Mar 2026 15:11:21,662 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I hover on 'All Task Header Button' (IGNORED)
-29 Mar 2026 15:11:21,662 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Completed Tasks' (IGNORED)
-29 Mar 2026 15:11:21,662 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify text of 'Completed Tasks First Subject Text' equals saved value 'SubjectText' (IGNORED)
-29 Mar 2026 15:11:21,662 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I hover on  'User Name Header Button' (IGNORED)
-29 Mar 2026 15:11:21,663 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'logout Button' (IGNORED)
-29 Mar 2026 15:11:21,663 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify 'login Button' is present (IGNORED)
-29 Mar 2026 15:11:21,663 INFO : com.automation.jbehave.ConsoleLogger - !-- Then [Input] I login as 'p:JPPMCuser.HikmatZomat' with password 'p:JPPMC.password' (IGNORED)
-29 Mar 2026 15:11:21,663 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I hover on 'All Task Header Button' (IGNORED)
-29 Mar 2026 15:11:21,663 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'My Processes List Header Button' (IGNORED)
-29 Mar 2026 15:11:21,663 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify 'Process Status' equals 'p:ProcessCompletedStatus' text (IGNORED)
-29 Mar 2026 15:11:21,664 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I hover on  'User Name Header Button' (IGNORED)
-29 Mar 2026 15:11:21,664 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'logout Button' (IGNORED)
-29 Mar 2026 15:11:21,664 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify 'login Button' is present (IGNORED)
-29 Mar 2026 15:11:21,859 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
-29 Mar 2026 15:11:21,860 INFO : com.automation.jbehave.ConsoleLogger - Scenario: TC_006_JPPMC_002
-29 Mar 2026 15:11:21,860 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
-29 Mar 2026 15:11:21,860 INFO : com.automation.jbehave.PropertyParameterConverter - Parameter converted:[p:dewanJPPMC] >> [http://172.16.30.83:5555/JPPMC_EndUser/login.aspx]
-29 Mar 2026 15:11:23,148 INFO : com.automation.pages.CannedPage - Navigating to the page: http://172.16.30.83:5555/JPPMC_EndUser/login.aspx
-29 Mar 2026 15:11:23,178 INFO : com.automation.jbehave.ConsoleLogger - Given [Navigation] I navigate to 'p:dewanJPPMC' (SUCCESSFUL)
-29 Mar 2026 15:11:23,178 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I login as 'p:JPPMCuser.HikmatZomat' with password 'p:JPPMC.password' (IGNORED)
-29 Mar 2026 15:11:23,178 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Add Process Button' (IGNORED)
-29 Mar 2026 15:11:23,178 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Incoming Button' (IGNORED)
-29 Mar 2026 15:11:23,178 INFO : com.automation.jbehave.ConsoleLogger - !-- When [Input] Set 'Subject Field' value to 'random' (IGNORED)
-29 Mar 2026 15:11:23,178 INFO : com.automation.jbehave.ConsoleLogger - !-- !-- And [Input] Set 'Num Book From The Source' value to 'nanotime' (IGNORED)
-29 Mar 2026 15:11:23,178 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I select 'p:GeneralManagerOffice' from the 'General Manager Office Incoming JPPMC' combo box (IGNORED)
-29 Mar 2026 15:11:23,178 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
-29 Mar 2026 15:11:23,178 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] Select 'p:RecipientsValue' value from 'Recipients Incoming JPPMC' dropdown list (IGNORED)
-29 Mar 2026 15:11:23,179 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Save Draft Button' (IGNORED)
-29 Mar 2026 15:11:23,179 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Save Button' (IGNORED)
-29 Mar 2026 15:11:23,179 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
-29 Mar 2026 15:11:23,179 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Action] I get value from 'General Manager Office Incoming JPPMC' and save it as 'GeneralManagerOfficeComboBoxValue' (IGNORED)
-29 Mar 2026 15:11:23,179 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Action] I get text from 'Subject Field' and save it as 'SubjectText' (IGNORED)
-29 Mar 2026 15:11:23,179 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Action] I get value from 'Incoming Get Serial Number' and save it as 'IncomingSerialNumberValue' (IGNORED)
-29 Mar 2026 15:11:23,179 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
-29 Mar 2026 15:11:23,179 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
-29 Mar 2026 15:11:23,179 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Direction Tab' (IGNORED)
-29 Mar 2026 15:11:23,179 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Click On All Check Box' (IGNORED)
-29 Mar 2026 15:11:23,179 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Delete Button' (IGNORED)
-29 Mar 2026 15:11:23,179 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
-29 Mar 2026 15:11:23,179 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Close Notification Button' (IGNORED)
-29 Mar 2026 15:11:23,179 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
-29 Mar 2026 15:11:23,179 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I select the 'To View Radio Button' (IGNORED)
-29 Mar 2026 15:11:23,180 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '5' sec (IGNORED)
-29 Mar 2026 15:11:23,180 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
-29 Mar 2026 15:11:23,180 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Add Button' (IGNORED)
-29 Mar 2026 15:11:23,180 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '4' sec (IGNORED)
-29 Mar 2026 15:11:23,180 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Close Notification Button' (IGNORED)
-29 Mar 2026 15:11:23,180 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Direction Button' (IGNORED)
-29 Mar 2026 15:11:23,180 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '4' sec (IGNORED)
-29 Mar 2026 15:11:23,180 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I hover on 'All Task Header Button' (IGNORED)
-29 Mar 2026 15:11:23,180 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'My Processes List Header Button' (IGNORED)
-29 Mar 2026 15:11:23,180 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify 'Process Status' equals 'p:ProcessCompletedStatus' text (IGNORED)
-29 Mar 2026 15:11:23,180 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'My Processes List View Process Button' (IGNORED)
-29 Mar 2026 15:11:23,180 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Incoming Users Directed To' (IGNORED)
-29 Mar 2026 15:11:23,180 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify 'Incoming User Name Directed To1' equals 'p:manarDojan.username' text (IGNORED)
-29 Mar 2026 15:11:23,180 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I hover on 'All Task Header Button' (IGNORED)
-29 Mar 2026 15:11:23,181 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Completed Tasks' (IGNORED)
-29 Mar 2026 15:11:23,181 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify text of 'Completed Tasks First Subject Text' equals saved value 'SubjectText' (IGNORED)
-29 Mar 2026 15:11:23,181 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'logout Button' (IGNORED)
-29 Mar 2026 15:11:23,181 INFO : com.automation.jbehave.ConsoleLogger - !-- Then [Input] I login as 'p:JPPMCuser.manarDojan' with password 'p:JPPMC.password' (IGNORED)
-29 Mar 2026 15:11:23,181 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Tasks To View' (IGNORED)
-29 Mar 2026 15:11:23,181 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify text of 'Tasks To View First Subject Text SCC' equals saved value 'SubjectText' (IGNORED)
-29 Mar 2026 15:11:23,181 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Generalizations View Process Button' (IGNORED)
-29 Mar 2026 15:11:23,181 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify text of 'Subject Field' equals saved value 'SubjectText' (IGNORED)
-29 Mar 2026 15:11:23,181 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify value of 'Incoming Get Serial Number' equals saved value 'IncomingSerialNumberValue' (IGNORED)
-29 Mar 2026 15:11:23,181 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'logout Button' (IGNORED)
-29 Mar 2026 15:11:23,181 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify 'login Button' is present (IGNORED)
-29 Mar 2026 15:11:23,491 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
-29 Mar 2026 15:11:23,491 INFO : com.automation.jbehave.ConsoleLogger - End Story:  TC_006_JPPMC.story
-29 Mar 2026 15:11:23,491 INFO : com.automation.jbehave.ConsoleLogger - Status:  PASSED 
-29 Mar 2026 15:11:23,491 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
+29 Mar 2026 15:31:00,524 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
+29 Mar 2026 15:31:00,524 INFO : com.automation.jbehave.ConsoleLogger - Scenario: TC_006_JPPMC_001
+29 Mar 2026 15:31:00,524 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
+29 Mar 2026 15:31:00,525 INFO : com.automation.jbehave.PropertyParameterConverter - Parameter converted:[p:dewanJPPMC] >> [http://172.16.30.83:5555/JPPMC_EndUser/login.aspx]
+29 Mar 2026 15:31:00,808 INFO : com.automation.pages.CannedPage - Navigating to the page: http://172.16.30.83:5555/JPPMC_EndUser/login.aspx
+29 Mar 2026 15:31:00,900 INFO : com.automation.jbehave.ConsoleLogger - Given [Navigation] I navigate to 'p:dewanJPPMC' (SUCCESSFUL)
+29 Mar 2026 15:31:00,902 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I login as 'p:JPPMCuser.HikmatZomat' with password 'p:JPPMC.password' (IGNORED)
+29 Mar 2026 15:31:00,902 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Add Process Button' (IGNORED)
+29 Mar 2026 15:31:00,903 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Incoming Button' (IGNORED)
+29 Mar 2026 15:31:00,904 INFO : com.automation.jbehave.ConsoleLogger - !-- When [Input] Set 'Subject Field' value to 'random' (IGNORED)
+29 Mar 2026 15:31:00,905 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I select 'p:CommissionersExportingUser' from the 'Commissioners Exporting Incoming JPPMC' combo box (IGNORED)
+29 Mar 2026 15:31:00,905 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
+29 Mar 2026 15:31:00,906 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] Select 'p:RecipientsValue' value from 'Recipients Incoming JPPMC' dropdown list (IGNORED)
+29 Mar 2026 15:31:00,906 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
+29 Mar 2026 15:31:00,907 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Save Draft Button' (IGNORED)
+29 Mar 2026 15:31:00,907 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '5' sec (IGNORED)
+29 Mar 2026 15:31:00,907 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
+29 Mar 2026 15:31:00,907 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Save Button' (IGNORED)
+29 Mar 2026 15:31:00,908 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
+29 Mar 2026 15:31:00,908 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Action] I get value from 'Commissioners Exporting Incoming JPPMC' and save it as 'GeneralManagerOfficeComboBoxValue' (IGNORED)
+29 Mar 2026 15:31:00,908 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Action] I get text from 'Subject Field' and save it as 'SubjectText' (IGNORED)
+29 Mar 2026 15:31:00,909 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Action] I get value from 'Incoming Get Serial Number' and save it as 'IncomingSerialNumberValue' (IGNORED)
+29 Mar 2026 15:31:00,909 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
+29 Mar 2026 15:31:00,909 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
+29 Mar 2026 15:31:00,910 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
+29 Mar 2026 15:31:00,910 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
+29 Mar 2026 15:31:00,910 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
+29 Mar 2026 15:31:00,911 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Direction Tab' (IGNORED)
+29 Mar 2026 15:31:00,911 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
+29 Mar 2026 15:31:00,911 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
+29 Mar 2026 15:31:00,911 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
+29 Mar 2026 15:31:00,911 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
+29 Mar 2026 15:31:00,912 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
+29 Mar 2026 15:31:00,912 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Direction Button' (IGNORED)
+29 Mar 2026 15:31:00,912 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '6' sec (IGNORED)
+29 Mar 2026 15:31:00,913 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I hover on 'All Task Header Button' (IGNORED)
+29 Mar 2026 15:31:00,913 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'My Processes List Header Button' (IGNORED)
+29 Mar 2026 15:31:00,914 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify 'Process Status' equals 'p:ProcessUnCompletedStatus' text (IGNORED)
+29 Mar 2026 15:31:00,914 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'My Processes List View Process Button' (IGNORED)
+29 Mar 2026 15:31:00,915 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
+29 Mar 2026 15:31:00,915 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
+29 Mar 2026 15:31:00,915 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
+29 Mar 2026 15:31:00,915 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
+29 Mar 2026 15:31:00,916 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
+29 Mar 2026 15:31:00,916 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Incoming Users Directed To' (IGNORED)
+29 Mar 2026 15:31:00,917 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify 'Incoming User Name Directed To1' equals 'p:MalakAlshishani.username' text (IGNORED)
+29 Mar 2026 15:31:00,917 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I hover on 'All Task Header Button' (IGNORED)
+29 Mar 2026 15:31:00,917 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Completed Tasks' (IGNORED)
+29 Mar 2026 15:31:00,918 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify text of 'Completed Tasks First Subject Text' equals saved value 'SubjectText' (IGNORED)
+29 Mar 2026 15:31:00,918 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I hover on  'User Name Header Button' (IGNORED)
+29 Mar 2026 15:31:00,918 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'logout Button' (IGNORED)
+29 Mar 2026 15:31:00,919 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I login as 'p:JPPMCuser.MalakAlshishani' with password 'p:JPPMC.password' (IGNORED)
+29 Mar 2026 15:31:00,919 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I hover on  'All Task Header Button' (IGNORED)
+29 Mar 2026 15:31:00,919 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Task List Header Button' (IGNORED)
+29 Mar 2026 15:31:00,924 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify text of 'Task List First Subject Text' equals saved value 'SubjectText' (IGNORED)
+29 Mar 2026 15:31:00,924 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Task List View Process Button' (IGNORED)
+29 Mar 2026 15:31:00,925 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
+29 Mar 2026 15:31:00,925 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
+29 Mar 2026 15:31:00,925 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
+29 Mar 2026 15:31:00,925 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
+29 Mar 2026 15:31:00,926 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
+29 Mar 2026 15:31:00,926 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Close Button' (IGNORED)
+29 Mar 2026 15:31:00,926 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
+29 Mar 2026 15:31:00,926 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Javascript] I accept alert (IGNORED)
+29 Mar 2026 15:31:00,927 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
+29 Mar 2026 15:31:00,927 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I hover on 'All Task Header Button' (IGNORED)
+29 Mar 2026 15:31:00,927 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Completed Tasks' (IGNORED)
+29 Mar 2026 15:31:00,927 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify text of 'Completed Tasks First Subject Text' equals saved value 'SubjectText' (IGNORED)
+29 Mar 2026 15:31:00,927 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I hover on  'User Name Header Button' (IGNORED)
+29 Mar 2026 15:31:00,928 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'logout Button' (IGNORED)
+29 Mar 2026 15:31:00,928 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify 'login Button' is present (IGNORED)
+29 Mar 2026 15:31:00,928 INFO : com.automation.jbehave.ConsoleLogger - !-- Then [Input] I login as 'p:JPPMCuser.HikmatZomat' with password 'p:JPPMC.password' (IGNORED)
+29 Mar 2026 15:31:00,929 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I hover on 'All Task Header Button' (IGNORED)
+29 Mar 2026 15:31:00,929 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'My Processes List Header Button' (IGNORED)
+29 Mar 2026 15:31:00,929 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify 'Process Status' equals 'p:ProcessCompletedStatus' text (IGNORED)
+29 Mar 2026 15:31:00,930 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I hover on  'User Name Header Button' (IGNORED)
+29 Mar 2026 15:31:00,930 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'logout Button' (IGNORED)
+29 Mar 2026 15:31:00,930 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify 'login Button' is present (IGNORED)
+29 Mar 2026 15:31:01,452 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
+29 Mar 2026 15:31:01,453 INFO : com.automation.jbehave.ConsoleLogger - Scenario: TC_006_JPPMC_002
+29 Mar 2026 15:31:01,453 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
+29 Mar 2026 15:31:01,453 INFO : com.automation.jbehave.PropertyParameterConverter - Parameter converted:[p:dewanJPPMC] >> [http://172.16.30.83:5555/JPPMC_EndUser/login.aspx]
+29 Mar 2026 15:31:02,018 INFO : com.automation.pages.CannedPage - Navigating to the page: http://172.16.30.83:5555/JPPMC_EndUser/login.aspx
+29 Mar 2026 15:31:02,081 INFO : com.automation.jbehave.ConsoleLogger - Given [Navigation] I navigate to 'p:dewanJPPMC' (SUCCESSFUL)
+29 Mar 2026 15:31:02,081 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I login as 'p:JPPMCuser.HikmatZomat' with password 'p:JPPMC.password' (IGNORED)
+29 Mar 2026 15:31:02,081 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Add Process Button' (IGNORED)
+29 Mar 2026 15:31:02,081 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Incoming Button' (IGNORED)
+29 Mar 2026 15:31:02,083 INFO : com.automation.jbehave.ConsoleLogger - !-- When [Input] Set 'Subject Field' value to 'random' (IGNORED)
+29 Mar 2026 15:31:02,083 INFO : com.automation.jbehave.ConsoleLogger - !-- !-- And [Input] Set 'Num Book From The Source' value to 'nanotime' (IGNORED)
+29 Mar 2026 15:31:02,083 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I select 'p:GeneralManagerOffice' from the 'General Manager Office Incoming JPPMC' combo box (IGNORED)
+29 Mar 2026 15:31:02,084 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
+29 Mar 2026 15:31:02,084 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] Select 'p:RecipientsValue' value from 'Recipients Incoming JPPMC' dropdown list (IGNORED)
+29 Mar 2026 15:31:02,084 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Save Draft Button' (IGNORED)
+29 Mar 2026 15:31:02,084 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Save Button' (IGNORED)
+29 Mar 2026 15:31:02,085 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
+29 Mar 2026 15:31:02,085 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Action] I get value from 'General Manager Office Incoming JPPMC' and save it as 'GeneralManagerOfficeComboBoxValue' (IGNORED)
+29 Mar 2026 15:31:02,085 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Action] I get text from 'Subject Field' and save it as 'SubjectText' (IGNORED)
+29 Mar 2026 15:31:02,085 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Action] I get value from 'Incoming Get Serial Number' and save it as 'IncomingSerialNumberValue' (IGNORED)
+29 Mar 2026 15:31:02,085 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
+29 Mar 2026 15:31:02,085 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
+29 Mar 2026 15:31:02,085 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Direction Tab' (IGNORED)
+29 Mar 2026 15:31:02,085 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Click On All Check Box' (IGNORED)
+29 Mar 2026 15:31:02,085 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Delete Button' (IGNORED)
+29 Mar 2026 15:31:02,086 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
+29 Mar 2026 15:31:02,086 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Close Notification Button' (IGNORED)
+29 Mar 2026 15:31:02,086 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
+29 Mar 2026 15:31:02,086 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I select the 'To View Radio Button' (IGNORED)
+29 Mar 2026 15:31:02,086 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '5' sec (IGNORED)
+29 Mar 2026 15:31:02,086 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
+29 Mar 2026 15:31:02,086 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Add Button' (IGNORED)
+29 Mar 2026 15:31:02,087 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '4' sec (IGNORED)
+29 Mar 2026 15:31:02,087 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Close Notification Button' (IGNORED)
+29 Mar 2026 15:31:02,087 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Direction Button' (IGNORED)
+29 Mar 2026 15:31:02,087 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '4' sec (IGNORED)
+29 Mar 2026 15:31:02,087 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I hover on 'All Task Header Button' (IGNORED)
+29 Mar 2026 15:31:02,089 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'My Processes List Header Button' (IGNORED)
+29 Mar 2026 15:31:02,089 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify 'Process Status' equals 'p:ProcessCompletedStatus' text (IGNORED)
+29 Mar 2026 15:31:02,090 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'My Processes List View Process Button' (IGNORED)
+29 Mar 2026 15:31:02,090 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Incoming Users Directed To' (IGNORED)
+29 Mar 2026 15:31:02,090 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify 'Incoming User Name Directed To1' equals 'p:manarDojan.username' text (IGNORED)
+29 Mar 2026 15:31:02,090 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I hover on 'All Task Header Button' (IGNORED)
+29 Mar 2026 15:31:02,090 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Completed Tasks' (IGNORED)
+29 Mar 2026 15:31:02,091 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify text of 'Completed Tasks First Subject Text' equals saved value 'SubjectText' (IGNORED)
+29 Mar 2026 15:31:02,091 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'logout Button' (IGNORED)
+29 Mar 2026 15:31:02,091 INFO : com.automation.jbehave.ConsoleLogger - !-- Then [Input] I login as 'p:JPPMCuser.manarDojan' with password 'p:JPPMC.password' (IGNORED)
+29 Mar 2026 15:31:02,091 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Tasks To View' (IGNORED)
+29 Mar 2026 15:31:02,091 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify text of 'Tasks To View First Subject Text SCC' equals saved value 'SubjectText' (IGNORED)
+29 Mar 2026 15:31:02,091 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Generalizations View Process Button' (IGNORED)
+29 Mar 2026 15:31:02,092 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify text of 'Subject Field' equals saved value 'SubjectText' (IGNORED)
+29 Mar 2026 15:31:02,092 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify value of 'Incoming Get Serial Number' equals saved value 'IncomingSerialNumberValue' (IGNORED)
+29 Mar 2026 15:31:02,092 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'logout Button' (IGNORED)
+29 Mar 2026 15:31:02,092 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify 'login Button' is present (IGNORED)
+29 Mar 2026 15:31:02,581 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
+29 Mar 2026 15:31:02,582 INFO : com.automation.jbehave.ConsoleLogger - End Story:  TC_006_JPPMC.story
+29 Mar 2026 15:31:02,582 INFO : com.automation.jbehave.ConsoleLogger - Status:  PASSED 
+29 Mar 2026 15:31:02,582 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
 Running story stories/TC_007_JPPMC.story
-29 Mar 2026 15:11:23,497 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
-29 Mar 2026 15:11:23,498 INFO : com.automation.jbehave.ConsoleLogger - Begin Story: TC_007_JPPMC.story
-29 Mar 2026 15:11:23,498 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
-29 Mar 2026 15:11:23,498 INFO : com.automation.jbehave.ConsoleLogger - Narrative[inOrderTo=,asA=,iWantTo=,soThat=]
-29 Mar 2026 15:11:23,498 INFO : com.automation.jbehave.ConsoleLogger - Lifecycle[before=Lifecycle.Steps[outcome=<null>,metaFilter=<null>,steps=[]],after={}]
+29 Mar 2026 15:31:02,584 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
+29 Mar 2026 15:31:02,584 INFO : com.automation.jbehave.ConsoleLogger - Begin Story: TC_007_JPPMC.story
+29 Mar 2026 15:31:02,584 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
+29 Mar 2026 15:31:02,584 INFO : com.automation.jbehave.ConsoleLogger - Narrative[inOrderTo=,asA=,iWantTo=,soThat=]
+29 Mar 2026 15:31:02,584 INFO : com.automation.jbehave.ConsoleLogger - Lifecycle[before=Lifecycle.Steps[outcome=<null>,metaFilter=<null>,steps=[]],after={}]
 Using timeout for story TC_007_JPPMC.story of 7200 secs.
-29 Mar 2026 15:11:24,867 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
-29 Mar 2026 15:11:24,868 INFO : com.automation.jbehave.ConsoleLogger - Scenario: TC_007_JPPMC_001
-29 Mar 2026 15:11:24,868 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
-29 Mar 2026 15:11:24,869 INFO : com.automation.jbehave.PropertyParameterConverter - Parameter converted:[p:dewanJPPMC] >> [http://172.16.30.83:5555/JPPMC_EndUser/login.aspx]
-29 Mar 2026 15:11:25,160 INFO : com.automation.pages.CannedPage - Navigating to the page: http://172.16.30.83:5555/JPPMC_EndUser/login.aspx
-29 Mar 2026 15:11:25,233 INFO : com.automation.jbehave.ConsoleLogger - Given [Navigation] I navigate to 'p:dewanJPPMC' (SUCCESSFUL)
-29 Mar 2026 15:11:25,235 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I login as 'p:JPPMCuser.HikmatZomat' with password 'p:JPPMC.password' (IGNORED)
-29 Mar 2026 15:11:25,235 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Add Process Button' (IGNORED)
-29 Mar 2026 15:11:25,235 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Internal Correspondence Button JPPMC' (IGNORED)
-29 Mar 2026 15:11:25,235 INFO : com.automation.jbehave.ConsoleLogger - !-- When [Input] Set 'Subject Field' value to 'random' (IGNORED)
-29 Mar 2026 15:11:25,236 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I select 'p:CommissionersExportingUser' from the 'Commissioner Internal Correspondence JPPMC' combo box (IGNORED)
-29 Mar 2026 15:11:25,236 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
-29 Mar 2026 15:11:25,237 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
-29 Mar 2026 15:11:25,237 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I select 'p:MainClassificationValue' from the 'Main Classification Internal Correspondence JPPMC' combo box (IGNORED)
-29 Mar 2026 15:11:25,237 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
-29 Mar 2026 15:11:25,237 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
-29 Mar 2026 15:11:25,237 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
-29 Mar 2026 15:11:25,238 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
-29 Mar 2026 15:11:25,238 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
-29 Mar 2026 15:11:25,238 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Save Button' (IGNORED)
-29 Mar 2026 15:11:25,238 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
-29 Mar 2026 15:11:25,238 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Action] I get value from 'Commissioner Internal Correspondence JPPMC' and save it as 'CommissionersExportingUser' (IGNORED)
-29 Mar 2026 15:11:25,238 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Action] I get text from 'Subject Field' and save it as 'SubjectText' (IGNORED)
-29 Mar 2026 15:11:25,238 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Action] I get value from 'Internal Correspondence Get Serial Number JPPMC' and save it as 'InternalCorrespondenceSerialNumberValue' (IGNORED)
-29 Mar 2026 15:11:25,238 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
-29 Mar 2026 15:11:25,238 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
-29 Mar 2026 15:11:25,239 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
-29 Mar 2026 15:11:25,239 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
-29 Mar 2026 15:11:25,239 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
-29 Mar 2026 15:11:25,239 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Direction Tab' (IGNORED)
-29 Mar 2026 15:11:25,239 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
-29 Mar 2026 15:11:25,239 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
-29 Mar 2026 15:11:25,239 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
-29 Mar 2026 15:11:25,240 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
-29 Mar 2026 15:11:25,240 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
-29 Mar 2026 15:11:25,240 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I select 'p:CommissionersExportingUser' from the 'Division Input' combo box (IGNORED)
-29 Mar 2026 15:11:25,240 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'AddButton' (IGNORED)
-29 Mar 2026 15:11:25,240 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '4' sec (IGNORED)
-29 Mar 2026 15:11:25,240 INFO : com.automation.jbehave.ConsoleLogger - !-- !-- And [Input] I click on 'Close Notification Button' (IGNORED)
-29 Mar 2026 15:11:25,241 INFO : com.automation.jbehave.ConsoleLogger - !-- !-- And [Progress] I wait for '3' sec (IGNORED)
-29 Mar 2026 15:11:25,241 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify text of 'Department Liaison Officer Name' contains saved value 'CommissionersExportingUser' (IGNORED)
-29 Mar 2026 15:11:25,241 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
-29 Mar 2026 15:11:25,241 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
-29 Mar 2026 15:11:25,241 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
-29 Mar 2026 15:11:25,241 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
-29 Mar 2026 15:11:25,242 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
-29 Mar 2026 15:11:25,242 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Direction Button' (IGNORED)
-29 Mar 2026 15:11:25,242 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '4' sec (IGNORED)
-29 Mar 2026 15:11:25,242 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I hover on 'All Task Header Button' (IGNORED)
-29 Mar 2026 15:11:25,242 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'My Processes List Header Button' (IGNORED)
-29 Mar 2026 15:11:25,242 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
-29 Mar 2026 15:11:25,242 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify 'Process Status' equals 'p:ProcessUnCompletedStatus' text (IGNORED)
-29 Mar 2026 15:11:25,243 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'My Processes List View Process Button' (IGNORED)
-29 Mar 2026 15:11:25,243 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
-29 Mar 2026 15:11:25,243 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
-29 Mar 2026 15:11:25,243 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
-29 Mar 2026 15:11:25,243 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
-29 Mar 2026 15:11:25,244 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
-29 Mar 2026 15:11:25,244 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Incoming Users Directed To' (IGNORED)
-29 Mar 2026 15:11:25,244 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify 'Incoming User Name Directed To1' equals 'p:MalakAlshishani.username' text (IGNORED)
-29 Mar 2026 15:11:25,244 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I hover on 'All Task Header Button' (IGNORED)
-29 Mar 2026 15:11:25,244 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Completed Tasks' (IGNORED)
-29 Mar 2026 15:11:25,244 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify text of 'Completed Tasks First Subject Text' equals saved value 'SubjectText' (IGNORED)
-29 Mar 2026 15:11:25,245 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I hover on  'User Name Header Button' (IGNORED)
-29 Mar 2026 15:11:25,245 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'logout Button' (IGNORED)
-29 Mar 2026 15:11:25,245 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I login as 'p:JPPMCuser.MalakAlshishani' with password 'p:JPPMC.password' (IGNORED)
-29 Mar 2026 15:11:25,245 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I hover on  'All Task Header Button' (IGNORED)
-29 Mar 2026 15:11:25,245 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Task List Header Button' (IGNORED)
-29 Mar 2026 15:11:25,245 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify text of 'Task List First Subject Text' equals saved value 'SubjectText' (IGNORED)
-29 Mar 2026 15:11:25,245 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Task List View Process Button' (IGNORED)
-29 Mar 2026 15:11:25,246 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
-29 Mar 2026 15:11:25,246 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
-29 Mar 2026 15:11:25,246 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
-29 Mar 2026 15:11:25,246 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
-29 Mar 2026 15:11:25,246 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
-29 Mar 2026 15:11:25,246 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Close Button' (IGNORED)
-29 Mar 2026 15:11:25,246 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Javascript] I accept alert (IGNORED)
-29 Mar 2026 15:11:25,246 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
-29 Mar 2026 15:11:25,247 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I hover on 'All Task Header Button' (IGNORED)
-29 Mar 2026 15:11:25,247 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Completed Tasks' (IGNORED)
-29 Mar 2026 15:11:25,247 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify text of 'Completed Tasks First Subject Text' equals saved value 'SubjectText' (IGNORED)
-29 Mar 2026 15:11:25,247 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I hover on  'User Name Header Button' (IGNORED)
-29 Mar 2026 15:11:25,247 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'logout Button' (IGNORED)
-29 Mar 2026 15:11:25,248 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify 'login Button' is present (IGNORED)
-29 Mar 2026 15:11:25,248 INFO : com.automation.jbehave.ConsoleLogger - !-- Then [Input] I login as 'p:JPPMCuser.HikmatZomat' with password 'p:JPPMC.password' (IGNORED)
-29 Mar 2026 15:11:25,248 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I hover on 'All Task Header Button' (IGNORED)
-29 Mar 2026 15:11:25,248 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'My Processes List Header Button' (IGNORED)
-29 Mar 2026 15:11:25,248 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify 'Process Status' equals 'p:ProcessCompletedStatus' text (IGNORED)
-29 Mar 2026 15:11:25,249 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I hover on  'User Name Header Button' (IGNORED)
-29 Mar 2026 15:11:25,249 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'logout Button' (IGNORED)
-29 Mar 2026 15:11:25,249 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify 'login Button' is present (IGNORED)
-29 Mar 2026 15:11:25,734 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
-29 Mar 2026 15:11:25,734 INFO : com.automation.jbehave.ConsoleLogger - Scenario: TC_007_JPPMC_002
-29 Mar 2026 15:11:25,734 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
-29 Mar 2026 15:11:25,735 INFO : com.automation.jbehave.PropertyParameterConverter - Parameter converted:[p:dewanJPPMC] >> [http://172.16.30.83:5555/JPPMC_EndUser/login.aspx]
-29 Mar 2026 15:11:25,967 INFO : com.automation.pages.CannedPage - Navigating to the page: http://172.16.30.83:5555/JPPMC_EndUser/login.aspx
-29 Mar 2026 15:11:26,019 INFO : com.automation.jbehave.ConsoleLogger - Given [Navigation] I navigate to 'p:dewanJPPMC' (SUCCESSFUL)
-29 Mar 2026 15:11:26,020 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I login as 'p:JPPMCuser.HikmatZomat' with password 'p:JPPMC.password' (IGNORED)
-29 Mar 2026 15:11:26,020 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Add Process Button' (IGNORED)
-29 Mar 2026 15:11:26,020 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Internal Correspondence Button SCC' (IGNORED)
-29 Mar 2026 15:11:26,020 INFO : com.automation.jbehave.ConsoleLogger - !-- When [Input] Set 'Subject Field' value to 'random' (IGNORED)
-29 Mar 2026 15:11:26,020 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I select 'p:GeneralManagerOffice' from the 'General Manager Office Internal Correspondence SCC' combo box (IGNORED)
-29 Mar 2026 15:11:26,021 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I select 'p:FileName' from the 'File Name Internal Correspondence SCC' combo box (IGNORED)
-29 Mar 2026 15:11:26,021 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] Set 'File Subject Internal Correspondence SCC' value to 'random' (IGNORED)
-29 Mar 2026 15:11:26,021 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Save Draft Button' (IGNORED)
-29 Mar 2026 15:11:26,021 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Save Button' (IGNORED)
-29 Mar 2026 15:11:26,021 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
-29 Mar 2026 15:11:26,021 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Action] I get value from 'General Manager Office Internal Correspondence SCC' and save it as 'GeneralManagerOfficeComboBoxValue' (IGNORED)
-29 Mar 2026 15:11:26,021 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Action] I get text from 'Subject Field' and save it as 'SubjectText' (IGNORED)
-29 Mar 2026 15:11:26,021 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Action] I get value from 'Internal Correspondence Get Serial Number SCC' and save it as 'InternalCorrespondenceSerialNumberValue' (IGNORED)
-29 Mar 2026 15:11:26,021 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Direction Tab' (IGNORED)
-29 Mar 2026 15:11:26,021 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Click On All Check Box' (IGNORED)
-29 Mar 2026 15:11:26,022 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Delete Button' (IGNORED)
-29 Mar 2026 15:11:26,022 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
-29 Mar 2026 15:11:26,022 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Close Notification Button' (IGNORED)
-29 Mar 2026 15:11:26,022 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
-29 Mar 2026 15:11:26,022 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I select the 'To View Radio Button' (IGNORED)
-29 Mar 2026 15:11:26,022 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
-29 Mar 2026 15:11:26,022 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
-29 Mar 2026 15:11:26,022 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Add Button' (IGNORED)
-29 Mar 2026 15:11:26,022 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
-29 Mar 2026 15:11:26,022 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Close Notification Button' (IGNORED)
-29 Mar 2026 15:11:26,022 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify text of 'Department Liaison Officer Name' contains saved value 'GeneralManagerOfficeComboBoxValue' (IGNORED)
-29 Mar 2026 15:11:26,023 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Direction Button' (IGNORED)
-29 Mar 2026 15:11:26,023 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '4' sec (IGNORED)
-29 Mar 2026 15:11:26,023 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I hover on 'All Task Header Button' (IGNORED)
-29 Mar 2026 15:11:26,023 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'My Processes List Header Button' (IGNORED)
-29 Mar 2026 15:11:26,023 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify 'Process Status' equals 'p:ProcessCompletedStatus' text (IGNORED)
-29 Mar 2026 15:11:26,023 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'My Processes List View Process Button' (IGNORED)
-29 Mar 2026 15:11:26,023 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Incoming Users Directed To' (IGNORED)
-29 Mar 2026 15:11:26,024 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify 'Incoming User Name Directed To1' equals 'p:manarDojan.username' text (IGNORED)
-29 Mar 2026 15:11:26,024 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I hover on 'All Task Header Button' (IGNORED)
-29 Mar 2026 15:11:26,024 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Completed Tasks' (IGNORED)
-29 Mar 2026 15:11:26,024 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify text of 'Completed Tasks First Subject Text' equals saved value 'SubjectText' (IGNORED)
-29 Mar 2026 15:11:26,024 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'logout Button' (IGNORED)
-29 Mar 2026 15:11:26,024 INFO : com.automation.jbehave.ConsoleLogger - !-- Then [Input] I login as 'p:JPPMCuser.manarDojan' with password 'p:JPPMC.password' (IGNORED)
-29 Mar 2026 15:11:26,025 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Tasks To View' (IGNORED)
-29 Mar 2026 15:11:26,025 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify text of 'Tasks To View First Subject Text SCC' equals saved value 'SubjectText' (IGNORED)
-29 Mar 2026 15:11:26,025 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Generalizations View Process Button' (IGNORED)
-29 Mar 2026 15:11:26,025 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify text of 'Subject Field' equals saved value 'SubjectText' (IGNORED)
-29 Mar 2026 15:11:26,026 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify value of 'Internal Correspondence Get Serial Number SCC' equals saved value 'InternalCorrespondenceSerialNumberValue' (IGNORED)
-29 Mar 2026 15:11:26,026 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'logout Button' (IGNORED)
-29 Mar 2026 15:11:26,026 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify 'login Button' is present (IGNORED)
-29 Mar 2026 15:11:26,533 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
-29 Mar 2026 15:11:26,533 INFO : com.automation.jbehave.ConsoleLogger - End Story:  TC_007_JPPMC.story
-29 Mar 2026 15:11:26,533 INFO : com.automation.jbehave.ConsoleLogger - Status:  PASSED 
-29 Mar 2026 15:11:26,533 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
+29 Mar 2026 15:31:04,175 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
+29 Mar 2026 15:31:04,175 INFO : com.automation.jbehave.ConsoleLogger - Scenario: TC_007_JPPMC_001
+29 Mar 2026 15:31:04,175 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
+29 Mar 2026 15:31:04,176 INFO : com.automation.jbehave.PropertyParameterConverter - Parameter converted:[p:dewanJPPMC] >> [http://172.16.30.83:5555/JPPMC_EndUser/login.aspx]
+29 Mar 2026 15:31:04,559 INFO : com.automation.pages.CannedPage - Navigating to the page: http://172.16.30.83:5555/JPPMC_EndUser/login.aspx
+29 Mar 2026 15:31:04,642 INFO : com.automation.jbehave.ConsoleLogger - Given [Navigation] I navigate to 'p:dewanJPPMC' (SUCCESSFUL)
+29 Mar 2026 15:31:04,644 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I login as 'p:JPPMCuser.HikmatZomat' with password 'p:JPPMC.password' (IGNORED)
+29 Mar 2026 15:31:04,645 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Add Process Button' (IGNORED)
+29 Mar 2026 15:31:04,648 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Internal Correspondence Button JPPMC' (IGNORED)
+29 Mar 2026 15:31:04,649 INFO : com.automation.jbehave.ConsoleLogger - !-- When [Input] Set 'Subject Field' value to 'random' (IGNORED)
+29 Mar 2026 15:31:04,650 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I select 'p:CommissionersExportingUser' from the 'Commissioner Internal Correspondence JPPMC' combo box (IGNORED)
+29 Mar 2026 15:31:04,650 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
+29 Mar 2026 15:31:04,650 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
+29 Mar 2026 15:31:04,650 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I select 'p:MainClassificationValue' from the 'Main Classification Internal Correspondence JPPMC' combo box (IGNORED)
+29 Mar 2026 15:31:04,650 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
+29 Mar 2026 15:31:04,650 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
+29 Mar 2026 15:31:04,651 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
+29 Mar 2026 15:31:04,651 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
+29 Mar 2026 15:31:04,651 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
+29 Mar 2026 15:31:04,651 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Save Button' (IGNORED)
+29 Mar 2026 15:31:04,651 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
+29 Mar 2026 15:31:04,651 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Action] I get value from 'Commissioner Internal Correspondence JPPMC' and save it as 'CommissionersExportingUser' (IGNORED)
+29 Mar 2026 15:31:04,651 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Action] I get text from 'Subject Field' and save it as 'SubjectText' (IGNORED)
+29 Mar 2026 15:31:04,651 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Action] I get value from 'Internal Correspondence Get Serial Number JPPMC' and save it as 'InternalCorrespondenceSerialNumberValue' (IGNORED)
+29 Mar 2026 15:31:04,651 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
+29 Mar 2026 15:31:04,652 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
+29 Mar 2026 15:31:04,652 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
+29 Mar 2026 15:31:04,652 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
+29 Mar 2026 15:31:04,652 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
+29 Mar 2026 15:31:04,652 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Direction Tab' (IGNORED)
+29 Mar 2026 15:31:04,652 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
+29 Mar 2026 15:31:04,652 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
+29 Mar 2026 15:31:04,652 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
+29 Mar 2026 15:31:04,652 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
+29 Mar 2026 15:31:04,653 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
+29 Mar 2026 15:31:04,653 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I select 'p:CommissionersExportingUser' from the 'Division Input' combo box (IGNORED)
+29 Mar 2026 15:31:04,653 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'AddButton' (IGNORED)
+29 Mar 2026 15:31:04,653 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '4' sec (IGNORED)
+29 Mar 2026 15:31:04,653 INFO : com.automation.jbehave.ConsoleLogger - !-- !-- And [Input] I click on 'Close Notification Button' (IGNORED)
+29 Mar 2026 15:31:04,653 INFO : com.automation.jbehave.ConsoleLogger - !-- !-- And [Progress] I wait for '3' sec (IGNORED)
+29 Mar 2026 15:31:04,653 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify text of 'Department Liaison Officer Name' contains saved value 'CommissionersExportingUser' (IGNORED)
+29 Mar 2026 15:31:04,654 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
+29 Mar 2026 15:31:04,654 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
+29 Mar 2026 15:31:04,654 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
+29 Mar 2026 15:31:04,654 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
+29 Mar 2026 15:31:04,654 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
+29 Mar 2026 15:31:04,654 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Direction Button' (IGNORED)
+29 Mar 2026 15:31:04,654 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '4' sec (IGNORED)
+29 Mar 2026 15:31:04,654 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I hover on 'All Task Header Button' (IGNORED)
+29 Mar 2026 15:31:04,655 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'My Processes List Header Button' (IGNORED)
+29 Mar 2026 15:31:04,655 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
+29 Mar 2026 15:31:04,655 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify 'Process Status' equals 'p:ProcessUnCompletedStatus' text (IGNORED)
+29 Mar 2026 15:31:04,655 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'My Processes List View Process Button' (IGNORED)
+29 Mar 2026 15:31:04,655 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
+29 Mar 2026 15:31:04,655 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
+29 Mar 2026 15:31:04,655 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
+29 Mar 2026 15:31:04,655 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
+29 Mar 2026 15:31:04,655 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
+29 Mar 2026 15:31:04,656 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Incoming Users Directed To' (IGNORED)
+29 Mar 2026 15:31:04,656 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify 'Incoming User Name Directed To1' equals 'p:MalakAlshishani.username' text (IGNORED)
+29 Mar 2026 15:31:04,656 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I hover on 'All Task Header Button' (IGNORED)
+29 Mar 2026 15:31:04,656 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Completed Tasks' (IGNORED)
+29 Mar 2026 15:31:04,656 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify text of 'Completed Tasks First Subject Text' equals saved value 'SubjectText' (IGNORED)
+29 Mar 2026 15:31:04,656 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I hover on  'User Name Header Button' (IGNORED)
+29 Mar 2026 15:31:04,656 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'logout Button' (IGNORED)
+29 Mar 2026 15:31:04,656 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I login as 'p:JPPMCuser.MalakAlshishani' with password 'p:JPPMC.password' (IGNORED)
+29 Mar 2026 15:31:04,657 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I hover on  'All Task Header Button' (IGNORED)
+29 Mar 2026 15:31:04,657 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Task List Header Button' (IGNORED)
+29 Mar 2026 15:31:04,657 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify text of 'Task List First Subject Text' equals saved value 'SubjectText' (IGNORED)
+29 Mar 2026 15:31:04,657 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Task List View Process Button' (IGNORED)
+29 Mar 2026 15:31:04,657 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
+29 Mar 2026 15:31:04,657 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
+29 Mar 2026 15:31:04,657 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
+29 Mar 2026 15:31:04,657 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
+29 Mar 2026 15:31:04,658 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
+29 Mar 2026 15:31:04,658 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Close Button' (IGNORED)
+29 Mar 2026 15:31:04,658 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Javascript] I accept alert (IGNORED)
+29 Mar 2026 15:31:04,659 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
+29 Mar 2026 15:31:04,659 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I hover on 'All Task Header Button' (IGNORED)
+29 Mar 2026 15:31:04,659 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Completed Tasks' (IGNORED)
+29 Mar 2026 15:31:04,659 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify text of 'Completed Tasks First Subject Text' equals saved value 'SubjectText' (IGNORED)
+29 Mar 2026 15:31:04,659 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I hover on  'User Name Header Button' (IGNORED)
+29 Mar 2026 15:31:04,660 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'logout Button' (IGNORED)
+29 Mar 2026 15:31:04,660 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify 'login Button' is present (IGNORED)
+29 Mar 2026 15:31:04,660 INFO : com.automation.jbehave.ConsoleLogger - !-- Then [Input] I login as 'p:JPPMCuser.HikmatZomat' with password 'p:JPPMC.password' (IGNORED)
+29 Mar 2026 15:31:04,660 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I hover on 'All Task Header Button' (IGNORED)
+29 Mar 2026 15:31:04,660 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'My Processes List Header Button' (IGNORED)
+29 Mar 2026 15:31:04,661 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify 'Process Status' equals 'p:ProcessCompletedStatus' text (IGNORED)
+29 Mar 2026 15:31:04,661 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I hover on  'User Name Header Button' (IGNORED)
+29 Mar 2026 15:31:04,661 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'logout Button' (IGNORED)
+29 Mar 2026 15:31:04,661 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify 'login Button' is present (IGNORED)
+29 Mar 2026 15:31:05,122 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
+29 Mar 2026 15:31:05,122 INFO : com.automation.jbehave.ConsoleLogger - Scenario: TC_007_JPPMC_002
+29 Mar 2026 15:31:05,122 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
+29 Mar 2026 15:31:05,122 INFO : com.automation.jbehave.PropertyParameterConverter - Parameter converted:[p:dewanJPPMC] >> [http://172.16.30.83:5555/JPPMC_EndUser/login.aspx]
+29 Mar 2026 15:31:05,729 INFO : com.automation.pages.CannedPage - Navigating to the page: http://172.16.30.83:5555/JPPMC_EndUser/login.aspx
+29 Mar 2026 15:31:05,771 INFO : com.automation.jbehave.ConsoleLogger - Given [Navigation] I navigate to 'p:dewanJPPMC' (SUCCESSFUL)
+29 Mar 2026 15:31:05,771 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I login as 'p:JPPMCuser.HikmatZomat' with password 'p:JPPMC.password' (IGNORED)
+29 Mar 2026 15:31:05,771 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Add Process Button' (IGNORED)
+29 Mar 2026 15:31:05,771 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Internal Correspondence Button SCC' (IGNORED)
+29 Mar 2026 15:31:05,771 INFO : com.automation.jbehave.ConsoleLogger - !-- When [Input] Set 'Subject Field' value to 'random' (IGNORED)
+29 Mar 2026 15:31:05,771 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I select 'p:GeneralManagerOffice' from the 'General Manager Office Internal Correspondence SCC' combo box (IGNORED)
+29 Mar 2026 15:31:05,771 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I select 'p:FileName' from the 'File Name Internal Correspondence SCC' combo box (IGNORED)
+29 Mar 2026 15:31:05,771 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] Set 'File Subject Internal Correspondence SCC' value to 'random' (IGNORED)
+29 Mar 2026 15:31:05,771 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Save Draft Button' (IGNORED)
+29 Mar 2026 15:31:05,771 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Save Button' (IGNORED)
+29 Mar 2026 15:31:05,771 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
+29 Mar 2026 15:31:05,772 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Action] I get value from 'General Manager Office Internal Correspondence SCC' and save it as 'GeneralManagerOfficeComboBoxValue' (IGNORED)
+29 Mar 2026 15:31:05,772 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Action] I get text from 'Subject Field' and save it as 'SubjectText' (IGNORED)
+29 Mar 2026 15:31:05,772 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Action] I get value from 'Internal Correspondence Get Serial Number SCC' and save it as 'InternalCorrespondenceSerialNumberValue' (IGNORED)
+29 Mar 2026 15:31:05,772 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Direction Tab' (IGNORED)
+29 Mar 2026 15:31:05,772 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Click On All Check Box' (IGNORED)
+29 Mar 2026 15:31:05,772 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Delete Button' (IGNORED)
+29 Mar 2026 15:31:05,772 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
+29 Mar 2026 15:31:05,772 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Close Notification Button' (IGNORED)
+29 Mar 2026 15:31:05,772 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
+29 Mar 2026 15:31:05,772 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I select the 'To View Radio Button' (IGNORED)
+29 Mar 2026 15:31:05,772 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
+29 Mar 2026 15:31:05,772 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Navigation] I scroll to end of page (IGNORED)
+29 Mar 2026 15:31:05,772 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Add Button' (IGNORED)
+29 Mar 2026 15:31:05,772 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '3' sec (IGNORED)
+29 Mar 2026 15:31:05,772 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Close Notification Button' (IGNORED)
+29 Mar 2026 15:31:05,772 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify text of 'Department Liaison Officer Name' contains saved value 'GeneralManagerOfficeComboBoxValue' (IGNORED)
+29 Mar 2026 15:31:05,772 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Direction Button' (IGNORED)
+29 Mar 2026 15:31:05,772 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Progress] I wait for '4' sec (IGNORED)
+29 Mar 2026 15:31:05,772 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I hover on 'All Task Header Button' (IGNORED)
+29 Mar 2026 15:31:05,772 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'My Processes List Header Button' (IGNORED)
+29 Mar 2026 15:31:05,773 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify 'Process Status' equals 'p:ProcessCompletedStatus' text (IGNORED)
+29 Mar 2026 15:31:05,773 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'My Processes List View Process Button' (IGNORED)
+29 Mar 2026 15:31:05,773 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Incoming Users Directed To' (IGNORED)
+29 Mar 2026 15:31:05,773 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify 'Incoming User Name Directed To1' equals 'p:manarDojan.username' text (IGNORED)
+29 Mar 2026 15:31:05,773 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I hover on 'All Task Header Button' (IGNORED)
+29 Mar 2026 15:31:05,773 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Completed Tasks' (IGNORED)
+29 Mar 2026 15:31:05,773 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify text of 'Completed Tasks First Subject Text' equals saved value 'SubjectText' (IGNORED)
+29 Mar 2026 15:31:05,773 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'logout Button' (IGNORED)
+29 Mar 2026 15:31:05,773 INFO : com.automation.jbehave.ConsoleLogger - !-- Then [Input] I login as 'p:JPPMCuser.manarDojan' with password 'p:JPPMC.password' (IGNORED)
+29 Mar 2026 15:31:05,773 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Tasks To View' (IGNORED)
+29 Mar 2026 15:31:05,773 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify text of 'Tasks To View First Subject Text SCC' equals saved value 'SubjectText' (IGNORED)
+29 Mar 2026 15:31:05,773 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'Generalizations View Process Button' (IGNORED)
+29 Mar 2026 15:31:05,773 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify text of 'Subject Field' equals saved value 'SubjectText' (IGNORED)
+29 Mar 2026 15:31:05,773 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify value of 'Internal Correspondence Get Serial Number SCC' equals saved value 'InternalCorrespondenceSerialNumberValue' (IGNORED)
+29 Mar 2026 15:31:05,773 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Input] I click on 'logout Button' (IGNORED)
+29 Mar 2026 15:31:05,773 INFO : com.automation.jbehave.ConsoleLogger - !-- And [Assertion] Verify 'login Button' is present (IGNORED)
+29 Mar 2026 15:31:06,087 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
+29 Mar 2026 15:31:06,087 INFO : com.automation.jbehave.ConsoleLogger - End Story:  TC_007_JPPMC.story
+29 Mar 2026 15:31:06,087 INFO : com.automation.jbehave.ConsoleLogger - Status:  PASSED 
+29 Mar 2026 15:31:06,087 INFO : com.automation.jbehave.ConsoleLogger - ==========================================================
 Sent message successfully....
 Generating reports view to 'D:\Automation Quality Projects\Dewan-Automation\target\jbehave' using formats '[ide_console, xml, html, consolelogger]' and view properties '{reports=ftl/jbehave-reports.ftl, nonDecorated=ftl/jbehave-report-non-decorated.ftl, maps=ftl/jbehave-maps.ftl, navigator=ftl/jbehave-navigator.ftl, views=ftl/jbehave-views.ftl, decorated=ftl/jbehave-report-decorated.ftl}'
 Reports view generated with 0 stories (of which 0 pending) containing 0 scenarios (of which 0 pending)
 ]]></system-out>
     <system-err><![CDATA[[pool-2-thread-1] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
 [pool-2-thread-1] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\mbarghuthi\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
-Mar 29, 2026 3:08:48 PM org.openqa.selenium.remote.service.DriverService$Builder getLogOutput
+Mar 29, 2026 3:29:24 PM org.openqa.selenium.remote.service.DriverService$Builder getLogOutput
 INFO: Driver logs no longer sent to console by default; https://www.selenium.dev/documentation/webdriver/drivers/service/#setting-log-output
-Mar 29, 2026 3:08:52 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Mar 29, 2026 3:29:26 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 146
-Mar 29, 2026 3:08:52 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+Mar 29, 2026 3:29:26 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.10.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[AsyncHttpClient-1-4] WARN org.asynchttpclient.netty.handler.WebSocketHandler - onError
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:403)
+	at java.base/sun.nio.ch.SocketChannelImpl.implRead(SocketChannelImpl.java:435)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:493)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Mar 29, 2026 3:29:29 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
+WARNING: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:403)
+	at java.base/sun.nio.ch.SocketChannelImpl.implRead(SocketChannelImpl.java:435)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:493)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+
+[pool-2-thread-1] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+[pool-2-thread-1] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\mbarghuthi\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
+Mar 29, 2026 3:29:29 PM org.openqa.selenium.remote.service.DriverService$Builder getLogOutput
+INFO: Driver logs no longer sent to console by default; https://www.selenium.dev/documentation/webdriver/drivers/service/#setting-log-output
+Mar 29, 2026 3:29:31 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 146
+Mar 29, 2026 3:29:31 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
 WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.10.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [pool-2-thread-1] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
 [pool-2-thread-1] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\mbarghuthi\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
-Mar 29, 2026 3:08:55 PM org.openqa.selenium.remote.service.DriverService$Builder getLogOutput
+Mar 29, 2026 3:29:32 PM org.openqa.selenium.remote.service.DriverService$Builder getLogOutput
 INFO: Driver logs no longer sent to console by default; https://www.selenium.dev/documentation/webdriver/drivers/service/#setting-log-output
-Mar 29, 2026 3:08:57 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Mar 29, 2026 3:29:34 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 146
-Mar 29, 2026 3:08:57 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+Mar 29, 2026 3:29:34 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
 WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.10.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [pool-2-thread-1] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
 [pool-2-thread-1] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\mbarghuthi\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
-Mar 29, 2026 3:08:58 PM org.openqa.selenium.remote.service.DriverService$Builder getLogOutput
+Mar 29, 2026 3:29:50 PM org.openqa.selenium.remote.service.DriverService$Builder getLogOutput
 INFO: Driver logs no longer sent to console by default; https://www.selenium.dev/documentation/webdriver/drivers/service/#setting-log-output
-Mar 29, 2026 3:09:00 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Mar 29, 2026 3:29:52 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 146
-Mar 29, 2026 3:09:00 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+Mar 29, 2026 3:29:52 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
 WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.10.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-[pool-2-thread-1] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
-[pool-2-thread-1] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\mbarghuthi\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
-Mar 29, 2026 3:09:17 PM org.openqa.selenium.remote.service.DriverService$Builder getLogOutput
-INFO: Driver logs no longer sent to console by default; https://www.selenium.dev/documentation/webdriver/drivers/service/#setting-log-output
-Mar 29, 2026 3:09:19 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 146
-Mar 29, 2026 3:09:19 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
-WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.10.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Screenshot of page 'http://172.16.30.83:5555/JPPMC_EndUser/Enduser/Home.aspx' has **NOT** been saved. If there is no error, perhaps the WebDriver type you are using is not compatible with taking screenshots
 Screenshot of page 'http://172.16.30.83:5555/JPPMC_EndUser/Enduser/Generalazation' has **NOT** been saved. If there is no error, perhaps the WebDriver type you are using is not compatible with taking screenshots
 [pool-2-thread-1] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
 [pool-2-thread-1] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\mbarghuthi\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
-Mar 29, 2026 3:11:17 PM org.openqa.selenium.remote.service.DriverService$Builder getLogOutput
+Mar 29, 2026 3:30:56 PM org.openqa.selenium.remote.service.DriverService$Builder getLogOutput
 INFO: Driver logs no longer sent to console by default; https://www.selenium.dev/documentation/webdriver/drivers/service/#setting-log-output
-Mar 29, 2026 3:11:18 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Mar 29, 2026 3:30:57 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 146
-Mar 29, 2026 3:11:18 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+Mar 29, 2026 3:30:57 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
 WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.10.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [pool-2-thread-1] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
 [pool-2-thread-1] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\mbarghuthi\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
-Mar 29, 2026 3:11:19 PM org.openqa.selenium.remote.service.DriverService$Builder getLogOutput
+Mar 29, 2026 3:30:58 PM org.openqa.selenium.remote.service.DriverService$Builder getLogOutput
 INFO: Driver logs no longer sent to console by default; https://www.selenium.dev/documentation/webdriver/drivers/service/#setting-log-output
-Mar 29, 2026 3:11:20 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Mar 29, 2026 3:31:00 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 146
-Mar 29, 2026 3:11:20 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+Mar 29, 2026 3:31:00 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
 WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.10.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [pool-2-thread-1] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
 [pool-2-thread-1] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\mbarghuthi\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
-Mar 29, 2026 3:11:23 PM org.openqa.selenium.remote.service.DriverService$Builder getLogOutput
+Mar 29, 2026 3:31:02 PM org.openqa.selenium.remote.service.DriverService$Builder getLogOutput
 INFO: Driver logs no longer sent to console by default; https://www.selenium.dev/documentation/webdriver/drivers/service/#setting-log-output
-Mar 29, 2026 3:11:24 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Mar 29, 2026 3:31:04 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 146
-Mar 29, 2026 3:11:24 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+Mar 29, 2026 3:31:04 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
 WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.10.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>

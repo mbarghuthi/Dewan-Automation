@@ -4,6 +4,7 @@ import org.jbehave.core.configuration.Configuration;
 import org.jbehave.core.configuration.MostUsefulConfiguration;
 import org.jbehave.core.embedder.Embedder;
 import org.jbehave.core.embedder.StoryControls;
+import org.jbehave.core.failures.RethrowingFailure;
 import org.jbehave.core.junit.JUnitStories;
 import org.jbehave.core.reporters.Format;
 import org.jbehave.core.reporters.StoryReporter;
@@ -31,77 +32,32 @@ public abstract class AbstractStoryConfiguration extends JUnitStories {
 
         Embedder embedder = configuredEmbedder();
         String DEFAULT_STORY_TIMEOUT_SECS = "7200";
+
         embedder.embedderControls()
-        		.doIgnoreFailureInStories(true)
-        		// added by me 
-		        //.doIgnoreFailureInStories(true)
-        		.doIgnoreFailureInStories(true)
+                .doIgnoreFailureInStories(false)
                 .useStoryTimeouts(DEFAULT_STORY_TIMEOUT_SECS)
                 .doFailOnStoryTimeout(false)
                 .doGenerateViewAfterStories(true)
                 .doIgnoreFailureInView(false)
                 .doVerboseFailures(true);
-        
-		        /*.doBatch(false)
-		 		.doGenerateViewAfterStories(true)
-		 		.doIgnoreFailureInStories(false)
-		 		.doIgnoreFailureInView(false)
-		 		.doSkip(false)
-		 		.doVerboseFailures(false)
-		 		.doVerboseFiltering(false)
-		 		.useStoryTimeoutInSecs(300)
-		 		.useThreads(1)*/
     }
 
     @Override
     public Configuration configuration() {
         StoryReporterBuilder reporterBuilder = new StoryReporterBuilder()
-        		.withFormats(storyFormat())
-                .withFailureTraceCompression(true)
+                .withFormats(storyFormat())
                 .withReporters(getReporters())
-                // added by me 
-                //.withFailureTrace(true)
-                //.withFailureTraceCompression(true)
                 .withFailureTrace(true)
                 .withFailureTraceCompression(true);
 
-
         return new MostUsefulConfiguration()
-        		.useStoryReporterBuilder(reporterBuilder)
+                .useFailureStrategy(new RethrowingFailure())
+                .useStoryReporterBuilder(reporterBuilder)
                 .useStoryControls(new StoryControls()
-                .doResetStateBeforeScenario(true))
+                        .doResetStateBeforeScenario(true))
                 .useParameterControls(new ParameterControls()
-                .useDelimiterNamedParameters(true))
+                        .useDelimiterNamedParameters(true))
                 .useParameterConverters(getConverters());
-        
-
-		/*		// configuration.doDryRun(false); "no dry run" is implicit by using
-				// default StoryControls
-		 
-				// configuration.useDefaultStoryReporter(new ConsoleOutput());
-				// deprecated -- rather use StoryReportBuilder
-		 
-				.useFailureStrategy(new RethrowingFailure())
-				.useKeywords(new LocalizedKeywords(Locale.ENGLISH))
-				.usePathCalculator(new AbsolutePathCalculator())
-				.useParameterControls(new ParameterControls())
-				.useParameterConverters(new ParameterConverters())
-				.useParanamer(new NullParanamer())
-				.usePendingStepStrategy(new PassingUponPendingStep())
-				.useStepCollector(new MarkUnmatchedStepsAsPending())
-				.useStepdocReporter(new PrintStreamStepdocReporter())
-				.useStepFinder(new StepFinder())
-				.useStepMonitor(new SilentStepMonitor())
-				.useStepPatternParser(new RegexPrefixCapturingPatternParser())
-				.useStoryControls(new StoryControls())
-				.useStoryLoader(new LoadFromClasspath())
-				.useStoryParser(new RegexStoryParser(configuration.keywords()))
-				.useStoryPathResolver(new UnderscoredCamelCaseResolver())
-				.useStoryReporterBuilder(new StoryReporterBuilder())
-				.useViewGenerator(new FreemarkerViewGenerator())
-				.useParameterControls(new ParameterControls().useNameDelimiterLeft("[").useNameDelimiterRight("]"))*/
-		        
-        
     }
 
     private ParameterConverters getConverters() {
@@ -117,12 +73,17 @@ public abstract class AbstractStoryConfiguration extends JUnitStories {
     }
 
     @Override
+    public void run() throws Throwable {
+        super.run();
+    }
+
+    @Override
     public InjectableStepsFactory stepsFactory() {
         return new SpringStepsFactory(configuration(), context);
     }
 
     protected Format[] storyFormat() {
-       return new Format[]{Format.IDE_CONSOLE, Format.XML, Format.HTML};
+        return new Format[]{Format.IDE_CONSOLE, Format.XML, Format.HTML};
     }
 
     protected ApplicationContext getContextInstance() {

@@ -3,6 +3,7 @@ package com.automation.jbehave;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 import org.apache.log4j.Logger;
 import org.jbehave.core.model.ExamplesTable;
@@ -36,6 +37,13 @@ public class ConsoleLogger implements StoryReporter {
 	private static ExtentTest extentTest;
 
 	private static final Logger log = Logger.getLogger(ConsoleLogger.class);
+
+	/**
+	 * Global failure flag for the whole JBehave run.
+	 * If any step/story fails, this becomes true.
+	 */
+	private static final AtomicBoolean HAS_FAILURES = new AtomicBoolean(false);
+
 	private ThreadLocal<Boolean> runningStoryStatus = new ThreadLocal<>();
 	private ThreadLocal<Story> storyThreadLocal = new ThreadLocal<>();
 	private WebDriver driver;
@@ -46,12 +54,28 @@ public class ConsoleLogger implements StoryReporter {
 		this.webDriverProvider = webDriverProvider;
 	}
 
+	/**
+	 * Reset failure flag before starting a fresh test run.
+	 */
+	public static void resetFailures() {
+		HAS_FAILURES.set(false);
+	}
+
+	/**
+	 * Read failure flag after the run finishes.
+	 */
+	public static boolean hasFailures() {
+		return HAS_FAILURES.get();
+	}
+
 	public void storyNotAllowed(Story story, String filter) {
 		log.info(String.format("%s (NOT ALLOWED [filter: %s])", story, filter));
+		// Treat "not allowed" as not a failure for build result.
 	}
 
 	public void storyCancelled(Story story, StoryDuration storyDuration) {
 		log.info(String.format("%s (CANCELLED [duration: %s])", story, storyDuration));
+		HAS_FAILURES.set(true);
 	}
 
 	public void beforeStory(Story story, boolean givenStory) {
@@ -70,14 +94,21 @@ public class ConsoleLogger implements StoryReporter {
 
 	public void afterStory(boolean givenStory) {
 		Story story = this.storyThreadLocal.get();
-		if (story.getName() != null && !story.getName().equals("BeforeStories")
+		if (story != null && story.getName() != null
+				&& !story.getName().equals("BeforeStories")
 				&& !story.getName().equals("AfterStories")) {
-			this.reportAfterStory(this.storyThreadLocal.get());
+			this.reportAfterStory(story);
 		}
 	}
 
 	private void reportAfterStory(Story story) {
-		String status = this.runningStoryStatus.get() ? " PASSED " : " FAILED ";
+		boolean storyPassed = Boolean.TRUE.equals(this.runningStoryStatus.get());
+		String status = storyPassed ? " PASSED " : " FAILED ";
+
+		if (!storyPassed) {
+			HAS_FAILURES.set(true);
+		}
+
 		log.info("==========================================================");
 		log.info("End Story:  " + story.getName());
 		log.info("Status: " + status);
@@ -148,12 +179,17 @@ public class ConsoleLogger implements StoryReporter {
 
 	public void pending(String step) {
 		test.get().log(LogStatus.ERROR, PropertyConverter.convert(step));
+		extent.flush();
+
+		HAS_FAILURES.set(true);
+		this.runningStoryStatus.set(false);
 
 		log.info(String.format("%s (PENDING)", step));
 	}
 
 	public void notPerformed(String step) {
 		test.get().log(LogStatus.SKIP, PropertyConverter.convert(step));
+		extent.flush();
 
 		log.info(String.format("%s (NOT PERFORMED)", step));
 	}
@@ -162,9 +198,12 @@ public class ConsoleLogger implements StoryReporter {
 		test.get().log(LogStatus.FAIL, PropertyConverter.convert(step));
 
 		// Log the cause message if available
-		if (cause.getCause() != null) {
+		if (cause != null && cause.getCause() != null) {
 			test.get().log(LogStatus.INFO, cause.getCause().getMessage());
 			log.error(cause.getCause());
+		} else if (cause != null) {
+			test.get().log(LogStatus.INFO, cause.getMessage() != null ? cause.getMessage() : "Unknown error occurred");
+			log.error(cause);
 		} else {
 			test.get().log(LogStatus.INFO, "Unknown error occurred");
 			log.error("Unknown error occurred");
@@ -173,16 +212,21 @@ public class ConsoleLogger implements StoryReporter {
 		// Capture and log screenshot if possible
 		String screenshotBase64 = captureScreenshot();
 		if (screenshotBase64 != null && !screenshotBase64.isEmpty()) {
-			test.get().log(LogStatus.INFO, "Screenshot of the failure", "<img src='data:image/png;base64," + screenshotBase64 + "' />");
+			test.get().log(LogStatus.INFO, "Screenshot of the failure",
+					"<img src='data:image/png;base64," + screenshotBase64 + "' />");
 		}
 
 		extent.flush();
 
+		HAS_FAILURES.set(true);
 		this.runningStoryStatus.set(false);
+
 		log.info(String.format("%s (FAILED)", step));
 	}
 
 	public void failedOutcomes(String step, OutcomesTable table) {
+		HAS_FAILURES.set(true);
+		this.runningStoryStatus.set(false);
 	}
 
 	public void restarted(String step, Throwable cause) {
@@ -190,12 +234,14 @@ public class ConsoleLogger implements StoryReporter {
 
 	@Override
 	public void restartedStory(Story story, Throwable throwable) {
+		HAS_FAILURES.set(true);
 	}
 
 	public void dryRun() {
 	}
 
 	public void pendingMethods(List<String> methods) {
+		HAS_FAILURES.set(true);
 	}
 
 	public String captureScreenshot() {

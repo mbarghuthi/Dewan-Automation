@@ -31,132 +31,128 @@ public abstract class AbstractPage<T> {
 	protected WebElement getElementWithWait(T obj, String elementName) throws Exception {
 		elementName = elementName.replaceAll(" ", "").trim();
 		Field[] fields = obj.getClass().getDeclaredFields();
+
 		for (Field field : fields) {
 			if (field.getName().equalsIgnoreCase(elementName)) {
 
-				// wait loader
 				waitForLoad(webDriverProvider.get());
 
 				try {
-					// wait element
-					WebDriverWait wait = new WebDriverWait(webDriverProvider.get(), Duration.ofSeconds(30));
-					WebElement element = wait.until(ExpectedConditions.visibilityOf((WebElement) field.get(this)));
+					field.setAccessible(true);
 
-					// wait loader
+					WebDriverWait wait = new WebDriverWait(webDriverProvider.get(), Duration.ofSeconds(30));
+					WebElement rawElement = (WebElement) field.get(this);
+					WebElement element = wait.until(ExpectedConditions.visibilityOf(rawElement));
+
 					waitForLoad(webDriverProvider.get());
-					
+
 					return element;
 
-				} catch (IllegalArgumentException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				} catch (IllegalAccessException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
+				} catch (IllegalArgumentException | IllegalAccessException e) {
+					throw new Exception("Failed to access element: " + elementName, e);
 				}
 			}
 		}
 
 		throw new Exception(elementName + " Element Not Found");
-
 	}
 
 	protected WebElement getElement(T obj, String elementName) throws Exception {
 		elementName = elementName.replaceAll(" ", "").trim();
-		// wait loader
+
 		waitForLoad(webDriverProvider.get());
+
 		Field[] fields = obj.getClass().getDeclaredFields();
 		for (Field field : fields) {
 			if (field.getName().equalsIgnoreCase(elementName)) {
-				// wait loader
 				waitForLoad(webDriverProvider.get());
+
 				try {
+					field.setAccessible(true);
 					return (WebElement) field.get(this);
-				} catch (IllegalArgumentException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				} catch (IllegalAccessException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
+				} catch (IllegalArgumentException | IllegalAccessException e) {
+					throw new Exception("Failed to access element: " + elementName, e);
 				}
 			}
 		}
 
 		throw new Exception(elementName + " Not Found");
-
 	}
 
+	@SuppressWarnings("unchecked")
 	protected WebElement getVisibleElementFromList(T obj, String listElementName) throws Exception {
-		
-		// wait loader
 		waitForLoad(webDriverProvider.get());
 		Thread.sleep(500);
+
 		listElementName = listElementName.replaceAll(" ", "").trim();
 		Field[] fields = obj.getClass().getDeclaredFields();
+
 		for (Field field : fields) {
 			if (field.getName().equalsIgnoreCase(listElementName)) {
-				// wait loader
 				waitForLoad(webDriverProvider.get());
-				List<WebElement> list = (List<WebElement>) field.get(this);
-				for (WebElement element : list) {
-					if (element.isDisplayed()) {
-						return element;
 
+				try {
+					field.setAccessible(true);
+					List<WebElement> list = (List<WebElement>) field.get(this);
+
+					for (WebElement element : list) {
+						if (element.isDisplayed()) {
+							return element;
+						}
 					}
+				} catch (IllegalArgumentException | IllegalAccessException e) {
+					throw new Exception("Failed to access list element: " + listElementName, e);
 				}
-
 			}
 		}
 
 		throw new Exception(listElementName + " Not Found");
-
 	}
 
+	@SuppressWarnings("unchecked")
 	protected boolean checkVisibleElementFromList(T obj, String listElementName) throws Exception {
-		// wait loader
 		waitForLoad(webDriverProvider.get());
 		Thread.sleep(500);
+
 		listElementName = listElementName.replaceAll(" ", "").trim();
 		Field[] fields = obj.getClass().getDeclaredFields();
+
 		for (Field field : fields) {
 			if (field.getName().equalsIgnoreCase(listElementName)) {
-				// wait loader
 				waitForLoad(webDriverProvider.get());
-				List<WebElement> list = (List<WebElement>) field.get(this);
-				for (WebElement element : list) {
-					if (element.isDisplayed()) {
-						return true;
 
+				try {
+					field.setAccessible(true);
+					List<WebElement> list = (List<WebElement>) field.get(this);
+
+					for (WebElement element : list) {
+						if (element.isDisplayed()) {
+							return true;
+						}
 					}
+				} catch (IllegalArgumentException | IllegalAccessException e) {
+					throw new Exception("Failed to access list element: " + listElementName, e);
 				}
-
 			}
 		}
 
 		return false;
-
 	}
 
-    public void waitForLoad(WebDriver driver) {
-        ExpectedCondition<Boolean> pageLoadCondition = new
-                ExpectedCondition<Boolean>() {
-                    public Boolean apply(WebDriver driver) {
-                        return ((JavascriptExecutor)driver).executeScript("return document.readyState").equals("complete");
-                    }
-                };
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
-        
-       //  wait page loading done
-        wait.until(pageLoadCondition);
+	public void waitForLoad(WebDriver driver) {
+		ExpectedCondition<Boolean> pageLoadCondition = new ExpectedCondition<Boolean>() {
+			public Boolean apply(WebDriver driver) {
+				return ((JavascriptExecutor) driver).executeScript("return document.readyState").equals("complete");
+			}
+		};
 
-     // wait loading done
-     	wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector("[class=\"indeterminate\"]")));
-     	wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector("[id=\"nprogress\"]")));
-     	wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector("[class=\"nprogress-busy\"]")));
-     	
-        
-    }
-	
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
+
+		wait.until(pageLoadCondition);
+		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector("[class=\"indeterminate\"]")));
+		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector("[id=\"nprogress\"]")));
+		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector("[class=\"nprogress-busy\"]")));
+	}
 
 	private WebDriverWait wait(WebDriverProvider driverProvider) {
 		if (wait == null) {
@@ -166,7 +162,7 @@ public abstract class AbstractPage<T> {
 	}
 
 	private void waitUntil(WebElement element) {
-		wait(webDriverProvider).until((ExpectedConditions.visibilityOf(element)));
+		wait(webDriverProvider).until(ExpectedConditions.visibilityOf(element));
 	}
 
 	public void selectByVisibleText(WebElement element, String text) {

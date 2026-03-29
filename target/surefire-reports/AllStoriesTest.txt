@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: AllStoriesTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 161.115 s <<< FAILURE! - in AllStoriesTest
+AllStoriesTest.run  Time elapsed: 161.109 s  <<< ERROR!
+java.lang.RuntimeException: JBehave detected failed stories. Failing Maven build.
+	at AllStoriesTest.run(AllStoriesTest.java:66)
+

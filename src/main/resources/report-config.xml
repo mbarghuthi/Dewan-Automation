@@ -1,36 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
 
-	<!-- report theme -->
-	<!-- standard, dark -->
 	<theme>standard</theme>
-
-	<!-- document encoding -->
-	<!-- defaults to UTF-8 -->
 	<encoding>UTF-8</encoding>
 
-	<!-- title of the document -->
 	<documentTitle>Dewan Automation Report</documentTitle>
 
-	<!-- report name - displayed at top-nav -->
 	<reportName>
-	<![CDATA[
-        <div class="logo-container" style= width:130px>
-            <img src='http://172.16.30.83:5555/JPPMC_EndUser/Images/OptimizaLogo.png' style='height: inherit; width: inherit; margin-top:0px'/>
+		<![CDATA[
+        <div class="logo-container" style="width:130px;">
+            <img src='http://172.16.30.83:5555/JPPMC_EndUser/Images/OptimizaLogo.png'
+                 style='height: inherit; width: inherit; margin-top:0px;'/>
         </div>
         Dewan Automation Report
     ]]>
-    </reportName>
+	</reportName>
 
-	<!-- global date format override -->
-	<!-- defaults to yyyy-MM-dd -->
 	<dateFormat>yyyy-MM-dd</dateFormat>
-
-	<!-- global time format override -->
-	<!-- defaults to HH:mm:ss -->
 	<timeFormat>HH:mm:ss</timeFormat>
 
-	<!-- custom javascript -->
 	<scripts>
 		<![CDATA[
             $(document).ready(function() {
@@ -41,28 +29,44 @@
         ]]>
 	</scripts>
 
-	<!-- custom styles -->
 	<styles>
 		<![CDATA[
-			nav { background-color: #ebebeb!important; }
-            .report-name { padding-left: 40%; color: black; font-weight: bold;}
+            nav { background-color: #ebebeb !important; }
+            .report-name {
+                padding-left: 40%;
+                color: black;
+                font-weight: bold;
+            }
             .test-desc { font-size: 18px; }
-            .test-name { width: fit-content }
+            .test-name { width: fit-content; }
             .cyan { display: none; }
             .orange { display: none; }
             .darken-4 { display: none; }
             .logo-content { display: none; }
-            .logo-container { background-color: #ebebeb!important; width: 46px; }
-            .blue.darken-2 { background-color: #1A231E!important; }
+            .logo-container {
+                background-color: #ebebeb !important;
+                width: 46px;
+            }
+            .blue.darken-2 { background-color: #1A231E !important; }
             .button-collapse { width: 50px; }
             .side-nav { width: 50px; }
             .analysis i { font-size: 15px !important; }
-            .side-nav.fixed a { padding: 18px; padding-top: 0px; }
+            .side-nav.fixed a {
+                padding: 18px;
+                padding-top: 0px;
+            }
             .step-details { word-break: inherit; }
-            ._addedCell1 { min-width: 25%; max-width: 50%; width: 150px; }
+            ._addedCell1 {
+                min-width: 25%;
+                max-width: 50%;
+                width: 150px;
+            }
             .step-filters { padding-bottom: 5px; }
-            .theme-selector {color: black; font-weight: bold;}
-			.suite-started-time {color: black; font-weight: bold;}
+            .theme-selector,
+            .suite-started-time {
+                color: black;
+                font-weight: bold;
+            }
         ]]>
 	</styles>
 </configuration>

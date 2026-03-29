@@ -6,12 +6,18 @@ import java.util.List;
 import java.util.Set;
 
 import org.junit.Assert;
-import org.openqa.selenium.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.NoSuchWindowException;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.UnexpectedTagNameException;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.UnexpectedTagNameException;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.automation.configuration.pageobjects.PageObject;
@@ -19,38 +25,37 @@ import com.automation.configuration.pageobjects.PageObject;
 @PageObject
 public class CannedPage extends AbstractPage<CannedPage> {
 
-//	@Value("${browser.screen.breakpoints}")
-//	private String breakpoints;
-
-//	*********************************************************************************************************************************************************************
-//********************************************************************** (For all clients)**************************************************************************
-//	*********************************************************************************************************************************************************************
-
-//************************************************************ logIn Dewan // Login Page elements (For all clients)********************************************************************
+	// ********************************************************************************************************
+	// **************************************** Login Page ****************************************************
+	// ********************************************************************************************************
 
 	@FindBy(css = "#tbxName")
 	public WebElement userName;
+
 	@FindBy(css = "#tbxPassword")
 	public WebElement password;
+
 	@FindBy(css = "#chUnifiedLogin")
 	public WebElement UnifiedLogin;
+
 	@FindBy(css = "#btnlogin")
 	public WebElement loginButton;
+
 	@FindBy(xpath = "//a[contains(text(),'خروج')]")
 	public WebElement logoutButton;
 
 	@FindBy(css = "#ctl00_RadMenu1 > ul > li:nth-child(8) > a > span")
 	public WebElement dewanHeader;
 
-// ************************************************************ Generalization Page elements**********************************************************************************************
+	// ********************************************************************************************************
+	// ************************************** Generalization **************************************************
+	// ********************************************************************************************************
 
 	@FindBy(xpath = "//span[contains(text(),'إدخال معاملة')]")
 	public WebElement AddProcessButton;
 
 	@FindBy(xpath = "//a[contains(text(),'تعميم')]")
 	public WebElement GeneralizationButton;
-
-// **************************************************************filling generalization mandatory fields***************************************************************************************
 
 	@FindBy(css = "#tbxSubject")
 	public WebElement SubjectField;
@@ -65,10 +70,10 @@ public class CannedPage extends AbstractPage<CannedPage> {
 	public WebElement SaveDraftButton;
 
 	@FindBy(css = "#MainContent_txtSerial_2583")
-	public WebElement GeneralizationGetSerialNumber; //value
+	public WebElement GeneralizationGetSerialNumber;
 
 	@FindBy(css = "#MainContent_txt_2584")
-	public WebElement GeneralizationGetYear; //value
+	public WebElement GeneralizationGetYear;
 
 	@FindBy(css = "#ctl00_MainContent_btnApprove")
 	public WebElement GeneralizeButton;
@@ -85,9 +90,7 @@ public class CannedPage extends AbstractPage<CannedPage> {
 	@FindBy(xpath = "//*[@id=\"ctl00_MainContent_RadGrid1_ctl00__0\"]/td[3]")
 	public WebElement GeneralizationFirstSubjectText;
 
-// **************************************************************to check that direction button is not clickable**************************************************************************************
 	@FindBy(css = "#ctl00_MainContent_RadGrid1_ctl00_ctl04_OpenLink")
-
 	public WebElement GeneralizationsViewProcessButton;
 
 	@FindBy(css = "#ctl00_MainContent_RadGrid1_ctl00_ctl04_OpenLink")
@@ -96,18 +99,15 @@ public class CannedPage extends AbstractPage<CannedPage> {
 	@FindBy(css = "#ctl00_MainContent_rgmyRequest_ctl00_ctl04_OpenLink")
 	public WebElement MyProcessesListViewProcessButton;
 
-// **************************************************************to check the process status*********************************************************************************************************
 	@FindBy(xpath = "//span[contains(text(),'جميع المهام')]")
 	public WebElement AllTaskHeaderButton;
 
 	@FindBy(xpath = "//a[contains(text(),'معاملاتي')]")
 	public WebElement MyProcessesListHeaderButton;
 
-// **************************************************************to enter page size*******************************************************************************************************************
 	@FindBy(xpath = "//*[@id=\"ctl00_MainContent_RadGrid1_ctl00_ctl03_ctl01_ChangePageSizeTextBox\"]")
 	public WebElement GeneralizationSizePageInput;
 
-// **************************************************************change button*************************************************************************************************************************
 	@FindBy(xpath = "//span[contains(text(),'تغيير')]")
 	public WebElement ChangeGridSizeButton;
 
@@ -115,8 +115,7 @@ public class CannedPage extends AbstractPage<CannedPage> {
 	public WebElement ProcessStatus;
 
 	@FindBy(xpath = "//a[contains(text(),'مهام للإجراء')]")
-	public  WebElement TaskListHeaderButton;
-
+	public WebElement TaskListHeaderButton;
 
 	@FindBy(xpath = "//*[@id=\"ctl00_MainContent_RadGrid1_ctl00__0\"]/td[5]")
 	public WebElement TaskListFirstSubjectText;
@@ -142,13 +141,8 @@ public class CannedPage extends AbstractPage<CannedPage> {
 	@FindBy(css = "#ctl00_MainContent_btnApprove")
 	public WebElement DirectionButton;
 
-//	@FindBy(xpath = "//*[@id=\"ctl00_MainContent_GVUserAssign_ctl00__3\"]/td[2]")
-//	public WebElement OutgoingUserNameDirectedTo2;
-
 	@FindBy(xpath = "//a[contains(text(),'بريد صادر الى الخارج')]")
 	public WebElement OutgoingButton;
-
-
 
 	@FindBy(xpath = "//*[@id=\"ctl00_RadMenu1\"]/ul/li[4]/div/ul/li[3]/a")
 	public WebElement TasksToView;
@@ -166,7 +160,7 @@ public class CannedPage extends AbstractPage<CannedPage> {
 	public WebElement CompletedTasksFirstSubjectText;
 
 	@FindBy(css = "#MainContent_txt_2361")
-	public WebElement OutgoingGetSerialNumber; //value
+	public WebElement OutgoingGetSerialNumber;
 
 	@FindBy(xpath = "//a[contains(text(),'بريد وارد من الخارج')]")
 	public WebElement IncomingButton;
@@ -174,12 +168,9 @@ public class CannedPage extends AbstractPage<CannedPage> {
 	@FindBy(css = "#MainContent_txt_2494")
 	public WebElement IncomingGetSerialNumber;
 
-//	*********************************************************************************************************************************************************************
-//********************************************************************** (For all clients)**************************************************************************
-//	*********************************************************************************************************************************************************************
-
-// ****************************************************************Outgoing Page elements UOP****************************************************************************************************************
-
+	// ********************************************************************************************************
+	// ************************************** UOP / JPPMC Fields **********************************************
+	// ********************************************************************************************************
 
 	@FindBy(css = "#ctl00_MainContent_ddlOrg_2371_Input")
 	public WebElement DivisionExporterUOP;
@@ -187,17 +178,8 @@ public class CannedPage extends AbstractPage<CannedPage> {
 	@FindBy(css = "#ctl00_MainContent_ddl_2375_Input")
 	public WebElement SalutationHandUOP;
 
-//	@FindBy(css = "#MainContent_uploadFile_2472_LinklblMessages")
-//	public WebElement AttachmentsButtonUOP;
-//
-//	@FindBy(css = "#btnUpload")
-//	public  WebElement UploadButtonUOP;
-
 	@FindBy(xpath = "//*[@id=\"ctl00_MainContent_GVUserOrg_ctl00__0\"]/td[4]")
 	public WebElement OutgoingUserNameDirectedTo1UOP;
-
-
-// ****************************************************************Outgoing Page elements JPPMC****************************************************************************************************************
 
 	@FindBy(css = "#ctl00_MainContent_ddlOrg_2371_Input")
 	public WebElement CommissionersExportingOutgoingJPPMC;
@@ -207,16 +189,6 @@ public class CannedPage extends AbstractPage<CannedPage> {
 
 	@FindBy(xpath = "//*[@id=\"ctl00_MainContent_GVUserOrg_ctl00__0\"]/td[4]")
 	public WebElement OutgoingUserNameDirectedTo1JPPMC;
-
-//	@FindBy(css = "#MainContent_uploadFile_2472_LinklblMessages")
-//	public WebElement AttachmentsButtonUOP;
-//
-//	@FindBy(css = "#btnUpload")
-//	public  WebElement UploadButtonUOP;
-
-
-
-// ****************************************************************Incoming Page elements UOP****************************************************************************************************************
 
 	@FindBy(css = "#MainContent_txt_2488")
 	public WebElement NumBookFromTheSource;
@@ -233,9 +205,6 @@ public class CannedPage extends AbstractPage<CannedPage> {
 	@FindBy(css = "#ctl00_MainContent_ddl_2606_Input")
 	public WebElement Delivery;
 
-
-// ****************************************************************Incoming Page elements JPPMC****************************************************************************************************************
-
 	@FindBy(css = "#ctl00_MainContent_ddlOrg_2496_Input")
 	public WebElement CommissionersExportingIncomingJPPMC;
 
@@ -245,11 +214,8 @@ public class CannedPage extends AbstractPage<CannedPage> {
 	@FindBy(css = "#ctl00_MainContent_ddl_2628_Input")
 	public WebElement SubReceiverNameIncomingJPPMC;
 
-//	temporary
 	@FindBy(xpath = "//*[@id=\"ctl00_MainContent_RadGrid1_ctl00__0\"]/td[5]")
 	public WebElement TasksToViewFirstSubjectTextJPPMC;
-
-//**************************************************
 
 	@FindBy(css = "#ctl00_MainContent_btnCloseProcess")
 	public WebElement CloseButton;
@@ -278,8 +244,9 @@ public class CannedPage extends AbstractPage<CannedPage> {
 	@FindBy(css = "#ctl00_MainContent_notification_rnCloseIcon")
 	public WebElement CloseNotificationButton;
 
-
-	// ****************************************************************Internal correspondence Page elements UOP****************************************************************************************************************
+	// ********************************************************************************************************
+	// ************************************** Internal Correspondence ******************************************
+	// ********************************************************************************************************
 
 	@FindBy(xpath = "//a[contains(text(),'مراسلات داخلية')]")
 	public WebElement InternalCorrespondenceButton;
@@ -296,10 +263,6 @@ public class CannedPage extends AbstractPage<CannedPage> {
 	@FindBy(css = "#MainContent_txtSerial_2591")
 	public WebElement InternalCorrespondenceGetSerialNumber;
 
-	// ****************************************************************Internal correspondence Page elements UOP****************************************************************************************************************
-
-
-	// ****************************************************************Internal correspondence Page elements JPPMC****************************************************************************************************************
 	@FindBy(xpath = "(//a[@class='rmLink'][contains(text(),'الكتب الداخلية')])[1]")
 	public WebElement InternalCorrespondenceButtonJPPMC;
 
@@ -315,60 +278,70 @@ public class CannedPage extends AbstractPage<CannedPage> {
 	@FindBy(css = "#MainContent_txtSerial_2591")
 	public WebElement InternalCorrespondenceGetSerialNumberJPPMC;
 
-// ****************************************************************Internal correspondence Page elements JPPMC****************************************************************************************************************
-
 	@FindBy(xpath = "//*[@id=\"ctl00_li12\"]/a")
 	public WebElement ProcessModuleButton;
+
 	@FindBy(css = "#ctl00_Process")
 	public WebElement ProcessSubmoduleButton;
+
 	@FindBy(css = "#ctl00_MainContent_GVViewData_ctl02_lnkOption")
 	public WebElement InternalCorrespondenceOptions;
 
 	@FindBy(css = "#ctl00_MainContent_txtSaveDraftAR")
 	public WebElement SaveDraftArabicCaption;
+
 	@FindBy(css = "#ctl00_MainContent_txtSaveDraftEN")
 	public WebElement SaveDraftEnglishCaption;
 
 	@FindBy(css = "#ctl00_MainContent_ImgUpdate")
 	public WebElement UpdateButton;
+
 	@FindBy(css = "#ctl00_MainContent_ImgBack")
 	public WebElement BackButton;
 
+	// ********************************************************************************************************
+	// **************************************** Form Design / Search *******************************************
+	// ********************************************************************************************************
+
 	@FindBy(xpath = "//span[contains(text(),'FORM DESIGN')]")
 	public WebElement FormDesignModuleButton;
+
 	@FindBy(css = "#ctl00_FormControls")
 	public WebElement ContentOfFormSubmoduleButton;
+
 	@FindBy(css = "#ctl00_MainContent_DdlForm")
 	public WebElement FormDropDownList;
 
 	@FindBy(xpath = "//tbody/tr[2]/td[5]/a[1]/img[1]")
 	public WebElement EditOutgoingMailAttachment;
+
 	@FindBy(xpath = "//option[contains(text(),'Outgoing Mail')]")
 	public WebElement OutgoingMailForm;
 
 	@FindBy(css = "#ctl00_MainContent_tbxlblen")
-    public WebElement ControlSearchEnglishField;
+	public WebElement ControlSearchEnglishField;
 
 	@FindBy(css = "#ctl00_MainContent_ImgSearch")
 	public WebElement ControlSearchButton;
 
-// ****************************************************************Search****************************************************************************************************************
 	@FindBy(xpath = "//a[contains(text(),'بحث متقدم')]")
 	public WebElement SearchHeader;
+
 	@FindBy(css = "#ctl00_MainContent_btnsearch")
 	public WebElement SearchButton;
+
 	@FindBy(xpath = "//tbody/tr[@id='ctl00_MainContent_GridView1_ctl00__0']/td[1]/a[1]")
 	public WebElement FirstView;
 
-// ****************************************************************Home Page****************************************************************************************************************
+	// ********************************************************************************************************
+	// **************************************** Home Page ******************************************************
+	// ********************************************************************************************************
 
 	@FindBy(xpath = "//a[contains(text(),'الرئيسية')]")
-public WebElement HomePage;
+	public WebElement HomePage;
 
-
-	// ******************************************************Home Page submodule counts************************************************************************************************
 	@FindBy(xpath = "//span[@id='MainContent_lblMyRequestCount']")
-public WebElement MyTasksCount;
+	public WebElement MyTasksCount;
 
 	@FindBy(xpath = "//span[@id='MainContent_lblTasksCount']")
 	public WebElement TasksListCount;
@@ -389,19 +362,13 @@ public WebElement MyTasksCount;
 	public WebElement NotificationsCountMainBar;
 
 	@FindBy(xpath = "//*[@id=\"MainContent_lblFollowupCount\"]")
-
 	public WebElement ManagerFollowCount;
 
 	@FindBy(xpath = "//span[@id='MainContent_lblCompletedTaskCount']")
 	public WebElement CompletedTasksCount;
 
-	// ****************************************************** Submodule Grid counts************************************************************************************************
-
-
-
 	@FindBy(xpath = "//*[@id=\"ctl00_MainContent_rgmyRequest_ctl00\"]/tfoot/tr/td/div/div[5]/strong[5]")
 	public WebElement MyTasksGridCount;
-
 
 	@FindBy(xpath = "//*[@id=\"ctl00_MainContent_RadGrid1_ctl00_ctl03_ctl01_ChangePageSizeTextBox\"]")
 	public WebElement TasksListGridSize;
@@ -424,164 +391,55 @@ public WebElement MyTasksCount;
 	@FindBy(xpath = "//div[contains(text(),'لا يوجد بيانات لإظهارها')]")
 	public WebElement NoDataToView;
 
-	// ****************************************************** Tasks list Page************************************************************************************************
-
 	@FindBy(xpath = "//*[@id=\"ctl00_MainContent_RadGrid1_ctl00_ctl02_ctl02_ImgMassAction\"]")
 	public WebElement MassActionButton;
 
+	// ********************************************************************************************************
+	// **************************************** Basic Actions **************************************************
+	// ********************************************************************************************************
+
 	/**
-	 *
-	 * Method to open link
-	 * 
-	 * @param url : String : URL for navigation
-	 * @throws Exception
+	 * Open target URL after maximizing the browser and clearing cookies.
 	 */
 	public void navigateTo(String url) {
-
 		webDriverProvider.get().manage().window().maximize();
-//		Dimension dimension = new Dimension(1400, 2000);
-//		webDriverProvider.get().manage().window().setSize(dimension);
-
 		webDriverProvider.get().manage().deleteAllCookies();
 		webDriverProvider.get().get(url);
 		log.info("Navigating to the page: " + url);
 	}
 
 	/**
-	 * Method to enter text into text field
-	 * 
-	 * @param elementName : String : element Name
-	 * @param text        : String : Text value to enter in field
-	 * @throws Exception
+	 * Enter text into an input element.
 	 */
 	public CannedPage enterText(String elementName, String text) throws Exception {
 		WebElement element = getElementWithWait(this, elementName);
-		 element.clear();
+		element.clear();
 		element.sendKeys(text);
 		log.info("Filled '" + elementName + "' with value: " + text);
 		return this;
-
 	}
 
 	/**
-	 * Method to click on an element
-	 * 
-	 * @param elementName : String : element Name
-	 * @throws Exception
+	 * Click on a visible element.
 	 */
 	public CannedPage click(String elementName) throws Exception {
-		// wait element
 		WebElement element = getElementWithWait(this, elementName);
 		element.click();
-//		Actions actions = new Actions(webDriverProvider.get());
-//		actions.moveToElement(element).click().perform();
 		log.info("Clicked on '" + elementName + "'");
 		return this;
 	}
 
 	/**
-	 * method to check element presence
-	 * 
-	 * @param elementName : String : element Name
-	 * @param testCase    : Boolean : test case [true or false]
-	 * @throws Exception
+	 * Clear input field text.
 	 */
-	public void checkElementPresence(String elementName, boolean testCase) throws Exception {
-		if (testCase) {
-			if (!isElementDisplayed(elementName))
-				throw new Exception("Element Not Present");
-		} else {
-			try {
-				if (isElementDisplayed(elementName))
-					throw new Exception("Present"); // since it is negative test and we found element
-			} catch (Exception e) {
-				if (e.getMessage().equals("Present")) // only raise if it present
-					throw new Exception("Element Present");
-			}
-		}
+	public void clearText(String elementName) throws Exception {
+		WebElement element = getElementWithWait(this, elementName);
+		element.clear();
 	}
 
 	/**
-	 * method to get element status - displayed?
-	 * 
-	 * @param elementName : String : element Name
-	 * @return Boolean
-	 * @throws Exception
+	 * Navigate browser backward or forward.
 	 */
-	public boolean isElementDisplayed(String elementName) throws Exception {
-
-		return getElementWithWait(this, elementName).isDisplayed();
-	}
-
-	/**
-	 * Method to check element text
-	 * 
-	 * @param elementName : String : element Name
-	 * @param expected    : String : Expected element text
-	 * @param testCase    : Boolean : test case [true or false]
-	 */
-	public void checkElementText(String elementName, String expected, boolean testCase) throws Exception {
-		String elementText = getElementWithWaitText(elementName);
-
-		if (testCase) {
-			if (!elementText.equalsIgnoreCase(expected))
-				Assert.assertEquals(expected, elementText);
-		} else {
-			if (elementText.equalsIgnoreCase(expected))
-				throw new Exception("Text Matched");
-		}
-	}
-
-	/**
-	 * Method to check element partial text
-	 * 
-	 * @param elementName : String : element Name
-	 * @param expected    : String : Expected element text
-	 * @param testCase    : Boolean : test case [true or false]
-	 */
-	public void checkElementpartialText(String elementName, String expected, boolean testCase) throws Exception {
-		String elementText = getElementWithWaitText(elementName);
-
-		if (testCase) {
-			if (!elementText.toLowerCase().contains(expected.toLowerCase())) {
-				Assert.assertEquals(expected, elementText);
-			}
-			System.out.println("==========================================================");
-			System.out.println("Actual: " + elementText);
-			System.out.println("==========================================================");
-		} else {
-			if (elementText.toLowerCase().contains(expected.toLowerCase()))
-				Assert.assertNotEquals(expected, elementText);
-		}
-	}
-
-	/**
-	 * Method to get element text
-	 * 
-	 * @param elementName : String : element Name
-	 * @return String
-	 * @throws Exception
-	 */
-	public String   getElementWithWaitText(String elementName) throws Exception {
-		return getElementWithWait(this, elementName).getText();
-
-	}
-
-	/**
-	 * Method to wait element disappear
-	 * 
-	 * @param elementName : String : element Name
-	 * @throws Exception
-	 */
-
-	public void wait_Element_Disappear(String elementName) throws Exception {
-		List<WebElement> elements = new ArrayList<WebElement>();
-		elements.add(getElement(this, elementName));
-		WebDriverWait wait = new WebDriverWait(webDriverProvider.get(), Duration.ofSeconds(30));
-		wait.until(ExpectedConditions.invisibilityOfAllElements(elements));
-
-	}
-
 	public void navigate(String direction) {
 		if (direction.equals("back")) {
 			webDriverProvider.get().navigate().back();
@@ -592,35 +450,223 @@ public WebElement MyTasksCount;
 		}
 	}
 
+	/**
+	 * Refresh current page.
+	 */
 	public void refresh_page() {
 		webDriverProvider.get().navigate().refresh();
 		log.info("I refresh page");
 	}
 
 	/**
-	 * Method to resize browser
-	 * 
-	 * @param width  : int : Width for browser resize
-	 * @param height : int : Height for browser resize
+	 * Resize browser window to a specific dimension.
 	 */
 	public void resizeBrowser(int width, int height) {
 		webDriverProvider.get().manage().window().setSize(new Dimension(width, height));
 		log.info("I resize browser window size to width '" + width + "' and height '" + height + "'");
 	}
 
-	/** Method to maximize browser */
+	/**
+	 * Maximize browser window.
+	 */
 	public void maximizeBrowser() {
 		webDriverProvider.get().manage().window().maximize();
 		log.info("I maximize browser window");
 	}
 
 	/**
-	 * Method to scroll page to top or end
-	 * 
-	 * @throws Exception
+	 * Wait for a fixed number of seconds.
+	 */
+	public CannedPage wait(String time) throws NumberFormatException, InterruptedException {
+		Thread.sleep(Integer.parseInt(time) * 1000);
+		return this;
+	}
+
+	// ********************************************************************************************************
+	// **************************************** Assertions *****************************************************
+	// ********************************************************************************************************
+
+	/**
+	 * Verify whether an element is present or not present.
+	 * This method throws real exceptions so Maven/JUnit can fail properly.
+	 */
+	public void checkElementPresence(String elementName, boolean testCase) throws Exception {
+		if (testCase) {
+			if (!isElementDisplayed(elementName)) {
+				throw new Exception("Element Not Present: " + elementName);
+			}
+		} else {
+			try {
+				if (isElementDisplayed(elementName)) {
+					throw new Exception("Element Present: " + elementName);
+				}
+			} catch (Exception e) {
+				if (e.getMessage() != null && e.getMessage().startsWith("Element Present")) {
+					throw e;
+				}
+				// If element truly not found, negative check passes.
+			}
+		}
+	}
+
+	/**
+	 * Check if an element is displayed.
+	 */
+	public boolean isElementDisplayed(String elementName) throws Exception {
+		return getElementWithWait(this, elementName).isDisplayed();
+	}
+
+	/**
+	 * Verify exact text match or mismatch.
+	 */
+	public void checkElementText(String elementName, String expected, boolean testCase) throws Exception {
+		String elementText = getElementWithWaitText(elementName);
+
+		if (testCase) {
+			Assert.assertEquals("Text mismatch for element: " + elementName, expected, elementText);
+		} else {
+			Assert.assertNotEquals("Unexpected matching text for element: " + elementName, expected, elementText);
+		}
+	}
+
+	/**
+	 * Verify partial text containment or non-containment.
+	 */
+	public void checkElementpartialText(String elementName, String expected, boolean testCase) throws Exception {
+		String elementText = getElementWithWaitText(elementName);
+
+		if (testCase) {
+			Assert.assertTrue(
+					"Expected element '" + elementName + "' to contain '" + expected + "', but actual text was: " + elementText,
+					elementText.toLowerCase().contains(expected.toLowerCase())
+			);
+			System.out.println("==========================================================");
+			System.out.println("Actual: " + elementText);
+			System.out.println("==========================================================");
+		} else {
+			Assert.assertFalse(
+					"Expected element '" + elementName + "' not to contain '" + expected + "', but actual text was: " + elementText,
+					elementText.toLowerCase().contains(expected.toLowerCase())
+			);
+		}
+	}
+
+	/**
+	 * Get visible element text.
+	 */
+	public String getElementWithWaitText(String elementName) throws Exception {
+		return getElementWithWait(this, elementName).getText();
+	}
+
+	/**
+	 * Wait for an element to disappear.
+	 */
+	public void wait_Element_Disappear(String elementName) throws Exception {
+		List<WebElement> elements = new ArrayList<>();
+		elements.add(getElement(this, elementName));
+		WebDriverWait wait = new WebDriverWait(webDriverProvider.get(), Duration.ofSeconds(30));
+		wait.until(ExpectedConditions.invisibilityOfAllElements(elements));
+	}
+
+	/**
+	 * Verify page title.
+	 */
+	public void checkTitle(String title, boolean testCase) throws Exception {
+		String pageTitle = webDriverProvider.get().getTitle();
+
+		if (testCase) {
+			Assert.assertEquals("Page title mismatch", title, pageTitle);
+		} else {
+			Assert.assertNotEquals("Page title should not match", title, pageTitle);
+		}
+	}
+
+	/**
+	 * Verify attribute value.
+	 */
+	public void checkElementAttribute(String elementName, String attributeName, String attributeValue, boolean testCase)
+			throws Exception {
+		String attrVal = getElementAttribute(elementName, attributeName);
+
+		if (testCase) {
+			Assert.assertEquals(
+					"Attribute mismatch for element: " + elementName + ", attribute: " + attributeName,
+					attributeValue,
+					attrVal
+			);
+		} else {
+			Assert.assertNotEquals(
+					"Attribute should not match for element: " + elementName + ", attribute: " + attributeName,
+					attributeValue,
+					attrVal
+			);
+		}
+	}
+
+	/**
+	 * Get element attribute value.
+	 */
+	public String getElementAttribute(String elementName, String attributeName) throws Exception {
+		WebElement element = getElementWithWait(this, elementName);
+		return element.getAttribute(attributeName);
+	}
+
+	/**
+	 * Check if xpath returns any elements.
+	 */
+	public boolean isElementPresent(String xpath) {
+		try {
+			return webDriverProvider.get().findElements(By.xpath(xpath)).size() > 0;
+		} catch (Exception e) {
+			return false;
+		}
+	}
+
+	/**
+	 * Verify enabled / disabled state correctly.
+	 * This was one of the important fixes because the old logic could pass when it should fail.
+	 */
+	public void checkElementEnable(String elementName, boolean shouldBeEnabled) throws Exception {
+		boolean actual = isElementEnabled(elementName);
+		Assert.assertEquals("Wrong enabled/disabled state for element: " + elementName, shouldBeEnabled, actual);
+	}
+
+	/**
+	 * Return enabled state of an element.
+	 */
+	public boolean isElementEnabled(String elementName) throws Exception {
+		WebElement element = getElementWithWait(this, elementName);
+		return element.isEnabled();
+	}
+
+	/**
+	 * Verify checkbox checked / unchecked state correctly.
+	 * This was one of the important fixes for Maven failure propagation.
+	 */
+	public void isCheckboxChecked(String elementName, boolean shouldBeChecked) throws Exception {
+		WebElement checkbox = getElementWithWait(this, elementName);
+		Assert.assertEquals("Wrong checkbox state for element: " + elementName, shouldBeChecked, checkbox.isSelected());
+	}
+
+	/**
+	 * Verify radio button selected / unselected state correctly.
+	 * This was one of the important fixes for Maven failure propagation.
+	 */
+	public void isRadioButtonSelected(String elementName, boolean shouldBeSelected) throws Exception {
+		WebElement radioButton = getElementWithWait(this, elementName);
+		Assert.assertEquals("Wrong radio button state for element: " + elementName, shouldBeSelected, radioButton.isSelected());
+	}
+
+	// ********************************************************************************************************
+	// **************************************** UI Interaction *************************************************
+	// ********************************************************************************************************
+
+	/**
+	 * Scroll page to top or end.
 	 */
 	public void scrollPage(String to) throws Exception {
 		JavascriptExecutor executor = (JavascriptExecutor) webDriverProvider.get();
+
 		if (to.equals("end")) {
 			executor.executeScript(
 					"window.scrollTo(0,Math.max(document.documentElement.scrollHeight,document.body.scrollHeight,document.documentElement.clientHeight));");
@@ -629,15 +675,13 @@ public WebElement MyTasksCount;
 			executor.executeScript(
 					"window.scrollTo(Math.max(document.documentElement.scrollHeight,document.body.scrollHeight,document.documentElement.clientHeight),0);");
 			log.info("I scroll to top of page");
-		} else
+		} else {
 			throw new Exception("Exception : Invalid Direction (only scroll \"top\" or \"end\")");
+		}
 	}
 
 	/**
-	 * Method to scroll page to particular element
-	 * 
-	 * @param elementName : String : to get element
-	 * @throws Exception
+	 * Scroll until a specific element is visible.
 	 */
 	public void scrollToElement(String elementName) throws Exception {
 		WebElement element = getElementWithWait(this, elementName);
@@ -647,10 +691,7 @@ public WebElement MyTasksCount;
 	}
 
 	/**
-	 * Method to hover on element
-	 * 
-	 * @param elementName : String : to get element
-	 * @throws Exception
+	 * Hover over a specific element.
 	 */
 	public void hoverOverElement(String elementName) throws Exception {
 		Actions action = new Actions(webDriverProvider.get());
@@ -659,96 +700,17 @@ public WebElement MyTasksCount;
 	}
 
 	/**
-	 * Method to verify page title
-	 * 
-	 * @param title    : String : expected title
-	 * @param testCase : Boolean : test case [true or false]
-	 * @throws Exception
+	 * Select option from dropdown.
+	 * Supports both standard select and input-based dropdown patterns.
 	 */
-	public void checkTitle(String title, boolean testCase) throws Exception {
-		String pageTitle = webDriverProvider.get().getTitle();
-
-		if (testCase) {
-			Assert.assertEquals(title, pageTitle);
-		} else {
-			Assert.assertNotEquals(title, pageTitle);
-		}
-	}
-
-	public void checkElementAttribute(String elementName, String attributeName, String attributeValue, boolean testCase)
-			throws Exception {
-		String attrVal = getElementAttribute(elementName, attributeName);
-		if (testCase) {
-			if (!attrVal.equals(attributeValue))
-				Assert.assertEquals(attributeValue, attrVal);
-		} else {
-			if (attrVal.equals(attributeValue))
-				Assert.assertNotEquals(attributeValue, attrVal);
-		}
-	}
-
-	public String getElementAttribute(String elementName, String attributeName) throws Exception {
-		WebElement element = getElementWithWait(this, elementName);
-		return element.getAttribute(attributeName);
-	}
-	public boolean isElementPresent(String xpath) {
-		try {
-			return webDriverProvider.get().findElements(By.xpath(xpath)).size() > 0;
-		} catch (Exception e) {
-			return false;
-		}
-	}
-
-	public void checkElementEnable(String elementName, boolean testCase) throws Exception {
-		boolean result = isElementEnabled(elementName);
-		if (testCase) {
-			if (!result)
-				Assert.assertFalse("Element Not Enabled", result);
-
-		} else {
-			if (result)
-				Assert.assertTrue("Element Enabled", result);
-		}
-	}
-
-	public boolean isElementEnabled(String elementName) throws Exception {
-		WebElement element = getElementWithWait(this, elementName);
-		return element.isEnabled();
-	}
-
-	public void isCheckboxChecked(String elementName, boolean shouldBeChecked) throws Exception {
-		WebElement checkbox = getElementWithWait(this, elementName);
-		if ((!checkbox.isSelected()) && shouldBeChecked)
-			Assert.assertTrue("Checkbox is not checked", (!checkbox.isSelected()) && shouldBeChecked);
-		else if (checkbox.isSelected() && !shouldBeChecked)
-			Assert.assertTrue("Checkbox is checked", checkbox.isSelected() && !shouldBeChecked);
-	}
-
-
-
-	public void isRadioButtonSelected(String elementName, boolean shouldBeSelected) throws Exception {
-		WebElement checkbox = getElementWithWait(this, elementName);
-		if ((!checkbox.isSelected()) && shouldBeSelected)
-			Assert.assertTrue("Radio Button is not Selected", (!checkbox.isSelected()) && shouldBeSelected);
-		else if (checkbox.isSelected() && !shouldBeSelected)
-			Assert.assertTrue("Radio Button is Selected", checkbox.isSelected() && !shouldBeSelected);
-	}
-
-	public void clearText(String elementName) throws Exception {
-		WebElement element = getElementWithWait(this, elementName);
-		element.clear();
-	}
-
 	public void selectOptionFromDropdown(String optionValue, String dropDownListName) throws Exception {
 		WebElement dropdown = getElementWithWait(this, dropDownListName);
 		dropdown.clear();
 
 		try {
-			// Try to use Select if the element is a <select> tag
 			Select selectList = new Select(dropdown);
 			selectList.selectByVisibleText(optionValue);
 		} catch (UnexpectedTagNameException e) {
-			// Handle the case where the element is not a <select> tag
 			if (dropdown.getTagName().equalsIgnoreCase("input")) {
 				dropdown.click();
 				dropdown.clear();
@@ -762,61 +724,74 @@ public WebElement MyTasksCount;
 		}
 	}
 
+	/**
+	 * Select from standard HTML select dropdown.
+	 */
 	public void selectFromDropdown(String elementName, String valueToSelect) throws Exception {
 		WebElement dropdownElement = getElementWithWait(this, elementName);
 		Select dropdown = new Select(dropdownElement);
 		dropdown.selectByVisibleText(valueToSelect);
 	}
 
+	/**
+	 * Check checkbox if not already selected.
+	 */
 	public void checkCheckbox(String elementName) throws Exception {
 		WebElement checkbox = getElementWithWait(this, elementName);
-		if (!checkbox.isSelected())
+		if (!checkbox.isSelected()) {
 			checkbox.click();
+		}
 	}
 
+	/**
+	 * Uncheck checkbox if currently selected.
+	 */
 	public void uncheckCheckbox(String elementName) throws Exception {
 		WebElement checkbox = getElementWithWait(this, elementName);
-		if (checkbox.isSelected())
+		if (checkbox.isSelected()) {
 			checkbox.click();
+		}
 	}
 
+	/**
+	 * Select radio button if not already selected.
+	 */
 	public void selectRadioButton(String elementName) throws Exception {
 		WebElement radioButton = getElementWithWait(this, elementName);
-		if (!radioButton.isSelected())
+		if (!radioButton.isSelected()) {
 			radioButton.click();
+		}
 	}
 
-	public CannedPage wait(String time) throws NumberFormatException, InterruptedException {
-		// sleep method takes parameter in milliseconds
-		Thread.sleep(Integer.parseInt(time) * 1000);
-		return this;
-
-	}
-
+	/**
+	 * Accept or dismiss browser alert.
+	 */
 	public void handleAlert(String decision) {
-		if (decision.equals("accept"))
+		if (decision.equals("accept")) {
 			webDriverProvider.get().switchTo().alert().accept();
-		else
+		} else {
 			webDriverProvider.get().switchTo().alert().dismiss();
+		}
 	}
 
-
+	/**
+	 * Fetch values from specific row xpaths and ensure there are no duplicates.
+	 */
 	public List<String> getValuesFromXpaths(int rowCount) throws Exception {
 		List<String> values = new ArrayList<>();
 
 		for (int i = 0; i < rowCount; i++) {
 			String xpath = "//*[@id='ctl00_MainContent_RadGrid1_ctl00__" + i + "']/td[2]";
 			WebElement element = webDriverProvider.get().findElement(By.xpath(xpath));
-			String text = element.getText().trim(); // Trim to remove any leading or trailing whitespace
+			String text = element.getText().trim();
 
-			if (values.contains(text)) { // Check for duplicates
+			if (values.contains(text)) {
 				throw new Exception("Duplicate value found: " + text);
 			}
 
 			values.add(text);
 		}
 
-		// Print the fetched values in the console
 		System.out.println("Fetched values from xpaths:");
 		for (String value : values) {
 			System.out.println(value);
@@ -825,7 +800,9 @@ public WebElement MyTasksCount;
 		return values;
 	}
 
-
+	/**
+	 * Select a value from combo box by typing and confirming with keyboard.
+	 */
 	public void selectFromComboBox(String elementName, String value) throws Exception {
 		WebElement comboBox = getElementWithWait(this, elementName);
 		comboBox.click();
@@ -836,39 +813,38 @@ public WebElement MyTasksCount;
 		Thread.sleep(1000);
 	}
 
+	// ********************************************************************************************************
+	// **************************************** Tab Handling ***************************************************
+	// ********************************************************************************************************
 
+	/**
+	 * Switch to the newly opened browser tab.
+	 */
 	public void switchToNewTab() {
-		String originalWindow = webDriverProvider.get().getWindowHandle();
-		// Get all window handles
 		ArrayList<String> tabs = new ArrayList<>(webDriverProvider.get().getWindowHandles());
-		// Switch to the new tab
 		webDriverProvider.get().switchTo().window(tabs.get(1));
 	}
+
+	/**
+	 * Close the latest tab and return to the first available tab.
+	 */
 	public void closeLatestTabAndReturnToFirstTab() {
 		WebDriver driver = webDriverProvider.get();
 
-		// Get all window handles
 		Set<String> allTabs = driver.getWindowHandles();
 		List<String> tabs = new ArrayList<>(allTabs);
 
-		// Check if there are more than one tab
 		if (tabs.size() > 1) {
 			try {
-				// Switch to the most recently opened tab
 				String latestTab = tabs.get(tabs.size() - 1);
 
-				// Ensure the latest tab handle is valid
 				if (driver.getWindowHandles().contains(latestTab)) {
 					driver.switchTo().window(latestTab);
-
-					// Close the latest tab
 					driver.close();
 
-					// Refresh the list of window handles
 					allTabs = driver.getWindowHandles();
 					tabs = new ArrayList<>(allTabs);
 
-					// If the original tab is still open, switch back to it
 					if (!tabs.isEmpty()) {
 						driver.switchTo().window(tabs.get(0));
 					}
@@ -880,7 +856,6 @@ public WebElement MyTasksCount;
 				}
 			} catch (NoSuchWindowException e) {
 				System.err.println("Error: The target window is already closed.");
-				// Switch back to the first available window in case of error
 				allTabs = driver.getWindowHandles();
 				tabs = new ArrayList<>(allTabs);
 				if (!tabs.isEmpty()) {
@@ -891,5 +866,4 @@ public WebElement MyTasksCount;
 			System.out.println("No additional tabs to close.");
 		}
 	}
-
 }

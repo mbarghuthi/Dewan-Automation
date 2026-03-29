@@ -5,134 +5,91 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0826a89a-9e89-42f5-b126-da99926bde7e" name="Changes" comment="Did some updates on for the latest release">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/stories/TC_001_JPPMC_PRECONDITION.story" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/stories/TC_001_UOP_PRECONDITION.story" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/stories/TC_002_JPPMC.story" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/stories/TC_002_UOP.story" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/stories/TC_003_JPPMC.story" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/stories/TC_003_UOP.story" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/stories/TC_004_JPPMC.story" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/stories/TC_004_UOP.story" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/stories/TC_005_JPPMC.story" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/stories/TC_005_UOP.story" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/stories/TC_006_JPPMC.story" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/stories/TC_006_UOP.story" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/stories/TC_007_JPPMC.story" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/stories/TC_007_UOP.story" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/stories/TC_008_UOP.story" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/stories/TC_009_UOP.story" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/stories/TC_003_UOP.story" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/stories/TC_003_UOP.story" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Web-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/Web-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/Sun Dec 28 14-12-14 EET 2025/Dewan-Automation-Report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/Tue Sep 16 11-07-30 EET 2025/Dewan-Automation-Report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/configuration/AbstractStoryConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/configuration/AbstractStoryConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/jbehave/ConsoleLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/jbehave/ConsoleLogger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/jbehave/format/PropertyConverterHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/jbehave/format/PropertyConverterHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/pages/AbstractPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/pages/AbstractPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/pages/CannedPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/pages/CannedPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/test_runner/AllStories.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AllStoriesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/report-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/report-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/stories/TC_001_JPPMC_PRECONDITION.story" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/stories/TC_001_JPPMC_PRECONDITION.story" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/stories/TC_001_UOP_PRECONDITION.story" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/stories/TC_001_UOP_PRECONDITION.story" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/stories/TC_002_JPPMC.story" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/stories/TC_002_JPPMC.story" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/stories/TC_002_UOP.story" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/stories/TC_002_UOP.story" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/stories/TC_003_JPPMC.story" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/stories/TC_003_JPPMC.story" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/stories/TC_003_UOP.story" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/stories/TC_003_UOP.story" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/stories/TC_004_JPPMC.story" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/stories/TC_004_JPPMC.story" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/stories/TC_004_UOP.story" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/stories/TC_004_UOP.story" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/stories/TC_005_JPPMC.story" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/stories/TC_005_JPPMC.story" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/stories/TC_005_UOP.story" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/stories/TC_005_UOP.story" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/stories/TC_006_JPPMC.story" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/stories/TC_006_JPPMC.story" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/stories/TC_006_UOP.story" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/stories/TC_006_UOP.story" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/stories/TC_007_JPPMC.story" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/stories/TC_007_JPPMC.story" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/stories/TC_007_UOP.story" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/stories/TC_007_UOP.story" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/stories/TC_008_UOP.story" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/stories/TC_008_UOP.story" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/stories/TC_009_UOP.story" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/stories/TC_009_UOP.story" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Web-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/automation/configuration/AbstractStoryConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/automation/configuration/AbstractStoryConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/automation/jbehave/ConsoleLogger.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/automation/jbehave/ConsoleLogger.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/automation/jbehave/format/PropertyConverterHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/automation/jbehave/format/PropertyConverterHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/automation/pages/AbstractPage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/automation/pages/AbstractPage$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/automation/pages/AbstractPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/automation/pages/AbstractPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/automation/pages/CannedPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/automation/pages/CannedPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/automation/test_runner/AllStories.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/report-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/report-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/stories/TC_003_UOP.story" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/stories/TC_003_UOP.story" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/stories/TC_004_JPPMC.story" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/stories/TC_004_JPPMC.story" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/stories/TC_005_JPPMC.story" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/stories/TC_005_JPPMC.story" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/stories/TC_006_JPPMC.story" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/stories/TC_006_JPPMC.story" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/stories/TC_007_JPPMC.story" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/stories/TC_007_JPPMC.story" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/AfterStories.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/AfterStories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/BeforeStories.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/BeforeStories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/stories.TC_001.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/stories.TC_001.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/stories.TC_001_SCC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/stories.TC_001_SCC.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/stories.TC_001_SCC_PRECONDITION.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/stories.TC_001_SCC_PRECONDITION.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/stories.TC_001_UOP.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/stories.TC_001_UOP.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/stories.TC_001_UOP_PRECONDITION.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/stories.TC_001_UOP_PRECONDITION.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/stories.TC_002.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/stories.TC_002.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/stories.TC_002_JPPMC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/stories.TC_002_JPPMC.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/stories.TC_002_SCC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/stories.TC_002_SCC.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/stories.TC_002_UOP.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/stories.TC_002_UOP.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/stories.TC_003.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/stories.TC_003.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/stories.TC_003_JPPMC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/stories.TC_003_JPPMC.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/stories.TC_003_SCC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/stories.TC_003_SCC.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/stories.TC_003_UOP.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/stories.TC_003_UOP.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/stories.TC_004_JPPMC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/stories.TC_004_JPPMC.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/stories.TC_004_SCC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/stories.TC_004_SCC.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/stories.TC_004_UOP.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/stories.TC_004_UOP.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/stories.TC_005_JPPMC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/stories.TC_005_JPPMC.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/stories.TC_005_SCC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/stories.TC_005_SCC.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/stories.TC_005_UOP.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/stories.TC_005_UOP.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/stories.TC_006_JPPMC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/stories.TC_006_JPPMC.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/stories.TC_006_SCC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/stories.TC_006_SCC.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/stories.TC_006_UOP.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/stories.TC_006_UOP.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/stories.TC_007_JPPMC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/stories.TC_007_JPPMC.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/stories.TC_007_SCC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/stories.TC_007_SCC.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/stories.TC_007_UOP.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/stories.TC_007_UOP.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/stories.TC_008_UOP.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/stories.TC_008_UOP.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/stories.TC_009_UOP.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/stories.TC_009_UOP.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/storyDurations.props" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/AfterStories.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/AfterStories.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/BeforeStories.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/BeforeStories.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/reports.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/stories.TC_001.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/stories.TC_001.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/stories.TC_001_SCC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/stories.TC_001_SCC.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/stories.TC_001_SCC_PRECONDITION.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/stories.TC_001_SCC_PRECONDITION.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/stories.TC_001_UOP.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/stories.TC_001_UOP.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/stories.TC_001_UOP_PRECONDITION.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/stories.TC_001_UOP_PRECONDITION.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/stories.TC_002.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/stories.TC_002.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/stories.TC_002_JPPMC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/stories.TC_002_JPPMC.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/stories.TC_002_SCC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/stories.TC_002_SCC.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/stories.TC_002_UOP.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/stories.TC_002_UOP.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/stories.TC_003.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/stories.TC_003.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/stories.TC_003_JPPMC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/stories.TC_003_JPPMC.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/stories.TC_003_SCC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/stories.TC_003_SCC.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/stories.TC_003_UOP.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/stories.TC_003_UOP.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/stories.TC_004_JPPMC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/stories.TC_004_JPPMC.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/stories.TC_004_SCC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/stories.TC_004_SCC.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/stories.TC_004_UOP.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/stories.TC_004_UOP.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/stories.TC_005_JPPMC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/stories.TC_005_JPPMC.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/stories.TC_005_SCC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/stories.TC_005_SCC.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/stories.TC_005_UOP.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/stories.TC_005_UOP.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/stories.TC_006_JPPMC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/stories.TC_006_JPPMC.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/stories.TC_006_SCC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/stories.TC_006_SCC.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/stories.TC_006_UOP.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/stories.TC_006_UOP.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/stories.TC_007_JPPMC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/stories.TC_007_JPPMC.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/stories.TC_007_SCC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/stories.TC_007_SCC.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/stories.TC_007_UOP.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/stories.TC_007_UOP.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/stories.TC_008_UOP.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/stories.TC_008_UOP.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/stories.TC_009_UOP.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/stories.TC_009_UOP.xml.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/stories/TC_001_JPPMC_PRECONDITION.story" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/stories/TC_001_UOP_PRECONDITION.story" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/stories/TC_002_JPPMC.story" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/stories/TC_002_UOP.story" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/stories/TC_003_JPPMC.story" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/stories/TC_003_UOP.story" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/stories/TC_004_JPPMC.story" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/stories/TC_004_UOP.story" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/stories/TC_005_JPPMC.story" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/stories/TC_005_UOP.story" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/stories/TC_006_JPPMC.story" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/stories/TC_006_UOP.story" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/stories/TC_007_JPPMC.story" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/stories/TC_007_UOP.story" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/stories/TC_008_UOP.story" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/stories/TC_009_UOP.story" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jbehave/AfterStories.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/jbehave/AfterStories.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jbehave/AfterStories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/jbehave/AfterStories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jbehave/BeforeStories.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/jbehave/BeforeStories.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jbehave/BeforeStories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/jbehave/BeforeStories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jbehave/stories.TC_007_JPPMC.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/jbehave/stories.TC_007_JPPMC.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jbehave/stories.TC_007_JPPMC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/jbehave/stories.TC_007_JPPMC.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jbehave/storyDurations.props" beforeDir="false" afterPath="$PROJECT_DIR$/target/jbehave/storyDurations.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jbehave/view/AfterStories.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/jbehave/view/AfterStories.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jbehave/view/AfterStories.xml.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/jbehave/view/AfterStories.xml.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jbehave/view/BeforeStories.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/jbehave/view/BeforeStories.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jbehave/view/BeforeStories.xml.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/jbehave/view/BeforeStories.xml.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jbehave/view/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/jbehave/view/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jbehave/view/reports.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/jbehave/view/reports.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jbehave/view/stories.TC_007_JPPMC.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/jbehave/view/stories.TC_007_JPPMC.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jbehave/view/stories.TC_007_JPPMC.xml.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/jbehave/view/stories.TC_007_JPPMC.xml.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
@@ -177,31 +134,51 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;JUnit.AllStories.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Automation Quality Projects/Apex-evaluation&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.4448276&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "JUnit.AllStories.executor": "Run",
+    "JUnit.AllStoriesTest.executor": "Run",
+    "JUnit.AllStoriestest.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Automation Quality Projects/Apex-evaluation",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.4448276",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
-  <component name="RunManager">
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Automation Quality Projects\Dewan-Automation\src\test\resources" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+      <recent name="com" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.AllStoriesTest">
     <configuration name="AllStories" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Web" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.automation.test_runner.*" />
+          <option name="PATTERN" value=".*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.automation.test_runner" />
-      <option name="MAIN_CLASS_NAME" value="com.automation.test_runner.AllStories" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AllStories" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AllStoriesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Web" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AllStoriesTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -209,7 +186,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AllStories" />
+        <item itemvalue="JUnit.AllStoriesTest" />
       </list>
     </recent_temporary>
   </component>

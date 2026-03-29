@@ -18,3 +18,5 @@ Thumbs.db
 # Temporary / compiled
 *.tmp
 *.class
+
+.idea/workspace.xml

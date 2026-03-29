@@ -13,38 +13,60 @@
 		<jbehave.site.version>3.3.1</jbehave.site.version>
 		<junit.runner.version>1.2.0</junit.runner.version>
 		<log4j.version>1.2.17</log4j.version>
+
 		<maven.compiler.version>3.3</maven.compiler.version>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
+
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
 		<selenium.version>4.10.0</selenium.version>
 		<cglib.version>3.2.8</cglib.version>
 		<spring.version>3.1.1.RELEASE</spring.version>
 		<extent.version>2.41.2</extent.version>
 		<testng.version>7.8.0</testng.version>
 		<javax.mail.version>1.6.2</javax.mail.version>
+
 		<spring.core.version>5.3.21</spring.core.version>
 		<spring.context.version>5.3.21</spring.context.version>
 		<spring.beans.version>5.3.21</spring.beans.version>
+
 		<junit.version>4.13.2</junit.version>
 		<slf4j.version>1.7.36</slf4j.version>
+		<surefire.version>3.0.0-M5</surefire.version>
 		<surefire.junit47.version>3.0.0-M5</surefire.junit47.version>
 	</properties>
 
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.seleniumhq.selenium</groupId>
+				<artifactId>selenium-bom</artifactId>
+				<version>${selenium.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
 	<dependencies>
 
-		<!-- https://mvnrepository.com/artifact/com.sun.mail/javax.mail -->
+		<!-- Mail -->
 		<dependency>
 			<groupId>com.sun.mail</groupId>
 			<artifactId>javax.mail</artifactId>
 			<version>${javax.mail.version}</version>
 		</dependency>
 
+		<!-- JUnit -->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>${junit.version}</version>
 		</dependency>
 
+		<!-- Logging -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-simple</artifactId>
@@ -72,27 +94,29 @@
 			<version>${spring.beans.version}</version>
 		</dependency>
 
+		<!-- TestNG -->
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
-			<version>${testng.version}</version> <!-- Check for the latest version -->
+			<version>${testng.version}</version>
 			<scope>test</scope>
 		</dependency>
 
+		<!-- WebDriverManager -->
 		<dependency>
 			<groupId>io.github.bonigarcia</groupId>
 			<artifactId>webdrivermanager</artifactId>
 			<version>5.8.0</version>
 		</dependency>
-		<!-- add it when update selenium version -->
-		<!-- https://mvnrepository.com/artifact/cglib/cglib -->
+
+		<!-- CGLIB -->
 		<dependency>
 			<groupId>cglib</groupId>
 			<artifactId>cglib</artifactId>
 			<version>${cglib.version}</version>
 		</dependency>
 
-		<!-- report -->
+		<!-- Extent Report -->
 		<dependency>
 			<groupId>com.relevantcodes</groupId>
 			<artifactId>extentreports</artifactId>
@@ -103,7 +127,6 @@
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
-			<version>${selenium.version}</version>
 		</dependency>
 
 		<!-- JBehave -->
@@ -112,6 +135,7 @@
 			<artifactId>jbehave-junit-runner</artifactId>
 			<version>${junit.runner.version}</version>
 		</dependency>
+
 		<dependency>
 			<groupId>org.jbehave</groupId>
 			<artifactId>jbehave-core</artifactId>
@@ -119,17 +143,20 @@
 			<classifier>resources</classifier>
 			<type>zip</type>
 		</dependency>
+
 		<dependency>
 			<groupId>org.jbehave.site</groupId>
 			<artifactId>jbehave-site-resources</artifactId>
 			<version>${jbehave.site.version}</version>
 			<type>zip</type>
 		</dependency>
+
 		<dependency>
 			<groupId>org.jbehave</groupId>
 			<artifactId>jbehave-spring</artifactId>
 			<version>${jbehave.core.version}</version>
 		</dependency>
+
 		<dependency>
 			<groupId>org.jbehave.web</groupId>
 			<artifactId>jbehave-web-selenium</artifactId>
@@ -143,10 +170,14 @@
 					<groupId>org.jbehave</groupId>
 					<artifactId>jbehave-core</artifactId>
 				</exclusion>
+				<exclusion>
+					<groupId>org.seleniumhq.selenium</groupId>
+					<artifactId>selenium-support</artifactId>
+				</exclusion>
 			</exclusions>
 		</dependency>
 
-		<!-- Spring -->
+		<!-- Spring Web -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-web</artifactId>
@@ -159,15 +190,12 @@
 			<artifactId>log4j</artifactId>
 			<version>${log4j.version}</version>
 		</dependency>
-		<dependency>
-			<groupId>org.seleniumhq.selenium</groupId>
-			<artifactId>selenium-support</artifactId>
-			<version>4.22.0</version>
-		</dependency>
+
 	</dependencies>
 
 	<build>
 		<plugins>
+
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -175,13 +203,23 @@
 				<configuration>
 					<source>${maven.compiler.source}</source>
 					<target>${maven.compiler.target}</target>
+					<encoding>${project.build.sourceEncoding}</encoding>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>3.3.1</version>
+				<configuration>
+					<encoding>${project.build.sourceEncoding}</encoding>
 				</configuration>
 			</plugin>
 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
-				<version>3.0.0-M5</version>
+				<version>${surefire.version}</version>
 				<dependencies>
 					<dependency>
 						<groupId>org.apache.maven.surefire</groupId>
@@ -196,6 +234,7 @@
 					</includes>
 				</configuration>
 			</plugin>
+
 		</plugins>
 	</build>
 </project>

@@ -25,6 +25,12 @@ pipeline {
             }
         }
 
+        stage('Publish Results') {
+            steps {
+                junit 'target/surefire-reports/*.xml'
+            }
+        }
+
         stage('Archive Reports') {
             steps {
                 archiveArtifacts artifacts: 'target/surefire-reports/**/*', allowEmptyArchive: true

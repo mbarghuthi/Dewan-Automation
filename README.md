@@ -1,1 +1,1 @@
-[![Build Status](http://localhost:8080/buildStatus/icon?job=Dewan-Automation&style=flat-square)](http://localhost:8080/job/Dewan-Automation/)
+[![Build Status](http://172.16.1.250:8080/buildStatus/icon?job=Dewan-Automation&style=flat-square)](http://172.16.1.250:8080/job/Dewan-Automation/)

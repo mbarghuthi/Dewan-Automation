@@ -25,18 +25,26 @@ pipeline {
             }
         }
 
-        stage('Publish Results') {
-            steps {
-                junit 'target/surefire-reports/*.xml'
-            }
-        }
-
         stage('Archive Reports') {
             steps {
                 archiveArtifacts artifacts: 'target/surefire-reports/**/*', allowEmptyArchive: true
                 archiveArtifacts artifacts: 'reports/**/*', allowEmptyArchive: true
                 archiveArtifacts artifacts: 'target/jbehave/**/*', allowEmptyArchive: true
                 junit 'target/surefire-reports/*.xml'
+            }
+        }
+
+        stage('Publish HTML Report') {
+            steps {
+                publishHTML(target: [
+                    allowMissing: true,
+                    alwaysLinkToLastBuild: true,
+                    keepAll: true,
+                    reportDir: 'reports',
+                    reportFiles: '**/Dewan-Automation-Report.html',
+                    reportName: 'Extent Report',
+                    reportTitles: 'Dewan Automation Extent Report'
+                ])
             }
         }
     }

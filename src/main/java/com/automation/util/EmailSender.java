@@ -19,13 +19,8 @@ public class EmailSender {
     private static final String username = "test-automation@optimizasolutions.com";
     private static final String password = "M@RT1299";
     private static final String from = "test-automation@optimizasolutions.com";
-//    private static final String reportDirectory = "D:\\Automation Quality Projects\\Dewan-Automation\\reports";
-    private static final String reportDirectory = "C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\Dewan-Automation\\reports";
 
-//    private static final String cc = "hmeqdad@optimizasolutions.com";
-//    private static final String to = "DMS@optimizasolutions.com";
     private static final String to = "sjaber@optimizasolutions.com";
-    ////    private static final String[] to = { "mbarghuthi@optimizasolutions.com", "sjaber@optimizasolutions.com" };
     private static final String cc = "mbarghuthi@optimizasolutions.com";
 
     public void sendSuccessEmail() {
@@ -42,7 +37,7 @@ public class EmailSender {
         File latestFile = getLatestReportFile();
 
         if (latestFile == null) {
-            System.out.println("No .htm files found in the directory.");
+            System.out.println("No HTML report file found in the latest report directory.");
             return;
         }
 
@@ -56,9 +51,13 @@ public class EmailSender {
     }
 
     private File getLatestReportFile() {
-        File directory = new File(reportDirectory);
+        File directory = new File(resolveReportDirectory());
 
-        // Get all subdirectories
+        if (!directory.exists() || !directory.isDirectory()) {
+            System.out.println("Report directory does not exist: " + directory.getAbsolutePath());
+            return null;
+        }
+
         File[] subdirs = directory.listFiles(File::isDirectory);
 
         if (subdirs == null || subdirs.length == 0) {
@@ -66,17 +65,14 @@ public class EmailSender {
             return null;
         }
 
-        // Sort subdirectories by last modified date in descending order
         Arrays.sort(subdirs, Comparator.comparingLong(File::lastModified).reversed());
-
-        // Get the latest subdirectory
         File latestDir = subdirs[0];
 
-        // Get the HTML file from the latest subdirectory
         File[] htmlFiles = latestDir.listFiles(new FilenameFilter() {
             @Override
             public boolean accept(File dir, String name) {
-                return name.toLowerCase().endsWith(".htm") || name.toLowerCase().endsWith(".html");
+                String lower = name.toLowerCase();
+                return lower.endsWith(".htm") || lower.endsWith(".html");
             }
         });
 
@@ -85,27 +81,45 @@ public class EmailSender {
             return null;
         }
 
-        // Return the first HTML file found (assuming there's only one)
+        Arrays.sort(htmlFiles, Comparator.comparingLong(File::lastModified).reversed());
         return htmlFiles[0];
+    }
+
+    private String resolveReportDirectory() {
+        String reportDirectoryProperty = System.getProperty("reportDirectory");
+        if (isNotBlank(reportDirectoryProperty)) {
+            return reportDirectoryProperty;
+        }
+
+        String workspace = System.getenv("WORKSPACE");
+        if (isNotBlank(workspace)) {
+            return workspace + File.separator + "reports";
+        }
+
+        return System.getProperty("user.dir") + File.separator + "reports";
+    }
+
+    private boolean isNotBlank(String value) {
+        return value != null && !value.trim().isEmpty();
     }
 
     private Message prepareMessage(Session session, File latestFile) throws MessagingException {
         Message message = new MimeMessage(session);
         message.setFrom(new InternetAddress(from));
-
-//        for (String recipient : to) {
-//            message.addRecipient(Message.RecipientType.TO, new InternetAddress(recipient));
-//        }
-
         message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
-
         message.addRecipient(Message.RecipientType.CC, new InternetAddress(cc));
         message.setSubject("Recent Dewan Automation Test Report");
 
         Multipart multipart = new MimeMultipart();
 
         BodyPart messageBodyPart = new MimeBodyPart();
-        messageBodyPart.setText("Dear,\nI hope this message finds you well. Please find attached the most recent automation test report for Dewan.\n\nFeel free to review it and share any feedback or observations.\n\nBest regards,\nImageLinks Automation Team");
+        messageBodyPart.setText(
+                "Dear,\n" +
+                        "I hope this message finds you well. Please find attached the most recent automation test report for Dewan.\n\n" +
+                        "Feel free to review it and share any feedback or observations.\n\n" +
+                        "Best regards,\n" +
+                        "ImageLinks Automation Team"
+        );
         multipart.addBodyPart(messageBodyPart);
 
         messageBodyPart = new MimeBodyPart();
@@ -115,7 +129,6 @@ public class EmailSender {
         multipart.addBodyPart(messageBodyPart);
 
         message.setContent(multipart);
-
         return message;
     }
 }

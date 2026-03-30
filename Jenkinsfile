@@ -21,7 +21,7 @@ pipeline {
 
         stage('Test') {
             steps {
-                bat 'mvn test'
+                bat 'mvn test -DreportDirectory="%WORKSPACE%\\reports"'
             }
         }
 
@@ -30,6 +30,7 @@ pipeline {
                 archiveArtifacts artifacts: 'target/surefire-reports/**/*', allowEmptyArchive: true
                 archiveArtifacts artifacts: 'reports/**/*', allowEmptyArchive: true
                 archiveArtifacts artifacts: 'target/jbehave/**/*', allowEmptyArchive: true
+                junit 'target/surefire-reports/*.xml'
             }
         }
     }

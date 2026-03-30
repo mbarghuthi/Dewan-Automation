@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0826a89a-9e89-42f5-b126-da99926bde7e" name="Changes" comment="Did some updates on for the latest release to prepare for CI/CD">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -314,8 +313,59 @@
       <option name="project" value="LOCAL" />
       <updated>1774787562722</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Did some updates on for the latest release to prepare for CI/CD">
+      <option name="closed" value="true" />
+      <created>1774795515253</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1774795515253</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Did some updates on for the latest release to prepare for CI/CD">
+      <option name="closed" value="true" />
+      <created>1774796719150</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1774796719150</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Did some updates on for the latest release to prepare for CI/CD">
+      <option name="closed" value="true" />
+      <created>1774797969416</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1774797969416</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Did some updates on for the latest release to prepare for CI/CD">
+      <option name="closed" value="true" />
+      <created>1774798388502</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1774798388502</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Did some updates on for the latest release to prepare for CI/CD">
+      <option name="closed" value="true" />
+      <created>1774799979729</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1774799979729</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Did some updates on for the latest release to prepare for CI/CD">
+      <option name="closed" value="true" />
+      <created>1774850362124</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1774850362125</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="Jenkinsfile" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

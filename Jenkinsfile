@@ -33,15 +33,10 @@ pipeline {
                 bat 'mvn test -DreportDirectory="%WORKSPACE%\\reports"'
             }
         }
+
         stage('Break Report On Purpose') {
             steps {
                 bat 'if exist "%WORKSPACE%\\reports" rmdir /s /q "%WORKSPACE%\\reports"'
-            }
-        }
-
-        stage('Debug Reports') {
-            steps {
-                bat 'dir /s "%WORKSPACE%\\reports"'
             }
         }
     }
@@ -57,8 +52,8 @@ pipeline {
             junit allowEmptyResults: true, testResults: 'target/surefire-reports/*.xml'
 
             publishHTML(target: [
-                allowMissing: true,
-                alwaysLinkToLastBuild: true,
+                allowMissing: false,
+                alwaysLinkToLastBuild: false,
                 keepAll: true,
                 reportDir: 'reports',
                 reportFiles: '**/Dewan-Automation-Report.html',

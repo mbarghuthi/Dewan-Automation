@@ -19,9 +19,24 @@ pipeline {
             }
         }
 
+        stage('Clean Reports Folder') {
+            steps {
+                bat '''
+                if exist "%WORKSPACE%\\reports" rmdir /s /q "%WORKSPACE%\\reports"
+                mkdir "%WORKSPACE%\\reports"
+                '''
+            }
+        }
+
         stage('Test') {
             steps {
                 bat 'mvn test -DreportDirectory="%WORKSPACE%\\reports"'
+            }
+        }
+
+        stage('Debug Reports') {
+            steps {
+                bat 'dir /s "%WORKSPACE%\\reports"'
             }
         }
     }

@@ -55,13 +55,13 @@ Given [Navigation] I navigate to 'p:dewanJPPMC'
 Scenario: TC_004_JPPMC_002 JPPMC Check uniqueness serial number for Generalization
 
 Given [Navigation] I navigate to 'p:dewanJPPMC'
-!-- And [Input] I login as 'p:JPPMCuser.HikmatZomat' with password 'p:JPPMC.password'
-!-- And [Input] I click on 'Generalizations Header Button'
-!-- When [Input] Set 'Generalization Size Page Input' value to 'p:GeneralizationSizePage'
-!-- And [Input] I click on 'Change Grid Size Button'
-!-- And [Progress] I wait for '3' sec
-!-- And [Action] I get value from 'Generalization Size Page Input' and save it as 'GeneralizationSizePageValue'
-!-- Then [Assertion] Verify uniqueness of values in column 'رقم التعميم' to approaches 'GeneralizationSizePageValue'
-!-- And [Input] I hover on  'User Name Header Button'
-!-- And [Input] I click on 'logout Button'
-!-- And [Assertion] Verify 'login Button' is present
+And [Input] I login as 'p:JPPMCuser.HikmatZomat' with password 'p:JPPMC.password'
+And [Input] I click on 'Generalizations Header Button'
+When [Input] Set 'Generalization Size Page Input' value to 'p:GeneralizationSizePage'
+And [Input] I click on 'Change Grid Size Button'
+And [Progress] I wait for '3' sec
+And [Action] I get value from 'Generalization Size Page Input' and save it as 'GeneralizationSizePageValue'
+Then [Assertion] Verify uniqueness of values in column 'رقم التعميم' to approaches 'GeneralizationSizePageValue'
+And [Input] I hover on  'User Name Header Button'
+And [Input] I click on 'logout Button'
+And [Assertion] Verify 'login Button' is present

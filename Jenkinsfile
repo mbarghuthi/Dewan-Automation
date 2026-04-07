@@ -33,6 +33,11 @@ pipeline {
                 bat 'mvn test -DreportDirectory="%WORKSPACE%\\reports"'
             }
         }
+        stage('Break Report On Purpose') {
+            steps {
+                bat 'if exist "%WORKSPACE%\\reports" rmdir /s /q "%WORKSPACE%\\reports"'
+            }
+        }
 
         stage('Debug Reports') {
             steps {
@@ -56,7 +61,7 @@ pipeline {
                 alwaysLinkToLastBuild: true,
                 keepAll: true,
                 reportDir: 'reports',
-                reportFiles:'**/Wrong-Report.html',
+                reportFiles: '**/Dewan-Automation-Report.html',
                 reportName: 'Extent Report',
                 reportTitles: 'Dewan Automation Extent Report'
             ])

@@ -56,7 +56,7 @@ pipeline {
                 alwaysLinkToLastBuild: true,
                 keepAll: true,
                 reportDir: 'reports',
-                reportFiles: '**/Dewan-Automation-Report.html',
+                reportFiles:'**/Wrong-Report.html',
                 reportName: 'Extent Report',
                 reportTitles: 'Dewan Automation Extent Report'
             ])

@@ -5,7 +5,18 @@ pipeline {
         maven 'Maven'
         jdk 'JDK8'
     }
-
+  parameters {
+        string(
+            name: 'APP_NAME',
+            defaultValue: '*',
+            description: 'Which app to test: UOP, JPPMC, JIC, or * for all'
+        )
+        string(
+            name: 'VERSION',
+            defaultValue: 'unknown',
+            description: 'Deployed version (passed from n8n)'
+        )
+    }
     stages {
         stage('Checkout') {
             steps {

@@ -31,23 +31,10 @@ public class AllStoriesTest extends JBehaveReportFormatter {
 
 	@Override
 	public List<String> storyPaths() {
+		// -Dstory.filter=*JPPMC* from Maven/Jenkins, defaults to * (all stories)
+		String filter = System.getProperty("story.filter", "*");
 		return new StoryFinder().findPaths(CodeLocations.codeLocationFromClass(this.getClass()),
-//				String.format("stories/**/%s.story", STORY_NAME.trim()), "");
-
-// to specify running single story / scenario
-//				String.format("stories/TC_003_UOP.story", STORY_NAME.trim()), "");
-
-//Run a only for single test scenario
-				String.format("stories/TC_006_JPPMC.story", STORY_NAME.trim()), "");
-
-//Run a only UOP stories
-//				String.format("stories/**/%s.story", STORY_NAME_PATTERN_UOP.trim()), "");
-
-//Run a only JPPMC stories
-//				String.format("stories/**/%s.story", STORY_NAME_PATTERN_JPPMC.trim()), "");
-
-//Run a only JIC stories
-//		String.format("stories/**/%s.story", STORY_NAME_PATTERN_JIC.trim()), "");
+				String.format("stories/**/%s.story", filter.trim()), "");
 	}
 
 	@Override

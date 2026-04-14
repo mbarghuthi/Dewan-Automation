@@ -41,11 +41,17 @@ pipeline {
 
        stage('Test') {
            steps {
-               bat '''
-               chcp 65001
-               set JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF-8 -Dsun.jnu.encoding=UTF-8
-               mvn test -DreportDirectory="%WORKSPACE%\\reports"
-               '''
+               script {
+                   def storyPattern = "*"
+                   if (params.APP_NAME && params.APP_NAME != "*") {
+                       storyPattern = "*${params.APP_NAME}*"
+                   }
+                   bat """
+                       chcp 65001
+                       set JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF-8 -Dsun.jnu.encoding=UTF-8
+                       mvn test "-Dstory.filter=${storyPattern}" -DreportDirectory="%WORKSPACE%\\reports"
+                   """
+               }
            }
        }
 

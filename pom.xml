@@ -252,6 +252,9 @@
 					<includes>
 						<include>**/*Test.java</include>
 					</includes>
+					<systemPropertyVariables>
+						<story.filter>${story.filter}</story.filter>
+					</systemPropertyVariables>
 				</configuration>
 			</plugin>
 

@@ -60,7 +60,8 @@ pipeline {
     post {
         always {
             echo 'Build finished'
-
+            echo "Build result: ${currentBuild.result ?: 'SUCCESS'}"
+            echo "Tested app: ${params.APP_NAME}, version: ${params.VERSION}"
             archiveArtifacts artifacts: 'target/surefire-reports/**/*', allowEmptyArchive: true
             archiveArtifacts artifacts: 'reports/**/*', allowEmptyArchive: true
             archiveArtifacts artifacts: 'target/jbehave/**/*', allowEmptyArchive: true
